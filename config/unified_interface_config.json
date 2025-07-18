@@ -8,9 +8,9 @@
     "ram_gb": 23.95028305053711,
     "optimization_mode": "performance"
   },
-  "kobold_integration": {
+  "schwabot_ai_integration": {
     "enabled": true,
-    "kobold_path": "koboldcpp",
+    "schwabot_ai_path": "schwabot_ai_system.py",
     "model_path": "",
     "port": 5001,
     "auto_start": true,

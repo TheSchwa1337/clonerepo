@@ -35,48 +35,48 @@ from dataclasses import dataclass, field
 import numpy as np
 import psutil
 
-from .hardware_auto_detector import HardwareAutoDetector
+from hardware_auto_detector import HardwareAutoDetector
 
 logger = logging.getLogger(__name__)
 
 # Import real implementations instead of stubs
 try:
-    from .schwabot_ai_integration import SchwabotAIIntegration, AnalysisType, SchwabotRequest, SchwabotResponse
+    from schwabot_ai_integration import SchwabotAIIntegration, AnalysisType, SchwabotRequest, SchwabotResponse
     KOBOLD_AVAILABLE = True
 except ImportError:
     logger.warning("Schwabot AI integration not available, using stub")
     KOBOLD_AVAILABLE = False
 
 try:
-    from .visual_layer_controller import VisualLayerController, VisualizationType, ChartTimeframe
+    from visual_layer_controller import VisualLayerController, VisualizationType, ChartTimeframe
     VISUAL_AVAILABLE = True
 except ImportError:
     logger.warning("Visual layer controller not available, using stub")
     VISUAL_AVAILABLE = False
 
 try:
-    from .tick_loader import TickLoader, TickPriority
+    from tick_loader import TickLoader, TickPriority
     TICK_LOADER_AVAILABLE = True
 except ImportError:
     logger.warning("Tick loader not available, using stub")
     TICK_LOADER_AVAILABLE = False
 
 try:
-    from .signal_cache import SignalCache, SignalType, SignalPriority
+    from signal_cache import SignalCache, SignalType, SignalPriority
     SIGNAL_CACHE_AVAILABLE = True
 except ImportError:
     logger.warning("Signal cache not available, using stub")
     SIGNAL_CACHE_AVAILABLE = False
 
 try:
-    from .registry_writer import RegistryWriter, ArchivePriority
+    from registry_writer import RegistryWriter, ArchivePriority
     REGISTRY_AVAILABLE = True
 except ImportError:
     logger.warning("Registry writer not available, using stub")
     REGISTRY_AVAILABLE = False
 
 try:
-    from .json_server import JSONServer, PacketPriority
+    from json_server import JSONServer, PacketPriority
     JSON_SERVER_AVAILABLE = True
 except ImportError:
     logger.warning("JSON server not available, using stub")
@@ -104,13 +104,13 @@ if not KOBOLD_AVAILABLE:
             self.schwabot_ai_path = schwabot_ai_path
             self.model_path = model_path
             self.port = port
-            self.schwabot_ai_running = False
+            self.schwabot_running = False
             self.running = False
         
         async def start_kobold_server(self) -> bool:
             """Stub method for starting KoboldCPP server."""
             logger.info("✅ KoboldCPP server started (stubbed)")
-            self.schwabot_ai_running = True
+            self.schwabot_running = True
             return True
         
         async def analyze_trading_data(self, request) -> Optional[Any]:
@@ -119,7 +119,7 @@ if not KOBOLD_AVAILABLE:
         
         def stop_processing(self):
             """Stub method for stopping processing."""
-            self.schwabot_ai_running = False
+            self.schwabot_running = False
             self.running = False
 
     class AnalysisType(Enum):
@@ -509,8 +509,8 @@ class SchwabotUnifiedInterface:
             # Initialize Schwabot AI integration
             if self.config["schwabot_ai_integration"]["enabled"]:
                 self.schwabot_ai_integration = SchwabotAIIntegration(
-                    schwabot_ai_path=self.config["schwabot_ai_integration"]["schwabot_ai_path"],
-                    model_path=self.config["schwabot_ai_integration"]["model_path"],
+                    schwabot_path=Path(self.config["schwabot_ai_integration"]["schwabot_ai_path"]),
+                    model_path=Path(self.config["schwabot_ai_integration"]["model_path"]) if self.config["schwabot_ai_integration"]["model_path"] else None,
                     port=self.config["schwabot_ai_integration"]["port"]
                 )
                 logger.info("✅ Schwabot AI integration initialized")
@@ -666,7 +666,7 @@ class SchwabotUnifiedInterface:
         """Start conversation space and chat interface."""
         try:
             # Start conversation space using KoboldCPP web interface
-            if self.schwabot_ai_integration and self.schwabot_ai_integration.schwabot_ai_running:
+            if self.schwabot_ai_integration and self.schwabot_ai_integration.schwabot_running:
                 # KoboldCPP provides the conversation interface
                 self.conversation_active = True
                 logger.info("✅ Conversation space started (via KoboldCPP)")
@@ -750,7 +750,7 @@ class SchwabotUnifiedInterface:
                 await self._process_trading_data()
             
             # Process AI analyses
-            if self.schwabot_ai_integration and self.schwabot_ai_integration.schwabot_ai_running:
+            if self.schwabot_ai_integration and self.schwabot_ai_integration.schwabot_running:
                 await self._process_ai_analyses()
             
             # Process visualizations
@@ -919,7 +919,7 @@ class SchwabotUnifiedInterface:
             
             # Check Schwabot AI integration
             if self.schwabot_ai_integration:
-                health_checks.append(self.schwabot_ai_integration.schwabot_ai_running)
+                health_checks.append(self.schwabot_ai_integration.schwabot_running)
             
             # Check visual controller
             if self.visual_controller:
@@ -956,7 +956,7 @@ class SchwabotUnifiedInterface:
             logger.info("🔄 Attempting system recovery...")
             
             # Restart failed components
-            if self.schwabot_ai_integration and not self.schwabot_ai_integration.schwabot_ai_running:
+            if self.schwabot_ai_integration and not self.schwabot_ai_integration.schwabot_running:
                 await self.schwabot_ai_integration.start_schwabot_ai_server()
             
             if self.visual_controller and not self.visual_controller.running:
@@ -1023,7 +1023,7 @@ class SchwabotUnifiedInterface:
         try:
             return UnifiedSystemStatus(
                 mode=self.mode,
-                schwabot_ai_running=self.schwabot_ai_integration.schwabot_ai_running if self.schwabot_ai_integration else False,
+                schwabot_ai_running=self.schwabot_ai_integration.schwabot_running if self.schwabot_ai_integration else False,
                 visual_layer_active=self.visual_controller.running if self.visual_controller else False,
                 trading_active=self.tick_loader.running if self.tick_loader else False,
                 dlt_waveform_active=self.dlt_waveform_active,
@@ -1056,7 +1056,7 @@ class SchwabotUnifiedInterface:
     async def send_conversation_message(self, message: str) -> str:
         """Send a message through the conversation interface."""
         try:
-            if not self.schwabot_ai_integration or not self.schwabot_ai_integration.schwabot_ai_running:
+            if not self.schwabot_ai_integration or not self.schwabot_ai_integration.schwabot_running:
                 return "Error: KoboldCPP not available"
             
             # Create AI analysis request
@@ -1083,7 +1083,7 @@ class SchwabotUnifiedInterface:
     async def get_trading_analysis(self, symbol: str, timeframe: str = "1h") -> Dict[str, Any]:
         """Get comprehensive trading analysis for a symbol."""
         try:
-            if not self.schwabot_ai_integration or not self.schwabot_ai_integration.schwabot_ai_running:
+            if not self.schwabot_ai_integration or not self.schwabot_ai_integration.schwabot_running:
                 return {"error": "KoboldCPP not available"}
             
             # Get recent signals for the symbol

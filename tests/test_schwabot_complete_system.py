@@ -20,10 +20,15 @@ import asyncio
 import logging
 import random
 import time
+import sys
 from datetime import datetime
 from typing import List
+from pathlib import Path
 import numpy as np
 import math
+
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from schwabot_core_math import SchwabotCoreMath, ExecutionPath, ThermalState
 from schwabot_trading_engine import (

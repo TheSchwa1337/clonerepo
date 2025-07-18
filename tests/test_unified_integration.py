@@ -13,10 +13,10 @@ import sys
 import logging
 from pathlib import Path
 
-# Add core directory to path
-sys.path.append(str(Path(__file__).parent / "core"))
+# Add core directory to path (updated for new directory structure)
+sys.path.append(str(Path(__file__).parent.parent / "core"))
 
-from core.schwabot_unified_interface import SchwabotUnifiedInterface, InterfaceMode
+from schwabot_unified_interface import SchwabotUnifiedInterface, InterfaceMode
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)

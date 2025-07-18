@@ -221,7 +221,7 @@ python -m core.live_market_data_bridge
 
 ✅ **Complete Integration**: All components working together  
 ✅ **Live Market Data**: Real-time data from multiple exchanges  
-✅ **AI-Powered Analysis**: KoboldCPP integration for intelligent trading  
+✅ **AI-Powered Analysis**: Schwabot AI integration for intelligent trading  
 ✅ **Visual Layer Takeover**: Complete visual control system  
 ✅ **Hardware Optimization**: Auto-detected and optimized performance  
 ✅ **Security Features**: Full encryption and data protection  

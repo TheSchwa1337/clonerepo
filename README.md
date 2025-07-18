@@ -113,9 +113,9 @@ python master_integration.py --mode visual      # Visual layer only
 - **`setup_security.py`**: Interactive security setup
 
 ### AI Integration
-- **`core/koboldcpp_integration.py`**: KoboldCPP AI integration
-- **`core/koboldcpp_bridge.py`**: Bridge between AI and trading
-- **`core/koboldcpp_enhanced_interface.py`**: Enhanced AI interface
+- **`core/schwabot_ai_integration.py`**: KoboldCPP AI integration
+- **`core/schwabot_ai_bridge.py`**: Bridge between AI and trading
+- **`core/schwabot_ai_enhanced_interface.py`**: Enhanced AI interface
 
 ### Trading System
 - **`core/tick_loader.py`**: Real-time data loading
@@ -209,7 +209,7 @@ set_api_config(
     "paper_trading": true
   },
   "api": {
-    "kobold_port": 5001,
+    "schwabot_ai_port": 5001,
     "bridge_port": 5005,
     "enhanced_port": 5006,
     "timeout_seconds": 30

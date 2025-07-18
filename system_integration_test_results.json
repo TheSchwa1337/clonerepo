@@ -15,7 +15,7 @@
         "status": "PASS",
         "error": null
       },
-      "core.koboldcpp_integration": {
+      "core.schwabot_ai_integration": {
         "status": "PASS",
         "error": null
       },
@@ -129,7 +129,7 @@
       "hardware_optimized": true,
       "system_health": "unhealthy"
     },
-    "kobold_integration": {
+    "schwabot_ai_integration": {
       "integration_creation": {
         "status": "PASS",
         "error": null
@@ -138,4 +138,4 @@
         "status": "PASS",
         "error": null
       },
-      "kobold_path": 
+      "schwabot_ai_path": 

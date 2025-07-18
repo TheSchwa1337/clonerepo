@@ -25,8 +25,8 @@
       "duration": 0.41999101638793945
     },
     {
-      "name": "KoboldCPP Integration",
-      "details": "Kobold path: koboldcpp, Port: 5001",
+      "name": "Schwabot AI Integration",
+      "details": "Kobold path: schwabot_ai, Port: 5001",
       "duration": 0.10112977027893066
     },
     {

@@ -31,7 +31,7 @@ pip install ta  # Alternative technical analysis library
 ```
 
 ### **3. Install KoboldCPP**
-- Download KoboldCPP from: https://github.com/LostRuins/koboldcpp
+- Download KoboldCPP from: https://github.com/LostRuins/schwabot_ai
 - Follow installation guide for your platform
 - Download a compatible model (Llama 2, Mistral, etc.)
 
@@ -100,7 +100,7 @@ Open your browser to:
 🏥 System Health: ✅ HEALTHY
 
 🌐 Access URLs:
-   KoboldCPP Web UI: http://localhost:5001
+   Schwabot AI Web UI: http://localhost:5001
    Unified Dashboard: http://localhost:5004
    Visual Layer: http://localhost:5000
    DLT Waveform: http://localhost:5001
@@ -142,7 +142,7 @@ python start_complete_schwabot_system.py visual
 ```bash
 python start_complete_schwabot_system.py kobold
 ```
-- Just KoboldCPP integration
+- Just Schwabot AI integration
 - AI conversation interface
 - Local LLM processing
 
@@ -185,8 +185,8 @@ python test_complete_system_integration.py
      Mode: full_integration, Components: 5
    • Visual Layer Controller (0.18s)
      Output dir: test_visualizations, Hardware optimized: True
-   • KoboldCPP Integration (0.15s)
-     Kobold path: koboldcpp, Port: 5001
+   • Schwabot AI Integration (0.15s)
+     Kobold path: schwabot_ai, Port: 5001
    • Trading Components (0.28s)
      Tick loader: ✅, Signal cache: ✅, Registry writer: ✅
    • Live Market Data Bridge (0.34s)
@@ -242,7 +242,7 @@ pip install ta
 #### **KoboldCPP Not Starting**
 ```bash
 # Check if KoboldCPP is installed
-koboldcpp --help
+schwabot_ai --help
 
 # Download a model and specify path in config
 ```

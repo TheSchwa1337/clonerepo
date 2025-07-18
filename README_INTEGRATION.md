@@ -6,13 +6,13 @@ This is the complete integration between **Schwabot** (a sophisticated AI-powere
 
 ## 🎯 What This System Provides
 
-### **1. Bridge Layer** (`core/koboldcpp_bridge.py`)
+### **1. Bridge Layer** (`core/schwabot_ai_bridge.py`)
 - **Connects** Schwabot's unified trading system to KoboldCPP's existing Flask/HTTP interface
 - **Processes** natural language commands and routes them to appropriate trading functions
 - **Supports** trading analysis, portfolio management, strategy activation, and more
 - **Provides** real-time market data integration and AI-powered insights
 
-### **2. Enhanced Interface** (`core/koboldcpp_enhanced_interface.py`)
+### **2. Enhanced Interface** (`core/schwabot_ai_enhanced_interface.py`)
 - **Extends** KoboldCPP's functionality with trading-specific features
 - **Offers** enhanced pattern recognition for trading commands
 - **Provides** streaming responses and real-time data updates
@@ -287,7 +287,7 @@ The system automatically:
 ```bash
 # Error: Connection refused to KoboldCPP
 # Solution: Start KoboldCPP first
-./koboldcpp --port 5001 --model your_model.gguf
+./schwabot_ai --port 5001 --model your_model.gguf
 ```
 
 #### **2. Port Conflicts**
@@ -370,7 +370,7 @@ python master_integration.py full --log-level DEBUG 2>&1 | tee debug.log
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd schwabot-koboldcpp-integration
+cd schwabot-schwabot_ai-integration
 
 # Install development dependencies
 pip install -r requirements-dev.txt
@@ -510,7 +510,7 @@ Get available and active strategies.
 ## 🎯 Quick Start Checklist
 
 - [ ] Install dependencies: `pip install -r requirements.txt`
-- [ ] Start KoboldCPP: `./koboldcpp --port 5001 --model your_model.gguf`
+- [ ] Start KoboldCPP: `./schwabot_ai --port 5001 --model your_model.gguf`
 - [ ] Start integration: `python master_integration.py full`
 - [ ] Test system: `python test_integration.py`
 - [ ] Access interface: `http://localhost:5001` or `http://localhost:5006`

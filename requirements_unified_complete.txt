@@ -1,7 +1,7 @@
 # Schwabot Unified Complete System Requirements
 # ===========================================
 # Complete dependency specification for the unified Schwabot trading system
-# This includes all components: KoboldCPP integration, visual layer, trading system,
+# This includes all components: Schwabot AI integration, visual layer, trading system,
 # code quality tools, and all mathematical frameworks.
 
 # ============================================================================

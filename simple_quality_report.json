@@ -57,7 +57,7 @@
         }
       },
       {
-        "name": "core.koboldcpp_integration",
+        "name": "core.schwabot_ai_integration",
         "success": true,
         "import_errors": [],
         "runtime_errors": [],

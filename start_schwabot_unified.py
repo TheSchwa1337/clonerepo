@@ -6,7 +6,7 @@ Schwabot Unified System Launcher
 
 Simple launcher script for the complete Schwabot unified trading system.
 This script provides easy access to all Schwabot functionality through
-the unified interface with KoboldCPP integration.
+the unified interface with Schwabot AI integration.
 
 Usage:
     python start_schwabot_unified.py [mode] [options]
@@ -174,7 +174,7 @@ async def main():
             logger.info(f"   Total Analyses: {status.total_analyses}")
             logger.info(f"   Total Trades: {status.total_trades}")
             logger.info(f"   System Health: {status.system_health}")
-            logger.info(f"   KoboldCPP: {'✅' if status.kobold_running else '❌'}")
+            logger.info(f"   KoboldCPP: {'✅' if status.schwabot_ai_running else '❌'}")
             logger.info(f"   Visual Layer: {'✅' if status.visual_layer_active else '❌'}")
             logger.info(f"   Trading: {'✅' if status.trading_active else '❌'}")
             logger.info(f"   DLT Waveform: {'✅' if status.dlt_waveform_active else '❌'}")

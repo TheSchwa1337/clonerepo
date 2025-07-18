@@ -27,7 +27,7 @@ from typing import Dict, Any, Optional
 import threading
 
 from .hardware_auto_detector import HardwareAutoDetector
-from .koboldcpp_integration import KoboldCPPIntegration, AnalysisType
+from .schwabot_ai_integration import SchwabotAIIntegration, AnalysisType
 from .visual_layer_controller import VisualLayerController, VisualizationType, ChartTimeframe
 from .tick_loader import TickLoader, TickPriority
 from .signal_cache import SignalCache, SignalType, SignalPriority
@@ -48,8 +48,8 @@ class SchwabotKoboldMaster:
         self.hardware_detector = HardwareAutoDetector()
         self.alpha256 = Alpha256Encryption()
         
-        # KoboldCPP integration components
-        self.kobold_integration = None
+        # Schwabot AI integration components
+        self.schwabot_ai_integration = None
         self.visual_controller = None
         self.tick_loader = None
         self.signal_cache = None
@@ -136,9 +136,9 @@ class SchwabotKoboldMaster:
                 "ram_gb": self.system_info.ram_gb if self.system_info else 8.0,
                 "optimization_mode": self.system_info.optimization_mode.value if self.system_info else "balanced"
             },
-            "kobold_integration": {
+            "schwabot_ai_integration": {
                 "enabled": True,
-                "kobold_path": "koboldcpp",
+                "schwabot_ai_path": "schwabot_ai",
                 "model_path": "",
                 "port": 5001,
                 "auto_start": True,
@@ -200,14 +200,14 @@ class SchwabotKoboldMaster:
         try:
             logger.info("🔧 Initializing core components...")
             
-            # Initialize KoboldCPP integration
-            if self.config["kobold_integration"]["enabled"]:
-                self.kobold_integration = KoboldCPPIntegration(
-                    kobold_path=self.config["kobold_integration"]["kobold_path"],
-                    model_path=self.config["kobold_integration"]["model_path"],
-                    port=self.config["kobold_integration"]["port"]
+            # Initialize Schwabot AI integration
+            if self.config["schwabot_ai_integration"]["enabled"]:
+                self.schwabot_ai_integration = SchwabotAIIntegration(
+                    schwabot_ai_path=self.config["schwabot_ai_integration"]["schwabot_ai_path"],
+                    model_path=self.config["schwabot_ai_integration"]["model_path"],
+                    port=self.config["schwabot_ai_integration"]["port"]
                 )
-                logger.info("✅ KoboldCPP integration initialized")
+                logger.info("✅ Schwabot AI integration initialized")
             
             # Initialize visual layer controller
             if self.config["visual_layer"]["enabled"]:
@@ -282,10 +282,10 @@ class SchwabotKoboldMaster:
     async def _start_core_components(self):
         """Start all core system components."""
         try:
-            # Start KoboldCPP integration
-            if self.kobold_integration:
-                await self.kobold_integration.start_processing()
-                logger.info("✅ KoboldCPP integration started")
+            # Start Schwabot AI integration
+            if self.schwabot_ai_integration:
+                await self.schwabot_ai_integration.start_processing()
+                logger.info("✅ Schwabot AI integration started")
             
             # Start visual layer controller
             if self.visual_controller:
@@ -361,7 +361,7 @@ class SchwabotKoboldMaster:
                 await self._process_tick_data()
             
             # Process AI analyses
-            if self.kobold_integration and self.kobold_integration.running:
+            if self.schwabot_ai_integration and self.schwabot_ai_integration.running:
                 await self._process_ai_analyses()
             
             # Process visualizations
@@ -422,7 +422,7 @@ class SchwabotKoboldMaster:
                 
                 for signal in signals:
                     # Perform AI analysis
-                    response = await self.kobold_integration.process_trading_analysis(
+                    response = await self.schwabot_ai_integration.process_trading_analysis(
                         signal.data,
                         AnalysisType.TECHNICAL_ANALYSIS
                     )
@@ -497,9 +497,9 @@ class SchwabotKoboldMaster:
         try:
             health_checks = []
             
-            # Check KoboldCPP integration
-            if self.kobold_integration:
-                health_checks.append(self.kobold_integration.kobold_running)
+            # Check Schwabot AI integration
+            if self.schwabot_ai_integration:
+                health_checks.append(self.schwabot_ai_integration.schwabot_ai_running)
             
             # Check visual controller
             if self.visual_controller:
@@ -568,8 +568,8 @@ class SchwabotKoboldMaster:
             logger.info("🔄 Attempting system recovery...")
             
             # Restart failed components
-            if self.kobold_integration and not self.kobold_integration.kobold_running:
-                await self.kobold_integration.start_kobold_server()
+            if self.schwabot_ai_integration and not self.schwabot_ai_integration.schwabot_ai_running:
+                await self.schwabot_ai_integration.start_schwabot_ai_server()
             
             if self.visual_controller and not self.visual_controller.running:
                 await self.visual_controller.start_processing()
@@ -605,9 +605,9 @@ class SchwabotKoboldMaster:
     async def _stop_core_components(self):
         """Stop all core system components."""
         try:
-            # Stop KoboldCPP integration
-            if self.kobold_integration:
-                self.kobold_integration.stop_processing()
+            # Stop Schwabot AI integration
+            if self.schwabot_ai_integration:
+                self.schwabot_ai_integration.stop_processing()
             
             # Stop visual layer controller
             if self.visual_controller:
@@ -646,10 +646,10 @@ class SchwabotKoboldMaster:
                 },
                 "statistics": self.stats,
                 "components": {
-                    "kobold_integration": {
-                        "enabled": bool(self.kobold_integration),
-                        "running": self.kobold_integration.running if self.kobold_integration else False,
-                        "stats": self.kobold_integration.get_statistics() if self.kobold_integration else {}
+                    "schwabot_ai_integration": {
+                        "enabled": bool(self.schwabot_ai_integration),
+                        "running": self.schwabot_ai_integration.running if self.schwabot_ai_integration else False,
+                        "stats": self.schwabot_ai_integration.get_statistics() if self.schwabot_ai_integration else {}
                     },
                     "visual_controller": {
                         "enabled": bool(self.visual_controller),

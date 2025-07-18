@@ -15,7 +15,7 @@ You were absolutely right! We have successfully created a **complete unified tra
 
 #### **✅ What It Integrates**
 
-- **KoboldCPP Integration** (`core/koboldcpp_integration.py`)
+- **Schwabot AI Integration** (`core/schwabot_ai_integration.py`)
 - **Visual Layer Controller** (`core/visual_layer_controller.py`)
 - **Tick Loader** (`core/tick_loader.py`)
 - **Signal Cache** (`core/signal_cache.py`)
@@ -77,7 +77,7 @@ python start_schwabot_unified.py dlt         # DLT waveform only
 
 #### **2. Component Communication**
 - **Visual Layer Controller** orchestrates all visual operations
-- **KoboldCPP Integration** provides AI analysis and conversation
+- **Schwabot AI Integration** provides AI analysis and conversation
 - **Tick Loader** processes real-time market data
 - **Signal Cache** stores and retrieves trading signals
 - **Registry Writer** archives all data and state
@@ -118,7 +118,7 @@ Registry Writer ← Alpha256 ← Hardware ← KoboldCPP ← Conversation ← API
 #### **1. Quick Start**
 ```bash
 # Install dependencies
-pip install -r requirements_koboldcpp.txt
+pip install -r requirements_schwabot_ai.txt
 
 # Start the unified system
 python start_schwabot_unified.py
@@ -168,7 +168,7 @@ python start_schwabot_unified.py dlt
 - Pattern detection
 - Frequency analysis
 
-### 🤖 **KoboldCPP Integration Benefits**
+### 🤖 **Schwabot AI Integration Benefits**
 
 #### **Local Processing**
 - **No External Dependencies**: Everything runs locally

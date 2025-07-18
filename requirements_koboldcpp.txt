@@ -1,4 +1,4 @@
-# KoboldCPP Integration Requirements for Schwabot Trading System
+# Schwabot AI Integration Requirements for Schwabot Trading System
 # =============================================================
 
 # Core dependencies

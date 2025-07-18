@@ -12,7 +12,7 @@ Features:
 - Real-time market data integration with multiple exchanges
 - Seamless connection to unified interface
 - Visual layer controller integration
-- KoboldCPP AI analysis integration
+- Schwabot AI analysis integration
 - Hardware-optimized performance
 - Complete trading pipeline integration
 """
@@ -32,7 +32,7 @@ from pathlib import Path
 from .live_market_data_integration import LiveMarketDataIntegration, MarketData, TradingSignal
 from .schwabot_unified_interface import SchwabotUnifiedInterface, InterfaceMode
 from .visual_layer_controller import VisualLayerController, VisualizationType, ChartTimeframe
-from .koboldcpp_integration import KoboldCPPIntegration, AnalysisType, KoboldRequest
+from .schwabot_ai_integration import SchwabotAIIntegration, AnalysisType, SchwabotRequest
 from .tick_loader import TickLoader, TickPriority
 from .signal_cache import SignalCache, SignalType, SignalPriority
 from .registry_writer import RegistryWriter, ArchivePriority
@@ -55,7 +55,7 @@ class BridgeStatus:
     market_data_running: bool
     unified_interface_running: bool
     visual_layer_running: bool
-    kobold_integration_running: bool
+    schwabot_ai_integration_running: bool
     data_flow_active: bool
     uptime_seconds: float
     total_data_points: int
@@ -82,8 +82,8 @@ class LiveMarketDataBridge:
         # Visual layer controller
         self.visual_controller = None
         
-        # KoboldCPP integration
-        self.kobold_integration = None
+        # Schwabot AI integration
+        self.schwabot_ai_integration = None
         
         # Trading system components
         self.tick_loader = None
@@ -216,9 +216,9 @@ class LiveMarketDataBridge:
                 "enable_real_time_rendering": True,
                 "chart_update_interval": 5.0
             },
-            "kobold_integration": {
+            "schwabot_ai_integration": {
                 "enabled": True,
-                "kobold_path": "koboldcpp",
+                "schwabot_ai_path": "schwabot_ai",
                 "model_path": "",
                 "port": 5001,
                 "auto_start": True,
@@ -286,14 +286,14 @@ class LiveMarketDataBridge:
                 )
                 logger.info("✅ Visual layer controller initialized")
             
-            # Initialize KoboldCPP integration
-            if self.config["kobold_integration"]["enabled"]:
-                self.kobold_integration = KoboldCPPIntegration(
-                    kobold_path=self.config["kobold_integration"]["kobold_path"],
-                    model_path=self.config["kobold_integration"]["model_path"],
-                    port=self.config["kobold_integration"]["port"]
+            # Initialize Schwabot AI integration
+            if self.config["schwabot_ai_integration"]["enabled"]:
+                self.schwabot_ai_integration = SchwabotAIIntegration(
+                    schwabot_ai_path=self.config["schwabot_ai_integration"]["schwabot_ai_path"],
+                    model_path=self.config["schwabot_ai_integration"]["model_path"],
+                    port=self.config["schwabot_ai_integration"]["port"]
                 )
-                logger.info("✅ KoboldCPP integration initialized")
+                logger.info("✅ Schwabot AI integration initialized")
             
             # Initialize trading system components
             if self.config["trading_system"]["enabled"]:
@@ -356,11 +356,11 @@ class LiveMarketDataBridge:
                 await self.visual_controller.start_processing()
                 logger.info("✅ Visual layer controller started")
             
-            # Start KoboldCPP integration
-            if self.kobold_integration:
-                if self.config["kobold_integration"]["auto_start"]:
-                    await self.kobold_integration.start_kobold_server()
-                logger.info("✅ KoboldCPP integration started")
+            # Start Schwabot AI integration
+            if self.schwabot_ai_integration:
+                if self.config["schwabot_ai_integration"]["auto_start"]:
+                    await self.schwabot_ai_integration.start_schwabot_ai_server()
+                logger.info("✅ Schwabot AI integration started")
             
             # Start trading system components
             if self.tick_loader:
@@ -476,14 +476,14 @@ class LiveMarketDataBridge:
     def _process_ai_analysis_flow(self):
         """Process AI analysis flow through KoboldCPP."""
         try:
-            if self.kobold_integration and self.kobold_integration.kobold_running:
+            if self.schwabot_ai_integration and self.schwabot_ai_integration.schwabot_ai_running:
                 # Get recent market data for analysis
                 if self.signal_cache:
                     signals = asyncio.run(self.signal_cache.get_signals_by_type(SignalType.PRICE, limit=10))
                     
                     for signal in signals:
                         # Create AI analysis request
-                        request = KoboldRequest(
+                        request = SchwabotRequest(
                             prompt=f"Analyze trading data for {signal.symbol}: price=${signal.data['price']:.2f}, volume={signal.data['volume']:.0f}, RSI={signal.data['rsi']:.2f}. Provide technical analysis and trading recommendations.",
                             max_length=512,
                             temperature=0.7,
@@ -491,7 +491,7 @@ class LiveMarketDataBridge:
                         )
                         
                         # Perform AI analysis
-                        response = asyncio.run(self.kobold_integration.analyze_trading_data(request))
+                        response = asyncio.run(self.schwabot_ai_integration.analyze_trading_data(request))
                         
                         if response:
                             # Cache AI analysis result
@@ -631,9 +631,9 @@ class LiveMarketDataBridge:
             if self.visual_controller:
                 self.visual_controller.stop_processing()
             
-            # Stop KoboldCPP integration
-            if self.kobold_integration:
-                self.kobold_integration.stop_processing()
+            # Stop Schwabot AI integration
+            if self.schwabot_ai_integration:
+                self.schwabot_ai_integration.stop_processing()
             
             # Stop trading system components
             if self.tick_loader:
@@ -656,7 +656,7 @@ class LiveMarketDataBridge:
                 market_data_running=self.market_data_integration.running if self.market_data_integration else False,
                 unified_interface_running=self.unified_interface.running if self.unified_interface else False,
                 visual_layer_running=self.visual_controller.running if self.visual_controller else False,
-                kobold_integration_running=self.kobold_integration.kobold_running if self.kobold_integration else False,
+                schwabot_ai_integration_running=self.schwabot_ai_integration.schwabot_ai_running if self.schwabot_ai_integration else False,
                 data_flow_active=self.data_flow_active,
                 uptime_seconds=self.stats["uptime_seconds"],
                 total_data_points=self.stats["total_data_points"],
@@ -672,7 +672,7 @@ class LiveMarketDataBridge:
                 market_data_running=False,
                 unified_interface_running=False,
                 visual_layer_running=False,
-                kobold_integration_running=False,
+                schwabot_ai_integration_running=False,
                 data_flow_active=False,
                 uptime_seconds=0.0,
                 total_data_points=0,
@@ -698,9 +698,9 @@ class LiveMarketDataBridge:
             if self.visual_controller:
                 health_checks.append(self.visual_controller.running)
             
-            # Check KoboldCPP integration
-            if self.kobold_integration:
-                health_checks.append(self.kobold_integration.kobold_running)
+            # Check Schwabot AI integration
+            if self.schwabot_ai_integration:
+                health_checks.append(self.schwabot_ai_integration.schwabot_ai_running)
             
             # Check data flow
             health_checks.append(self.data_flow_active)

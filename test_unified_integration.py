@@ -44,7 +44,7 @@ async def test_unified_system():
         # Check component initialization
         print("3. Checking component initialization...")
         components = {
-            "KoboldCPP Integration": unified_interface.kobold_integration is not None,
+            "Schwabot AI Integration": unified_interface.schwabot_ai_integration is not None,
             "Visual Controller": unified_interface.visual_controller is not None,
             "Tick Loader": unified_interface.tick_loader is not None,
             "Signal Cache": unified_interface.signal_cache is not None,
@@ -105,8 +105,8 @@ async def test_conversation_interface():
         unified_interface = SchwabotUnifiedInterface(InterfaceMode.CONVERSATION)
         
         # Test conversation message (without starting full system)
-        if unified_interface.kobold_integration:
-            print("✅ KoboldCPP integration available")
+        if unified_interface.schwabot_ai_integration:
+            print("✅ Schwabot AI integration available")
             
             # Test simple message
             test_message = "Hello, can you analyze BTC/USD for me?"
@@ -117,7 +117,7 @@ async def test_conversation_interface():
             print("✅ Conversation interface structure verified")
             
         else:
-            print("❌ KoboldCPP integration not available")
+            print("❌ Schwabot AI integration not available")
             return False
             
         return True

@@ -1,9 +1,9 @@
-# Schwabot KoboldCPP Integration
+# Schwabot Schwabot AI Integration
 ## AI-Powered Trading System with Visual Layer Takeover
 
 ### Overview
 
-The Schwabot KoboldCPP Integration is a comprehensive system that properly utilizes KoboldCPP's local LLM capabilities to enable advanced AI-powered trading analysis, decision making, and visual layer control. This system allows the visual layer to **TAKE OVER** the KoboldCPP system, providing unprecedented AI-driven trading insights and automated decision-making capabilities.
+The Schwabot Schwabot AI Integration is a comprehensive system that properly utilizes KoboldCPP's local LLM capabilities to enable advanced AI-powered trading analysis, decision making, and visual layer control. This system allows the visual layer to **TAKE OVER** the KoboldCPP system, providing unprecedented AI-driven trading insights and automated decision-making capabilities.
 
 ### 🎯 Key Features
 
@@ -13,7 +13,7 @@ The Schwabot KoboldCPP Integration is a comprehensive system that properly utili
 - **Advanced Visualization**: AI-enhanced charts with pattern recognition and technical analysis
 - **Automated Decision Making**: AI-generated trading signals and recommendations
 
-#### **KoboldCPP Integration**
+#### **Schwabot AI Integration**
 - **Local LLM Processing**: Full integration with KoboldCPP for local AI analysis
 - **Multimodal Vision**: Support for chart analysis and image-based trading insights
 - **Hardware Optimization**: Auto-detection and optimization for any hardware environment
@@ -56,13 +56,13 @@ The Schwabot KoboldCPP Integration is a comprehensive system that properly utili
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd schwabot-koboldcpp-integration
+cd schwabot-schwabot_ai-integration
 
 # Install dependencies
-pip install -r requirements_koboldcpp.txt
+pip install -r requirements_schwabot_ai.txt
 
 # Download KoboldCPP (if not already installed)
-# Visit: https://github.com/LostRuins/koboldcpp/releases
+# Visit: https://github.com/LostRuins/schwabot_ai/releases
 ```
 
 #### 2. Configuration
@@ -81,7 +81,7 @@ python -m core.schwabot_kobold_master
 
 ### 🔧 Core Components
 
-#### **1. KoboldCPP Integration (`core/koboldcpp_integration.py`)**
+#### **1. Schwabot AI Integration (`core/schwabot_ai_integration.py`)**
 - **Purpose**: Manages KoboldCPP server and AI analysis requests
 - **Features**:
   - Hardware-optimized model loading
@@ -236,9 +236,9 @@ status = master_system.get_system_status()
 #### **KoboldCPP Settings**
 ```json
 {
-  "kobold_integration": {
+  "schwabot_ai_integration": {
     "enabled": true,
-    "kobold_path": "koboldcpp",
+    "schwabot_ai_path": "schwabot_ai",
     "model_path": "path/to/model.gguf",
     "port": 5001,
     "auto_start": true,
@@ -313,7 +313,7 @@ status = master_system.get_system_status()
 #### **Development Setup**
 ```bash
 # Install development dependencies
-pip install -r requirements_koboldcpp.txt
+pip install -r requirements_schwabot_ai.txt
 
 # Run tests
 pytest tests/
@@ -356,4 +356,4 @@ For support and questions:
 
 **🎉 The Visual Layer has successfully TAKEN OVER the KoboldCPP system!**
 
-The Schwabot KoboldCPP Integration represents a new era in AI-powered trading, where the visual layer orchestrates all AI operations, providing unprecedented insights and automated decision-making capabilities. This system properly utilizes KoboldCPP's local LLM capabilities while maintaining the integrity and performance of the existing 47-day mathematical framework. 
+The Schwabot Schwabot AI Integration represents a new era in AI-powered trading, where the visual layer orchestrates all AI operations, providing unprecedented insights and automated decision-making capabilities. This system properly utilizes KoboldCPP's local LLM capabilities while maintaining the integrity and performance of the existing 47-day mathematical framework. 

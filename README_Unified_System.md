@@ -7,7 +7,7 @@ The Schwabot Unified Trading System represents the **complete integration** of a
 ### 🎯 **What This System Provides**
 
 #### **🔗 Complete Component Integration**
-- **KoboldCPP Integration**: Local LLM-powered AI analysis and decision making
+- **Schwabot AI Integration**: Local LLM-powered AI analysis and decision making
 - **Visual Layer Controller**: AI-enhanced chart generation and pattern recognition
 - **DLT Waveform Visualization**: Real-time waveform analysis and 3D visualization
 - **Trading System**: Complete 47-day mathematical framework integration
@@ -64,10 +64,10 @@ git clone <repository-url>
 cd schwabot
 
 # Install dependencies
-pip install -r requirements_koboldcpp.txt
+pip install -r requirements_schwabot_ai.txt
 
 # Download KoboldCPP (if not already installed)
-# Visit: https://github.com/LostRuins/koboldcpp/releases
+# Visit: https://github.com/LostRuins/schwabot_ai/releases
 ```
 
 #### **2. Start the Unified System**
@@ -173,9 +173,9 @@ The system creates `config/unified_interface_config.json` automatically:
   "version": "1.0.0",
   "system_name": "Schwabot Unified Interface",
   "mode": "full_integration",
-  "kobold_integration": {
+  "schwabot_ai_integration": {
     "enabled": true,
-    "kobold_path": "koboldcpp",
+    "schwabot_ai_path": "schwabot_ai",
     "model_path": "",
     "port": 5001,
     "auto_start": true,
@@ -237,7 +237,7 @@ ai_insights = visual_analysis.ai_insights
 # - Trading recommendations
 ```
 
-### 🤖 **KoboldCPP Integration Features**
+### 🤖 **Schwabot AI Integration Features**
 
 #### **Local AI Analysis**
 - **No External Dependencies**: All AI processing happens locally
@@ -402,7 +402,7 @@ python start_schwabot_unified.py --debug
 #### **Development Setup**
 ```bash
 # Install development dependencies
-pip install -r requirements_koboldcpp.txt
+pip install -r requirements_schwabot_ai.txt
 
 # Run tests
 pytest tests/
@@ -449,7 +449,7 @@ The Schwabot Unified Trading System provides **everything you need** in a single
 
 ✅ **Complete Component Integration** - All Schwabot features in one place  
 ✅ **Visual Layer Takeover** - AI-powered interface control  
-✅ **KoboldCPP Integration** - Local AI processing and conversation  
+✅ **Schwabot AI Integration** - Local AI processing and conversation  
 ✅ **DLT Waveform Visualization** - Real-time waveform analysis  
 ✅ **Conversation Space** - Natural language trading interface  
 ✅ **API Access** - Full REST API for external integrations  

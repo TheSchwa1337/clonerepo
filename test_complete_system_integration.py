@@ -6,13 +6,13 @@ Complete System Integration Test
 
 This test script verifies that the complete Schwabot system is working
 end-to-end with live market data integration, unified interface, visual
-layer controller, and KoboldCPP integration.
+layer controller, and Schwabot AI integration.
 
 Tests:
 - Live market data integration with real APIs
 - Unified interface functionality
 - Visual layer controller with AI analysis
-- KoboldCPP integration and AI processing
+- Schwabot AI integration and AI processing
 - Complete data flow from APIs to visualization
 - Hardware auto-detection and optimization
 - System health monitoring
@@ -31,7 +31,7 @@ import sys
 from core.live_market_data_bridge import LiveMarketDataBridge, BridgeMode
 from core.schwabot_unified_interface import SchwabotUnifiedInterface, InterfaceMode
 from core.visual_layer_controller import VisualLayerController, VisualizationType, ChartTimeframe
-from core.koboldcpp_integration import KoboldCPPIntegration, AnalysisType, KoboldRequest
+from core.schwabot_ai_integration import SchwabotAIIntegration, AnalysisType, SchwabotRequest
 from core.hardware_auto_detector import HardwareAutoDetector
 from core.live_market_data_integration import LiveMarketDataIntegration
 from core.tick_loader import TickLoader, TickPriority
@@ -118,7 +118,7 @@ def test_unified_interface() -> TestResult:
         interface = SchwabotUnifiedInterface(InterfaceMode.FULL_INTEGRATION)
         
         if interface and interface.initialized:
-            details = f"Mode: {interface.mode.value}, Components: {len([interface.kobold_integration, interface.visual_controller, interface.tick_loader, interface.signal_cache, interface.registry_writer])}"
+            details = f"Mode: {interface.mode.value}, Components: {len([interface.schwabot_ai_integration, interface.visual_controller, interface.tick_loader, interface.signal_cache, interface.registry_writer])}"
             return TestResult("Unified Interface", True, details, time.time() - start_time)
         else:
             return TestResult("Unified Interface", False, "Failed to initialize", time.time() - start_time)
@@ -143,22 +143,22 @@ def test_visual_layer_controller() -> TestResult:
     except Exception as e:
         return TestResult("Visual Layer Controller", False, str(e), time.time() - start_time)
 
-def test_koboldcpp_integration() -> TestResult:
-    """Test KoboldCPP integration."""
+def test_schwabot_ai_integration() -> TestResult:
+    """Test Schwabot AI integration."""
     start_time = time.time()
     try:
-        logger.info("🤖 Testing KoboldCPP integration...")
+        logger.info("🤖 Testing Schwabot AI integration...")
         
-        integration = KoboldCPPIntegration(kobold_path="koboldcpp", port=5001)
+        integration = SchwabotAIIntegration(schwabot_ai_path="schwabot_ai", port=5001)
         
         if integration:
-            details = f"Kobold path: {integration.kobold_path}, Port: {integration.port}"
-            return TestResult("KoboldCPP Integration", True, details, time.time() - start_time)
+            details = f"Kobold path: {integration.schwabot_ai_path}, Port: {integration.port}"
+            return TestResult("Schwabot AI Integration", True, details, time.time() - start_time)
         else:
-            return TestResult("KoboldCPP Integration", False, "Failed to initialize", time.time() - start_time)
+            return TestResult("Schwabot AI Integration", False, "Failed to initialize", time.time() - start_time)
             
     except Exception as e:
-        return TestResult("KoboldCPP Integration", False, str(e), time.time() - start_time)
+        return TestResult("Schwabot AI Integration", False, str(e), time.time() - start_time)
 
 def test_trading_components() -> TestResult:
     """Test trading system components."""
@@ -227,8 +227,8 @@ async def test_ai_analysis_pipeline() -> TestResult:
     try:
         logger.info("🧠 Testing AI analysis pipeline...")
         
-        # Test KoboldCPP integration
-        kobold = KoboldCPPIntegration(port=5001)
+        # Test Schwabot AI integration
+        kobold = SchwabotAIIntegration(port=5001)
         
         # Test visual layer controller
         visual = VisualLayerController()
@@ -371,7 +371,7 @@ async def main():
     results.append(test_live_market_data_integration())
     results.append(test_unified_interface())
     results.append(test_visual_layer_controller())
-    results.append(test_koboldcpp_integration())
+    results.append(test_schwabot_ai_integration())
     results.append(test_trading_components())
     results.append(test_system_health_monitoring())
     

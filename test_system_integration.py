@@ -30,7 +30,7 @@ def test_core_imports():
     # Test core modules
     core_modules = [
         "core.schwabot_unified_interface",
-        "core.koboldcpp_integration", 
+        "core.schwabot_ai_integration", 
         "core.visual_layer_controller",
         "core.tick_loader",
         "core.signal_cache",
@@ -200,18 +200,18 @@ def test_unified_interface():
         logger.error(f"❌ Unified interface test failed: {e}")
         return {"interface_test": {"status": "FAIL", "error": str(e)}}
 
-def test_kobold_integration():
-    """Test KoboldCPP integration."""
-    logger.info("🔍 Testing KoboldCPP integration...")
+def test_schwabot_ai_integration():
+    """Test Schwabot AI integration."""
+    logger.info("🔍 Testing Schwabot AI integration...")
     
     try:
-        from core.koboldcpp_integration import KoboldCPPIntegration, AnalysisType, KoboldRequest
+        from core.schwabot_ai_integration import SchwabotAIIntegration, AnalysisType, SchwabotRequest
         
         # Create integration instance
-        integration = KoboldCPPIntegration()
+        integration = SchwabotAIIntegration()
         
         # Test request creation
-        request = KoboldRequest(
+        request = SchwabotRequest(
             prompt="Test trading analysis",
             max_length=512,
             temperature=0.7,
@@ -221,18 +221,18 @@ def test_kobold_integration():
         test_results = {
             "integration_creation": {"status": "PASS", "error": None},
             "request_creation": {"status": "PASS", "error": None},
-            "kobold_path": integration.kobold_path,
+            "schwabot_ai_path": integration.schwabot_ai_path,
             "port": integration.port
         }
         
-        logger.info(f"✅ KoboldCPP integration created successfully")
-        logger.info(f"   Kobold path: {integration.kobold_path}")
+        logger.info(f"✅ Schwabot AI integration created successfully")
+        logger.info(f"   Kobold path: {integration.schwabot_ai_path}")
         logger.info(f"   Port: {integration.port}")
         
         return test_results
         
     except Exception as e:
-        logger.error(f"❌ KoboldCPP integration test failed: {e}")
+        logger.error(f"❌ Schwabot AI integration test failed: {e}")
         return {"kobold_test": {"status": "FAIL", "error": str(e)}}
 
 def test_visual_layer():
@@ -402,7 +402,7 @@ def main():
     all_results["aoi_imports"] = test_aoi_imports()
     all_results["dependencies"] = test_dependencies()
     all_results["unified_interface"] = test_unified_interface()
-    all_results["kobold_integration"] = test_kobold_integration()
+    all_results["schwabot_ai_integration"] = test_schwabot_ai_integration()
     all_results["visual_layer"] = test_visual_layer()
     all_results["trading_components"] = test_trading_components()
     all_results["hardware_detection"] = test_hardware_detection()

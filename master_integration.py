@@ -39,11 +39,11 @@ from typing import Any, Dict, List, Optional
 from pathlib import Path
 
 # Import our core components
-from core.koboldcpp_bridge import KoboldCPPBridge, start_bridge, stop_bridge
-from core.koboldcpp_enhanced_interface import KoboldCPPEnhancedInterface, start_enhanced_interface, stop_enhanced_interface
+from core.schwabot_ai_bridge import KoboldCPPBridge, start_bridge, stop_bridge
+from core.schwabot_ai_enhanced_interface import KoboldCPPEnhancedInterface, start_enhanced_interface, stop_enhanced_interface
 from core.schwabot_unified_interface import SchwabotUnifiedInterface, InterfaceMode
 from core.visual_layer_controller import VisualLayerController
-from core.koboldcpp_integration import KoboldCPPIntegration
+from core.schwabot_ai_integration import SchwabotAIIntegration
 from core.tick_loader import TickLoader
 from core.signal_cache import SignalCache
 from core.registry_writer import RegistryWriter
@@ -99,7 +99,7 @@ class MasterIntegration:
             if self.mode in [IntegrationMode.FULL, IntegrationMode.BRIDGE, IntegrationMode.ENHANCED]:
                 # Initialize bridge
                 self.components['bridge'] = KoboldCPPBridge(
-                    kobold_port=self.ports['kobold'],
+                    schwabot_ai_port=self.ports['kobold'],
                     bridge_port=self.ports['bridge']
                 )
                 logger.info("✅ Bridge component initialized")
@@ -107,7 +107,7 @@ class MasterIntegration:
             if self.mode in [IntegrationMode.FULL, IntegrationMode.ENHANCED]:
                 # Initialize enhanced interface
                 self.components['enhanced'] = KoboldCPPEnhancedInterface(
-                    kobold_port=self.ports['kobold'],
+                    schwabot_ai_port=self.ports['kobold'],
                     enhanced_port=self.ports['enhanced']
                 )
                 logger.info("✅ Enhanced interface component initialized")
@@ -124,9 +124,9 @@ class MasterIntegration:
                 logger.info("✅ Unified interface component initialized")
             
             if self.mode in [IntegrationMode.FULL, IntegrationMode.CONVERSATION]:
-                # Initialize KoboldCPP integration
-                self.components['kobold'] = KoboldCPPIntegration(port=self.ports['kobold'])
-                logger.info("✅ KoboldCPP integration component initialized")
+                # Initialize Schwabot AI integration
+                self.components['kobold'] = SchwabotAIIntegration(port=self.ports['kobold'])
+                logger.info("✅ Schwabot AI integration component initialized")
             
             # Initialize core components for all modes
             self.components['tick_loader'] = TickLoader()
@@ -513,7 +513,7 @@ async def main():
         integration = MasterIntegration(mode=args.mode)
         
         # Update ports if specified
-        integration.ports['kobold'] = args.kobold_port
+        integration.ports['kobold'] = args.schwabot_ai_port
         integration.ports['bridge'] = args.bridge_port
         integration.ports['enhanced'] = args.enhanced_port
         integration.ports['visual'] = args.visual_port

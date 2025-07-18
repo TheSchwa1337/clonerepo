@@ -4,7 +4,7 @@
 
 The Schwabot Unified Interface was experiencing GUI issues because:
 
-1. **Missing Real Implementations**: The system was using stub classes instead of real KoboldCPP integration
+1. **Missing Real Implementations**: The system was using stub classes instead of real Schwabot AI integration
 2. **Improper Imports**: GUI components weren't being imported correctly
 3. **Configuration Issues**: KoboldCPP wasn't properly configured for the trading system
 
@@ -18,15 +18,15 @@ The Schwabot Unified Interface was experiencing GUI issues because:
 ```python
 # Now properly imports real implementations
 try:
-    from .koboldcpp_integration import KoboldCPPIntegration, AnalysisType, KoboldRequest, KoboldResponse
+    from .schwabot_ai_integration import SchwabotAIIntegration, AnalysisType, SchwabotRequest, SchwabotResponse
     KOBOLD_AVAILABLE = True
 except ImportError:
-    logger.warning("⚠️ KoboldCPP integration not available, using stub")
+    logger.warning("⚠️ Schwabot AI integration not available, using stub")
     KOBOLD_AVAILABLE = False
 ```
 
 ### 2. Created Setup Script
-- **New File**: `setup_koboldcpp.py`
+- **New File**: `setup_schwabot_ai.py`
 - **Purpose**: Automatically download and configure KoboldCPP
 - **Features**: 
   - Platform detection (Windows/Linux/macOS)
@@ -47,16 +47,16 @@ except ImportError:
 ### Step 1: Run the Setup Script
 ```bash
 # Complete setup (downloads KoboldCPP and creates config)
-python setup_koboldcpp.py
+python setup_schwabot_ai.py
 
 # Or just test existing installation
-python setup_koboldcpp.py --test
+python setup_schwabot_ai.py --test
 ```
 
 ### Step 2: Download a Model (Optional)
 ```bash
 # Download a recommended model
-python setup_koboldcpp.py --download-model phi-2.gguf
+python setup_schwabot_ai.py --download-model phi-2.gguf
 
 # Available models:
 # - phi-2.gguf (small, fast)
@@ -79,13 +79,13 @@ python -m core.schwabot_unified_interface api
 ## 🔧 Configuration Details
 
 ### KoboldCPP Configuration
-The setup script creates `config/koboldcpp_config.json` with:
+The setup script creates `config/schwabot_ai_config.json` with:
 
 ```json
 {
-  "kobold_integration": {
+  "schwabot_ai_integration": {
     "enabled": true,
-    "kobold_path": "./koboldcpp/koboldcpp.exe",
+    "schwabot_ai_path": "./schwabot_ai/schwabot_ai.exe",
     "port": 5001,
     "auto_start": true,
     "threads": 4,
@@ -114,7 +114,7 @@ After successful setup, access the system at:
 ### Issue: "KoboldCPP not available"
 **Solution**: Run the setup script
 ```bash
-python setup_koboldcpp.py
+python setup_schwabot_ai.py
 ```
 
 ### Issue: "GUI components not found"
@@ -139,7 +139,7 @@ kill -9 <PID>
 ### Issue: "Model not loading"
 **Solution**: Download a model and update configuration
 ```bash
-python setup_koboldcpp.py --download-model phi-2.gguf
+python setup_schwabot_ai.py --download-model phi-2.gguf
 ```
 
 ## 📊 System Status
@@ -148,7 +148,7 @@ The unified interface now provides real-time status:
 
 ```python
 status = unified_interface.get_unified_status()
-print(f"KoboldCPP: {status.kobold_running}")
+print(f"KoboldCPP: {status.schwabot_ai_running}")
 print(f"Visual Layer: {status.visual_layer_active}")
 print(f"Trading: {status.trading_active}")
 print(f"System Health: {status.system_health}")
@@ -157,7 +157,7 @@ print(f"System Health: {status.system_health}")
 ## 🎯 What's Fixed
 
 1. ✅ **Import System**: Real implementations with fallback stubs
-2. ✅ **KoboldCPP Integration**: Proper startup and configuration
+2. ✅ **Schwabot AI Integration**: Proper startup and configuration
 3. ✅ **GUI Components**: Visualizer launcher integration
 4. ✅ **Error Handling**: Graceful degradation when components missing
 5. ✅ **Configuration**: Hardware-optimized settings
@@ -165,8 +165,8 @@ print(f"System Health: {status.system_health}")
 
 ## 🚀 Next Steps
 
-1. Run `python setup_koboldcpp.py` to set up KoboldCPP
-2. Download a model: `python setup_koboldcpp.py --download-model phi-2.gguf`
+1. Run `python setup_schwabot_ai.py` to set up KoboldCPP
+2. Download a model: `python setup_schwabot_ai.py --download-model phi-2.gguf`
 3. Start the system: `python -m core.schwabot_unified_interface`
 4. Access the web interface at http://localhost:5000
 

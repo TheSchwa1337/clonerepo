@@ -6,7 +6,7 @@ Complete Schwabot System Launcher
 
 This launcher starts the complete Schwabot trading system with:
 - Live market data integration from real APIs
-- Unified interface with KoboldCPP integration
+- Unified interface with Schwabot AI integration
 - Visual layer controller with AI-powered analysis
 - Complete trading pipeline integration
 - Hardware auto-detection and optimization
@@ -31,7 +31,7 @@ from enum import Enum
 from core.live_market_data_bridge import LiveMarketDataBridge, BridgeMode
 from core.schwabot_unified_interface import SchwabotUnifiedInterface, InterfaceMode
 from core.visual_layer_controller import VisualLayerController
-from core.koboldcpp_integration import KoboldCPPIntegration
+from core.schwabot_ai_integration import SchwabotAIIntegration
 from core.hardware_auto_detector import HardwareAutoDetector
 
 logger = logging.getLogger(__name__)
@@ -59,7 +59,7 @@ class CompleteSchwabotSystem:
         self.live_market_bridge = None
         self.unified_interface = None
         self.visual_controller = None
-        self.kobold_integration = None
+        self.schwabot_ai_integration = None
         
         # System state
         self.running = False
@@ -157,9 +157,9 @@ class CompleteSchwabotSystem:
                 "enable_real_time_rendering": True,
                 "enable_dlt_waveform": True
             },
-            "kobold_integration": {
+            "schwabot_ai_integration": {
                 "enabled": True,
-                "kobold_path": "koboldcpp",
+                "schwabot_ai_path": "schwabot_ai",
                 "model_path": "",
                 "port": 5001,
                 "auto_start": True,
@@ -210,21 +210,21 @@ class CompleteSchwabotSystem:
                 )
                 logger.info("✅ Visual layer controller initialized")
             
-            # Initialize KoboldCPP integration
-            if self.config["kobold_integration"]["enabled"]:
-                self.kobold_integration = KoboldCPPIntegration(
-                    kobold_path=self.config["kobold_integration"]["kobold_path"],
-                    model_path=self.config["kobold_integration"]["model_path"],
-                    port=self.config["kobold_integration"]["port"]
+            # Initialize Schwabot AI integration
+            if self.config["schwabot_ai_integration"]["enabled"]:
+                self.schwabot_ai_integration = SchwabotAIIntegration(
+                    schwabot_ai_path=self.config["schwabot_ai_integration"]["schwabot_ai_path"],
+                    model_path=self.config["schwabot_ai_integration"]["model_path"],
+                    port=self.config["schwabot_ai_integration"]["port"]
                 )
-                logger.info("✅ KoboldCPP integration initialized")
+                logger.info("✅ Schwabot AI integration initialized")
             
             # Count total components
             self.stats["total_components"] = sum([
                 bool(self.live_market_bridge),
                 bool(self.unified_interface),
                 bool(self.visual_controller),
-                bool(self.kobold_integration)
+                bool(self.schwabot_ai_integration)
             ])
             
             logger.info(f"✅ All system components initialized ({self.stats['total_components']} components)")
@@ -287,11 +287,11 @@ class CompleteSchwabotSystem:
                 active_components += 1
                 logger.info("✅ Visual layer controller started")
             
-            # Start KoboldCPP integration
-            if self.kobold_integration and self.config["kobold_integration"]["auto_start"]:
-                await self.kobold_integration.start_kobold_server()
+            # Start Schwabot AI integration
+            if self.schwabot_ai_integration and self.config["schwabot_ai_integration"]["auto_start"]:
+                await self.schwabot_ai_integration.start_schwabot_ai_server()
                 active_components += 1
-                logger.info("✅ KoboldCPP integration started")
+                logger.info("✅ Schwabot AI integration started")
             
             self.stats["active_components"] = active_components
             
@@ -346,9 +346,9 @@ class CompleteSchwabotSystem:
             if self.visual_controller:
                 health_checks.append(self.visual_controller.running)
             
-            # Check KoboldCPP integration
-            if self.kobold_integration:
-                health_checks.append(self.kobold_integration.kobold_running)
+            # Check Schwabot AI integration
+            if self.schwabot_ai_integration:
+                health_checks.append(self.schwabot_ai_integration.schwabot_ai_running)
             
             if all(health_checks):
                 return "healthy"
@@ -379,8 +379,8 @@ class CompleteSchwabotSystem:
             if self.visual_controller and not self.visual_controller.running:
                 await self.visual_controller.start_processing()
             
-            if self.kobold_integration and not self.kobold_integration.kobold_running:
-                await self.kobold_integration.start_kobold_server()
+            if self.schwabot_ai_integration and not self.schwabot_ai_integration.schwabot_ai_running:
+                await self.schwabot_ai_integration.start_schwabot_ai_server()
             
             logger.info("✅ System recovery completed")
             
@@ -416,8 +416,8 @@ class CompleteSchwabotSystem:
             if self.visual_controller:
                 logger.info(f"🎨 Visual Layer: {'✅ RUNNING' if self.visual_controller.running else '❌ STOPPED'}")
             
-            if self.kobold_integration:
-                logger.info(f"🤖 KoboldCPP: {'✅ RUNNING' if self.kobold_integration.kobold_running else '❌ STOPPED'}")
+            if self.schwabot_ai_integration:
+                logger.info(f"🤖 KoboldCPP: {'✅ RUNNING' if self.schwabot_ai_integration.schwabot_ai_running else '❌ STOPPED'}")
             
             # System health
             health = self._assess_system_health()
@@ -426,7 +426,7 @@ class CompleteSchwabotSystem:
             
             # Access URLs
             logger.info(f"\n🌐 Access URLs:")
-            logger.info(f"   KoboldCPP Web UI: http://localhost:5001")
+            logger.info(f"   Schwabot AI Web UI: http://localhost:5001")
             logger.info(f"   Unified Dashboard: http://localhost:5004")
             logger.info(f"   Visual Layer: http://localhost:5000")
             logger.info(f"   DLT Waveform: http://localhost:5001")
@@ -486,9 +486,9 @@ class CompleteSchwabotSystem:
             if self.visual_controller:
                 self.visual_controller.stop_processing()
             
-            # Stop KoboldCPP integration
-            if self.kobold_integration:
-                self.kobold_integration.stop_processing()
+            # Stop Schwabot AI integration
+            if self.schwabot_ai_integration:
+                self.schwabot_ai_integration.stop_processing()
             
         except Exception as e:
             logger.error(f"❌ Component shutdown failed: {e}")

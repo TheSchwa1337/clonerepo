@@ -64,10 +64,10 @@ except ImportError:
     ALPHA256_AVAILABLE = False
 
 try:
-    from .koboldcpp_integration import KoboldCPPIntegration, AnalysisType, KoboldRequest
+    from .schwabot_ai_integration import SchwabotAIIntegration, AnalysisType, SchwabotRequest
     KOBOLD_AVAILABLE = True
 except ImportError:
-    logger.warning("KoboldCPPIntegration not available, using stub")
+    logger.warning("SchwabotAIIntegration not available, using stub")
     KOBOLD_AVAILABLE = False
 
 try:
@@ -125,8 +125,8 @@ if not ALPHA256_AVAILABLE:
             return data  # Simple pass-through for now
 
 if not KOBOLD_AVAILABLE:
-    class KoboldCPPIntegration:
-        """Simple stub for KoboldCPPIntegration."""
+    class SchwabotAIIntegration:
+        """Simple stub for SchwabotAIIntegration."""
         def __init__(self):
             pass
 
@@ -135,8 +135,8 @@ if not KOBOLD_AVAILABLE:
         TECHNICAL_ANALYSIS = "technical_analysis"
         PATTERN_RECOGNITION = "pattern_recognition"
 
-    class KoboldRequest:
-        """Simple stub for KoboldRequest."""
+    class SchwabotRequest:
+        """Simple stub for SchwabotRequest."""
         def __init__(self, prompt: str, max_length: int = 512, temperature: float = 0.8, analysis_type: AnalysisType = AnalysisType.TECHNICAL_ANALYSIS):
             self.prompt = prompt
             self.max_length = max_length
@@ -239,7 +239,7 @@ class VisualLayerController:
         self.hardware_detector = HardwareAutoDetector()
         self.hash_config = HashConfigManager()
         self.alpha256 = Alpha256Encryption()
-        self.kobold_integration = KoboldCPPIntegration()
+        self.schwabot_ai_integration = SchwabotAIIntegration()
         self.tick_loader = TickLoader()
         self.signal_cache = SignalCache()
         self.registry_writer = RegistryWriter()
@@ -614,7 +614,7 @@ class VisualLayerController:
     async def perform_ai_analysis(self, visual_analysis: VisualAnalysis) -> Optional[VisualAnalysis]:
         """Perform AI analysis on visual data using KoboldCPP."""
         try:
-            if not self.enable_ai_analysis or not self.kobold_integration:
+            if not self.enable_ai_analysis or not self.schwabot_ai_integration:
                 logger.warning("⚠️ AI analysis disabled or KoboldCPP not available")
                 return visual_analysis
             
@@ -636,7 +636,7 @@ Data points: {visual_analysis.metadata.get('data_points', 0)}
 """
             
             # Create Kobold request
-            request = KoboldRequest(
+            request = SchwabotRequest(
                 prompt=prompt,
                 max_length=512,
                 temperature=0.7,
@@ -644,11 +644,11 @@ Data points: {visual_analysis.metadata.get('data_points', 0)}
             )
             
             # Add chart image if vision is supported
-            if hasattr(self.kobold_integration, 'model_capabilities') and self.kobold_integration.model_capabilities.get("vision_multimodal", False):
+            if hasattr(self.schwabot_ai_integration, 'model_capabilities') and self.schwabot_ai_integration.model_capabilities.get("vision_multimodal", False):
                 request.images = [chart_base64]
             
             # Perform analysis
-            response = await self.kobold_integration.analyze_trading_data(request)
+            response = await self.schwabot_ai_integration.analyze_trading_data(request)
             
             if response:
                 # Update visual analysis with AI insights

@@ -38,11 +38,11 @@ from typing import Any, Dict, List, Optional
 import requests
 
 # Import our components
-from core.koboldcpp_bridge import KoboldCPPBridge
-from core.koboldcpp_enhanced_interface import KoboldCPPEnhancedInterface
+from core.schwabot_ai_bridge import KoboldCPPBridge
+from core.schwabot_ai_enhanced_interface import KoboldCPPEnhancedInterface
 from core.schwabot_unified_interface import SchwabotUnifiedInterface, InterfaceMode
 from core.visual_layer_controller import VisualLayerController
-from core.koboldcpp_integration import KoboldCPPIntegration
+from core.schwabot_ai_integration import SchwabotAIIntegration
 from core.tick_loader import TickLoader
 from core.signal_cache import SignalCache
 from core.registry_writer import RegistryWriter
@@ -74,7 +74,7 @@ class IntegrationTester:
         
         # Test configuration
         self.test_config = {
-            'kobold_port': 5001,
+            'schwabot_ai_port': 5001,
             'bridge_port': 5005,
             'enhanced_port': 5006,
             'test_symbol': 'BTC/USD',
@@ -103,7 +103,7 @@ class IntegrationTester:
             # Test bridge initialization
             try:
                 self.components['bridge'] = KoboldCPPBridge(
-                    kobold_port=self.test_config['kobold_port'],
+                    schwabot_ai_port=self.test_config['schwabot_ai_port'],
                     bridge_port=self.test_config['bridge_port']
                 )
                 self._add_result("Bridge Initialization", True, "Bridge initialized successfully")
@@ -114,7 +114,7 @@ class IntegrationTester:
             # Test enhanced interface initialization
             try:
                 self.components['enhanced'] = KoboldCPPEnhancedInterface(
-                    kobold_port=self.test_config['kobold_port'],
+                    schwabot_ai_port=self.test_config['schwabot_ai_port'],
                     enhanced_port=self.test_config['enhanced_port']
                 )
                 self._add_result("Enhanced Interface Initialization", True, "Enhanced interface initialized successfully")

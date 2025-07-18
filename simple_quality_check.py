@@ -58,7 +58,7 @@ class SimpleQualityChecker:
         # Core files to check
         self.core_files = [
             "core/schwabot_unified_interface.py",
-            "core/koboldcpp_integration.py",
+            "core/schwabot_ai_integration.py",
             "core/visual_layer_controller.py",
             "core/tick_loader.py",
             "core/signal_cache.py",
@@ -152,7 +152,7 @@ class SimpleQualityChecker:
             # Test core imports
             core_modules = [
                 "core.schwabot_unified_interface",
-                "core.koboldcpp_integration", 
+                "core.schwabot_ai_integration", 
                 "core.visual_layer_controller",
                 "core.tick_loader",
                 "core.signal_cache",
@@ -196,7 +196,7 @@ class SimpleQualityChecker:
         # Test core components
         core_components = [
             "core.schwabot_unified_interface",
-            "core.koboldcpp_integration",
+            "core.schwabot_ai_integration",
             "core.visual_layer_controller",
             "core.tick_loader",
             "core.signal_cache",
@@ -262,7 +262,7 @@ class SimpleQualityChecker:
                 
                 # Check components
                 components_status = {
-                    "kobold_integration": interface.kobold_integration is not None,
+                    "schwabot_ai_integration": interface.schwabot_ai_integration is not None,
                     "visual_controller": interface.visual_controller is not None,
                     "tick_loader": interface.tick_loader is not None,
                     "signal_cache": interface.signal_cache is not None,

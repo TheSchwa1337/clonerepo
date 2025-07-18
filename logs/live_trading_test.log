@@ -1,5 +1,0 @@
-2025-07-17 21:25:37,690 - root - WARNING - TA-Lib not available, using fallback calculations
-2025-07-17 21:25:38,392 - core.live_market_data_integration - ERROR - Error initializing exchanges: coinbase does not have a sandbox URL
-2025-07-17 21:25:38,405 - core.live_market_data_integration - INFO - Live Market Data Integration initialized
-2025-07-17 21:26:28,455 - root - WARNING - aiofiles not available, using fallback file operations
-2025-07-17 21:26:28,496 - core.live_market_data_integration - ERROR - Error initializing exchanges: coinbase does not have a sandbox URL

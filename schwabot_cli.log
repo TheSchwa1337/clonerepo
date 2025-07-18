@@ -1,266 +1,38 @@
-2025-07-13 17:39:19,076 - core.btc_usdc_trading_engine - INFO - ⚡ BTCTradingEngine using numpy (CPU) for tensor operations
-2025-07-13 17:39:19,082 - core.btc_usdc_trading_engine - INFO - ✅ Mathematical framework initialized
-2025-07-13 17:39:19,083 - core.btc_usdc_trading_engine - INFO - ✅ BTC/USDC Trading Engine initialized
-2025-07-13 17:39:20,181 - core.clean_unified_math - INFO - 🔄 Clean Unified Math using CPU fallback: NumPy (CPU)
-2025-07-13 17:39:20,181 - core.clean_unified_math - INFO - 🧠 Profit vector integration: ENABLED
-2025-07-13 17:39:38,172 - core.math.entropy_math - WARNING - Math infrastructure not available
-2025-07-13 17:39:38,407 - utils.gpu_fallback_manager - INFO - CuPy not available, falling back to NumPy: No module named 'cupy'
-2025-07-13 17:39:38,409 - utils.gpu_fallback_manager - INFO - CUDA runtime not available
-2025-07-13 17:39:38,409 - utils.gpu_fallback_manager - INFO - GPU not available, using CPU fallback
-2025-07-13 17:39:38,409 - utils.gpu_fallback_manager - INFO - Using NumPy for CPU computation
-2025-07-13 17:39:38,410 - utils.gpu_fallback_manager - INFO - GPU Fallback Manager initialized with backend: numpy
-2025-07-13 17:39:38,410 - utils.gpu_fallback_manager - INFO - GPU Status: GPUStatus(cuda_available=False, cupy_available=False, gpu_memory_gb=0.0, gpu_name='Unknown', compute_capability='', driver_version='', cuda_version='', fallback_reason="CuPy not available: No module named 'cupy'")
-2025-07-13 17:39:38,640 - utils.safe_print - WARNING - Unified math system not available, using fallback implementations
-2025-07-13 17:39:38,643 - dual_unicore_handler - INFO - DualUnicoreHandler initialized
-2025-07-13 17:39:38,648 - mathlib.quantum_strategy - WARNING - Unified math system not available, using fallback implementations
-2025-07-13 17:39:38,656 - core.unified_mathematical_bridge - WARNING - Persistent Homology not available - using fallback
-2025-07-13 17:39:38,686 - core.quantum_mathematical_bridge - INFO - Initializing QuantumState
-2025-07-13 17:39:38,687 - core.quantum_mathematical_bridge - INFO - ✅ QuantumState initialized successfully
-2025-07-13 17:39:38,700 - core.phantom_detector - WARNING - Mathematical infrastructure not available: cannot import name 'UnifiedMathematicalBridge' from partially initialized module 'core.unified_mathematical_bridge' (most likely due to a circular import) (C:\Users\maxde\Downloads\clonerepo\AOI_Base_Files_Schwabot\core\unified_mathematical_bridge.py)
-2025-07-13 17:39:38,726 - core.unified_mathematical_bridge - WARNING - Phantom Math not available - using fallback
-2025-07-13 17:39:38,763 - core.risk_manager - INFO - ⚡ RiskManager using numpy (CPU) for tensor operations
-2025-07-13 17:39:38,789 - core.risk_manager - INFO - 🛡️ RiskManager initialized with float risk_tolerance: 2.0%
-2025-07-13 17:39:38,797 - core.risk_manager - INFO -    Max portfolio risk: 5.0%
-2025-07-13 17:39:38,825 - core.risk_manager - INFO - 🔄 Enhanced error recovery system integrated
-2025-07-13 17:39:38,833 - core.pure_profit_calculator - WARNING - ⚠️ Entropy Signal Integration not available in Pure Profit Calculator
-2025-07-13 17:39:38,938 - core.thermal_strategy_router.ThermalEntropyEngine - INFO - ✅ Thermal entropy engine initialized
-2025-07-13 17:39:38,948 - core.bitmap_hash_folding - INFO - ✅ Bitmap Hash Folding Engine initialized
-2025-07-13 17:39:38,950 - core.matrix_mapper - INFO - Initializing Matrix Mapper...
-2025-07-13 17:39:38,952 - core.matrix_mapper - INFO - [SUCCESS] Matrix Mapper initialized successfully
-2025-07-13 17:39:38,954 - core.strategy.strategy_loader - INFO - Strategy Loader initialized
-2025-07-13 17:39:38,956 - core.strategy_bit_mapper - INFO - ✅ Strategy Bit Mapper initialized
-2025-07-13 17:39:38,957 - core.thermal_strategy_router.ThermalStrategyRouter - INFO - ✅ Infrastructure components initialized
-2025-07-13 17:39:38,964 - core.thermal_strategy_router.ThermalStrategyRouter - INFO - ✅ Thermal strategy router initialized
-2025-07-13 17:39:38,996 - __main__ - ERROR - Failed to initialize components: expected an indented block after 'try' statement on line 888 (profit_echo_cache.py, line 889)
-2025-07-13 17:40:38,881 - core.unified_mathematical_bridge - WARNING - Persistent Homology not available - using fallback
-2025-07-13 17:40:38,884 - core.unified_mathematical_bridge - WARNING - Phantom Math not available - using fallback
-2025-07-13 17:40:38,905 - main - ERROR - Failed to initialize components: expected an indented block after 'try' statement on line 888 (profit_echo_cache.py, line 889)
-2025-07-13 17:40:38,913 - core.unified_mathematical_bridge - WARNING - Persistent Homology not available - using fallback
-2025-07-13 17:40:38,925 - core.unified_mathematical_bridge - WARNING - Phantom Math not available - using fallback
-2025-07-13 17:40:38,944 - main - ERROR - Failed to initialize components: expected an indented block after 'try' statement on line 888 (profit_echo_cache.py, line 889)
-2025-07-13 17:41:08,694 - core.unified_mathematical_bridge - WARNING - Persistent Homology not available - using fallback
-2025-07-13 17:41:08,697 - core.unified_mathematical_bridge - WARNING - Phantom Math not available - using fallback
-2025-07-13 17:41:08,710 - main - ERROR - Failed to initialize components: expected an indented block after 'try' statement on line 658 (api_tick_cache.py, line 659)
-2025-07-13 17:41:08,719 - core.unified_mathematical_bridge - WARNING - Persistent Homology not available - using fallback
-2025-07-13 17:41:08,722 - core.unified_mathematical_bridge - WARNING - Phantom Math not available - using fallback
-2025-07-13 17:41:08,737 - main - ERROR - Failed to initialize components: expected an indented block after 'try' statement on line 658 (api_tick_cache.py, line 659)
-2025-07-13 17:48:48,369 - core.risk_manager - INFO - 🛡️ RiskManager initialized with float risk_tolerance: 2.0%
-2025-07-13 17:48:48,369 - core.risk_manager - INFO -    Max portfolio risk: 5.0%
-2025-07-13 17:48:48,370 - core.risk_manager - INFO - 🔄 Enhanced error recovery system integrated
-2025-07-13 17:48:48,370 - core.btc_usdc_trading_engine - INFO - ✅ Mathematical framework initialized
-2025-07-13 17:48:48,371 - core.btc_usdc_trading_engine - INFO - ✅ BTC/USDC Trading Engine initialized
-2025-07-13 17:48:48,371 - core.mathematical_framework_integrator - INFO - ✅ Mathematical Framework Integrator initialized
-2025-07-13 17:48:48,371 - core.unified_btc_trading_pipeline - INFO - ✅ All core components imported successfully
-2025-07-13 17:48:48,372 - core.unified_btc_trading_pipeline - INFO - ✅ Unified BTC Trading Pipeline initialized
-2025-07-13 17:48:48,372 - core.pure_profit_calculator - WARNING - ⚠️ Entropy signal integration not available in Pure Profit Calculator
-2025-07-13 17:48:48,373 - core.pure_profit_calculator - INFO - 🧮 Pure Profit Calculator initialized - Mathematical Mode with hybrid
-2025-07-13 17:48:48,373 - main - INFO - Core components initialized successfully
-2025-07-13 17:48:48,375 - core.risk_manager - INFO - 🛡️ RiskManager initialized with float risk_tolerance: 2.0%
-2025-07-13 17:48:48,375 - core.risk_manager - INFO -    Max portfolio risk: 5.0%
-2025-07-13 17:48:48,376 - core.risk_manager - INFO - 🔄 Enhanced error recovery system integrated
-2025-07-13 17:48:48,376 - core.btc_usdc_trading_engine - INFO - ✅ Mathematical framework initialized
-2025-07-13 17:48:48,376 - core.btc_usdc_trading_engine - INFO - ✅ BTC/USDC Trading Engine initialized
-2025-07-13 17:48:48,377 - core.mathematical_framework_integrator - INFO - ✅ Mathematical Framework Integrator initialized
-2025-07-13 17:48:48,377 - core.unified_btc_trading_pipeline - INFO - ✅ All core components imported successfully
-2025-07-13 17:48:48,378 - core.unified_btc_trading_pipeline - INFO - ✅ Unified BTC Trading Pipeline initialized
-2025-07-13 17:48:48,378 - core.pure_profit_calculator - WARNING - ⚠️ Entropy signal integration not available in Pure Profit Calculator
-2025-07-13 17:48:48,378 - core.pure_profit_calculator - INFO - 🧮 Pure Profit Calculator initialized - Mathematical Mode with hybrid
-2025-07-13 17:48:48,379 - main - INFO - Core components initialized successfully
-2025-07-13 17:48:48,379 - main - INFO - GETTING SYSTEM STATUS
-2025-07-13 17:49:29,622 - core.risk_manager - INFO - 🛡️ RiskManager initialized with float risk_tolerance: 2.0%
-2025-07-13 17:49:29,623 - core.risk_manager - INFO -    Max portfolio risk: 5.0%
-2025-07-13 17:49:29,623 - core.risk_manager - INFO - 🔄 Enhanced error recovery system integrated
-2025-07-13 17:49:29,623 - core.btc_usdc_trading_engine - INFO - ✅ Mathematical framework initialized
-2025-07-13 17:49:29,624 - core.btc_usdc_trading_engine - INFO - ✅ BTC/USDC Trading Engine initialized
-2025-07-13 17:49:29,624 - core.mathematical_framework_integrator - INFO - ✅ Mathematical Framework Integrator initialized
-2025-07-13 17:49:29,625 - core.unified_btc_trading_pipeline - INFO - ✅ All core components imported successfully
-2025-07-13 17:49:29,626 - core.unified_btc_trading_pipeline - INFO - ✅ Unified BTC Trading Pipeline initialized
-2025-07-13 17:49:29,626 - core.pure_profit_calculator - WARNING - ⚠️ Entropy signal integration not available in Pure Profit Calculator
-2025-07-13 17:49:29,627 - core.pure_profit_calculator - INFO - 🧮 Pure Profit Calculator initialized - Mathematical Mode with hybrid
-2025-07-13 17:49:29,627 - main - INFO - Core components initialized successfully
-2025-07-13 17:49:29,629 - core.risk_manager - INFO - 🛡️ RiskManager initialized with float risk_tolerance: 2.0%
-2025-07-13 17:49:29,629 - core.risk_manager - INFO -    Max portfolio risk: 5.0%
-2025-07-13 17:49:29,630 - core.risk_manager - INFO - 🔄 Enhanced error recovery system integrated
-2025-07-13 17:49:29,630 - core.btc_usdc_trading_engine - INFO - ✅ Mathematical framework initialized
-2025-07-13 17:49:29,630 - core.btc_usdc_trading_engine - INFO - ✅ BTC/USDC Trading Engine initialized
-2025-07-13 17:49:29,631 - core.mathematical_framework_integrator - INFO - ✅ Mathematical Framework Integrator initialized
-2025-07-13 17:49:29,631 - core.unified_btc_trading_pipeline - INFO - ✅ All core components imported successfully
-2025-07-13 17:49:29,631 - core.unified_btc_trading_pipeline - INFO - ✅ Unified BTC Trading Pipeline initialized
-2025-07-13 17:49:29,632 - core.pure_profit_calculator - WARNING - ⚠️ Entropy signal integration not available in Pure Profit Calculator
-2025-07-13 17:49:29,632 - core.pure_profit_calculator - INFO - 🧮 Pure Profit Calculator initialized - Mathematical Mode with hybrid
-2025-07-13 17:49:29,633 - main - INFO - Core components initialized successfully
-2025-07-13 17:49:29,633 - main - INFO - GETTING SYSTEM STATUS
-2025-07-13 17:50:19,134 - core.risk_manager - INFO - 🛡️ RiskManager initialized with float risk_tolerance: 2.0%
-2025-07-13 17:50:19,135 - core.risk_manager - INFO -    Max portfolio risk: 5.0%
-2025-07-13 17:50:19,135 - core.risk_manager - INFO - 🔄 Enhanced error recovery system integrated
-2025-07-13 17:50:19,136 - core.btc_usdc_trading_engine - INFO - ✅ Mathematical framework initialized
-2025-07-13 17:50:19,136 - core.btc_usdc_trading_engine - INFO - ✅ BTC/USDC Trading Engine initialized
-2025-07-13 17:50:19,137 - core.mathematical_framework_integrator - INFO - ✅ Mathematical Framework Integrator initialized
-2025-07-13 17:50:19,137 - core.unified_btc_trading_pipeline - INFO - ✅ All core components imported successfully
-2025-07-13 17:50:19,138 - core.unified_btc_trading_pipeline - INFO - ✅ Unified BTC Trading Pipeline initialized
-2025-07-13 17:50:19,138 - core.pure_profit_calculator - WARNING - ⚠️ Entropy signal integration not available in Pure Profit Calculator
-2025-07-13 17:50:19,139 - core.pure_profit_calculator - INFO - 🧮 Pure Profit Calculator initialized - Mathematical Mode with hybrid
-2025-07-13 17:50:19,139 - main - INFO - Core components initialized successfully
-2025-07-13 17:50:19,142 - core.risk_manager - INFO - 🛡️ RiskManager initialized with float risk_tolerance: 2.0%
-2025-07-13 17:50:19,143 - core.risk_manager - INFO -    Max portfolio risk: 5.0%
-2025-07-13 17:50:19,143 - core.risk_manager - INFO - 🔄 Enhanced error recovery system integrated
-2025-07-13 17:50:19,144 - core.btc_usdc_trading_engine - INFO - ✅ Mathematical framework initialized
-2025-07-13 17:50:19,144 - core.btc_usdc_trading_engine - INFO - ✅ BTC/USDC Trading Engine initialized
-2025-07-13 17:50:19,145 - core.mathematical_framework_integrator - INFO - ✅ Mathematical Framework Integrator initialized
-2025-07-13 17:50:19,146 - core.unified_btc_trading_pipeline - INFO - ✅ All core components imported successfully
-2025-07-13 17:50:19,146 - core.unified_btc_trading_pipeline - INFO - ✅ Unified BTC Trading Pipeline initialized
-2025-07-13 17:50:19,146 - core.pure_profit_calculator - WARNING - ⚠️ Entropy signal integration not available in Pure Profit Calculator
-2025-07-13 17:50:19,147 - core.pure_profit_calculator - INFO - 🧮 Pure Profit Calculator initialized - Mathematical Mode with hybrid
-2025-07-13 17:50:19,147 - main - INFO - Core components initialized successfully
-2025-07-13 17:50:19,148 - main - INFO - GETTING SYSTEM STATUS
-2025-07-13 18:01:07,065 - core.risk_manager - INFO - 🛡️ RiskManager initialized with float risk_tolerance: 2.0%
-2025-07-13 18:01:07,066 - core.risk_manager - INFO -    Max portfolio risk: 5.0%
-2025-07-13 18:01:07,066 - core.risk_manager - INFO - 🔄 Enhanced error recovery system integrated
-2025-07-13 18:01:07,067 - core.btc_usdc_trading_engine - INFO - ✅ Mathematical framework initialized
-2025-07-13 18:01:07,067 - core.btc_usdc_trading_engine - INFO - ✅ BTC/USDC Trading Engine initialized
-2025-07-13 18:01:07,068 - core.mathematical_framework_integrator - INFO - ✅ Mathematical Framework Integrator initialized
-2025-07-13 18:01:07,069 - core.unified_btc_trading_pipeline - INFO - ✅ All core components imported successfully
-2025-07-13 18:01:07,069 - core.unified_btc_trading_pipeline - INFO - ✅ Unified BTC Trading Pipeline initialized
-2025-07-13 18:01:07,070 - core.pure_profit_calculator - WARNING - ⚠️ Entropy signal integration not available in Pure Profit Calculator
-2025-07-13 18:01:07,070 - core.pure_profit_calculator - INFO - 🧮 Pure Profit Calculator initialized - Mathematical Mode with hybrid
-2025-07-13 18:01:07,070 - main - INFO - Core components initialized successfully
-2025-07-13 18:01:07,072 - core.risk_manager - INFO - 🛡️ RiskManager initialized with float risk_tolerance: 2.0%
-2025-07-13 18:01:07,072 - core.risk_manager - INFO -    Max portfolio risk: 5.0%
-2025-07-13 18:01:07,072 - core.risk_manager - INFO - 🔄 Enhanced error recovery system integrated
-2025-07-13 18:01:07,073 - core.btc_usdc_trading_engine - INFO - ✅ Mathematical framework initialized
-2025-07-13 18:01:07,073 - core.btc_usdc_trading_engine - INFO - ✅ BTC/USDC Trading Engine initialized
-2025-07-13 18:01:07,074 - core.mathematical_framework_integrator - INFO - ✅ Mathematical Framework Integrator initialized
-2025-07-13 18:01:07,074 - core.unified_btc_trading_pipeline - INFO - ✅ All core components imported successfully
-2025-07-13 18:01:07,074 - core.unified_btc_trading_pipeline - INFO - ✅ Unified BTC Trading Pipeline initialized
-2025-07-13 18:01:07,075 - core.pure_profit_calculator - WARNING - ⚠️ Entropy signal integration not available in Pure Profit Calculator
-2025-07-13 18:01:07,075 - core.pure_profit_calculator - INFO - 🧮 Pure Profit Calculator initialized - Mathematical Mode with hybrid
-2025-07-13 18:01:07,075 - main - INFO - Core components initialized successfully
-2025-07-13 18:01:07,075 - main - INFO - GETTING SYSTEM STATUS
-2025-07-13 18:01:28,033 - core.risk_manager - INFO - 🛡️ RiskManager initialized with float risk_tolerance: 2.0%
-2025-07-13 18:01:28,034 - core.risk_manager - INFO -    Max portfolio risk: 5.0%
-2025-07-13 18:01:28,036 - core.risk_manager - INFO - 🔄 Enhanced error recovery system integrated
-2025-07-13 18:01:28,036 - core.btc_usdc_trading_engine - INFO - ✅ Mathematical framework initialized
-2025-07-13 18:01:28,037 - core.btc_usdc_trading_engine - INFO - ✅ BTC/USDC Trading Engine initialized
-2025-07-13 18:01:28,038 - core.mathematical_framework_integrator - INFO - ✅ Mathematical Framework Integrator initialized
-2025-07-13 18:01:28,042 - core.unified_btc_trading_pipeline - INFO - ✅ All core components imported successfully
-2025-07-13 18:01:28,044 - core.unified_btc_trading_pipeline - INFO - ✅ Unified BTC Trading Pipeline initialized
-2025-07-13 18:01:28,044 - core.pure_profit_calculator - WARNING - ⚠️ Entropy signal integration not available in Pure Profit Calculator
-2025-07-13 18:01:28,046 - core.pure_profit_calculator - INFO - 🧮 Pure Profit Calculator initialized - Mathematical Mode with hybrid
-2025-07-13 18:01:28,051 - main - INFO - Core components initialized successfully
-2025-07-13 18:01:28,063 - core.risk_manager - INFO - 🛡️ RiskManager initialized with float risk_tolerance: 2.0%
-2025-07-13 18:01:28,064 - core.risk_manager - INFO -    Max portfolio risk: 5.0%
-2025-07-13 18:01:28,064 - core.risk_manager - INFO - 🔄 Enhanced error recovery system integrated
-2025-07-13 18:01:28,065 - core.btc_usdc_trading_engine - INFO - ✅ Mathematical framework initialized
-2025-07-13 18:01:28,065 - core.btc_usdc_trading_engine - INFO - ✅ BTC/USDC Trading Engine initialized
-2025-07-13 18:01:28,066 - core.mathematical_framework_integrator - INFO - ✅ Mathematical Framework Integrator initialized
-2025-07-13 18:01:28,066 - core.unified_btc_trading_pipeline - INFO - ✅ All core components imported successfully
-2025-07-13 18:01:28,068 - core.unified_btc_trading_pipeline - INFO - ✅ Unified BTC Trading Pipeline initialized
-2025-07-13 18:01:28,069 - core.pure_profit_calculator - WARNING - ⚠️ Entropy signal integration not available in Pure Profit Calculator
-2025-07-13 18:01:28,070 - core.pure_profit_calculator - INFO - 🧮 Pure Profit Calculator initialized - Mathematical Mode with hybrid
-2025-07-13 18:01:28,078 - main - INFO - Core components initialized successfully
-2025-07-13 18:01:28,083 - main - INFO - GETTING SYSTEM STATUS
-2025-07-13 18:07:54,509 - core.risk_manager - INFO - 🛡️ RiskManager initialized with float risk_tolerance: 2.0%
-2025-07-13 18:07:54,510 - core.risk_manager - INFO -    Max portfolio risk: 5.0%
-2025-07-13 18:07:54,510 - core.risk_manager - INFO - 🔄 Enhanced error recovery system integrated
-2025-07-13 18:07:54,511 - core.btc_usdc_trading_engine - INFO - ✅ Mathematical framework initialized
-2025-07-13 18:07:54,511 - core.btc_usdc_trading_engine - INFO - ✅ BTC/USDC Trading Engine initialized
-2025-07-13 18:07:54,512 - core.mathematical_framework_integrator - INFO - ✅ Mathematical Framework Integrator initialized
-2025-07-13 18:07:54,512 - core.unified_btc_trading_pipeline - INFO - ✅ All core components imported successfully
-2025-07-13 18:07:54,513 - core.unified_btc_trading_pipeline - INFO - ✅ Unified BTC Trading Pipeline initialized
-2025-07-13 18:07:54,513 - core.pure_profit_calculator - WARNING - ⚠️ Entropy signal integration not available in Pure Profit Calculator
-2025-07-13 18:07:54,513 - core.pure_profit_calculator - INFO - 🧮 Pure Profit Calculator initialized - Mathematical Mode with hybrid
-2025-07-13 18:07:54,514 - main - INFO - Core components initialized successfully
-2025-07-13 18:07:54,516 - core.risk_manager - INFO - 🛡️ RiskManager initialized with float risk_tolerance: 2.0%
-2025-07-13 18:07:54,517 - core.risk_manager - INFO -    Max portfolio risk: 5.0%
-2025-07-13 18:07:54,517 - core.risk_manager - INFO - 🔄 Enhanced error recovery system integrated
-2025-07-13 18:07:54,517 - core.btc_usdc_trading_engine - INFO - ✅ Mathematical framework initialized
-2025-07-13 18:07:54,518 - core.btc_usdc_trading_engine - INFO - ✅ BTC/USDC Trading Engine initialized
-2025-07-13 18:07:54,518 - core.mathematical_framework_integrator - INFO - ✅ Mathematical Framework Integrator initialized
-2025-07-13 18:07:54,518 - core.unified_btc_trading_pipeline - INFO - ✅ All core components imported successfully
-2025-07-13 18:07:54,519 - core.unified_btc_trading_pipeline - INFO - ✅ Unified BTC Trading Pipeline initialized
-2025-07-13 18:07:54,519 - core.pure_profit_calculator - WARNING - ⚠️ Entropy signal integration not available in Pure Profit Calculator
-2025-07-13 18:07:54,523 - core.pure_profit_calculator - INFO - 🧮 Pure Profit Calculator initialized - Mathematical Mode with hybrid
-2025-07-13 18:07:54,524 - main - INFO - Core components initialized successfully
-2025-07-13 18:07:54,524 - main - INFO - GETTING SYSTEM STATUS
-2025-07-13 18:09:23,290 - core.risk_manager - INFO - 🛡️ RiskManager initialized with float risk_tolerance: 2.0%
-2025-07-13 18:09:23,291 - core.risk_manager - INFO -    Max portfolio risk: 5.0%
-2025-07-13 18:09:23,291 - core.risk_manager - INFO - 🔄 Enhanced error recovery system integrated
-2025-07-13 18:09:23,292 - core.btc_usdc_trading_engine - INFO - ✅ Mathematical framework initialized
-2025-07-13 18:09:23,292 - core.btc_usdc_trading_engine - INFO - ✅ BTC/USDC Trading Engine initialized
-2025-07-13 18:09:23,293 - core.mathematical_framework_integrator - INFO - ✅ Mathematical Framework Integrator initialized
-2025-07-13 18:09:23,293 - core.unified_btc_trading_pipeline - INFO - ✅ All core components imported successfully
-2025-07-13 18:09:23,293 - core.unified_btc_trading_pipeline - INFO - ✅ Unified BTC Trading Pipeline initialized
-2025-07-13 18:09:23,294 - core.pure_profit_calculator - WARNING - ⚠️ Entropy signal integration not available in Pure Profit Calculator
-2025-07-13 18:09:23,294 - core.pure_profit_calculator - INFO - 🧮 Pure Profit Calculator initialized - Mathematical Mode with hybrid
-2025-07-13 18:09:23,294 - main - INFO - Core components initialized successfully
-2025-07-13 18:09:23,302 - core.risk_manager - INFO - 🛡️ RiskManager initialized with float risk_tolerance: 2.0%
-2025-07-13 18:09:23,303 - core.risk_manager - INFO -    Max portfolio risk: 5.0%
-2025-07-13 18:09:23,303 - core.risk_manager - INFO - 🔄 Enhanced error recovery system integrated
-2025-07-13 18:09:23,304 - core.btc_usdc_trading_engine - INFO - ✅ Mathematical framework initialized
-2025-07-13 18:09:23,304 - core.btc_usdc_trading_engine - INFO - ✅ BTC/USDC Trading Engine initialized
-2025-07-13 18:09:23,305 - core.mathematical_framework_integrator - INFO - ✅ Mathematical Framework Integrator initialized
-2025-07-13 18:09:23,306 - core.unified_btc_trading_pipeline - INFO - ✅ All core components imported successfully
-2025-07-13 18:09:23,306 - core.unified_btc_trading_pipeline - INFO - ✅ Unified BTC Trading Pipeline initialized
-2025-07-13 18:09:23,307 - core.pure_profit_calculator - WARNING - ⚠️ Entropy signal integration not available in Pure Profit Calculator
-2025-07-13 18:09:23,307 - core.pure_profit_calculator - INFO - 🧮 Pure Profit Calculator initialized - Mathematical Mode with hybrid
-2025-07-13 18:09:23,308 - main - INFO - Core components initialized successfully
-2025-07-13 18:09:23,308 - main - INFO - GETTING SYSTEM STATUS
-2025-07-17 13:20:39,275 - AOI_Base_Files_Schwabot.core.hash_config_manager - INFO - 🔧 Hash config: Auto-detected desktop_server - truncated=False, length=64
-2025-07-17 13:20:39,278 - __main__ - ERROR - Failed to initialize components: unexpected indent (entropy_enhanced_trading_executor.py, line 20)
-2025-07-17 13:21:18,074 - AOI_Base_Files_Schwabot.core.hash_config_manager - INFO - 🔧 Hash config: Auto-detected desktop_server - truncated=False, length=64
-2025-07-17 13:21:19,742 - __main__ - ERROR - Failed to initialize components: unexpected indent (risk_manager.py, line 41)
-2025-07-17 13:25:49,151 - AOI_Base_Files_Schwabot.core.hash_config_manager - INFO - 🔧 Hash config: Auto-detected desktop_server - truncated=False, length=64
-2025-07-17 13:25:49,153 - __main__ - ERROR - Failed to initialize components: unexpected indent (entropy_enhanced_trading_executor.py, line 9)
-2025-07-17 13:33:47,120 - AOI_Base_Files_Schwabot.core.hash_config_manager - INFO - 🔧 Hash config: Auto-detected desktop_server - truncated=False, length=64
-2025-07-17 13:33:48,613 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - ⚡ RiskManager using numpy (CPU) for tensor operations
-2025-07-17 13:33:48,623 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - 🛡️ RiskManager initialized with float risk_tolerance: 2.0%
-2025-07-17 13:33:48,623 - AOI_Base_Files_Schwabot.core.risk_manager - INFO -    Max portfolio risk: 5.0%
-2025-07-17 13:33:48,624 - AOI_Base_Files_Schwabot.core.risk_manager - WARNING - ⚠️ Enhanced error recovery system not available
-2025-07-17 13:33:48,626 - __main__ - ERROR - Failed to initialize components: unexpected indent (unified_btc_trading_pipeline.py, line 25)
-2025-07-17 13:34:00,519 - AOI_Base_Files_Schwabot.core.hash_config_manager - INFO - 🔧 Hash config: Auto-detected desktop_server - truncated=False, length=64
-2025-07-17 13:34:02,182 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - ⚡ RiskManager using numpy (CPU) for tensor operations
-2025-07-17 13:34:02,187 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - 🛡️ RiskManager initialized with float risk_tolerance: 2.0%
-2025-07-17 13:34:02,187 - AOI_Base_Files_Schwabot.core.risk_manager - INFO -    Max portfolio risk: 5.0%
-2025-07-17 13:34:02,188 - AOI_Base_Files_Schwabot.core.risk_manager - WARNING - ⚠️ Enhanced error recovery system not available
-2025-07-17 13:34:02,189 - __main__ - ERROR - Failed to initialize components: unexpected indent (unified_btc_trading_pipeline.py, line 25)
-2025-07-18 15:06:23,997 - backtesting.mathematical_integration - WARNING - ⚠️ Some mathematical systems not available: cannot import name 'hash_config_manager' from 'AOI_Base_Files_Schwabot.core.hash_config_manager' (C:\Users\maxde\Downloads\clonerepo\AOI_Base_Files_Schwabot\core\hash_config_manager.py)
-2025-07-18 15:06:23,997 - backtesting.mathematical_integration - INFO - 🔄 Creating fallback mathematical systems
-2025-07-18 15:06:23,998 - backtesting.mathematical_integration - INFO - ✅ Fallback mathematical systems created
-2025-07-18 15:06:45,580 - backtesting.mathematical_integration - WARNING - ⚠️ Some mathematical systems not available: cannot import name 'hash_config_manager' from 'AOI_Base_Files_Schwabot.core.hash_config_manager' (C:\Users\maxde\Downloads\clonerepo\AOI_Base_Files_Schwabot\core\hash_config_manager.py)
-2025-07-18 15:06:45,580 - backtesting.mathematical_integration - INFO - 🔄 Creating fallback mathematical systems
-2025-07-18 15:06:45,580 - backtesting.mathematical_integration - INFO - ✅ Fallback mathematical systems created
-2025-07-18 15:06:51,467 - backtesting.mathematical_integration - WARNING - ⚠️ Some mathematical systems not available: cannot import name 'hash_config_manager' from 'AOI_Base_Files_Schwabot.core.hash_config_manager' (C:\Users\maxde\Downloads\clonerepo\AOI_Base_Files_Schwabot\core\hash_config_manager.py)
-2025-07-18 15:06:51,467 - backtesting.mathematical_integration - INFO - 🔄 Creating fallback mathematical systems
-2025-07-18 15:06:51,468 - backtesting.mathematical_integration - INFO - ✅ Fallback mathematical systems created
-2025-07-18 15:13:44,359 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.clean_math_foundation - INFO - ⚡ CleanMathFoundation using GPU acceleration: cupy (GPU)
-2025-07-18 15:14:53,663 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.clean_math_foundation - INFO - ⚡ CleanMathFoundation using GPU acceleration: cupy (GPU)
-2025-07-18 15:16:33,122 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.clean_math_foundation - INFO - ⚡ CleanMathFoundation using GPU acceleration: cupy (GPU)
-2025-07-18 15:17:59,950 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.clean_math_foundation - INFO - ⚡ CleanMathFoundation using GPU acceleration: cupy (GPU)
-2025-07-18 15:18:04,959 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor using GPU acceleration: cupy (GPU)
-2025-07-18 15:19:38,953 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.clean_math_foundation - INFO - ⚡ CleanMathFoundation using GPU acceleration: cupy (GPU)
-2025-07-18 15:19:39,313 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor using GPU acceleration: cupy (GPU)
-2025-07-18 15:19:39,328 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
-2025-07-18 15:21:01,939 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.clean_math_foundation - INFO - ⚡ CleanMathFoundation using GPU acceleration: cupy (GPU)
-2025-07-18 15:21:03,088 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor using GPU acceleration: cupy (GPU)
-2025-07-18 15:21:03,095 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
-2025-07-18 15:21:03,125 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.ghost_core - INFO - 🔄 Ghost Core using CPU fallback: numpy (CPU)
-2025-07-18 15:29:46,495 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - ⚡ RiskManager using numpy (CPU) for tensor operations
-2025-07-18 15:29:46,500 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
-2025-07-18 15:29:46,517 - AOI_Base_Files_Schwabot.core.entropy_enhanced_trading_executor - INFO - 🔄 Exchange connection initialized: binance
-2025-07-18 15:29:46,517 - AOI_Base_Files_Schwabot.core.entropy_enhanced_trading_executor - INFO - 🔄 Entropy-Enhanced Trading Executor initialized
-2025-07-18 15:33:22,665 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.clean_math_foundation - INFO - ⚡ CleanMathFoundation using GPU acceleration: cupy (GPU)
-2025-07-18 15:33:23,191 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor using GPU acceleration: cupy (GPU)
-2025-07-18 15:33:23,197 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
-2025-07-18 15:33:23,204 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.ghost_core - INFO - 🔄 Ghost Core using CPU fallback: numpy (CPU)
-2025-07-18 15:33:27,749 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
-2025-07-18 15:46:17,821 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.clean_math_foundation - INFO - ⚡ CleanMathFoundation using GPU acceleration: cupy (GPU)
-2025-07-18 15:46:18,256 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor using GPU acceleration: cupy (GPU)
-2025-07-18 15:46:18,263 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
-2025-07-18 15:46:18,269 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.ghost_core - INFO - 🔄 Ghost Core using CPU fallback: numpy (CPU)
-2025-07-18 15:46:22,796 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
-2025-07-18 15:46:24,191 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.chrono_recursive_logic_function - INFO - 🔄 CRLF using CPU fallback: numpy (CPU)
-2025-07-18 16:10:04,113 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - ⚡ RiskManager using numpy (CPU) for tensor operations
-2025-07-18 16:10:04,120 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
-2025-07-18 16:10:04,146 - AOI_Base_Files_Schwabot.core.entropy_enhanced_trading_executor - INFO - 🔄 Exchange connection initialized: binance
-2025-07-18 16:10:04,147 - AOI_Base_Files_Schwabot.core.entropy_enhanced_trading_executor - INFO - 🔄 Entropy-Enhanced Trading Executor initialized
-2025-07-18 16:10:04,151 - AOI_Base_Files_Schwabot.core.enhanced_ccxt_trading_engine - WARNING - Math infrastructure not available
+2025-07-18 17:26:50,323 - core.hash_config_manager - INFO - Hash configuration manager initialized successfully
+2025-07-18 17:26:51,609 - core.entropy_enhanced_trading_executor - INFO - 🔄 Exchange connection initialized: binance
+2025-07-18 17:26:51,609 - core.entropy_enhanced_trading_executor - INFO - 🔄 Entropy-Enhanced Trading Executor initialized
+2025-07-18 17:26:51,611 - core.risk_manager - INFO - ⚡ RiskManager using numpy (CPU) for tensor operations
+2025-07-18 17:26:51,616 - core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-18 17:26:51,616 - core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-18 17:26:51,619 - __main__ - ERROR - Failed to initialize components: expected an indented block after 'try' statement on line 32 (unified_btc_trading_pipeline.py, line 33)
+2025-07-18 17:26:51,619 - __main__ - INFO - 🎮 GPU auto-detection disabled, using basic fallback
+2025-07-18 17:26:51,620 - __main__ - INFO - GETTING SYSTEM STATUS
+2025-07-18 17:26:51,620 - __main__ - ERROR - Failed to get system status: 'RiskManager' object has no attribute 'get_error_statistics'
+2025-07-18 17:26:55,195 - core.hash_config_manager - INFO - Hash configuration manager initialized successfully
+2025-07-18 17:26:56,386 - core.entropy_enhanced_trading_executor - INFO - 🔄 Exchange connection initialized: binance
+2025-07-18 17:26:56,387 - core.entropy_enhanced_trading_executor - INFO - 🔄 Entropy-Enhanced Trading Executor initialized
+2025-07-18 17:26:56,389 - core.risk_manager - INFO - ⚡ RiskManager using numpy (CPU) for tensor operations
+2025-07-18 17:26:56,394 - core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-18 17:26:56,394 - core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-18 17:26:56,397 - __main__ - ERROR - Failed to initialize components: expected an indented block after 'try' statement on line 32 (unified_btc_trading_pipeline.py, line 33)
+2025-07-18 17:26:56,397 - __main__ - INFO - 🎮 GPU auto-detection disabled, using basic fallback
+2025-07-18 17:27:56,657 - core.hash_config_manager - INFO - Hash configuration manager initialized successfully
+2025-07-18 17:27:57,943 - core.entropy_enhanced_trading_executor - INFO - 🔄 Exchange connection initialized: binance
+2025-07-18 17:27:57,963 - core.entropy_enhanced_trading_executor - INFO - 🔄 Entropy-Enhanced Trading Executor initialized
+2025-07-18 17:27:57,965 - core.risk_manager - INFO - ⚡ RiskManager using numpy (CPU) for tensor operations
+2025-07-18 17:27:57,972 - core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-18 17:27:57,972 - core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-18 17:27:57,974 - __main__ - ERROR - Failed to initialize components: expected an indented block after 'try' statement on line 32 (unified_btc_trading_pipeline.py, line 33)
+2025-07-18 17:27:57,975 - __main__ - INFO - 🎮 GPU auto-detection disabled, using basic fallback
+2025-07-18 17:27:57,976 - __main__ - INFO - GETTING SYSTEM STATUS
+2025-07-18 17:27:57,976 - __main__ - ERROR - Failed to get system status: 'RiskManager' object has no attribute 'get_error_statistics'
+2025-07-18 17:29:42,353 - core.hash_config_manager - INFO - Hash configuration manager initialized successfully
+2025-07-18 17:29:43,581 - core.entropy_enhanced_trading_executor - INFO - 🔄 Exchange connection initialized: binance
+2025-07-18 17:29:43,586 - core.entropy_enhanced_trading_executor - INFO - 🔄 Entropy-Enhanced Trading Executor initialized
+2025-07-18 17:29:43,590 - core.risk_manager - INFO - ⚡ RiskManager using numpy (CPU) for tensor operations
+2025-07-18 17:29:43,596 - core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-18 17:29:43,596 - core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-18 17:29:43,599 - __main__ - ERROR - Failed to initialize components: expected an indented block after 'try' statement on line 32 (unified_btc_trading_pipeline.py, line 33)
+2025-07-18 17:29:43,599 - __main__ - INFO - 🎮 GPU auto-detection disabled, using basic fallback
+2025-07-18 17:29:43,600 - __main__ - INFO - GETTING SYSTEM STATUS
+2025-07-18 17:29:43,600 - __main__ - ERROR - Failed to get system status: 'RiskManager' object has no attribute 'get_error_statistics'

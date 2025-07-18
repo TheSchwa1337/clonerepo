@@ -1,65 +1,65 @@
 {
-  "timestamp": "2025-07-17T21:11:50.317352",
+  "timestamp": "2025-07-18T07:13:08.305783",
   "summary": {
     "total_tests": 10,
-    "passed_tests": 8,
-    "failed_tests": 2,
-    "success_rate": 80.0,
-    "total_duration": 6.863495111465454
+    "passed_tests": 3,
+    "failed_tests": 7,
+    "success_rate": 30.0,
+    "total_duration": 3.7048161029815674
   },
-  "status": "PASS_WITH_WARNINGS",
+  "status": "FAIL",
   "passed_tests": [
     {
       "name": "Hardware Detection",
       "details": "Platform: Windows-10-10.0.19045-SP0, RAM: 24.0GB, Tier: high",
-      "duration": 0.3178842067718506
+      "duration": 0.3876333236694336
     },
     {
       "name": "Live Market Data Integration",
       "details": "Initialized with 0 exchanges",
-      "duration": 0.0009992122650146484
-    },
-    {
-      "name": "Unified Interface",
-      "details": "Mode: full_integration, Components: 5",
-      "duration": 0.41999101638793945
-    },
-    {
-      "name": "Schwabot AI Integration",
-      "details": "Kobold path: schwabot_ai, Port: 5001",
-      "duration": 0.10112977027893066
-    },
-    {
-      "name": "Trading Components",
-      "details": "Tick loader: \u2705, Signal cache: \u2705, Registry writer: \u2705",
-      "duration": 0.07165384292602539
+      "duration": 0.0
     },
     {
       "name": "System Health Monitoring",
-      "details": "System healthy: True, Load: {'cpu_usage': 42.3, 'memory_usage': 48.0, 'disk_usage': 91.4, 'is_healthy': True}",
-      "duration": 3.0235090255737305
-    },
-    {
-      "name": "Complete Data Flow",
-      "details": "Bridge: \u2705, Interface: \u2705, Visual: \u2705 - All components ready for data flow",
-      "duration": 1.5361928939819336
-    },
-    {
-      "name": "AI Analysis Pipeline",
-      "details": "KoboldCPP: \u2705, Visual Controller: \u2705 - AI pipeline ready",
-      "duration": 0.335451602935791
+      "details": "System healthy: False, Load: {'cpu_usage': 74.6, 'memory_usage': 80.2, 'disk_usage': 95.3, 'is_healthy': False}",
+      "duration": 3.0440051555633545
     }
   ],
   "failed_tests": [
     {
+      "name": "Unified Interface",
+      "details": "'schwabot_ai_integration'",
+      "duration": 0.024226903915405273
+    },
+    {
       "name": "Visual Layer Controller",
-      "details": "'VisualLayerController' object has no attribute 'hardware_optimized'",
-      "duration": 0.21335220336914062
+      "details": "'HardwareInfo' object has no attribute 'cpu_cores'",
+      "duration": 0.045998573303222656
+    },
+    {
+      "name": "Schwabot AI Integration",
+      "details": "SchwabotAIIntegration.__init__() got an unexpected keyword argument 'schwabot_ai_path'",
+      "duration": 0.0
+    },
+    {
+      "name": "Trading Components",
+      "details": "'HardwareInfo' object has no attribute 'cpu_cores'",
+      "duration": 0.057721853256225586
     },
     {
       "name": "Live Market Data Bridge",
-      "details": "'total_components'",
-      "duration": 0.8433313369750977
+      "details": "'schwabot_ai_integration'",
+      "duration": 0.03997683525085449
+    },
+    {
+      "name": "Complete Data Flow",
+      "details": "'schwabot_ai_integration'",
+      "duration": 0.040865421295166016
+    },
+    {
+      "name": "AI Analysis Pipeline",
+      "details": "'HardwareInfo' object has no attribute 'cpu_cores'",
+      "duration": 0.06438803672790527
     }
   ]
 }

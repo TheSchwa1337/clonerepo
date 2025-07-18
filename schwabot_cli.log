@@ -223,3 +223,44 @@
 2025-07-17 13:34:02,187 - AOI_Base_Files_Schwabot.core.risk_manager - INFO -    Max portfolio risk: 5.0%
 2025-07-17 13:34:02,188 - AOI_Base_Files_Schwabot.core.risk_manager - WARNING - ⚠️ Enhanced error recovery system not available
 2025-07-17 13:34:02,189 - __main__ - ERROR - Failed to initialize components: unexpected indent (unified_btc_trading_pipeline.py, line 25)
+2025-07-18 15:06:23,997 - backtesting.mathematical_integration - WARNING - ⚠️ Some mathematical systems not available: cannot import name 'hash_config_manager' from 'AOI_Base_Files_Schwabot.core.hash_config_manager' (C:\Users\maxde\Downloads\clonerepo\AOI_Base_Files_Schwabot\core\hash_config_manager.py)
+2025-07-18 15:06:23,997 - backtesting.mathematical_integration - INFO - 🔄 Creating fallback mathematical systems
+2025-07-18 15:06:23,998 - backtesting.mathematical_integration - INFO - ✅ Fallback mathematical systems created
+2025-07-18 15:06:45,580 - backtesting.mathematical_integration - WARNING - ⚠️ Some mathematical systems not available: cannot import name 'hash_config_manager' from 'AOI_Base_Files_Schwabot.core.hash_config_manager' (C:\Users\maxde\Downloads\clonerepo\AOI_Base_Files_Schwabot\core\hash_config_manager.py)
+2025-07-18 15:06:45,580 - backtesting.mathematical_integration - INFO - 🔄 Creating fallback mathematical systems
+2025-07-18 15:06:45,580 - backtesting.mathematical_integration - INFO - ✅ Fallback mathematical systems created
+2025-07-18 15:06:51,467 - backtesting.mathematical_integration - WARNING - ⚠️ Some mathematical systems not available: cannot import name 'hash_config_manager' from 'AOI_Base_Files_Schwabot.core.hash_config_manager' (C:\Users\maxde\Downloads\clonerepo\AOI_Base_Files_Schwabot\core\hash_config_manager.py)
+2025-07-18 15:06:51,467 - backtesting.mathematical_integration - INFO - 🔄 Creating fallback mathematical systems
+2025-07-18 15:06:51,468 - backtesting.mathematical_integration - INFO - ✅ Fallback mathematical systems created
+2025-07-18 15:13:44,359 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.clean_math_foundation - INFO - ⚡ CleanMathFoundation using GPU acceleration: cupy (GPU)
+2025-07-18 15:14:53,663 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.clean_math_foundation - INFO - ⚡ CleanMathFoundation using GPU acceleration: cupy (GPU)
+2025-07-18 15:16:33,122 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.clean_math_foundation - INFO - ⚡ CleanMathFoundation using GPU acceleration: cupy (GPU)
+2025-07-18 15:17:59,950 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.clean_math_foundation - INFO - ⚡ CleanMathFoundation using GPU acceleration: cupy (GPU)
+2025-07-18 15:18:04,959 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor using GPU acceleration: cupy (GPU)
+2025-07-18 15:19:38,953 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.clean_math_foundation - INFO - ⚡ CleanMathFoundation using GPU acceleration: cupy (GPU)
+2025-07-18 15:19:39,313 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor using GPU acceleration: cupy (GPU)
+2025-07-18 15:19:39,328 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
+2025-07-18 15:21:01,939 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.clean_math_foundation - INFO - ⚡ CleanMathFoundation using GPU acceleration: cupy (GPU)
+2025-07-18 15:21:03,088 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor using GPU acceleration: cupy (GPU)
+2025-07-18 15:21:03,095 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
+2025-07-18 15:21:03,125 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.ghost_core - INFO - 🔄 Ghost Core using CPU fallback: numpy (CPU)
+2025-07-18 15:29:46,495 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - ⚡ RiskManager using numpy (CPU) for tensor operations
+2025-07-18 15:29:46,500 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-18 15:29:46,517 - AOI_Base_Files_Schwabot.core.entropy_enhanced_trading_executor - INFO - 🔄 Exchange connection initialized: binance
+2025-07-18 15:29:46,517 - AOI_Base_Files_Schwabot.core.entropy_enhanced_trading_executor - INFO - 🔄 Entropy-Enhanced Trading Executor initialized
+2025-07-18 15:33:22,665 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.clean_math_foundation - INFO - ⚡ CleanMathFoundation using GPU acceleration: cupy (GPU)
+2025-07-18 15:33:23,191 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor using GPU acceleration: cupy (GPU)
+2025-07-18 15:33:23,197 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
+2025-07-18 15:33:23,204 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.ghost_core - INFO - 🔄 Ghost Core using CPU fallback: numpy (CPU)
+2025-07-18 15:33:27,749 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 15:46:17,821 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.clean_math_foundation - INFO - ⚡ CleanMathFoundation using GPU acceleration: cupy (GPU)
+2025-07-18 15:46:18,256 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor using GPU acceleration: cupy (GPU)
+2025-07-18 15:46:18,263 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
+2025-07-18 15:46:18,269 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.ghost_core - INFO - 🔄 Ghost Core using CPU fallback: numpy (CPU)
+2025-07-18 15:46:22,796 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 15:46:24,191 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.chrono_recursive_logic_function - INFO - 🔄 CRLF using CPU fallback: numpy (CPU)
+2025-07-18 16:10:04,113 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - ⚡ RiskManager using numpy (CPU) for tensor operations
+2025-07-18 16:10:04,120 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-18 16:10:04,146 - AOI_Base_Files_Schwabot.core.entropy_enhanced_trading_executor - INFO - 🔄 Exchange connection initialized: binance
+2025-07-18 16:10:04,147 - AOI_Base_Files_Schwabot.core.entropy_enhanced_trading_executor - INFO - 🔄 Entropy-Enhanced Trading Executor initialized
+2025-07-18 16:10:04,151 - AOI_Base_Files_Schwabot.core.enhanced_ccxt_trading_engine - WARNING - Math infrastructure not available

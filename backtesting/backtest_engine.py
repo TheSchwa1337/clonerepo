@@ -34,6 +34,9 @@ from schwabot_ai_integration import SchwabotAIIntegration, AnalysisType
 # Import the new data sources
 from .data_sources import DataSourceManager, DataSourceConfig, SimulatedDataGenerator
 
+# Add mathematical integration import at the top
+from .mathematical_integration_simplified import mathematical_integration, MathematicalSignal
+
 logger = logging.getLogger(__name__)
 
 @dataclass
@@ -190,6 +193,9 @@ class BacktestEngine:
         self.config = config
         self.data_loader = HistoricalDataLoader()
         
+        # Initialize mathematical integration
+        self.mathematical_integration = mathematical_integration
+        
         # Initialize trading pipeline
         pipeline_config = {
             "analysis_interval": 60,
@@ -217,7 +223,15 @@ class BacktestEngine:
         self.total_commission = 0.0
         self.total_slippage = 0.0
         
+        # Mathematical tracking
+        self.mathematical_signals = []
+        self.dualistic_consensus_history = []
+        self.dlt_waveform_history = []
+        self.bit_phase_history = []
+        self.ferris_phase_history = []
+        
         logger.info(f"🚀 Backtest Engine initialized with ${config.initial_balance:.2f} initial balance")
+        logger.info(f"🧮 Mathematical integration enabled with all systems")
     
     async def run_backtest(self) -> BacktestResult:
         """Run complete backtest."""
@@ -280,15 +294,22 @@ class BacktestEngine:
         
         for i, market_data in enumerate(all_data_points):
             try:
-                # Process through trading pipeline
+                # Step 1: Process through mathematical integration
+                mathematical_signal = await self._process_mathematical_analysis(market_data, all_data_points[:i+1])
+                
+                # Step 2: Process through trading pipeline
                 decision = await self.pipeline.process_market_data(market_data)
                 
-                if decision and decision.confidence >= self.config.min_confidence:
+                # Step 3: Combine mathematical and AI decisions
+                final_decision = self._combine_decisions(mathematical_signal, decision, market_data)
+                
+                if final_decision and final_decision.confidence >= self.config.min_confidence:
                     # Execute trade
-                    success = await self._execute_backtest_trade(decision, market_data)
+                    success = await self._execute_backtest_trade(final_decision, market_data)
                     
                     if success:
-                        logger.debug(f"💰 Trade executed: {decision.action} {decision.symbol} @ ${decision.entry_price:.4f}")
+                        logger.debug(f"💰 Trade executed: {final_decision.action} {final_decision.symbol} @ ${final_decision.entry_price:.4f}")
+                        logger.debug(f"🧮 Mathematical confidence: {mathematical_signal.confidence:.3f}")
                 
                 # Update equity curve
                 self._update_equity_curve(market_data.timestamp)
@@ -300,6 +321,169 @@ class BacktestEngine:
             except Exception as e:
                 logger.error(f"❌ Error processing data point {i}: {e}")
     
+    async def _process_mathematical_analysis(self, market_data: MarketDataPoint, historical_data: List[MarketDataPoint]) -> MathematicalSignal:
+        """Process market data through all mathematical systems."""
+        try:
+            # Prepare market data for mathematical processing
+            market_data_dict = {
+                'current_price': market_data.price,
+                'volume': market_data.volume,
+                'price_change': market_data.price_change,
+                'volatility': market_data.volatility,
+                'sentiment': market_data.sentiment,
+                'close_prices': [d.price for d in historical_data[-100:]],  # Last 100 prices
+                'entry_price': self._get_entry_price(market_data.symbol),
+                'bit_phase': self._get_current_bit_phase(market_data.symbol)
+            }
+            
+            # Process through mathematical integration
+            mathematical_signal = await self.mathematical_integration.process_market_data_mathematically(market_data_dict)
+            
+            # Store mathematical signal for analysis
+            self.mathematical_signals.append(mathematical_signal)
+            
+            # Store specific mathematical components
+            if mathematical_signal.dualistic_consensus:
+                self.dualistic_consensus_history.append(mathematical_signal.dualistic_consensus)
+            
+            self.dlt_waveform_history.append(mathematical_signal.dlt_waveform_score)
+            self.bit_phase_history.append(mathematical_signal.bit_phase)
+            self.ferris_phase_history.append(mathematical_signal.ferris_phase)
+            
+            return mathematical_signal
+            
+        except Exception as e:
+            logger.error(f"❌ Mathematical analysis failed: {e}")
+            return MathematicalSignal()
+    
+    def _combine_decisions(self, mathematical_signal: MathematicalSignal, ai_decision: TradingDecision, market_data: MarketDataPoint) -> TradingDecision:
+        """Combine mathematical and AI decisions."""
+        try:
+            if not ai_decision:
+                # Use mathematical decision only
+                return self._create_trading_decision_from_mathematical(mathematical_signal, market_data)
+            
+            # Weight mathematical vs AI decision
+            math_weight = 0.7  # Mathematical systems get higher weight
+            ai_weight = 0.3
+            
+            # Calculate combined confidence
+            math_confidence = mathematical_signal.confidence
+            ai_confidence = ai_decision.confidence if ai_decision else 0.5
+            
+            combined_confidence = (math_confidence * math_weight + ai_confidence * ai_weight)
+            
+            # Determine final decision
+            if mathematical_signal.decision == "BUY" and ai_decision.action == "BUY":
+                final_action = "BUY"
+                final_confidence = combined_confidence
+            elif mathematical_signal.decision == "SELL" and ai_decision.action == "SELL":
+                final_action = "SELL"
+                final_confidence = combined_confidence
+            elif mathematical_signal.decision == "BUY" and ai_decision.action == "SELL":
+                # Conflict - use mathematical decision with reduced confidence
+                final_action = mathematical_signal.decision
+                final_confidence = math_confidence * 0.8
+            elif mathematical_signal.decision == "SELL" and ai_decision.action == "BUY":
+                # Conflict - use mathematical decision with reduced confidence
+                final_action = mathematical_signal.decision
+                final_confidence = math_confidence * 0.8
+            else:
+                # Use mathematical decision
+                final_action = mathematical_signal.decision
+                final_confidence = math_confidence
+            
+            # Create final trading decision
+            final_decision = TradingDecision(
+                action=final_action,
+                symbol=market_data.symbol,
+                entry_price=market_data.price,
+                position_size=self._calculate_position_size(final_confidence, market_data.price),
+                confidence=final_confidence,
+                timestamp=market_data.timestamp,
+                metadata={
+                    'mathematical_decision': mathematical_signal.decision,
+                    'ai_decision': ai_decision.action if ai_decision else 'NONE',
+                    'dualistic_consensus': mathematical_signal.dualistic_consensus,
+                    'dlt_waveform_score': mathematical_signal.dlt_waveform_score,
+                    'bit_phase': mathematical_signal.bit_phase,
+                    'ferris_phase': mathematical_signal.ferris_phase,
+                    'tensor_score': mathematical_signal.tensor_score,
+                    'entropy_score': mathematical_signal.entropy_score
+                }
+            )
+            
+            return final_decision
+            
+        except Exception as e:
+            logger.error(f"❌ Decision combination failed: {e}")
+            return None
+    
+    def _create_trading_decision_from_mathematical(self, mathematical_signal: MathematicalSignal, market_data: MarketDataPoint) -> TradingDecision:
+        """Create trading decision from mathematical signal only."""
+        try:
+            position_size = self._calculate_position_size(mathematical_signal.confidence, market_data.price)
+            
+            return TradingDecision(
+                action=mathematical_signal.decision,
+                symbol=market_data.symbol,
+                entry_price=market_data.price,
+                position_size=position_size,
+                confidence=mathematical_signal.confidence,
+                timestamp=market_data.timestamp,
+                metadata={
+                    'mathematical_only': True,
+                    'dualistic_consensus': mathematical_signal.dualistic_consensus,
+                    'dlt_waveform_score': mathematical_signal.dlt_waveform_score,
+                    'bit_phase': mathematical_signal.bit_phase,
+                    'ferris_phase': mathematical_signal.ferris_phase,
+                    'tensor_score': mathematical_signal.tensor_score,
+                    'entropy_score': mathematical_signal.entropy_score
+                }
+            )
+            
+        except Exception as e:
+            logger.error(f"❌ Mathematical decision creation failed: {e}")
+            return None
+    
+    def _calculate_position_size(self, confidence: float, price: float) -> float:
+        """Calculate position size based on confidence and risk management."""
+        try:
+            # Base position size from risk management
+            base_size = self.current_balance * self.config.risk_per_trade / price
+            
+            # Adjust based on confidence
+            confidence_multiplier = min(confidence * 2, 1.0)  # Scale confidence to 0-1
+            
+            # Apply maximum position limit
+            max_positions = self.config.max_positions
+            current_positions = len(self.positions)
+            
+            if current_positions >= max_positions:
+                position_multiplier = 0.5  # Reduce size if at position limit
+            else:
+                position_multiplier = 1.0
+            
+            final_size = base_size * confidence_multiplier * position_multiplier
+            
+            return max(0.0, final_size)
+            
+        except Exception as e:
+            logger.error(f"❌ Position size calculation failed: {e}")
+            return 0.0
+    
+    def _get_entry_price(self, symbol: str) -> float:
+        """Get entry price for a symbol."""
+        # For simplicity, use current market price
+        # In a real implementation, you'd track actual entry prices
+        return 50000.0  # Default BTC price
+    
+    def _get_current_bit_phase(self, symbol: str) -> int:
+        """Get current bit phase for a symbol."""
+        # For simplicity, return a default bit phase
+        # In a real implementation, you'd track actual bit phases
+        return 8  # Default 8-bit phase
+
     async def _execute_backtest_trade(self, decision: TradingDecision, market_data: MarketDataPoint) -> bool:
         """Execute a trade in the backtest."""
         try:
@@ -487,6 +671,9 @@ class BacktestEngine:
                         consecutive_wins = 0
                         max_consecutive_losses = max(max_consecutive_losses, consecutive_losses)
         
+        # Add mathematical analysis to results
+        mathematical_metrics = self._calculate_mathematical_metrics()
+        
         return BacktestResult(
             config=self.config,
             start_date=self.config.start_date,
@@ -512,7 +699,8 @@ class BacktestEngine:
             performance_metrics={
                 "total_pnl": total_pnl,
                 "avg_trade_pnl": total_pnl / total_trades if total_trades > 0 else 0.0,
-                "profit_factor": abs(total_pnl / max_drawdown) if max_drawdown > 0 else 0.0
+                "profit_factor": abs(total_pnl / max_drawdown) if max_drawdown > 0 else 0.0,
+                "mathematical_metrics": mathematical_metrics
             }
         )
     
@@ -539,6 +727,54 @@ class BacktestEngine:
             total_commission=0.0,
             total_slippage=0.0
         )
+
+    def _calculate_mathematical_metrics(self) -> Dict[str, Any]:
+        """Calculate mathematical performance metrics."""
+        try:
+            if not self.mathematical_signals:
+                return {}
+            
+            # DLT Waveform Analysis
+            dlt_scores = [s.dlt_waveform_score for s in self.mathematical_signals if s.dlt_waveform_score > 0]
+            avg_dlt_score = np.mean(dlt_scores) if dlt_scores else 0.0
+            
+            # Dualistic Consensus Analysis
+            dualistic_scores = []
+            for consensus in self.dualistic_consensus_history:
+                if consensus and 'mathematical_score' in consensus:
+                    dualistic_scores.append(consensus['mathematical_score'])
+            avg_dualistic_score = np.mean(dualistic_scores) if dualistic_scores else 0.0
+            
+            # Bit Phase Analysis
+            bit_phase_distribution = {}
+            for phase in self.bit_phase_history:
+                bit_phase_distribution[phase] = bit_phase_distribution.get(phase, 0) + 1
+            
+            # Ferris Phase Analysis
+            ferris_phases = [p for p in self.ferris_phase_history if p != 0]
+            avg_ferris_phase = np.mean(ferris_phases) if ferris_phases else 0.0
+            
+            # Decision Distribution
+            decisions = [s.decision for s in self.mathematical_signals]
+            decision_distribution = {}
+            for decision in decisions:
+                decision_distribution[decision] = decision_distribution.get(decision, 0) + 1
+            
+            return {
+                "avg_dlt_waveform_score": avg_dlt_score,
+                "avg_dualistic_score": avg_dualistic_score,
+                "bit_phase_distribution": bit_phase_distribution,
+                "avg_ferris_phase": avg_ferris_phase,
+                "decision_distribution": decision_distribution,
+                "total_mathematical_signals": len(self.mathematical_signals),
+                "mathematical_confidence_avg": np.mean([s.confidence for s in self.mathematical_signals]),
+                "tensor_score_avg": np.mean([s.tensor_score for s in self.mathematical_signals if s.tensor_score != 0]),
+                "entropy_score_avg": np.mean([s.entropy_score for s in self.mathematical_signals if s.entropy_score > 0])
+            }
+            
+        except Exception as e:
+            logger.error(f"❌ Mathematical metrics calculation failed: {e}")
+            return {}
 
 # Global instance for easy access
 backtest_engine = None

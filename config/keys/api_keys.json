@@ -1,0 +1,362 @@
+[
+  {
+    "key_id": "binance_1752797767_c11fd343822f5e81",
+    "exchange": "binance",
+    "encrypted_key": "eyJkYXRhIjogImtIczVCOCt0K2tjME9yZXpPQkxjbHR6U1F1MGV1N0k3UmwzWVVuWldTQXNmUDRidm41b2UwMXRDUk1EVEtxSmgiLCAiaXYiOiAia0hzNUI4K3Qra2MwT3Jlek9CTGNsZz09IiwgInNhbHQiOiAiYkJwNmlTT2s0a2lLZHNoaGEzTDR4U1A3TEtZbXQ3RXdHdG5pSTVUTC8rTT0iLCAia2V5X2lkIjogImJpbmFuY2VfMTc1Mjc5Nzc2N19jMTFmZDM0MzgyMmY1ZTgxIiwgImVuY3J5cHRpb25fdHlwZSI6ICJhbHBoYTI1NiIsICJ0aW1lc3RhbXAiOiAxNzUyNzk3NzY3Ljg0MzI2NCwgInNpZ25hdHVyZSI6ICJydytRT2tsWkZYeXozUFJ0MVB4UVErNGIvMU9qdzMvUERuTU8vOXRPQndFPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "encrypted_secret": "eyJkYXRhIjogIkNwd2JlUTRzSFZHT0YrQkVWb0tQU0JZbG52MDQ3YTU3YWNObUttVlRETURicUp2U3J2aDlsQXo1UWN3aVByU04iLCAiaXYiOiAiQ3B3YmVRNHNIVkdPRitCRVZvS1BTQT09IiwgInNhbHQiOiAiMlFqUkkyL0ZHK0RkR2FoOW1BbUFiSVFpRUVtT2EzZHUxSHFobEFiR1JHdz0iLCAia2V5X2lkIjogImJpbmFuY2VfMTc1Mjc5Nzc2N19jMTFmZDM0MzgyMmY1ZTgxIiwgImVuY3J5cHRpb25fdHlwZSI6ICJhbHBoYTI1NiIsICJ0aW1lc3RhbXAiOiAxNzUyNzk3NzY3Ljg0MzI2NCwgInNpZ25hdHVyZSI6ICJLVHYzenFmcTNORVFaZ3JBU2ZGUFhZT0FtaGs2d3R5c2pja0g4cnprL2ZjPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:16:07.843264",
+    "expires_at": null,
+    "last_used": null,
+    "usage_count": 0,
+    "is_active": true
+  },
+  {
+    "key_id": "coinbase_1752797767_384dd9c1ff67ba4c",
+    "exchange": "coinbase",
+    "encrypted_key": "eyJkYXRhIjogIlhVaVdna09yaXEzVlJkMEtucXg2THl5b1JFa29xSDRKZXFUcFhXNjRhQ0hCL2FJVlg4SXIxVVVMa1FNcmNZdUwiLCAiaXYiOiAiWFVpV2drT3JpcTNWUmQwS25xeDZMdz09IiwgInNhbHQiOiAiZEVTa1cyVjRhT2RMdFVsOWcyaGJNcW9QWGIxZzR2WmF2d1lSSW0rOURUdz0iLCAia2V5X2lkIjogImNvaW5iYXNlXzE3NTI3OTc3NjdfMzg0ZGQ5YzFmZjY3YmE0YyIsICJlbmNyeXB0aW9uX3R5cGUiOiAiYWxwaGEyNTYiLCAidGltZXN0YW1wIjogMTc1Mjc5Nzc2Ny44NDUyNjI1LCAic2lnbmF0dXJlIjogImJ4amRJNDR4QnFQeDVtMmprN0Y0UEVnTFBhRFozWWI3di80Vk42MVFmdUE9IiwgIm1ldGFkYXRhIjoge319",
+    "encrypted_secret": "eyJkYXRhIjogImdiaG45RUFhSGJVR2F2c25FdEsydmp0eHVqb2Y3SkFRUkNXNFJVdUhpalBLODNaeGdzRjNpcEF2ZkN6Wk9iRXciLCAiaXYiOiAiZ2JobjlFQWFIYlVHYXZzbkV0SzJ2Zz09IiwgInNhbHQiOiAiZDNNWUVvbEZyL3ptSGNQeVplVXFjRVg4TUo1WjJhVFV2YytCOXBSdmNwUT0iLCAia2V5X2lkIjogImNvaW5iYXNlXzE3NTI3OTc3NjdfMzg0ZGQ5YzFmZjY3YmE0YyIsICJlbmNyeXB0aW9uX3R5cGUiOiAiYWxwaGEyNTYiLCAidGltZXN0YW1wIjogMTc1Mjc5Nzc2Ny44NDUyNjI1LCAic2lnbmF0dXJlIjogIng3MTFrYUNRbEpTUWFXdEFJNStuZGFQWUJtQ2F0bVpMMnZWREJpWUE4bTA9IiwgIm1ldGFkYXRhIjoge319",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:16:07.845262",
+    "expires_at": null,
+    "last_used": null,
+    "usage_count": 0,
+    "is_active": true
+  },
+  {
+    "key_id": "kraken_1752797767_104ffe2f7ab658fd",
+    "exchange": "kraken",
+    "encrypted_key": "eyJkYXRhIjogIjdhOTBrV0xGSHVWZ2NTUDV2VXhzYk9MR0pKOTlaYUx4K2puSmhVZDlENTZXNmdTMDZkWWpwUHQ5ZjViR1IzT00iLCAiaXYiOiAiN2E5MGtXTEZIdVZnY1NQNXZVeHNiQT09IiwgInNhbHQiOiAia1ZVQUNSRWRydmJER0N4eEptMzVrbmF2NExBeFlpQkRCaDhDYjZHZHFpMD0iLCAia2V5X2lkIjogImtyYWtlbl8xNzUyNzk3NzY3XzEwNGZmZTJmN2FiNjU4ZmQiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc3NjcuODYzMjUyNCwgInNpZ25hdHVyZSI6ICJYZlRTY0NMK041U0FKeHNFckJ5ZWdzNkhodmdRS0NVZUR4YktieEh1SEhnPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "encrypted_secret": "eyJkYXRhIjogImY5aVczcFlLNzRiazhXQ1I1bC9XcUM0aFFNQnlxNjZUaDB0OWloOG45T010djV2VjhDWE0zS3ZIbnZLa1IvZVYiLCAiaXYiOiAiZjlpVzNwWUs3NGJrOFdDUjVsL1dxQT09IiwgInNhbHQiOiAidmNSR2crVkRLbmI0c0hqcGN5OGdITXA1VzRZdjR0MmxXekdUN0srZDcxTT0iLCAia2V5X2lkIjogImtyYWtlbl8xNzUyNzk3NzY3XzEwNGZmZTJmN2FiNjU4ZmQiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc3NjcuODYzMjUyNCwgInNpZ25hdHVyZSI6ICJoMXBENFJEMTNzeTdrUXB0UUE3VXEwb09LcXRVWWptSkRYVTBnTlJOT3dBPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:16:07.864252",
+    "expires_at": null,
+    "last_used": null,
+    "usage_count": 0,
+    "is_active": true
+  },
+  {
+    "key_id": "kucoin_1752797767_08076b37678f3b67",
+    "exchange": "kucoin",
+    "encrypted_key": "eyJkYXRhIjogIlExYkVWQ013bVkrcENEQUx6YjNYL2RmRUdJNzBZMEdGMm43bjJmVTRKbVVsaFJXUnoyTmNNb2ZPVmNvamt5cUkiLCAiaXYiOiAiUTFiRVZDTXdtWStwQ0RBTHpiM1gvUT09IiwgInNhbHQiOiAiNURtR1dwd3lYYzdtcFc5czNxS3orZlh0U3pMdFYvZ0UrcTg4OUc2WFl6az0iLCAia2V5X2lkIjogImt1Y29pbl8xNzUyNzk3NzY3XzA4MDc2YjM3Njc4ZjNiNjciLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc3NjcuODgyMjQ0LCAic2lnbmF0dXJlIjogIjkybytiSiswakI1YmNrRkF4VzlKK1BLL0RWcUtoRFlzZ01ZUWtLb21mUkk9IiwgIm1ldGFkYXRhIjoge319",
+    "encrypted_secret": "eyJkYXRhIjogImZlaWY1b0NUVkRRMGFMdUl4NnM4MnFlRlhZT21paEN6aVNFdHNFaXlkNGtHdFE3OEVXeTQ3T29XRHJFOEkvRmciLCAiaXYiOiAiZmVpZjVvQ1RWRFEwYUx1SXg2czgyZz09IiwgInNhbHQiOiAiZ0ViTlM0aFN2NG9YRzNpZDBoUlZvMFdZbGN1aXVteTN4OVd3TjBKNnBYTT0iLCAia2V5X2lkIjogImt1Y29pbl8xNzUyNzk3NzY3XzA4MDc2YjM3Njc4ZjNiNjciLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc3NjcuODgyMjQ0LCAic2lnbmF0dXJlIjogImJOS2R6NTM2TGczZWRacHk4Mk8yeUJmNi9ZUnpaN1NMSUVKdmEwR1UvOFE9IiwgIm1ldGFkYXRhIjoge319",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:16:07.882244",
+    "expires_at": null,
+    "last_used": null,
+    "usage_count": 0,
+    "is_active": true
+  },
+  {
+    "key_id": "test_exchange_1_1752797767_d06755e5d762e1d9",
+    "exchange": "test_exchange_1",
+    "encrypted_key": "eyJkYXRhIjogIjdnUXZaRUNBUGdvOGlIYkc4VENwK3hPZ1RYaG8raGZTc3VBeHNNVDRiWmd5RTdjdy9FejdicnIzbXE3RDVWcGMiLCAiaXYiOiAiN2dRdlpFQ0FQZ284aUhiRzhUQ3Ardz09IiwgInNhbHQiOiAiVWtxT0tFTE82azU3SXFQRHhDc2lJSGx4c3lBMW04cm9lZ3VUU0tBK0txZz0iLCAia2V5X2lkIjogInRlc3RfZXhjaGFuZ2VfMV8xNzUyNzk3NzY3X2QwNjc1NWU1ZDc2MmUxZDkiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc3NjcuOTk5NjkwNSwgInNpZ25hdHVyZSI6ICJZREhYUC93QjNqcGIvMlV1WlB6QzBPclIvWFErQ0FmcjQzOTNxNzRNRTJZPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "encrypted_secret": "eyJkYXRhIjogImVDYXBPZU4xTEd0UU1nTjVHSGUvR3ovT1ppemo5REt1Z3MydXRqOXBTZEZMTlM0N09rSVp4UnFhbzhFcHV0em0iLCAiaXYiOiAiZUNhcE9lTjFMR3RRTWdONUdIZS9Hdz09IiwgInNhbHQiOiAiVlVKQlR4Rnl5disvTW5Iemw5dkRiRWsxbE1UKzZpczFNM0V3TVRjZEljYz0iLCAia2V5X2lkIjogInRlc3RfZXhjaGFuZ2VfMV8xNzUyNzk3NzY3X2QwNjc1NWU1ZDc2MmUxZDkiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc3NjcuOTk5NjkwNSwgInNpZ25hdHVyZSI6ICJNa0Y4cFRqNlhjb3MxYTRjbERHeERSQXozOTd1N2pvSGw1UGpESHdsNmFrPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:16:07.999690",
+    "expires_at": null,
+    "last_used": null,
+    "usage_count": 0,
+    "is_active": true
+  },
+  {
+    "key_id": "test_exchange_2_1752797768_7b3f106aeac50f48",
+    "exchange": "test_exchange_2",
+    "encrypted_key": "eyJkYXRhIjogIjllZ08yblNxc0w0bGRUcWx4djlZenNaMDZDQmptSHhkVHg5d3E5aTNhK0I3MEhxQ3phZk44WVdzS0hSRXArUkYiLCAiaXYiOiAiOWVnTzJuU3FzTDRsZFRxbHh2OVl6Zz09IiwgInNhbHQiOiAiN2N2MldiazFBQ1pJWHRCMlVkaEhZMWsxbU1BWHgwa25yY0ZLSmVDa0RJZz0iLCAia2V5X2lkIjogInRlc3RfZXhjaGFuZ2VfMl8xNzUyNzk3NzY4XzdiM2YxMDZhZWFjNTBmNDgiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc3NjguMDA0Njg4NSwgInNpZ25hdHVyZSI6ICJhSy9PZlozY2ZTSU9QSmdvd01rSkgvNVJUQlROdHA1WVdGL0hMYkZ5YkJ3PSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "encrypted_secret": "eyJkYXRhIjogImFERUNZa21CZEI5RTRZZTNKV21xeC9jbno4Z1YxOExJOVdzTEowdU1XN3RYcWF0QUc4UzJRODFDMFRTT1JWNWIiLCAiaXYiOiAiYURFQ1lrbUJkQjlFNFllM0pXbXF4dz09IiwgInNhbHQiOiAiVTdBK0xzK1pJa3RVYTJMdUJqWHpUVFk4UGdJakxTcGt6aE00cklHZGQ1OD0iLCAia2V5X2lkIjogInRlc3RfZXhjaGFuZ2VfMl8xNzUyNzk3NzY4XzdiM2YxMDZhZWFjNTBmNDgiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc3NjguMDA0Njg4NSwgInNpZ25hdHVyZSI6ICJXOUZtNlZpeXBROW1jMEpjRytpZW9zN2lZaTFvSGVxTjNhTmpjaDVETG5jPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:16:08.004688",
+    "expires_at": null,
+    "last_used": null,
+    "usage_count": 0,
+    "is_active": true
+  },
+  {
+    "key_id": "binance_1752797829_03a2af06ba40040b",
+    "exchange": "binance",
+    "encrypted_key": "eyJkYXRhIjogIkpBWnZCOXQ5Znp3NlVIcStsdlRxMkxWMFpNUEtDMmxHRHJNVlk1MEZDT01Uci9DTEJ1aFVOUHFLZkFmR3dzMysiLCAiaXYiOiAiSkFadkI5dDlmenc2VUhxK2x2VHEyQT09IiwgInNhbHQiOiAieHFvTms0VVBoR0lmcGszU2ZYT2FFS25ZUFNteXNmdlhhSWRvVXhRVmg3VT0iLCAia2V5X2lkIjogImJpbmFuY2VfMTc1Mjc5NzgyOV8wM2EyYWYwNmJhNDAwNDBiIiwgImVuY3J5cHRpb25fdHlwZSI6ICJhbHBoYTI1NiIsICJ0aW1lc3RhbXAiOiAxNzUyNzk3ODI5LjEwNzgzOTgsICJzaWduYXR1cmUiOiAiUmtVZjdCRHNud0o2eGUwaXdHQTFzMlVZQmdPeUJaUzFRemhaRU1Haks2cz0iLCAibWV0YWRhdGEiOiB7fX0=",
+    "encrypted_secret": "eyJkYXRhIjogInR6MDFDMkp5TWJqSTB6UmlRVUt1aVFSMk1PSzV1dnh6a3lrWGI1V3AxY0kybEVVOWNMVEhsSEFnRExsZXlWdGciLCAiaXYiOiAidHowMUMySnlNYmpJMHpSaVFVS3VpUT09IiwgInNhbHQiOiAieEZoak5peTdkUTBjRzZwNHVWNnNjSXAyT1V1RzFJM1h5UmdtYnhzZXQ1ST0iLCAia2V5X2lkIjogImJpbmFuY2VfMTc1Mjc5NzgyOV8wM2EyYWYwNmJhNDAwNDBiIiwgImVuY3J5cHRpb25fdHlwZSI6ICJhbHBoYTI1NiIsICJ0aW1lc3RhbXAiOiAxNzUyNzk3ODI5LjEwNzgzOTgsICJzaWduYXR1cmUiOiAicTZXWmFUdzZ0MWk5Um9tR0lsZS8wOGlvMnJhNG9aSmsxVGUza09IR3NOUT0iLCAibWV0YWRhdGEiOiB7fX0=",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:17:09.107839",
+    "expires_at": null,
+    "last_used": null,
+    "usage_count": 0,
+    "is_active": true
+  },
+  {
+    "key_id": "coinbase_1752797829_6b04a370f799f697",
+    "exchange": "coinbase",
+    "encrypted_key": "eyJkYXRhIjogIlpjbDJTMTdjYVVhdTBybDltaThublpieTlMbFgwR0J1Uk00N00wUk8wZWZTeEFXWTd3Ynlab2lWN21VYUtLdmQiLCAiaXYiOiAiWmNsMlMxN2NhVWF1MHJsOW1pOG5uUT09IiwgInNhbHQiOiAiN1ZtcGx2LytheXYvakJ5UXF4c1ZVWGtDS1R5VXZYRUpldHZRSWxyYXFGTT0iLCAia2V5X2lkIjogImNvaW5iYXNlXzE3NTI3OTc4MjlfNmIwNGEzNzBmNzk5ZjY5NyIsICJlbmNyeXB0aW9uX3R5cGUiOiAiYWxwaGEyNTYiLCAidGltZXN0YW1wIjogMTc1Mjc5NzgyOS4xMDk4MzkyLCAic2lnbmF0dXJlIjogIklCNVpWSzR5aHVJazBHU3dsRG5EZ3RQN2ZqbnM5VnBBcmlBRjR4QTVRODA9IiwgIm1ldGFkYXRhIjoge319",
+    "encrypted_secret": "eyJkYXRhIjogIi90RjNyL25jRWJGL054N3NMWU9rd2VjMGhIUEM0M1hWT2pKU1Q4a0J4Z1NWeUZNYmxqQVVzeGxpUTJoY1NXVVgiLCAiaXYiOiAiL3RGM3IvbmNFYkYvTng3c0xZT2t3UT09IiwgInNhbHQiOiAiUG5iM1p4QnNqMVN4YzQrc3NDOXJROERsM21HUFlBR3V4aDVLK2tBVGxNTT0iLCAia2V5X2lkIjogImNvaW5iYXNlXzE3NTI3OTc4MjlfNmIwNGEzNzBmNzk5ZjY5NyIsICJlbmNyeXB0aW9uX3R5cGUiOiAiYWxwaGEyNTYiLCAidGltZXN0YW1wIjogMTc1Mjc5NzgyOS4xMTA4Mzc1LCAic2lnbmF0dXJlIjogIlBrZE9WQjVMTW83TFg0d2prc0hHWEFPUFV5QVFvbmhLREtYN0ZBbHNOMEU9IiwgIm1ldGFkYXRhIjoge319",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:17:09.110837",
+    "expires_at": null,
+    "last_used": null,
+    "usage_count": 0,
+    "is_active": true
+  },
+  {
+    "key_id": "kraken_1752797829_8a7b9b4e85cd593a",
+    "exchange": "kraken",
+    "encrypted_key": "eyJkYXRhIjogImhKaUxROVlrTWhDamlxWGl3ckhyaWtXdHE1TDhCbEQyYzJpZHJxSjFEZy9LUmJjUDYxZzZlaThmNlZScEtkNEciLCAiaXYiOiAiaEppTFE5WWtNaENqaXFYaXdySHJpZz09IiwgInNhbHQiOiAiY3hyZjZkVWpuWVhhdUxCYTNibmhGeHh3TXBBc1p4eGNqakpNdEtoek9hYz0iLCAia2V5X2lkIjogImtyYWtlbl8xNzUyNzk3ODI5XzhhN2I5YjRlODVjZDU5M2EiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4MjkuMTI3MDUxLCAic2lnbmF0dXJlIjogIlVpSHdjdm5ZZXFwd3lEeGpVUGZJaTdCMnliN3JtVzBsckk0bStDRGE2S1U9IiwgIm1ldGFkYXRhIjoge319",
+    "encrypted_secret": "eyJkYXRhIjogIk14N0htcFIzQ05oc0RhNHpzSU13RFIvdnczOVJxU1RmcEJpdzE2QkV5S280SWlqTzdjbWlkOFlQK1dTVUZBQ28iLCAiaXYiOiAiTXg3SG1wUjNDTmhzRGE0enNJTXdEUT09IiwgInNhbHQiOiAiVEdUODAxRFMxbGNHd0N6Z2VOcEJPcGdyWTZSV3NvMFNSZzZlQ1NlLzhXUT0iLCAia2V5X2lkIjogImtyYWtlbl8xNzUyNzk3ODI5XzhhN2I5YjRlODVjZDU5M2EiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4MjkuMTI3MDUxLCAic2lnbmF0dXJlIjogIkVPTXMwM3U2a01NQUZ3akdZOUJDbC9OeU1wNEVrY0xBT2VWUnJPcExlZ1E9IiwgIm1ldGFkYXRhIjoge319",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:17:09.127051",
+    "expires_at": null,
+    "last_used": null,
+    "usage_count": 0,
+    "is_active": true
+  },
+  {
+    "key_id": "kucoin_1752797829_a1d50523154210b5",
+    "exchange": "kucoin",
+    "encrypted_key": "eyJkYXRhIjogImpIS3ZFOWJ3UGt6UEJVV1lCbk5ueUpDdnBadEZCTnFqTUNZSjJRMmZzU3hxcGQ3WXgxdTM4dkhxalJzS05sbC8iLCAiaXYiOiAiakhLdkU5YndQa3pQQlVXWUJuTm55QT09IiwgInNhbHQiOiAia3VGamliVG5PRHJUTWF1MHdjYUUxLzFXSmU5ZHgrZENvQ1VJWUZoUmkrTT0iLCAia2V5X2lkIjogImt1Y29pbl8xNzUyNzk3ODI5X2ExZDUwNTIzMTU0MjEwYjUiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4MjkuMTQzMTY5NiwgInNpZ25hdHVyZSI6ICJCYkpyUy9UTUoyQ3U2K25BeVJOVjJSYVl1SGF3L2ZnVVZmeVJ6ZUJIajV3PSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "encrypted_secret": "eyJkYXRhIjogIjhaUHJGVmNFV0FBaC9mc1VxWFRUaFdjd05mbVk3ZDVmbjhJK2krUEZLVGU0bWdJV05WNTNzeWZuWFgrN00vMDQiLCAiaXYiOiAiOFpQckZWY0VXQUFoL2ZzVXFYVFRoUT09IiwgInNhbHQiOiAiSHBDLzZWK0FocXVKa1poSjc5QWd2V1Q1TCtDcGFYbC9vVFRoQkdTNDZ0az0iLCAia2V5X2lkIjogImt1Y29pbl8xNzUyNzk3ODI5X2ExZDUwNTIzMTU0MjEwYjUiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4MjkuMTQzMTY5NiwgInNpZ25hdHVyZSI6ICIraVRyaEFIOFUrMWJnUTdhMFVaUGVKMUlXZU1mY0xBM1hvNnpxQVhlSEJJPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:17:09.143169",
+    "expires_at": null,
+    "last_used": null,
+    "usage_count": 0,
+    "is_active": true
+  },
+  {
+    "key_id": "test_exchange_1_1752797829_f8bf0c4ed8db3c80",
+    "exchange": "test_exchange_1",
+    "encrypted_key": "eyJkYXRhIjogIlJvcU5qL29PSllOSGZtaTQxWUo3UTBtVElkZjh5N2pORHpNb3NMbWlkVGI5TWxMMVVTMWV2QzVnQkNkcXR6UXIiLCAiaXYiOiAiUm9xTmovb09KWU5IZm1pNDFZSjdRdz09IiwgInNhbHQiOiAiRWlKMkhqcG15NnJuQ2ZZL3VJaDNleXcwemZ0NXJSS09VbFpmSFdpVzlMQT0iLCAia2V5X2lkIjogInRlc3RfZXhjaGFuZ2VfMV8xNzUyNzk3ODI5X2Y4YmYwYzRlZDhkYjNjODAiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4MjkuMjIwNDM0NCwgInNpZ25hdHVyZSI6ICI1RzRIQzFlSnJOSVErZk1BTVlTdjBoZS9lWGwxT1NCRnpEbXJjS2tpQkhZPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "encrypted_secret": "eyJkYXRhIjogImJCdE1jdGRCYmZzUjllRUw2aXJKOWVweC9ISDZzNFZjVkZORlVmS1UxR1B3NHJKT2FQWWJRSEZKbVgrSmlveFMiLCAiaXYiOiAiYkJ0TWN0ZEJiZnNSOWVFTDZpcko5UT09IiwgInNhbHQiOiAiaTE0V3IwV0ExUEVGcWJPWHM1ZTYzTVpGem1OcDQxOGhSNWFTblo3THBibz0iLCAia2V5X2lkIjogInRlc3RfZXhjaGFuZ2VfMV8xNzUyNzk3ODI5X2Y4YmYwYzRlZDhkYjNjODAiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4MjkuMjIwNDM0NCwgInNpZ25hdHVyZSI6ICJKb3d0UlNKM01DMDU2NmtiZ2dOWld1Mmp2dFcrT1BzVmtoUWVXenI5QzVrPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:17:09.220434",
+    "expires_at": null,
+    "last_used": null,
+    "usage_count": 0,
+    "is_active": true
+  },
+  {
+    "key_id": "test_exchange_2_1752797829_9dc4a1026dfea7fc",
+    "exchange": "test_exchange_2",
+    "encrypted_key": "eyJkYXRhIjogIlVZcE5yZTlKK0xleSt5dzZpaGdjL2JFUS81K0V1ODd4Uy9uSE56Mi9ZRlFRZUR3M0lNMzEvdVFCeEgzck1yZDgiLCAiaXYiOiAiVVlwTnJlOUorTGV5K3l3NmloZ2MvUT09IiwgInNhbHQiOiAiK00wUjdKaXBGajJUaDZKd2t4UEJjaGI3SFRUcS9tMnJCVmFPV21MR1lnOD0iLCAia2V5X2lkIjogInRlc3RfZXhjaGFuZ2VfMl8xNzUyNzk3ODI5XzlkYzRhMTAyNmRmZWE3ZmMiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4MjkuMjI1NDMwNSwgInNpZ25hdHVyZSI6ICJpcEljOFU4bmxyREJFVVVWV0MxWjdwWnhrZWMwWGpRMyt5NUJMclJUcUhZPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "encrypted_secret": "eyJkYXRhIjogIklCREEwTklwV1M1dFQyd1dYS3N1YmtFb1UvOElKbW5vSGw2NXNVdlRQaFZKTGhMMStqNkVzS3pyYk9nMkdVYXQiLCAiaXYiOiAiSUJEQTBOSXBXUzV0VDJ3V1hLc3ViZz09IiwgInNhbHQiOiAiZWhOZlhEUi8yeDd5MGE4MUpMQ3hwbUlTR2k2cFlBeGlPUThiVFNjNjhQcz0iLCAia2V5X2lkIjogInRlc3RfZXhjaGFuZ2VfMl8xNzUyNzk3ODI5XzlkYzRhMTAyNmRmZWE3ZmMiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4MjkuMjI1NDMwNSwgInNpZ25hdHVyZSI6ICJRNVhBNVVwdnN6WUVZbkdNQkg3QmJlZkdkeW5BVDFCU2k4ZGhXeEZQSWlRPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:17:09.225430",
+    "expires_at": null,
+    "last_used": null,
+    "usage_count": 0,
+    "is_active": true
+  },
+  {
+    "key_id": "binance_1752797842_34b1d5c94bbba692",
+    "exchange": "binance",
+    "encrypted_key": "eyJkYXRhIjogInNKQW9RYVZyaG9HRzA2QXdaV3lpZGxhWVU4QmQydUFWTzNMeldSYmU3enlEZTloZ1Fzdk1mVjE4SThWTHRLQmYiLCAiaXYiOiAic0pBb1FhVnJob0dHMDZBd1pXeWlkZz09IiwgInNhbHQiOiAiNkF1TTNUbGg1dGFuNDJqU0FSeC9XTXhyQ2FvNDVtNktxMDBVaWJjTTlFZz0iLCAia2V5X2lkIjogImJpbmFuY2VfMTc1Mjc5Nzg0Ml8zNGIxZDVjOTRiYmJhNjkyIiwgImVuY3J5cHRpb25fdHlwZSI6ICJhbHBoYTI1NiIsICJ0aW1lc3RhbXAiOiAxNzUyNzk3ODQyLjc3NDU4NywgInNpZ25hdHVyZSI6ICJTU280T3FhV3ByUE9EZ0o4U0xVZ1o4YXJaeXlsaVdSbHRBWnZESDJBakZVPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "encrypted_secret": "eyJkYXRhIjogInBFemRSSDZxWUdlTWVXN3ZscUQvZzVQSEk1UTZCRU5NN1JkVWpRWGFXR2EvT0ZUdktrTGNqeEtPNUtSdHV0VkgiLCAiaXYiOiAicEV6ZFJINnFZR2VNZVc3dmxxRC9ndz09IiwgInNhbHQiOiAiV1VmYjA0cGc5OXlvVEdNYVdZc0kzazdraytiQVFnMm8rYTRPZU1sTk1pTT0iLCAia2V5X2lkIjogImJpbmFuY2VfMTc1Mjc5Nzg0Ml8zNGIxZDVjOTRiYmJhNjkyIiwgImVuY3J5cHRpb25fdHlwZSI6ICJhbHBoYTI1NiIsICJ0aW1lc3RhbXAiOiAxNzUyNzk3ODQyLjc3NDU4NywgInNpZ25hdHVyZSI6ICI0L2xpTUViaE9nVUJxNWFVOWc2NG9JMm9yeTRsUktuYnl1MGh1RmpxQUk0PSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:17:22.774587",
+    "expires_at": null,
+    "last_used": "2025-07-17T20:17:22.819928",
+    "usage_count": 1,
+    "is_active": true
+  },
+  {
+    "key_id": "coinbase_1752797842_78c191107c187eda",
+    "exchange": "coinbase",
+    "encrypted_key": "eyJkYXRhIjogIkhEM3h3RG8vN1ZyN3R6MDIwWFpkUWk1WjJXK3kybzJ6ZEpsYXV6Mkx3YitoM0ZPMVpZSmdvaU1ScHJyWG9zbjUiLCAiaXYiOiAiSEQzeHdEby83VnI3dHowMjBYWmRRZz09IiwgInNhbHQiOiAiODgyU0UyL21ZcUpzM1NJUytZcjB5RmdES01EZXNIdFNWNVVmaDlDOGRhbz0iLCAia2V5X2lkIjogImNvaW5iYXNlXzE3NTI3OTc4NDJfNzhjMTkxMTA3YzE4N2VkYSIsICJlbmNyeXB0aW9uX3R5cGUiOiAiYWxwaGEyNTYiLCAidGltZXN0YW1wIjogMTc1Mjc5Nzg0Mi43Nzc1ODcsICJzaWduYXR1cmUiOiAiVVZWeFhGV1YyMnBOMC92T3liSTVuL2ZSUUFzTVZvQjAwNXFFNWZIWlNSST0iLCAibWV0YWRhdGEiOiB7fX0=",
+    "encrypted_secret": "eyJkYXRhIjogImlwRkREcEkyVzl3YmFRY0J4QTFVdVlISWhXeDBRL3ppeWo5MXJDSWlmek9LU0tnWnBJRkV6bjdBK3JPTzRnNjAiLCAiaXYiOiAiaXBGRERwSTJXOXdiYVFjQnhBMVV1UT09IiwgInNhbHQiOiAicWdSdHVuR0QxbzNrQnlRK3pkcC9HSHY5V29MVW5qT09LRERKL2REcmJDWT0iLCAia2V5X2lkIjogImNvaW5iYXNlXzE3NTI3OTc4NDJfNzhjMTkxMTA3YzE4N2VkYSIsICJlbmNyeXB0aW9uX3R5cGUiOiAiYWxwaGEyNTYiLCAidGltZXN0YW1wIjogMTc1Mjc5Nzg0Mi43Nzc1ODcsICJzaWduYXR1cmUiOiAiTmFWOEFSZk9BdXdlNmpqbzNUWmcweVZqTUFvWWFna0k0V0QzU3loYS82MD0iLCAibWV0YWRhdGEiOiB7fX0=",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:17:22.777587",
+    "expires_at": null,
+    "last_used": "2025-07-17T20:17:22.832922",
+    "usage_count": 1,
+    "is_active": true
+  },
+  {
+    "key_id": "kraken_1752797842_e9b29d5b98f4d078",
+    "exchange": "kraken",
+    "encrypted_key": "eyJkYXRhIjogIkdiUm5veEF3eWRzaGhwbzQzbldqVGtwMU45eHJwY2FJRURBUVY4RU5aK2hPYmE1ZVQzWjRuaisxT210aHJkUlYiLCAiaXYiOiAiR2JSbm94QXd5ZHNoaHBvNDNuV2pUZz09IiwgInNhbHQiOiAiQldWak9YZDNJVG9ycUh5TUl0ZDc2Qi9reDRBQkdZN3haL0prU3Jhd01DOD0iLCAia2V5X2lkIjogImtyYWtlbl8xNzUyNzk3ODQyX2U5YjI5ZDViOThmNGQwNzgiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4NDIuNzkyNTc5NCwgInNpZ25hdHVyZSI6ICJGUmd6czJvS1VWM09IM0R1eWhPRG1UbVdiN1FtMXh1dDF4UHlZRDJ2d1gwPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "encrypted_secret": "eyJkYXRhIjogInZ0OHBENVdieGo2VGk1bHBGOXJkbFM0MlhocFFOck9mMGNKWndWL3RqTE1BK2JiaU1ZR0g4ZFVnOGdjOHBQd2wiLCAiaXYiOiAidnQ4cEQ1V2J4ajZUaTVscEY5cmRsUT09IiwgInNhbHQiOiAiL2xZSlZVVGgvcWxEbDdFQlF2OXlLNitmUjdNNWx4aW90OGRsRkoybUdwYz0iLCAia2V5X2lkIjogImtyYWtlbl8xNzUyNzk3ODQyX2U5YjI5ZDViOThmNGQwNzgiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4NDIuNzkyNTc5NCwgInNpZ25hdHVyZSI6ICJVSnpQYTlYMkwweUpjNnUvYUFiMDRPUUdHZ1doRHFMalpVVzJjNGFzd0JvPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:17:22.792579",
+    "expires_at": null,
+    "last_used": "2025-07-17T20:17:22.845913",
+    "usage_count": 1,
+    "is_active": true
+  },
+  {
+    "key_id": "kucoin_1752797842_e31444b8c6852ea2",
+    "exchange": "kucoin",
+    "encrypted_key": "eyJkYXRhIjogImlNbjJnbldDL1JtbVFEZnBObzRqbGdKRmh5aVBweVZ6bkJGN2tYeVFFVUYrMnk0SWRTODdqNURzSmI0dXA3QlAiLCAiaXYiOiAiaU1uMmduV0MvUm1tUURmcE5vNGpsZz09IiwgInNhbHQiOiAiNEYwdkRwRWxzZ3NYZDlIdHRXSjFwWWY1SHlVdWtpbytMckZJcGJqZDR3dz0iLCAia2V5X2lkIjogImt1Y29pbl8xNzUyNzk3ODQyX2UzMTQ0NGI4YzY4NTJlYTIiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4NDIuODA1NTcwNCwgInNpZ25hdHVyZSI6ICI0WTZubVNJWmdmWHBTVkYzYW1zZittTWtMTngvRkp6NnZLdXVYY2JVUFJrPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "encrypted_secret": "eyJkYXRhIjogIndNTFJxMGY4dnZsV3J0UmN3WDlLbkF5OWFWazQvRENpM2JmNFI4Q0ZsNllDSWJ3ZER0b3VicFZCbno4SGlTWVMiLCAiaXYiOiAid01MUnEwZjh2dmxXcnRSY3dYOUtuQT09IiwgInNhbHQiOiAidlNJLzUwZ0doODhsR2IxOEwyb0xRb1ZoWnRNcm92Q0RENm1samNFcnU2ND0iLCAia2V5X2lkIjogImt1Y29pbl8xNzUyNzk3ODQyX2UzMTQ0NGI4YzY4NTJlYTIiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4NDIuODA1NTcwNCwgInNpZ25hdHVyZSI6ICJQK3d6WlVuQkxBbDF3aFBCcE5VZ2FKN25oSFlaY0hMa3BRT3R4YU1jK0FNPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:17:22.805570",
+    "expires_at": null,
+    "last_used": "2025-07-17T20:17:22.863279",
+    "usage_count": 1,
+    "is_active": true
+  },
+  {
+    "key_id": "test_exchange_1_1752797842_d54b2ece5c7bf891",
+    "exchange": "test_exchange_1",
+    "encrypted_key": "eyJkYXRhIjogIlFuZDZPQWZqRVVxd3hXUDNDellPVzJCSUM4UlYrM0E5ZS9wT1ZuZWcrZldocW5BenZIRmR5Nld6TTd5MzNEMHQiLCAiaXYiOiAiUW5kNk9BZmpFVXF3eFdQM0N6WU9Xdz09IiwgInNhbHQiOiAiTGxRZmo4M21oTkk2czNaS3FWc1lhdFZsU2p5L3BKNTIzeG5SeUVlVXMzWT0iLCAia2V5X2lkIjogInRlc3RfZXhjaGFuZ2VfMV8xNzUyNzk3ODQyX2Q1NGIyZWNlNWM3YmY4OTEiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4NDIuOTQ5ODM0MywgInNpZ25hdHVyZSI6ICJXTXI1T3lmOXo0cm9vNXBjUlpKdmVOSWNudmVIQW9TR2ExakkwdzZnVVM4PSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "encrypted_secret": "eyJkYXRhIjogIjFINHBmc2NwUDFkMW9ZUlBKS0RrdW5YSmF6S0psZjM2K1hHZEc1ZWtMRUtPb2RVNXZGZXprUUZhVFlHRk02QXQiLCAiaXYiOiAiMUg0cGZzY3BQMWQxb1lSUEpLRGt1Zz09IiwgInNhbHQiOiAiYUFxN05iRm02OVJxSUhVU2N3RllhWWpmWmZOVnc5RGVzdDMyL21tWXkvOD0iLCAia2V5X2lkIjogInRlc3RfZXhjaGFuZ2VfMV8xNzUyNzk3ODQyX2Q1NGIyZWNlNWM3YmY4OTEiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4NDIuOTQ5ODM0MywgInNpZ25hdHVyZSI6ICJTSVY2dWd5SkpMSVNPMU9NdENORUYxZTRkSDF1b1FTdHEwTkEyZVVFRDlBPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:17:22.949834",
+    "expires_at": null,
+    "last_used": "2025-07-17T20:17:22.975178",
+    "usage_count": 1,
+    "is_active": true
+  },
+  {
+    "key_id": "test_exchange_2_1752797842_bca2b4b6b1f89607",
+    "exchange": "test_exchange_2",
+    "encrypted_key": "eyJkYXRhIjogIitFNUo5YkdoclpJTDdjWmZrN3cxZzc0K2pNNk00dVNBSmlCTlhXeWhtU3l0bkNUUmRta0dXWmIyRDlsS1ZlVmoiLCAiaXYiOiAiK0U1SjliR2hyWklMN2NaZms3dzFndz09IiwgInNhbHQiOiAiL2ZxY1JYU1dMRVRTUysrRTZKMFNmQlBpQzZhbjA1eTRhclJOc3ZocVVBbz0iLCAia2V5X2lkIjogInRlc3RfZXhjaGFuZ2VfMl8xNzUyNzk3ODQyX2JjYTJiNGI2YjFmODk2MDciLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4NDIuOTU1ODMwMywgInNpZ25hdHVyZSI6ICJKNjF6TmFQbDR2czJNYXBZcUttNFI4WmhUait3VVh1Szd6aEpTZmhHR0tnPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "encrypted_secret": "eyJkYXRhIjogInIxdHpDWFpoMitKdEMxOUw2Sjlwdjd1Y1Y3QWpiZDFPSDUrMDZ5aWdzUWp4Zyt4UlRzM3JJcEp2U01WRVpLa3IiLCAiaXYiOiAicjF0ekNYWmgyK0p0QzE5TDZKOXB2dz09IiwgInNhbHQiOiAiZzNmUVY2SCtSZ0hSVE9pUzdHelpIUzdlUEZLLzdBd1Q0ajd1UWNqNjg2Zz0iLCAia2V5X2lkIjogInRlc3RfZXhjaGFuZ2VfMl8xNzUyNzk3ODQyX2JjYTJiNGI2YjFmODk2MDciLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4NDIuOTU1ODMwMywgInNpZ25hdHVyZSI6ICJnQll5TFFFaElwMFNnZTdFVjhtYytXK3gzd2hITHU2aVhTQzROMjZReVlFPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:17:22.955830",
+    "expires_at": null,
+    "last_used": "2025-07-17T20:17:22.991540",
+    "usage_count": 1,
+    "is_active": true
+  },
+  {
+    "key_id": "binance_1752797865_21e85cc35023d3d9",
+    "exchange": "binance",
+    "encrypted_key": "eyJkYXRhIjogImppRlVINmNSZzQraTlEQkxlTTNQbzZERDlqbHhlZ1lHei9mMVpQNnRWN0lJNlR0Q0RXL3c3OXZCdk9RbmxybGgiLCAiaXYiOiAiamlGVUg2Y1JnNCtpOURCTGVNM1Bvdz09IiwgInNhbHQiOiAiS05DU3AxRnNJWDBJdllzeXlKZ0RlMWVkWDhyc0J5VVhoWW1Wejk4bHpmbz0iLCAia2V5X2lkIjogImJpbmFuY2VfMTc1Mjc5Nzg2NV8yMWU4NWNjMzUwMjNkM2Q5IiwgImVuY3J5cHRpb25fdHlwZSI6ICJhbHBoYTI1NiIsICJ0aW1lc3RhbXAiOiAxNzUyNzk3ODY1LjUxMDIyNDgsICJzaWduYXR1cmUiOiAiREpPbTUvWUZkVis0ZmdxU0YraXAwc2wyb29JTGdPWDNDdGhrbk9sd09aWT0iLCAibWV0YWRhdGEiOiB7fX0=",
+    "encrypted_secret": "eyJkYXRhIjogIm9qS0NuWjJ0YkRoMDVsYXY1YWIwcUgycmxmUnlBRFg3cERaVzl6OHlZVHVjNHJITGhGak8xelpQbHcrVjgxVSsiLCAiaXYiOiAib2pLQ25aMnRiRGgwNWxhdjVhYjBxQT09IiwgInNhbHQiOiAiNVR2dE01ejlHdDY5b0ZpMnlUdjJQYVlEUnFkanBpWmp1Qzd4SnBUMDJTWT0iLCAia2V5X2lkIjogImJpbmFuY2VfMTc1Mjc5Nzg2NV8yMWU4NWNjMzUwMjNkM2Q5IiwgImVuY3J5cHRpb25fdHlwZSI6ICJhbHBoYTI1NiIsICJ0aW1lc3RhbXAiOiAxNzUyNzk3ODY1LjUxMDIyNDgsICJzaWduYXR1cmUiOiAiSkhBOFFyNGxBMWNnNm1nWWFic0lTbjJlY3dxL0xxNEl3VTZCekNIa1F5bz0iLCAibWV0YWRhdGEiOiB7fX0=",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:17:45.510224",
+    "expires_at": null,
+    "last_used": "2025-07-17T20:17:45.563192",
+    "usage_count": 1,
+    "is_active": true
+  },
+  {
+    "key_id": "coinbase_1752797865_46e8e1ddd07ba619",
+    "exchange": "coinbase",
+    "encrypted_key": "eyJkYXRhIjogInNtY3lsYmRGT2xMRmp4M1FuTng4SW9sc0cxcnROOE84dVlTWlgyR29uU0ZxRWZ4dk14czJpWFlJY0hEWTYrYkQiLCAiaXYiOiAic21jeWxiZEZPbExGangzUW5OeDhJZz09IiwgInNhbHQiOiAiWlBTU0FFTFJTNitvaVpwdjZaRzdkNWRsWkZpKzU0YTdxUGZDVVdNUEkyWT0iLCAia2V5X2lkIjogImNvaW5iYXNlXzE3NTI3OTc4NjVfNDZlOGUxZGRkMDdiYTYxOSIsICJlbmNyeXB0aW9uX3R5cGUiOiAiYWxwaGEyNTYiLCAidGltZXN0YW1wIjogMTc1Mjc5Nzg2NS41MTMyMjEsICJzaWduYXR1cmUiOiAiVWlTa2QzOWFyb0lqUHlDWGx3bmxHNVlWRTRZWEpUUkNlRGVObXZ0cmNJYz0iLCAibWV0YWRhdGEiOiB7fX0=",
+    "encrypted_secret": "eyJkYXRhIjogIllUZGFzZXZubUFMblJtNHZCTDdabkF4WWhjbW01aGpWMkUyZTVTUVByQ0dFQWZTdUtEWU1GaTIxWFVwNXlyN3IiLCAiaXYiOiAiWVRkYXNldm5tQUxuUm00dkJMN1puQT09IiwgInNhbHQiOiAiQlp5NDdZU1M4TnRuSUZOOUdCaWFQMnZWZ2tXWmZ1QVNiRmxlSWt2QnlmMD0iLCAia2V5X2lkIjogImNvaW5iYXNlXzE3NTI3OTc4NjVfNDZlOGUxZGRkMDdiYTYxOSIsICJlbmNyeXB0aW9uX3R5cGUiOiAiYWxwaGEyNTYiLCAidGltZXN0YW1wIjogMTc1Mjc5Nzg2NS41MTMyMjEsICJzaWduYXR1cmUiOiAibkhWUnR5SVVQSFM5d1hHQmdqb1U5S0NYL3V2ZTFXbFBpVENTUzBMeTIxST0iLCAibWV0YWRhdGEiOiB7fX0=",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:17:45.513221",
+    "expires_at": null,
+    "last_used": "2025-07-17T20:17:45.577236",
+    "usage_count": 1,
+    "is_active": true
+  },
+  {
+    "key_id": "kraken_1752797865_29ca559f0b036bf0",
+    "exchange": "kraken",
+    "encrypted_key": "eyJkYXRhIjogImUzanJYdTcxS2VSa05zODRvL3lFSkJpMjRseW42ajlJc3JrdWRienBNSVV1Z1p2M01oVDYxeTFtWDhhZEc4eHQiLCAiaXYiOiAiZTNqclh1NzFLZVJrTnM4NG8veUVKQT09IiwgInNhbHQiOiAiWnJuNkRNbGJEOUltVmszeE5JZG9mckdNVWZFTElsNVUzZU5iYitySGtZST0iLCAia2V5X2lkIjogImtyYWtlbl8xNzUyNzk3ODY1XzI5Y2E1NTlmMGIwMzZiZjAiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4NjUuNTI5MjEyNSwgInNpZ25hdHVyZSI6ICJ4VUVrdVkwd0Z3TlAvVXRwOEYySEZUeS8waFlkaDBnM3Y3eWxjbE5LdW9BPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "encrypted_secret": "eyJkYXRhIjogIjZUdUFyK0pmRFdBZHJqSCtBaEg2OEdSS1ZOOEN0S256eHFQTXJnYXI0bndVeVN1ZHZMVjVFczFpTTF3VHBVT0giLCAiaXYiOiAiNlR1QXIrSmZEV0FkcmpIK0FoSDY4QT09IiwgInNhbHQiOiAiS0hiT1JDNnppTlF1YlVKc2JYM1FJdjFRMFlqMVRWUmVSczBYUVltVDVaMD0iLCAia2V5X2lkIjogImtyYWtlbl8xNzUyNzk3ODY1XzI5Y2E1NTlmMGIwMzZiZjAiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4NjUuNTI5MjEyNSwgInNpZ25hdHVyZSI6ICJWUUtDbzZWbExxV2w3Q2xGQVBFZ1MrbG1DQytHTE82b0FxeFhiSHpSWE80PSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:17:45.529212",
+    "expires_at": null,
+    "last_used": "2025-07-17T20:17:45.593225",
+    "usage_count": 1,
+    "is_active": true
+  },
+  {
+    "key_id": "kucoin_1752797865_ed6b03f612a8947e",
+    "exchange": "kucoin",
+    "encrypted_key": "eyJkYXRhIjogIm9mYjZyWXlVU2FLSzN5MkM0V1JROW52dnh0bUxTVnBaR3hpM0QzcnlRNWt1Rm9BNFpTaGJLL25WVzdJRDkydS8iLCAiaXYiOiAib2ZiNnJZeVVTYUtLM3kyQzRXUlE5Zz09IiwgInNhbHQiOiAiYzhFSm1Ib1JkSGR0NklMVDBGeUsxYnBSOTZhTFhzZmdza1FXU0EzWk1ZOD0iLCAia2V5X2lkIjogImt1Y29pbl8xNzUyNzk3ODY1X2VkNmIwM2Y2MTJhODk0N2UiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4NjUuNTQ0MjAzMywgInNpZ25hdHVyZSI6ICJVRmltbUd6K1kxSzV6T0tjcTNPVzJBN253Y0xnZEtuTVJzN01nWjl3ZWtZPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "encrypted_secret": "eyJkYXRhIjogIlhqOTZJSEJ2NkxBMzkyR2ZkZUV2S2pEM2orNStGTTdVWU5xRWRDeEhRaDVDOWJFR3pkeVlnOGFYc0orNENVRUMiLCAiaXYiOiAiWGo5NklIQnY2TEEzOTJHZmRlRXZLZz09IiwgInNhbHQiOiAiNTFhNG5mUmkzc0NSWnhIUSszT2d4SGZ6UFZ5SUNHWFZJTDRFdjQ0RVNRST0iLCAia2V5X2lkIjogImt1Y29pbl8xNzUyNzk3ODY1X2VkNmIwM2Y2MTJhODk0N2UiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4NjUuNTQ0MjAzMywgInNpZ25hdHVyZSI6ICJZdHVXTTducTN3SXhUVlBNOUVMT1h5NlBtSHVDbFROdm95Rjd6c0kxVTl3PSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:17:45.544203",
+    "expires_at": null,
+    "last_used": "2025-07-17T20:17:45.605217",
+    "usage_count": 1,
+    "is_active": true
+  },
+  {
+    "key_id": "test_exchange_1_1752797865_02e1b11dbb13dfaf",
+    "exchange": "test_exchange_1",
+    "encrypted_key": "eyJkYXRhIjogIkpOMWsyelMxbGRFVk84bjQ1Uk9uN1J6aWU0RmxEbjRmampvMnNWQ2VrenhvUTU5N0tOZUVRc0wyWjV5WGhiTSsiLCAiaXYiOiAiSk4xazJ6UzFsZEVWTzhuNDVST243UT09IiwgInNhbHQiOiAiWE16ZHdQMi9kTEx5OU5zRVpuWURhejVEQVVyK3V5RmhUN3FDSlR0eGlRcz0iLCAia2V5X2lkIjogInRlc3RfZXhjaGFuZ2VfMV8xNzUyNzk3ODY1XzAyZTFiMTFkYmIxM2RmYWYiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4NjUuNjkzOTY0NSwgInNpZ25hdHVyZSI6ICI0ajZHVXdLRkNCeW40S2hQWFYxYTRvTWJkbjZ4ZXdwNDdRWEhTa1UzSkNRPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "encrypted_secret": "eyJkYXRhIjogIjlkbHRUTXRBNjExNDF3RjJndlEwcDBUbjFLZ3QvZjBhVEJGV0ZpUWRjYS84b2tGWjJFdUZWNnY1V2RwNUJmWkgiLCAiaXYiOiAiOWRsdFRNdEE2MTE0MXdGMmd2UTBwdz09IiwgInNhbHQiOiAidjEzdlFVeW1TSTY5bUlLbFZwVHNuTDZlSUxpZ25PSEFsVUNQVGRJWWp4MD0iLCAia2V5X2lkIjogInRlc3RfZXhjaGFuZ2VfMV8xNzUyNzk3ODY1XzAyZTFiMTFkYmIxM2RmYWYiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4NjUuNjk0OTYzMiwgInNpZ25hdHVyZSI6ICJEdysvRjhBVTM3MlJIMURHSnFtOU8rOGdpa3FlWmlUamswWmUxL0lENHlZPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:17:45.694963",
+    "expires_at": null,
+    "last_used": "2025-07-17T20:17:45.721329",
+    "usage_count": 1,
+    "is_active": true
+  },
+  {
+    "key_id": "test_exchange_2_1752797865_ac6c9fc0843ed8af",
+    "exchange": "test_exchange_2",
+    "encrypted_key": "eyJkYXRhIjogIlVHNWVETWhZRUhheXYrWGRudkllNC92UWZyS3E2OU4wcHlYZmNoQnB2WGM4MGVDZFI4M2lERi9aczhTMDQwN3oiLCAiaXYiOiAiVUc1ZURNaFlFSGF5ditYZG52SWU0dz09IiwgInNhbHQiOiAiSURNdVFwQ1ozTzZwVXBKRU41cTlWR05FL3hiNHYzcXdnQ1lTMytrYmMwaz0iLCAia2V5X2lkIjogInRlc3RfZXhjaGFuZ2VfMl8xNzUyNzk3ODY1X2FjNmM5ZmMwODQzZWQ4YWYiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4NjUuNjk5OTYyLCAic2lnbmF0dXJlIjogIkZGWDBsK0w3M0dqV3R2MGo5Uk5oTVhKK3RWRUNwb2pnNUE1eDljV2JOU1E9IiwgIm1ldGFkYXRhIjoge319",
+    "encrypted_secret": "eyJkYXRhIjogIjNPV2R0aXhDMDdBRWpIYk13K1phV3NLTW9NeFlDSThYUDBnaGluT3I5b3N1b093Y2dkM0FabEFNYWVkWEZKM0MiLCAiaXYiOiAiM09XZHRpeEMwN0FFakhiTXcrWmFXZz09IiwgInNhbHQiOiAiRi9UenV6cm1UWTVsQjcrRjkvQTNEOWhrY1pNZHFRUXNBSkVkQkY5bUtOWT0iLCAia2V5X2lkIjogInRlc3RfZXhjaGFuZ2VfMl8xNzUyNzk3ODY1X2FjNmM5ZmMwODQzZWQ4YWYiLCAiZW5jcnlwdGlvbl90eXBlIjogImFscGhhMjU2IiwgInRpbWVzdGFtcCI6IDE3NTI3OTc4NjUuNzAwOTYxNCwgInNpZ25hdHVyZSI6ICJVQnVoUWhid1ptNjhIZ0xpQnA4UjlRb2YyT2I0TnNlc01id1pMMTJ1cElvPSIsICJtZXRhZGF0YSI6IHt9fQ==",
+    "permissions": [
+      "read",
+      "trade"
+    ],
+    "created_at": "2025-07-17T20:17:45.700961",
+    "expires_at": null,
+    "last_used": "2025-07-17T20:17:45.737320",
+    "usage_count": 1,
+    "is_active": true
+  }
+]

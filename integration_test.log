@@ -1,0 +1,57 @@
+2025-07-17 21:32:33,909 - core.schwabot_unified_interface - INFO -    RAM: 24.0 GB (high)
+2025-07-17 21:32:33,910 - core.schwabot_unified_interface - INFO -    Optimization: performance
+2025-07-17 21:32:34,189 - core.signal_cache - INFO - Initializing signal cache with hardware auto-detection...
+2025-07-17 21:32:34,199 - core.signal_cache - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:32:34,199 - core.signal_cache - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:32:34,200 - core.signal_cache - INFO - Optimization: performance
+2025-07-17 21:32:34,200 - core.signal_cache - INFO - Configured cache sizes for 5 priority levels
+2025-07-17 21:32:34,214 - core.signal_cache - INFO - Signal cache initialized with hardware optimization
+2025-07-17 21:32:34,279 - core.registry_writer - INFO - Initializing registry writer with hardware auto-detection...
+2025-07-17 21:32:34,288 - core.registry_writer - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:32:34,289 - core.registry_writer - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:32:34,289 - core.registry_writer - INFO - Optimization: performance
+2025-07-17 21:32:34,290 - core.registry_writer - INFO - Configured 3 storage pools
+2025-07-17 21:32:34,300 - core.registry_writer - INFO - Registry writer initialized with hardware optimization
+2025-07-17 21:32:34,644 - core.signal_cache - INFO - Initializing signal cache with hardware auto-detection...
+2025-07-17 21:32:34,654 - core.signal_cache - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:32:34,655 - core.signal_cache - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:32:34,655 - core.signal_cache - INFO - Optimization: performance
+2025-07-17 21:32:34,656 - core.signal_cache - INFO - Configured cache sizes for 5 priority levels
+2025-07-17 21:32:34,666 - core.signal_cache - INFO - Signal cache initialized with hardware optimization
+2025-07-17 21:32:34,731 - core.registry_writer - INFO - Initializing registry writer with hardware auto-detection...
+2025-07-17 21:32:34,741 - core.registry_writer - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:32:34,742 - core.registry_writer - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:32:34,742 - core.registry_writer - INFO - Optimization: performance
+2025-07-17 21:32:34,742 - core.registry_writer - INFO - Configured 3 storage pools
+2025-07-17 21:32:34,756 - core.registry_writer - INFO - Registry writer initialized with hardware optimization
+2025-07-17 21:32:34,968 - core.signal_cache - INFO - Initializing signal cache with hardware auto-detection...
+2025-07-17 21:32:34,978 - core.signal_cache - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:32:34,979 - core.signal_cache - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:32:34,979 - core.signal_cache - INFO - Optimization: performance
+2025-07-17 21:32:34,979 - core.signal_cache - INFO - Configured cache sizes for 5 priority levels
+2025-07-17 21:32:34,991 - core.signal_cache - INFO - Signal cache initialized with hardware optimization
+2025-07-17 21:32:35,052 - core.registry_writer - INFO - Initializing registry writer with hardware auto-detection...
+2025-07-17 21:32:35,061 - core.registry_writer - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:32:35,062 - core.registry_writer - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:32:35,062 - core.registry_writer - INFO - Optimization: performance
+2025-07-17 21:32:35,063 - core.registry_writer - INFO - Configured 3 storage pools
+2025-07-17 21:32:35,073 - core.registry_writer - INFO - Registry writer initialized with hardware optimization
+2025-07-17 21:32:35,282 - core.signal_cache - INFO - Initializing signal cache with hardware auto-detection...
+2025-07-17 21:32:35,295 - core.signal_cache - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:32:35,296 - core.signal_cache - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:32:35,296 - core.signal_cache - INFO - Optimization: performance
+2025-07-17 21:32:35,296 - core.signal_cache - INFO - Configured cache sizes for 5 priority levels
+2025-07-17 21:32:35,307 - core.signal_cache - INFO - Signal cache initialized with hardware optimization
+2025-07-17 21:32:35,645 - core.registry_writer - INFO - Initializing registry writer with hardware auto-detection...
+2025-07-17 21:32:35,654 - core.registry_writer - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:32:35,655 - core.registry_writer - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:32:35,655 - core.registry_writer - INFO - Optimization: performance
+2025-07-17 21:32:35,656 - core.registry_writer - INFO - Configured 3 storage pools
+2025-07-17 21:32:35,666 - core.registry_writer - INFO - Registry writer initialized with hardware optimization
+2025-07-17 21:32:35,771 - core.json_server - INFO - Initializing JSON server with hardware auto-detection...
+2025-07-17 21:32:35,784 - core.json_server - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:32:35,785 - core.json_server - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:32:35,785 - core.json_server - INFO - CPU: 8 cores
+2025-07-17 21:32:35,785 - core.json_server - INFO - Optimization: performance
+2025-07-17 21:32:35,810 - core.json_server - ERROR - Hardware detection failed: 'network_settings'
+2025-07-17 21:32:35,810 - core.json_server - WARNING - Using fallback configuration

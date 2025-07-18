@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "hardware_auto_detected": false,
+  "system_info": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "ram_gb": 23.95028305053711,
+    "optimization_mode": "performance"
+  },
+  "storage_settings": {
+    "base_path": "data\\registry",
+    "enable_compression": true,
+    "enable_encryption": true,
+    "max_file_size_mb": 100,
+    "backup_retention_days": 30,
+    "cleanup_interval_hours": 24
+  },
+  "processing_settings": {
+    "batch_size": 50,
+    "max_concurrent_writes": 10,
+    "enable_parallel_processing": true,
+    "enable_performance_tracking": true
+  },
+  "memory_management": {
+    "max_memory_usage_mb": 598.7570762634277,
+    "cleanup_interval_seconds": 3600,
+    "enable_auto_cleanup": true,
+    "enable_memory_monitoring": true
+  }
+}

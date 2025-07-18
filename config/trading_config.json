@@ -1,0 +1,29 @@
+{
+  "default_exchange": {
+    "value": "binance",
+    "encrypted": false,
+    "priority": "medium",
+    "hash_id": "07dadf3f59f5e65bb82fc9d8059b1a80",
+    "created_at": "2025-07-17T20:16:07.983702",
+    "updated_at": "2025-07-17T20:17:45.777474",
+    "metadata": {}
+  },
+  "max_position_size": {
+    "value": 0.5,
+    "encrypted": false,
+    "priority": "medium",
+    "hash_id": "d30262901fca995a4f4c7227a3c64a3a",
+    "created_at": "2025-07-17T20:16:07.985699",
+    "updated_at": "2025-07-17T20:17:45.778474",
+    "metadata": {}
+  },
+  "risk_percentage": {
+    "value": 3.0,
+    "encrypted": false,
+    "priority": "medium",
+    "hash_id": "e508a5bba88d5975b43dfd1dd1b04d45",
+    "created_at": "2025-07-17T20:16:07.990699",
+    "updated_at": "2025-07-17T20:17:45.780473",
+    "metadata": {}
+  }
+}

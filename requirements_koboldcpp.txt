@@ -1,0 +1,58 @@
+# KoboldCPP Integration Requirements for Schwabot Trading System
+# =============================================================
+
+# Core dependencies
+numpy>=1.21.0
+psutil>=5.8.0
+requests>=2.25.0
+asyncio-mqtt>=0.11.0
+
+# Visualization and charting
+matplotlib>=3.5.0
+opencv-python>=4.5.0
+Pillow>=8.3.0
+
+# Data processing and analysis
+pandas>=1.3.0
+scipy>=1.7.0
+scikit-learn>=1.0.0
+
+# Networking and communication
+aiohttp>=3.8.0
+websockets>=10.0
+fastapi>=0.68.0
+uvicorn>=0.15.0
+
+# Encryption and security
+cryptography>=3.4.0
+pycryptodome>=3.10.0
+
+# Hardware detection and optimization
+GPUtil>=1.4.0
+py-cpuinfo>=8.0.0
+
+# Logging and monitoring
+structlog>=21.1.0
+prometheus-client>=0.11.0
+
+# Development and testing
+pytest>=6.2.0
+pytest-asyncio>=0.15.0
+black>=21.7.0
+flake8>=3.9.0
+
+# Optional: GPU acceleration (if available)
+# torch>=1.9.0
+# torchvision>=0.10.0
+
+# Optional: Advanced visualization
+# plotly>=5.0.0
+# bokeh>=2.3.0
+
+# Optional: Database support
+# sqlalchemy>=1.4.0
+# aiosqlite>=0.17.0
+
+# Optional: Message queuing
+# redis>=4.0.0
+# aioredis>=2.0.0 

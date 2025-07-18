@@ -1,0 +1,47 @@
+{
+  "kobold_port": {
+    "value": 5001,
+    "encrypted": false,
+    "priority": "medium",
+    "hash_id": "d74b3a80f9589802191e6440804afe2f",
+    "created_at": "2025-07-17T20:17:09.216436",
+    "updated_at": "2025-07-17T20:17:45.782473",
+    "metadata": {}
+  },
+  "bridge_port": {
+    "value": 5005,
+    "encrypted": false,
+    "priority": "medium",
+    "hash_id": "19b1116e926b4849e06237a723b01784",
+    "created_at": "2025-07-17T20:17:09.217434",
+    "updated_at": "2025-07-17T20:17:45.784470",
+    "metadata": {}
+  },
+  "timeout_seconds": {
+    "value": 30,
+    "encrypted": false,
+    "priority": "medium",
+    "hash_id": "52110e665560e120375ad334fdc2307b",
+    "created_at": "2025-07-17T20:17:09.218434",
+    "updated_at": "2025-07-17T20:17:45.786470",
+    "metadata": {}
+  },
+  "test_exchange_1_api_key_id": {
+    "value": "test_exchange_1_1752797865_02e1b11dbb13dfaf",
+    "encrypted": false,
+    "priority": "medium",
+    "hash_id": "4a5139c3b71f81d5b829a1bf9ecd4436",
+    "created_at": "2025-07-17T20:17:09.223431",
+    "updated_at": "2025-07-17T20:17:45.788694",
+    "metadata": {}
+  },
+  "test_exchange_2_api_key_id": {
+    "value": "test_exchange_2_1752797865_ac6c9fc0843ed8af",
+    "encrypted": false,
+    "priority": "medium",
+    "hash_id": "6b20847dce61ed3a68934ede47f08938",
+    "created_at": "2025-07-17T20:17:09.239689",
+    "updated_at": "2025-07-17T20:17:45.790695",
+    "metadata": {}
+  }
+}

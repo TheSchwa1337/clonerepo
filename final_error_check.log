@@ -1,0 +1,171 @@
+2025-07-17 21:28:28,220 - root - WARNING - TA-Lib not available, using fallback calculations
+2025-07-17 21:28:29,741 - root - WARNING - aiofiles not available, using fallback file operations
+2025-07-17 21:28:30,357 - core.schwabot_unified_interface - INFO -    RAM: 24.0 GB (high)
+2025-07-17 21:28:30,362 - core.schwabot_unified_interface - INFO -    Optimization: performance
+2025-07-17 21:28:32,340 - core.live_market_data_integration - ERROR - Error initializing exchanges: 'LiveMarketDataIntegration' object has no attribute 'binance_config'
+2025-07-17 21:31:04,795 - root - WARNING - TA-Lib not available, using fallback calculations
+2025-07-17 21:31:06,646 - root - WARNING - aiofiles not available, using fallback file operations
+2025-07-17 21:31:07,040 - core.schwabot_unified_interface - INFO -    RAM: 24.0 GB (high)
+2025-07-17 21:31:07,040 - core.schwabot_unified_interface - INFO -    Optimization: performance
+2025-07-17 21:31:07,254 - core.signal_cache - INFO - Initializing signal cache with hardware auto-detection...
+2025-07-17 21:31:07,269 - core.signal_cache - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:31:07,269 - core.signal_cache - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:31:07,270 - core.signal_cache - INFO - Optimization: performance
+2025-07-17 21:31:07,270 - core.signal_cache - INFO - Configured cache sizes for 5 priority levels
+2025-07-17 21:31:07,280 - core.signal_cache - INFO - Signal cache initialized with hardware optimization
+2025-07-17 21:31:07,328 - core.registry_writer - INFO - Initializing registry writer with hardware auto-detection...
+2025-07-17 21:31:07,345 - core.registry_writer - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:31:07,345 - core.registry_writer - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:31:07,345 - core.registry_writer - INFO - Optimization: performance
+2025-07-17 21:31:07,346 - core.registry_writer - INFO - Configured 3 storage pools
+2025-07-17 21:31:07,354 - core.registry_writer - INFO - Registry writer initialized with hardware optimization
+2025-07-17 21:31:07,626 - core.signal_cache - INFO - Initializing signal cache with hardware auto-detection...
+2025-07-17 21:31:07,641 - core.signal_cache - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:31:07,641 - core.signal_cache - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:31:07,642 - core.signal_cache - INFO - Optimization: performance
+2025-07-17 21:31:07,642 - core.signal_cache - INFO - Configured cache sizes for 5 priority levels
+2025-07-17 21:31:07,660 - core.signal_cache - INFO - Signal cache initialized with hardware optimization
+2025-07-17 21:31:07,699 - core.registry_writer - INFO - Initializing registry writer with hardware auto-detection...
+2025-07-17 21:31:07,712 - core.registry_writer - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:31:07,713 - core.registry_writer - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:31:07,713 - core.registry_writer - INFO - Optimization: performance
+2025-07-17 21:31:07,713 - core.registry_writer - INFO - Configured 3 storage pools
+2025-07-17 21:31:07,732 - core.registry_writer - INFO - Registry writer initialized with hardware optimization
+2025-07-17 21:31:07,908 - core.signal_cache - INFO - Initializing signal cache with hardware auto-detection...
+2025-07-17 21:31:07,922 - core.signal_cache - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:31:07,923 - core.signal_cache - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:31:07,923 - core.signal_cache - INFO - Optimization: performance
+2025-07-17 21:31:07,924 - core.signal_cache - INFO - Configured cache sizes for 5 priority levels
+2025-07-17 21:31:07,931 - core.signal_cache - INFO - Signal cache initialized with hardware optimization
+2025-07-17 21:31:07,970 - core.registry_writer - INFO - Initializing registry writer with hardware auto-detection...
+2025-07-17 21:31:07,980 - core.registry_writer - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:31:07,981 - core.registry_writer - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:31:07,981 - core.registry_writer - INFO - Optimization: performance
+2025-07-17 21:31:07,982 - core.registry_writer - INFO - Configured 3 storage pools
+2025-07-17 21:31:07,989 - core.registry_writer - INFO - Registry writer initialized with hardware optimization
+2025-07-17 21:31:08,133 - core.signal_cache - INFO - Initializing signal cache with hardware auto-detection...
+2025-07-17 21:31:08,142 - core.signal_cache - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:31:08,143 - core.signal_cache - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:31:08,143 - core.signal_cache - INFO - Optimization: performance
+2025-07-17 21:31:08,144 - core.signal_cache - INFO - Configured cache sizes for 5 priority levels
+2025-07-17 21:31:08,150 - core.signal_cache - INFO - Signal cache initialized with hardware optimization
+2025-07-17 21:31:08,187 - core.registry_writer - INFO - Initializing registry writer with hardware auto-detection...
+2025-07-17 21:31:08,196 - core.registry_writer - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:31:08,197 - core.registry_writer - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:31:08,197 - core.registry_writer - INFO - Optimization: performance
+2025-07-17 21:31:08,197 - core.registry_writer - INFO - Configured 3 storage pools
+2025-07-17 21:31:08,204 - core.registry_writer - INFO - Registry writer initialized with hardware optimization
+2025-07-17 21:31:08,245 - core.json_server - INFO - Initializing JSON server with hardware auto-detection...
+2025-07-17 21:31:08,259 - core.json_server - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:31:08,260 - core.json_server - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:31:08,260 - core.json_server - INFO - CPU: 8 cores
+2025-07-17 21:31:08,261 - core.json_server - INFO - Optimization: performance
+2025-07-17 21:31:08,275 - core.json_server - ERROR - Hardware detection failed: 'network_settings'
+2025-07-17 21:31:08,276 - core.json_server - WARNING - Using fallback configuration
+2025-07-17 21:31:08,302 - core.live_market_data_integration - INFO - Initialized 0 exchanges
+2025-07-17 21:31:08,302 - core.live_market_data_integration - INFO - Live Market Data Integration initialized
+2025-07-17 21:33:36,244 - root - WARNING - TA-Lib not available, using fallback calculations
+2025-07-17 21:33:39,132 - root - WARNING - aiofiles not available, using fallback file operations
+2025-07-17 21:33:39,948 - core.schwabot_unified_interface - INFO -    RAM: 24.0 GB (high)
+2025-07-17 21:33:39,949 - core.schwabot_unified_interface - INFO -    Optimization: performance
+2025-07-17 21:33:41,889 - core.signal_cache - INFO - Initializing signal cache with hardware auto-detection...
+2025-07-17 21:33:41,937 - core.signal_cache - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:33:41,940 - core.signal_cache - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:33:41,942 - core.signal_cache - INFO - Optimization: performance
+2025-07-17 21:33:41,943 - core.signal_cache - INFO - Configured cache sizes for 5 priority levels
+2025-07-17 21:33:41,962 - core.signal_cache - INFO - Signal cache initialized with hardware optimization
+2025-07-17 21:33:42,156 - core.registry_writer - INFO - Initializing registry writer with hardware auto-detection...
+2025-07-17 21:33:42,188 - core.registry_writer - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:33:42,191 - core.registry_writer - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:33:42,221 - core.registry_writer - INFO - Optimization: performance
+2025-07-17 21:33:42,222 - core.registry_writer - INFO - Configured 3 storage pools
+2025-07-17 21:33:42,240 - core.registry_writer - INFO - Registry writer initialized with hardware optimization
+2025-07-17 21:33:43,166 - core.signal_cache - INFO - Initializing signal cache with hardware auto-detection...
+2025-07-17 21:33:43,187 - core.signal_cache - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:33:43,188 - core.signal_cache - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:33:43,189 - core.signal_cache - INFO - Optimization: performance
+2025-07-17 21:33:43,190 - core.signal_cache - INFO - Configured cache sizes for 5 priority levels
+2025-07-17 21:33:43,209 - core.signal_cache - INFO - Signal cache initialized with hardware optimization
+2025-07-17 21:33:43,338 - core.registry_writer - INFO - Initializing registry writer with hardware auto-detection...
+2025-07-17 21:33:43,401 - core.registry_writer - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:33:43,402 - core.registry_writer - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:33:43,403 - core.registry_writer - INFO - Optimization: performance
+2025-07-17 21:33:43,404 - core.registry_writer - INFO - Configured 3 storage pools
+2025-07-17 21:33:43,428 - core.registry_writer - INFO - Registry writer initialized with hardware optimization
+2025-07-17 21:33:43,727 - core.signal_cache - INFO - Initializing signal cache with hardware auto-detection...
+2025-07-17 21:33:43,749 - core.signal_cache - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:33:43,749 - core.signal_cache - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:33:43,750 - core.signal_cache - INFO - Optimization: performance
+2025-07-17 21:33:43,750 - core.signal_cache - INFO - Configured cache sizes for 5 priority levels
+2025-07-17 21:33:43,775 - core.signal_cache - INFO - Signal cache initialized with hardware optimization
+2025-07-17 21:33:43,859 - core.registry_writer - INFO - Initializing registry writer with hardware auto-detection...
+2025-07-17 21:33:43,878 - core.registry_writer - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:33:43,879 - core.registry_writer - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:33:43,880 - core.registry_writer - INFO - Optimization: performance
+2025-07-17 21:33:43,882 - core.registry_writer - INFO - Configured 3 storage pools
+2025-07-17 21:33:43,903 - core.registry_writer - INFO - Registry writer initialized with hardware optimization
+2025-07-17 21:33:44,268 - core.signal_cache - INFO - Initializing signal cache with hardware auto-detection...
+2025-07-17 21:33:44,303 - core.signal_cache - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:33:44,304 - core.signal_cache - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:33:44,304 - core.signal_cache - INFO - Optimization: performance
+2025-07-17 21:33:44,305 - core.signal_cache - INFO - Configured cache sizes for 5 priority levels
+2025-07-17 21:33:44,321 - core.signal_cache - INFO - Signal cache initialized with hardware optimization
+2025-07-17 21:33:44,415 - core.registry_writer - INFO - Initializing registry writer with hardware auto-detection...
+2025-07-17 21:33:44,443 - core.registry_writer - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:33:44,445 - core.registry_writer - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:33:44,448 - core.registry_writer - INFO - Optimization: performance
+2025-07-17 21:33:44,449 - core.registry_writer - INFO - Configured 3 storage pools
+2025-07-17 21:33:44,471 - core.registry_writer - INFO - Registry writer initialized with hardware optimization
+2025-07-17 21:33:44,588 - core.json_server - INFO - Initializing JSON server with hardware auto-detection...
+2025-07-17 21:33:44,625 - core.json_server - INFO - Hardware detected: Windows-10-10.0.19045-SP0
+2025-07-17 21:33:44,627 - core.json_server - INFO - RAM: 24.0 GB (high)
+2025-07-17 21:33:44,627 - core.json_server - INFO - CPU: 8 cores
+2025-07-17 21:33:44,628 - core.json_server - INFO - Optimization: performance
+2025-07-17 21:33:44,664 - core.json_server - ERROR - Hardware detection failed: 'network_settings'
+2025-07-17 21:33:44,665 - core.json_server - WARNING - Using fallback configuration
+2025-07-17 21:33:44,721 - core.live_market_data_integration - INFO - Initialized 0 exchanges
+2025-07-17 21:33:44,722 - core.live_market_data_integration - INFO - Live Market Data Integration initialized
+2025-07-17 21:35:29,000 - root - WARNING - TA-Lib not available, using fallback calculations
+2025-07-17 21:35:30,808 - root - WARNING - aiofiles not available, using fallback file operations
+2025-07-17 21:35:30,863 - core.alpha256_encryption - INFO - Master key loaded successfully
+2025-07-17 21:35:30,864 - core.alpha256_encryption - INFO - Loaded 24 API keys
+2025-07-17 21:35:30,864 - core.alpha256_encryption - INFO - Alpha256 Encryption System initialized
+2025-07-17 21:35:30,866 - core.hash_config_manager - INFO - Loaded 3 configuration types
+2025-07-17 21:35:30,866 - core.hash_config_manager - INFO - Hash Configuration Manager initialized
+2025-07-17 21:35:31,101 - core.schwabot_unified_interface - INFO -    RAM: 24.0 GB (high)
+2025-07-17 21:35:31,101 - core.schwabot_unified_interface - INFO -    Optimization: performance
+2025-07-17 21:35:31,115 - core.hash_config_manager - INFO - Loaded 3 configuration types
+2025-07-17 21:35:31,116 - core.hash_config_manager - INFO - Hash Configuration Manager initialized
+2025-07-17 21:35:31,120 - core.alpha256_encryption - INFO - Master key loaded successfully
+2025-07-17 21:35:31,122 - core.alpha256_encryption - INFO - Loaded 24 API keys
+2025-07-17 21:35:31,123 - core.alpha256_encryption - INFO - Alpha256 Encryption System initialized
+2025-07-17 21:35:31,126 - core.hash_config_manager - INFO - Loaded 3 configuration types
+2025-07-17 21:35:31,126 - core.hash_config_manager - INFO - Hash Configuration Manager initialized
+2025-07-17 21:35:31,131 - core.alpha256_encryption - INFO - Master key loaded successfully
+2025-07-17 21:35:31,132 - core.alpha256_encryption - INFO - Loaded 24 API keys
+2025-07-17 21:35:31,132 - core.alpha256_encryption - INFO - Alpha256 Encryption System initialized
+2025-07-17 21:35:31,167 - core.tick_loader - WARNING - Using fallback configuration
+2025-07-17 21:35:31,196 - core.live_market_data_integration - INFO - Initialized 0 exchanges
+2025-07-17 21:35:31,197 - core.live_market_data_integration - INFO - Live Market Data Integration initialized
+2025-07-17 21:36:06,722 - root - WARNING - TA-Lib not available, using fallback calculations
+2025-07-17 21:36:08,480 - root - WARNING - aiofiles not available, using fallback file operations
+2025-07-17 21:36:08,531 - core.alpha256_encryption - INFO - Master key loaded successfully
+2025-07-17 21:36:08,532 - core.alpha256_encryption - INFO - Loaded 24 API keys
+2025-07-17 21:36:08,533 - core.alpha256_encryption - INFO - Alpha256 Encryption System initialized
+2025-07-17 21:36:08,536 - core.hash_config_manager - INFO - Loaded 3 configuration types
+2025-07-17 21:36:08,536 - core.hash_config_manager - INFO - Hash Configuration Manager initialized
+2025-07-17 21:36:08,786 - core.schwabot_unified_interface - INFO -    RAM: 24.0 GB (high)
+2025-07-17 21:36:08,787 - core.schwabot_unified_interface - INFO -    Optimization: performance
+2025-07-17 21:36:08,803 - core.hash_config_manager - INFO - Loaded 3 configuration types
+2025-07-17 21:36:08,804 - core.hash_config_manager - INFO - Hash Configuration Manager initialized
+2025-07-17 21:36:08,808 - core.alpha256_encryption - INFO - Master key loaded successfully
+2025-07-17 21:36:08,809 - core.alpha256_encryption - INFO - Loaded 24 API keys
+2025-07-17 21:36:08,809 - core.alpha256_encryption - INFO - Alpha256 Encryption System initialized
+2025-07-17 21:36:08,811 - core.hash_config_manager - INFO - Loaded 3 configuration types
+2025-07-17 21:36:08,811 - core.hash_config_manager - INFO - Hash Configuration Manager initialized
+2025-07-17 21:36:08,818 - core.alpha256_encryption - INFO - Master key loaded successfully
+2025-07-17 21:36:08,819 - core.alpha256_encryption - INFO - Loaded 24 API keys
+2025-07-17 21:36:08,819 - core.alpha256_encryption - INFO - Alpha256 Encryption System initialized
+2025-07-17 21:36:08,852 - core.tick_loader - WARNING - Using fallback configuration
+2025-07-17 21:36:08,881 - core.live_market_data_integration - INFO - Initialized 0 exchanges
+2025-07-17 21:36:08,882 - core.live_market_data_integration - INFO - Live Market Data Integration initialized

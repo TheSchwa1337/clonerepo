@@ -1,0 +1,98 @@
+{
+  "version": "1.0.0",
+  "system_name": "Live Market Data Bridge",
+  "mode": "full_integration",
+  "hardware_auto_detected": true,
+  "system_info": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "ram_gb": 23.95028305053711,
+    "optimization_mode": "performance"
+  },
+  "market_data_integration": {
+    "enabled": true,
+    "exchanges": {
+      "coinbase": {
+        "enabled": true,
+        "api_key": "",
+        "secret": "",
+        "password": "",
+        "sandbox": true
+      },
+      "kraken": {
+        "enabled": true,
+        "api_key": "",
+        "secret": "",
+        "sandbox": true
+      },
+      "binance": {
+        "enabled": true,
+        "api_key": "",
+        "secret": "",
+        "sandbox": true
+      },
+      "finance_api": {
+        "enabled": true,
+        "api_key": "",
+        "provider": "alphavantage"
+      }
+    },
+    "symbols": [
+      "BTC/USDC",
+      "ETH/USDC",
+      "XRP/USDC",
+      "SOL/USDC"
+    ],
+    "update_interval": 1.0,
+    "enable_technical_indicators": true,
+    "enable_memory_keys": true
+  },
+  "unified_interface": {
+    "enabled": true,
+    "mode": "full_integration",
+    "auto_start": true,
+    "enable_visual_takeover": true
+  },
+  "visual_layer": {
+    "enabled": true,
+    "output_dir": "visualizations",
+    "enable_ai_analysis": true,
+    "enable_pattern_recognition": true,
+    "enable_real_time_rendering": true,
+    "chart_update_interval": 5.0
+  },
+  "kobold_integration": {
+    "enabled": true,
+    "kobold_path": "koboldcpp",
+    "model_path": "",
+    "port": 5001,
+    "auto_start": true,
+    "enable_ai_analysis": true
+  },
+  "trading_system": {
+    "enabled": true,
+    "tick_loader": {
+      "max_queue_size": 10000,
+      "enable_compression": true,
+      "enable_encryption": true
+    },
+    "signal_cache": {
+      "cache_size": 10000,
+      "enable_similarity_matching": true,
+      "enable_confidence_scoring": true
+    },
+    "registry_writer": {
+      "base_path": "data/registry",
+      "enable_compression": true,
+      "enable_encryption": true,
+      "enable_backup_rotation": true
+    }
+  },
+  "data_flow": {
+    "enable_real_time_processing": true,
+    "enable_ai_analysis": true,
+    "enable_visualization": true,
+    "enable_signal_generation": true,
+    "enable_memory_storage": true,
+    "processing_interval": 1.0
+  }
+}

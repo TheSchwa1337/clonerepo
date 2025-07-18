@@ -1,0 +1,77 @@
+{
+  "version": "1.0.0",
+  "system_name": "Schwabot Unified Interface",
+  "mode": "full_integration",
+  "hardware_auto_detected": true,
+  "system_info": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "ram_gb": 23.95028305053711,
+    "optimization_mode": "performance"
+  },
+  "kobold_integration": {
+    "enabled": true,
+    "kobold_path": "koboldcpp",
+    "model_path": "",
+    "port": 5001,
+    "auto_start": true,
+    "auto_load_model": true,
+    "enable_visual_takeover": true
+  },
+  "visual_layer": {
+    "enabled": true,
+    "output_dir": "visualizations",
+    "enable_ai_analysis": true,
+    "enable_pattern_recognition": true,
+    "enable_real_time_rendering": true,
+    "enable_dlt_waveform": true
+  },
+  "trading_system": {
+    "enabled": true,
+    "tick_loader": {
+      "max_queue_size": 10000,
+      "enable_compression": true,
+      "enable_encryption": true
+    },
+    "signal_cache": {
+      "cache_size": 10000,
+      "enable_similarity_matching": true,
+      "enable_confidence_scoring": true
+    },
+    "registry_writer": {
+      "base_path": "data/registry",
+      "enable_compression": true,
+      "enable_encryption": true,
+      "enable_backup_rotation": true
+    }
+  },
+  "conversation_space": {
+    "enabled": true,
+    "port": 8080,
+    "enable_chat_interface": true,
+    "enable_api_access": true,
+    "enable_websocket": true
+  },
+  "api_integration": {
+    "enabled": true,
+    "host": "localhost",
+    "port": 5000,
+    "max_connections": 100,
+    "enable_encryption": true,
+    "enable_rate_limiting": true
+  },
+  "dlt_waveform": {
+    "enabled": true,
+    "port": 5001,
+    "enable_real_time": true,
+    "enable_3d_visualization": true,
+    "enable_pattern_detection": true
+  },
+  "system_control": {
+    "enable_health_monitoring": true,
+    "health_check_interval_seconds": 30,
+    "enable_performance_tracking": true,
+    "enable_auto_restart": true,
+    "max_restart_attempts": 3,
+    "enable_graceful_shutdown": true
+  }
+}

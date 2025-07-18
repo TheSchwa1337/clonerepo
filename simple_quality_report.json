@@ -1,0 +1,160 @@
+{
+  "timestamp": "2025-07-17T21:32:31.136673",
+  "total_execution_time": 3.576026201248169,
+  "summary": {
+    "total_checks": 3,
+    "passed_checks": 2,
+    "failed_checks": 1,
+    "total_errors": 1,
+    "total_warnings": 0
+  },
+  "system_validation": {
+    "total_components": 12,
+    "successful_components": 12,
+    "failed_components": 0
+  },
+  "detailed_results": {
+    "quality_checks": [
+      {
+        "name": "Syntax Check",
+        "success": true,
+        "execution_time": 0.09996533393859863,
+        "errors": [],
+        "warnings": [],
+        "metadata": {
+          "checked_files": 15
+        }
+      },
+      {
+        "name": "Import Validation",
+        "success": true,
+        "execution_time": 2.8971266746520996,
+        "errors": [],
+        "warnings": [],
+        "metadata": {
+          "validated_modules": 12
+        }
+      },
+      {
+        "name": "Integration Tests",
+        "success": false,
+        "execution_time": 0.5759589672088623,
+        "errors": [
+          "Integration test failed: 'network_settings'"
+        ],
+        "warnings": [],
+        "metadata": {}
+      }
+    ],
+    "system_components": [
+      {
+        "name": "core.schwabot_unified_interface",
+        "success": true,
+        "import_errors": [],
+        "runtime_errors": [],
+        "metadata": {
+          "imported": true
+        }
+      },
+      {
+        "name": "core.koboldcpp_integration",
+        "success": true,
+        "import_errors": [],
+        "runtime_errors": [],
+        "metadata": {
+          "imported": true
+        }
+      },
+      {
+        "name": "core.visual_layer_controller",
+        "success": true,
+        "import_errors": [],
+        "runtime_errors": [],
+        "metadata": {
+          "imported": true
+        }
+      },
+      {
+        "name": "core.tick_loader",
+        "success": true,
+        "import_errors": [],
+        "runtime_errors": [],
+        "metadata": {
+          "imported": true
+        }
+      },
+      {
+        "name": "core.signal_cache",
+        "success": true,
+        "import_errors": [],
+        "runtime_errors": [],
+        "metadata": {
+          "imported": true
+        }
+      },
+      {
+        "name": "core.registry_writer",
+        "success": true,
+        "import_errors": [],
+        "runtime_errors": [],
+        "metadata": {
+          "imported": true
+        }
+      },
+      {
+        "name": "core.json_server",
+        "success": true,
+        "import_errors": [],
+        "runtime_errors": [],
+        "metadata": {
+          "imported": true
+        }
+      },
+      {
+        "name": "core.utils.windows_cli_compatibility",
+        "success": true,
+        "import_errors": [],
+        "runtime_errors": [],
+        "metadata": {
+          "imported": true
+        }
+      },
+      {
+        "name": "core.utils.math_utils",
+        "success": true,
+        "import_errors": [],
+        "runtime_errors": [],
+        "metadata": {
+          "imported": true
+        }
+      },
+      {
+        "name": "core.memory_stack.ai_command_sequencer",
+        "success": true,
+        "import_errors": [],
+        "runtime_errors": [],
+        "metadata": {
+          "imported": true
+        }
+      },
+      {
+        "name": "core.memory_stack.execution_validator",
+        "success": true,
+        "import_errors": [],
+        "runtime_errors": [],
+        "metadata": {
+          "imported": true
+        }
+      },
+      {
+        "name": "core.memory_stack.memory_key_allocator",
+        "success": true,
+        "import_errors": [],
+        "runtime_errors": [],
+        "metadata": {
+          "imported": true
+        }
+      }
+    ]
+  }
+}

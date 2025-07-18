@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-07-17T21:11:50.317352",
+  "summary": {
+    "total_tests": 10,
+    "passed_tests": 8,
+    "failed_tests": 2,
+    "success_rate": 80.0,
+    "total_duration": 6.863495111465454
+  },
+  "status": "PASS_WITH_WARNINGS",
+  "passed_tests": [
+    {
+      "name": "Hardware Detection",
+      "details": "Platform: Windows-10-10.0.19045-SP0, RAM: 24.0GB, Tier: high",
+      "duration": 0.3178842067718506
+    },
+    {
+      "name": "Live Market Data Integration",
+      "details": "Initialized with 0 exchanges",
+      "duration": 0.0009992122650146484
+    },
+    {
+      "name": "Unified Interface",
+      "details": "Mode: full_integration, Components: 5",
+      "duration": 0.41999101638793945
+    },
+    {
+      "name": "KoboldCPP Integration",
+      "details": "Kobold path: koboldcpp, Port: 5001",
+      "duration": 0.10112977027893066
+    },
+    {
+      "name": "Trading Components",
+      "details": "Tick loader: \u2705, Signal cache: \u2705, Registry writer: \u2705",
+      "duration": 0.07165384292602539
+    },
+    {
+      "name": "System Health Monitoring",
+      "details": "System healthy: True, Load: {'cpu_usage': 42.3, 'memory_usage': 48.0, 'disk_usage': 91.4, 'is_healthy': True}",
+      "duration": 3.0235090255737305
+    },
+    {
+      "name": "Complete Data Flow",
+      "details": "Bridge: \u2705, Interface: \u2705, Visual: \u2705 - All components ready for data flow",
+      "duration": 1.5361928939819336
+    },
+    {
+      "name": "AI Analysis Pipeline",
+      "details": "KoboldCPP: \u2705, Visual Controller: \u2705 - AI pipeline ready",
+      "duration": 0.335451602935791
+    }
+  ],
+  "failed_tests": [
+    {
+      "name": "Visual Layer Controller",
+      "details": "'VisualLayerController' object has no attribute 'hardware_optimized'",
+      "duration": 0.21335220336914062
+    },
+    {
+      "name": "Live Market Data Bridge",
+      "details": "'total_components'",
+      "duration": 0.8433313369750977
+    }
+  ]
+}

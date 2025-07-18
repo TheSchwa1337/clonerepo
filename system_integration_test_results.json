@@ -1,0 +1,141 @@
+{
+  "timestamp": 1752799971.5268712,
+  "summary": {
+    "total_tests": 37,
+    "passed_tests": 33,
+    "failed_tests": 2,
+    "skipped_tests": 2,
+    "actual_tests": 35,
+    "success_rate": 94.28571428571428,
+    "system_status": "EXCELLENT"
+  },
+  "detailed_results": {
+    "core_imports": {
+      "core.schwabot_unified_interface": {
+        "status": "PASS",
+        "error": null
+      },
+      "core.koboldcpp_integration": {
+        "status": "PASS",
+        "error": null
+      },
+      "core.visual_layer_controller": {
+        "status": "PASS",
+        "error": null
+      },
+      "core.tick_loader": {
+        "status": "PASS",
+        "error": null
+      },
+      "core.signal_cache": {
+        "status": "PASS",
+        "error": null
+      },
+      "core.registry_writer": {
+        "status": "PASS",
+        "error": null
+      },
+      "core.json_server": {
+        "status": "PASS",
+        "error": null
+      },
+      "core.hardware_auto_detector": {
+        "status": "PASS",
+        "error": null
+      },
+      "core.hash_config_manager": {
+        "status": "PASS",
+        "error": null
+      },
+      "core.alpha256_encryption": {
+        "status": "PASS",
+        "error": null
+      }
+    },
+    "aoi_imports": {
+      "core.ccxt_integration": {
+        "status": "FAIL",
+        "error": "No module named 'core.ccxt_integration'"
+      },
+      "gui.visualizer_launcher": {
+        "status": "FAIL",
+        "error": "No module named 'core.ccxt_integration'"
+      },
+      "core.clean_unified_math": {
+        "status": "SKIP",
+        "error": "Module not found (optional)"
+      },
+      "core.unified_math_system": {
+        "status": "SKIP",
+        "error": "Module not found (optional)"
+      }
+    },
+    "dependencies": {
+      "numpy": {
+        "status": "PASS",
+        "error": null
+      },
+      "matplotlib": {
+        "status": "PASS",
+        "error": null
+      },
+      "asyncio": {
+        "status": "PASS",
+        "error": null
+      },
+      "json": {
+        "status": "PASS",
+        "error": null
+      },
+      "logging": {
+        "status": "PASS",
+        "error": null
+      },
+      "threading": {
+        "status": "PASS",
+        "error": null
+      },
+      "time": {
+        "status": "PASS",
+        "error": null
+      },
+      "pathlib": {
+        "status": "PASS",
+        "error": null
+      },
+      "typing": {
+        "status": "PASS",
+        "error": null
+      },
+      "dataclasses": {
+        "status": "PASS",
+        "error": null
+      },
+      "enum": {
+        "status": "PASS",
+        "error": null
+      }
+    },
+    "unified_interface": {
+      "interface_creation": {
+        "status": "PASS",
+        "error": null
+      },
+      "status_retrieval": {
+        "status": "PASS",
+        "error": null
+      },
+      "mode": "full_integration",
+      "hardware_optimized": true,
+      "system_health": "unhealthy"
+    },
+    "kobold_integration": {
+      "integration_creation": {
+        "status": "PASS",
+        "error": null
+      },
+      "request_creation": {
+        "status": "PASS",
+        "error": null
+      },
+      "kobold_path": 

@@ -1,0 +1,450 @@
+2025-07-17 01:10:43,471 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 01:10:43,472 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 01:10:43,754 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 01:10:43,756 - schwabot_monitoring_system - INFO - Monitoring system started
+2025-07-17 01:10:43,811 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 01:10:43,841 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 01:10:43,863 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 01:10:43,880 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 01:10:43,904 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 01:10:53,775 - schwabot_monitoring_system - INFO - Monitoring system stopped
+2025-07-17 01:12:30,370 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 01:12:30,370 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 01:12:30,411 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 01:12:30,412 - schwabot_monitoring_system - INFO - Monitoring system started
+2025-07-17 01:12:30,468 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 01:12:30,488 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 01:12:30,508 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 01:12:30,526 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 01:12:30,544 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 01:12:40,434 - schwabot_monitoring_system - INFO - Monitoring system stopped
+2025-07-17 01:12:48,788 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 01:12:48,789 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 01:12:48,813 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 01:12:48,819 - schwabot_monitoring_system - INFO - Monitoring system started
+2025-07-17 01:12:48,865 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 01:12:48,883 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 01:12:48,900 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 01:12:48,917 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 01:12:48,934 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 01:12:58,836 - schwabot_monitoring_system - INFO - Monitoring system stopped
+2025-07-17 01:14:19,712 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 01:14:19,713 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 01:14:19,760 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 01:14:19,762 - schwabot_monitoring_system - INFO - Monitoring system started
+2025-07-17 01:14:19,857 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 01:14:19,882 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 01:14:19,902 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 01:14:19,922 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 01:14:19,964 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 01:14:29,785 - schwabot_monitoring_system - INFO - Monitoring system stopped
+2025-07-17 01:14:43,233 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 01:14:43,234 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 01:14:43,273 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 01:14:43,274 - schwabot_monitoring_system - INFO - Monitoring system started
+2025-07-17 01:14:43,394 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 01:14:43,411 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 01:14:43,430 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 01:14:43,453 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 01:14:43,471 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 01:14:53,313 - schwabot_monitoring_system - INFO - Monitoring system stopped
+2025-07-17 01:15:03,362 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 01:15:03,362 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 01:15:03,402 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 01:15:03,403 - schwabot_monitoring_system - INFO - Monitoring system started
+2025-07-17 01:15:03,489 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 01:15:03,507 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 01:15:03,527 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 01:15:03,547 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 01:15:03,566 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 01:15:13,428 - schwabot_monitoring_system - INFO - Monitoring system stopped
+2025-07-17 07:28:50,242 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 07:28:50,243 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 07:28:50,457 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 07:28:50,458 - schwabot_monitoring_system - INFO - Monitoring system started
+2025-07-17 07:28:50,560 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 07:28:50,579 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 07:28:50,601 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 07:28:50,620 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 07:28:50,638 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 07:29:00,481 - schwabot_monitoring_system - INFO - Monitoring system stopped
+2025-07-17 07:29:06,946 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 07:29:06,946 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 07:29:06,963 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 07:29:06,964 - schwabot_monitoring_system - INFO - Monitoring system started
+2025-07-17 07:29:07,044 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 07:29:07,066 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 07:29:07,088 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 07:29:07,108 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 07:29:07,126 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 07:29:16,991 - schwabot_monitoring_system - INFO - Monitoring system stopped
+2025-07-17 07:30:51,060 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 07:30:51,061 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 07:30:51,062 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 07:30:51,062 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized
+2025-07-17 07:30:51,115 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 07:30:51,127 - schwabot_monitoring_system - INFO - Monitoring system started
+2025-07-17 07:30:51,228 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 07:30:51,248 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 07:30:51,279 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 07:30:51,311 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 07:30:51,337 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 07:31:01,148 - schwabot_monitoring_system - INFO - Monitoring system stopped
+2025-07-17 07:31:11,164 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 07:31:11,165 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 07:31:11,165 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 07:31:11,165 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized
+2025-07-17 07:31:11,169 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 07:31:11,170 - schwabot_monitoring_system - INFO - Monitoring system started
+2025-07-17 07:31:11,260 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 07:31:11,277 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 07:31:11,297 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 07:31:11,314 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 07:31:11,340 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 07:31:21,217 - schwabot_monitoring_system - INFO - Monitoring system stopped
+2025-07-17 07:31:48,704 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 07:31:48,704 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 07:31:48,705 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 07:31:48,705 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized
+2025-07-17 07:31:48,719 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 07:31:48,721 - schwabot_monitoring_system - INFO - Monitoring system started
+2025-07-17 07:31:48,805 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 07:31:48,827 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 07:31:48,845 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 07:31:48,862 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 07:31:48,881 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 07:31:58,742 - schwabot_monitoring_system - INFO - Monitoring system stopped
+2025-07-17 07:32:05,568 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 07:32:05,568 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 07:32:05,568 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 07:32:05,569 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized
+2025-07-17 07:32:05,573 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 07:32:05,574 - schwabot_monitoring_system - INFO - Monitoring system started
+2025-07-17 07:32:05,650 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 07:32:05,668 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 07:32:05,685 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 07:32:05,702 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 07:32:05,719 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 07:32:15,599 - schwabot_monitoring_system - INFO - Monitoring system stopped
+2025-07-17 07:33:32,429 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 07:33:32,430 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 07:33:32,431 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 07:33:32,431 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized
+2025-07-17 07:33:32,434 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 07:33:32,435 - schwabot_monitoring_system - INFO - Monitoring system started
+2025-07-17 07:33:32,528 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 07:33:32,548 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 07:33:32,567 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 07:33:32,588 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 07:33:32,606 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 07:33:42,457 - schwabot_monitoring_system - INFO - Monitoring system stopped
+2025-07-17 07:33:51,586 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 07:33:51,587 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 07:33:51,587 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 07:33:51,588 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized
+2025-07-17 07:33:51,590 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 07:33:51,592 - schwabot_monitoring_system - INFO - Monitoring system started
+2025-07-17 07:33:51,698 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 07:33:51,715 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 07:33:51,742 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 07:33:51,774 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 07:33:51,794 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 07:34:01,619 - schwabot_monitoring_system - INFO - Monitoring system stopped
+2025-07-17 07:34:28,182 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 07:34:28,183 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 07:34:28,183 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 07:34:28,184 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized
+2025-07-17 07:34:28,188 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 07:34:28,279 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 07:34:28,302 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 07:34:28,332 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 07:34:28,361 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 07:34:28,392 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 07:36:16,422 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 07:36:16,423 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 07:36:16,423 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 07:36:16,424 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized
+2025-07-17 07:36:16,428 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 07:36:16,490 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 07:36:16,510 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 07:36:16,526 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 07:36:16,542 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 07:36:16,562 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 07:37:14,045 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 07:37:14,045 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 07:37:14,045 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 07:37:14,045 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized
+2025-07-17 07:37:14,047 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 07:37:14,107 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 07:37:14,122 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 07:37:14,139 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 07:37:14,156 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 07:37:14,174 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 07:51:17,133 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 07:51:17,134 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 07:51:17,134 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 07:51:17,135 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized
+2025-07-17 07:51:17,137 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 07:51:17,203 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 07:51:17,219 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 07:51:17,236 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 07:51:17,253 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 07:51:17,271 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 07:52:41,066 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 07:52:41,066 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 07:52:41,067 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 07:52:41,067 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized
+2025-07-17 07:52:41,069 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 07:52:41,214 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 07:52:41,230 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 07:52:41,246 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 07:52:41,261 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 07:52:41,279 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 07:52:41,313 - schwabot_monitoring_system - WARNING - ALERT [CRITICAL] test_component: Component failure detected
+2025-07-17 07:52:41,313 - schwabot_monitoring_system - INFO - Critical notification sent for test_component
+2025-07-17 07:52:41,314 - schwabot_monitoring_system - CRITICAL - EMERGENCY STOP triggered for test_component
+2025-07-17 07:53:20,740 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 07:53:20,740 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 07:53:20,741 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 07:53:20,741 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized
+2025-07-17 07:53:20,743 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 07:53:20,892 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 07:53:20,910 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 07:53:20,928 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 07:53:20,999 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 07:53:21,018 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 07:53:21,067 - schwabot_monitoring_system - WARNING - ALERT [CRITICAL] test_component: Component failure detected
+2025-07-17 07:53:21,068 - schwabot_monitoring_system - INFO - Critical notification sent for test_component
+2025-07-17 07:53:21,069 - schwabot_monitoring_system - CRITICAL - EMERGENCY STOP triggered for test_component
+2025-07-17 08:01:11,611 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 08:01:11,612 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 08:01:11,612 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 08:01:11,612 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized
+2025-07-17 08:01:11,615 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 08:01:11,797 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 08:01:11,817 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 08:01:11,838 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 08:01:11,860 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 08:01:11,881 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 08:01:11,934 - schwabot_monitoring_system - WARNING - ALERT [CRITICAL] test_component: Component failure detected
+2025-07-17 08:01:11,935 - schwabot_monitoring_system - INFO - Critical notification sent for test_component
+2025-07-17 08:01:11,935 - schwabot_monitoring_system - CRITICAL - EMERGENCY STOP triggered for test_component
+2025-07-17 08:02:00,404 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 08:02:00,405 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 08:02:00,405 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 08:02:00,405 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized
+2025-07-17 08:02:00,406 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 08:02:00,545 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 08:02:00,561 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 08:02:00,576 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 08:02:00,592 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 08:02:00,609 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 08:02:00,646 - schwabot_monitoring_system - WARNING - ALERT [CRITICAL] test_component: Component failure detected
+2025-07-17 08:02:00,646 - schwabot_monitoring_system - INFO - Critical notification sent for test_component
+2025-07-17 08:02:00,647 - schwabot_monitoring_system - CRITICAL - EMERGENCY STOP triggered for test_component
+2025-07-17 08:06:03,573 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 08:06:03,573 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 08:06:03,574 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 08:06:03,574 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized
+2025-07-17 08:06:03,576 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 08:06:03,734 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 08:06:03,753 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 08:06:03,771 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 08:06:03,788 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 08:06:03,806 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 08:06:03,849 - schwabot_monitoring_system - WARNING - ALERT [CRITICAL] test_component: Component failure detected
+2025-07-17 08:06:03,850 - schwabot_monitoring_system - INFO - Critical notification sent for test_component
+2025-07-17 08:06:03,850 - schwabot_monitoring_system - CRITICAL - EMERGENCY STOP triggered for test_component
+2025-07-17 08:09:50,498 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 08:09:50,498 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 08:09:50,499 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 08:09:50,499 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized
+2025-07-17 08:09:50,503 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 08:09:50,715 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 08:09:50,736 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 08:09:50,764 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 08:09:50,785 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 08:09:50,811 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 08:09:50,864 - schwabot_monitoring_system - WARNING - ALERT [CRITICAL] test_component: Component failure detected
+2025-07-17 08:09:50,865 - schwabot_monitoring_system - INFO - Critical notification sent for test_component
+2025-07-17 08:09:50,866 - schwabot_monitoring_system - CRITICAL - EMERGENCY STOP triggered for test_component
+2025-07-17 08:11:29,568 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 08:11:29,568 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 08:11:29,569 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 08:11:29,569 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized
+2025-07-17 08:11:29,571 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 08:11:29,591 - schwabot_trading_engine - INFO - Mathematical state updated (no signal): BTCUSDT - Vault entries: 0, Lantern corps: 0
+2025-07-17 08:11:29,729 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 08:11:29,745 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 08:11:29,764 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 08:11:29,782 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 08:11:29,805 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 08:11:29,812 - schwabot_trading_engine - INFO - Mathematical state updated (no signal):  - Vault entries: 0, Lantern corps: 0
+2025-07-17 08:11:29,848 - schwabot_monitoring_system - WARNING - ALERT [CRITICAL] test_component: Component failure detected
+2025-07-17 08:11:29,849 - schwabot_monitoring_system - INFO - Critical notification sent for test_component
+2025-07-17 08:11:29,849 - schwabot_monitoring_system - CRITICAL - EMERGENCY STOP triggered for test_component
+2025-07-17 08:11:29,883 - schwabot_trading_engine - INFO - Mathematical state updated (no signal): BTCUSDT - Vault entries: 0, Lantern corps: 0
+2025-07-17 08:11:29,903 - schwabot_trading_engine - INFO - Mathematical state updated (no signal): ETHUSDT - Vault entries: 0, Lantern corps: 0
+2025-07-17 08:11:29,920 - schwabot_trading_engine - INFO - Mathematical state updated (no signal): XRPUSDT - Vault entries: 0, Lantern corps: 0
+2025-07-17 08:11:29,932 - schwabot_trading_engine - INFO - Mathematical state updated (no signal): ETHUSDT - Vault entries: 0, Lantern corps: 0
+2025-07-17 08:31:25,727 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 08:31:25,728 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 08:31:25,728 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 08:31:25,729 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized with complete 47-day mathematical framework
+2025-07-17 08:31:25,731 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 08:31:25,754 - schwabot_trading_engine - ERROR - Error updating mathematical state tracking: 'SchwabotTradingEngine' object has no attribute 'mathematical_state_registry'
+2025-07-17 08:31:25,928 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 08:31:25,951 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 08:31:25,969 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 08:31:25,989 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 08:31:26,006 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 08:31:26,063 - schwabot_monitoring_system - WARNING - ALERT [CRITICAL] test_component: Component failure detected
+2025-07-17 08:31:26,064 - schwabot_monitoring_system - INFO - Critical notification sent for test_component
+2025-07-17 08:31:26,065 - schwabot_monitoring_system - CRITICAL - EMERGENCY STOP triggered for test_component
+2025-07-17 08:31:26,180 - schwabot_trading_engine - INFO - Trade signal generated: buy BTCUSDT at 45000.00 (strength: 0.660)
+2025-07-17 08:31:35,016 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 08:31:35,017 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 08:31:35,018 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 08:31:35,018 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized with complete 47-day mathematical framework
+2025-07-17 08:31:35,020 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 08:31:35,047 - schwabot_trading_engine - ERROR - Error updating mathematical state tracking: 'SchwabotTradingEngine' object has no attribute 'mathematical_state_registry'
+2025-07-17 08:31:35,211 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 08:31:35,235 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 08:31:35,262 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 08:31:35,288 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 08:31:35,323 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 08:31:35,390 - schwabot_monitoring_system - WARNING - ALERT [CRITICAL] test_component: Component failure detected
+2025-07-17 08:31:35,390 - schwabot_monitoring_system - INFO - Critical notification sent for test_component
+2025-07-17 08:31:35,391 - schwabot_monitoring_system - CRITICAL - EMERGENCY STOP triggered for test_component
+2025-07-17 08:31:35,512 - schwabot_trading_engine - INFO - Trade signal generated: buy BTCUSDT at 45000.00 (strength: 0.661)
+2025-07-17 08:33:30,325 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 08:33:30,326 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 08:33:30,326 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 08:33:30,326 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized with complete 47-day mathematical framework
+2025-07-17 08:33:30,327 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 08:33:30,499 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 08:33:30,520 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 08:33:30,539 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 08:33:30,560 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 08:33:30,580 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 08:33:30,624 - schwabot_monitoring_system - WARNING - ALERT [CRITICAL] test_component: Component failure detected
+2025-07-17 08:33:30,628 - schwabot_monitoring_system - INFO - Critical notification sent for test_component
+2025-07-17 08:33:30,631 - schwabot_monitoring_system - CRITICAL - EMERGENCY STOP triggered for test_component
+2025-07-17 08:33:30,743 - schwabot_trading_engine - INFO - Trade signal generated: buy BTCUSDT at 45000.00 (strength: 0.601)
+2025-07-17 08:33:49,381 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 08:33:49,381 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 08:33:49,381 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 08:33:49,381 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized with complete 47-day mathematical framework
+2025-07-17 08:33:49,382 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 08:33:49,557 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 08:33:49,576 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 08:33:49,593 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 08:33:49,617 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 08:33:49,638 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 08:33:49,680 - schwabot_monitoring_system - WARNING - ALERT [CRITICAL] test_component: Component failure detected
+2025-07-17 08:33:49,681 - schwabot_monitoring_system - INFO - Critical notification sent for test_component
+2025-07-17 08:33:49,682 - schwabot_monitoring_system - CRITICAL - EMERGENCY STOP triggered for test_component
+2025-07-17 13:07:30,141 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 13:07:30,141 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 13:07:30,142 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 13:07:30,142 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized with complete 47-day mathematical framework
+2025-07-17 13:07:30,144 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 13:07:30,331 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 13:07:30,349 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 13:07:30,373 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 13:07:30,396 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 13:07:30,411 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 13:07:30,478 - schwabot_monitoring_system - WARNING - ALERT [CRITICAL] test_component: Component failure detected
+2025-07-17 13:07:30,478 - schwabot_monitoring_system - INFO - Critical notification sent for test_component
+2025-07-17 13:07:30,479 - schwabot_monitoring_system - CRITICAL - EMERGENCY STOP triggered for test_component
+2025-07-17 13:20:02,179 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 13:20:02,180 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 13:20:02,180 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 13:20:02,180 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized with complete 47-day mathematical framework
+2025-07-17 13:20:02,182 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 13:20:02,351 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 13:20:02,368 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 13:20:02,383 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 13:20:02,401 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 13:20:02,422 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 13:20:02,477 - schwabot_monitoring_system - WARNING - ALERT [CRITICAL] test_component: Component failure detected
+2025-07-17 13:20:02,477 - schwabot_monitoring_system - INFO - Critical notification sent for test_component
+2025-07-17 13:20:02,478 - schwabot_monitoring_system - CRITICAL - EMERGENCY STOP triggered for test_component
+2025-07-17 13:20:02,591 - schwabot_trading_engine - INFO - Trade signal generated: buy BTCUSDT at 45000.00 (strength: 0.669)
+2025-07-17 13:37:13,145 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 13:37:13,146 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 13:37:13,147 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 13:37:13,147 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized with complete 47-day mathematical framework
+2025-07-17 13:37:13,149 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 13:37:13,302 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 13:37:13,317 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 13:37:13,337 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 13:37:13,366 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 13:37:13,381 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 13:37:13,423 - schwabot_monitoring_system - WARNING - ALERT [CRITICAL] test_component: Component failure detected
+2025-07-17 13:37:13,424 - schwabot_monitoring_system - INFO - Critical notification sent for test_component
+2025-07-17 13:37:13,425 - schwabot_monitoring_system - CRITICAL - EMERGENCY STOP triggered for test_component
+2025-07-17 13:37:13,519 - schwabot_trading_engine - INFO - Trade signal generated: buy BTCUSDT at 45000.00 (strength: 0.600)
+2025-07-17 13:37:20,460 - schwabot_real_data_integration - INFO - Database initialized: C:\Users\maxde\AppData\Local\Temp\tmph_uorsfs.db
+2025-07-17 13:37:20,568 - schwabot_real_data_integration - INFO - Database initialized: C:\Users\maxde\AppData\Local\Temp\tmpwmqaudjo.db
+2025-07-17 13:37:20,721 - schwabot_real_data_integration - INFO - Database initialized: C:\Users\maxde\AppData\Local\Temp\tmpfsyimha9.db
+2025-07-17 13:37:20,848 - schwabot_real_data_integration - INFO - Database initialized: C:\Users\maxde\AppData\Local\Temp\tmpaz4cariq.db
+2025-07-17 13:37:20,977 - schwabot_real_data_integration - INFO - Database initialized: C:\Users\maxde\AppData\Local\Temp\tmpagr8bewn.db
+2025-07-17 13:37:21,090 - schwabot_real_data_integration - INFO - Database initialized: C:\Users\maxde\AppData\Local\Temp\tmpzswr3cmq.db
+2025-07-17 13:37:21,106 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 13:37:21,129 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.50%, Max Drawdown=0.00%
+2025-07-17 13:37:21,149 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=33.33%
+2025-07-17 13:37:21,187 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=0.62%, Max Drawdown=33.33%
+2025-07-17 13:37:21,288 - schwabot_real_data_integration - INFO - Database initialized: C:\Users\maxde\AppData\Local\Temp\tmplzwdw32e.db
+2025-07-17 13:37:21,386 - schwabot_real_data_integration - INFO - Database initialized: C:\Users\maxde\AppData\Local\Temp\tmp5_dvzy68.db
+2025-07-17 13:37:21,401 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 13:37:21,511 - schwabot_real_data_integration - INFO - Database initialized: C:\Users\maxde\AppData\Local\Temp\tmpi_0q1915.db
+2025-07-17 13:37:21,530 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 13:37:21,549 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=50.00%, Avg ROI=0.25%, Max Drawdown=50.00%
+2025-07-17 13:37:21,645 - schwabot_real_data_integration - INFO - Database initialized: C:\Users\maxde\AppData\Local\Temp\tmpeikg7asb.db
+2025-07-17 13:37:21,664 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.50%, Max Drawdown=0.00%
+2025-07-17 13:37:21,671 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 13:37:21,675 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 13:37:21,678 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 13:37:21,678 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 13:37:21,705 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 13:37:21,705 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 13:37:21,731 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 13:37:21,731 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 13:37:21,732 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 13:37:21,732 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized with complete 47-day mathematical framework
+2025-07-17 13:37:21,742 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 13:37:21,742 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 13:37:21,743 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 13:37:21,743 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized with complete 47-day mathematical framework
+2025-07-17 13:37:21,850 - schwabot_real_data_integration - INFO - Database initialized: C:\Users\maxde\AppData\Local\Temp\tmpx19ouu2m.db
+2025-07-17 13:37:21,947 - schwabot_real_data_integration - INFO - Database initialized: C:\Users\maxde\AppData\Local\Temp\tmp93vc2flz.db
+2025-07-17 13:37:22,092 - schwabot_real_data_integration - INFO - Database initialized: C:\Users\maxde\AppData\Local\Temp\tmp_vm30beu.db
+2025-07-17 13:37:22,242 - schwabot_real_data_integration - INFO - Database initialized: C:\Users\maxde\AppData\Local\Temp\tmpp_d24f20.db
+2025-07-17 13:44:28,794 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 13:44:28,795 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 13:44:28,795 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 13:44:28,796 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized with complete 47-day mathematical framework
+2025-07-17 13:44:28,797 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 13:44:28,975 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 13:44:28,995 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 13:44:29,015 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 13:44:29,036 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 13:44:29,057 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 13:44:29,098 - schwabot_monitoring_system - WARNING - ALERT [CRITICAL] test_component: Component failure detected
+2025-07-17 13:44:29,100 - schwabot_monitoring_system - INFO - Critical notification sent for test_component
+2025-07-17 13:44:29,102 - schwabot_monitoring_system - CRITICAL - EMERGENCY STOP triggered for test_component
+2025-07-17 13:44:35,328 - schwabot_real_data_integration - INFO - Database initialized: schwabot_state.db
+2025-07-17 13:44:35,329 - schwabot_real_data_integration - INFO - RealDataManager initialized with 1 exchanges
+2025-07-17 13:44:35,329 - schwabot_core_math - INFO - Schwabot Core Mathematical Engine initialized
+2025-07-17 13:44:35,329 - schwabot_trading_engine - INFO - Schwabot Trading Engine initialized with complete 47-day mathematical framework
+2025-07-17 13:44:35,330 - schwabot_monitoring_system - INFO - Monitoring database initialized: schwabot_monitoring.db
+2025-07-17 13:44:35,483 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.00%, Max Drawdown=0.00%
+2025-07-17 13:44:35,504 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=100.00%, Avg ROI=1.25%, Max Drawdown=0.00%
+2025-07-17 13:44:35,522 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=66.67%, Avg ROI=0.67%, Max Drawdown=20.00%
+2025-07-17 13:44:35,538 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=75.00%, Avg ROI=1.00%, Max Drawdown=20.00%
+2025-07-17 13:44:35,574 - schwabot_real_data_integration - INFO - Performance metrics updated: Win Rate=80.00%, Avg ROI=0.95%, Max Drawdown=20.00%
+2025-07-17 13:44:35,616 - schwabot_monitoring_system - WARNING - ALERT [CRITICAL] test_component: Component failure detected
+2025-07-17 13:44:35,617 - schwabot_monitoring_system - INFO - Critical notification sent for test_component
+2025-07-17 13:44:35,617 - schwabot_monitoring_system - CRITICAL - EMERGENCY STOP triggered for test_component
+2025-07-17 13:44:35,710 - schwabot_trading_engine - INFO - Trade signal generated: buy BTCUSDT at 45000.00 (strength: 0.621)

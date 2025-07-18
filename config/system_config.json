@@ -1,0 +1,29 @@
+{
+  "debug_mode": {
+    "value": true,
+    "encrypted": false,
+    "priority": "medium",
+    "hash_id": "d60f82bc5b2c09d3bb4c24288c3b2074",
+    "created_at": "2025-07-17T20:16:07.967519",
+    "updated_at": "2025-07-17T20:17:45.773298",
+    "metadata": {}
+  },
+  "log_level": {
+    "value": "DEBUG",
+    "encrypted": false,
+    "priority": "medium",
+    "hash_id": "58a6f765dd297bc20a1ce79097616f79",
+    "created_at": "2025-07-17T20:16:07.968709",
+    "updated_at": "2025-07-17T20:17:45.774299",
+    "metadata": {}
+  },
+  "max_memory_mb": {
+    "value": 2048,
+    "encrypted": false,
+    "priority": "medium",
+    "hash_id": "1f2cca8c27a80a82fae15344be4d562c",
+    "created_at": "2025-07-17T20:16:07.981701",
+    "updated_at": "2025-07-17T20:17:45.776301",
+    "metadata": {}
+  }
+}

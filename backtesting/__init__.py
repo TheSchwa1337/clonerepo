@@ -3,7 +3,7 @@
 """
 Backtesting module for Schwabot trading system.
 
-This module provides backtesting functionality for trading strategies.
+This module provides comprehensive backtesting functionality for trading strategies.
 """
 
 import logging
@@ -12,14 +12,17 @@ import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
 
+# Import the comprehensive backtesting engine
+from .backtest_engine import BacktestConfig, BacktestEngine, BacktestResult, HistoricalDataLoader
+
 logger = logging.getLogger(__name__)
 
 def backtesting_status() -> str:
     """Return status of backtesting module."""
-    return "backtesting module import OK"
+    return "comprehensive backtesting module import OK"
 
-class BacktestEngine:
-    """Simple backtesting engine for trading strategies."""
+class SimpleBacktestEngine:
+    """Simple backtesting engine for trading strategies (legacy)."""
     
     def __init__(self, initial_capital: float = 10000.0):
         self.initial_capital = initial_capital
@@ -54,4 +57,12 @@ class BacktestEngine:
             "total_trades": len(self.trades)
         }
 
-__all__ = ["backtesting_status", "BacktestEngine"] 
+# Export the comprehensive backtesting classes
+__all__ = [
+    "backtesting_status", 
+    "SimpleBacktestEngine",
+    "BacktestConfig",
+    "BacktestEngine", 
+    "BacktestResult",
+    "HistoricalDataLoader"
+] 

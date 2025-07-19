@@ -36,3 +36,86 @@
 2025-07-18 17:29:43,599 - __main__ - INFO - 🎮 GPU auto-detection disabled, using basic fallback
 2025-07-18 17:29:43,600 - __main__ - INFO - GETTING SYSTEM STATUS
 2025-07-18 17:29:43,600 - __main__ - ERROR - Failed to get system status: 'RiskManager' object has no attribute 'get_error_statistics'
+2025-07-18 18:37:54,003 - core.hash_config_manager - INFO - Hash configuration manager initialized successfully
+2025-07-18 18:37:55,213 - core.entropy_enhanced_trading_executor - INFO - 🔄 Exchange connection initialized: binance
+2025-07-18 18:37:55,218 - core.entropy_enhanced_trading_executor - INFO - 🔄 Entropy-Enhanced Trading Executor initialized
+2025-07-18 18:37:55,221 - core.risk_manager - INFO - ⚡ RiskManager using numpy (CPU) for tensor operations
+2025-07-18 18:37:55,228 - core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-18 18:37:55,228 - core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-18 18:37:55,231 - __main__ - ERROR - Failed to initialize components: expected an indented block after 'try' statement on line 32 (unified_btc_trading_pipeline.py, line 33)
+2025-07-18 18:37:55,231 - __main__ - INFO - 🎮 GPU auto-detection disabled, using basic fallback
+2025-07-18 18:37:55,232 - __main__ - INFO - GETTING SYSTEM STATUS
+2025-07-18 18:37:55,232 - __main__ - ERROR - Failed to get system status: 'RiskManager' object has no attribute 'get_error_statistics'
+2025-07-18 18:38:07,544 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 18:38:12,757 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Orbital BRAIN System initialized with 8 shells
+2025-07-18 18:38:37,519 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Orbital BRAIN System initialized with 8 shells
+2025-07-18 18:38:37,524 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 18:38:37,526 - AOI_Base_Files_Schwabot.core.tensor_weight_memory - INFO - 🧠 TensorWeightMemory using CPU fallback: NumPy (CPU)
+2025-07-18 18:38:42,688 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Orbital BRAIN System initialized with 8 shells
+2025-07-18 18:38:42,692 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 18:38:42,695 - AOI_Base_Files_Schwabot.core.tensor_weight_memory - INFO - 🧠 TensorWeightMemory using CPU fallback: NumPy (CPU)
+2025-07-18 18:39:03,693 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 18:39:03,694 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 18:39:03,701 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Orbital BRAIN System initialized with 8 shells
+2025-07-18 18:39:03,702 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Orbital BRAIN System initialized with 8 shells
+2025-07-18 18:39:08,366 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧠 Neural Processing Engine initialized on cpu
+2025-07-18 18:39:08,371 - AOI_Base_Files_Schwabot.core.tensor_weight_memory - INFO - 🧠 TensorWeightMemory using CPU fallback: NumPy (CPU)
+2025-07-18 18:39:08,374 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 18:39:08,374 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧠 Neural Processing Engine initialized on cpu
+2025-07-18 18:39:08,375 - AOI_Base_Files_Schwabot.core.tensor_weight_memory - INFO - 🧠⚛️ TensorWeightMemory initialized
+2025-07-18 18:39:08,376 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 18:39:08,377 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Orbital BRAIN System initialized with 8 shells
+2025-07-18 18:39:08,378 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧠 Neural Processing Engine initialized on cpu
+2025-07-18 18:39:08,378 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧹 Neural Processing Engine resources cleaned up
+2025-07-18 18:39:08,379 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 18:39:08,380 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧠 Neural Processing Engine initialized on cpu
+2025-07-18 18:39:08,380 - AOI_Base_Files_Schwabot.core.tensor_weight_memory - INFO - 🧠⚛️ TensorWeightMemory initialized
+2025-07-18 18:39:08,380 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧹 Neural Processing Engine resources cleaned up
+2025-07-18 18:39:08,381 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - ERROR - Error calculating psi state: 'list' object has no attribute 'tolist'
+2025-07-18 18:39:08,382 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - ERROR - Error calculating psi state: 'list' object has no attribute 'tolist'
+2025-07-18 18:39:08,382 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - ERROR - Error calculating psi state: 'list' object has no attribute 'tolist'
+2025-07-18 18:39:08,382 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - ERROR - Error calculating psi state: 'list' object has no attribute 'tolist'
+2025-07-18 18:39:08,383 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - ERROR - Error calculating psi state: 'list' object has no attribute 'tolist'
+2025-07-18 18:39:08,383 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - ERROR - Error calculating psi state: 'list' object has no attribute 'tolist'
+2025-07-18 18:39:08,384 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - ERROR - Error calculating psi state: 'list' object has no attribute 'tolist'
+2025-07-18 18:39:08,384 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - ERROR - Error calculating psi state: 'list' object has no attribute 'tolist'
+2025-07-18 18:39:08,386 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧹 Neural Processing Engine resources cleaned up
+2025-07-18 18:39:08,386 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧹 Neural Processing Engine resources cleaned up
+2025-07-18 18:39:29,644 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 18:39:29,645 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 18:39:29,651 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Orbital BRAIN System initialized with 8 shells
+2025-07-18 18:39:29,652 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Orbital BRAIN System initialized with 8 shells
+2025-07-18 18:39:33,785 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧠 Neural Processing Engine initialized on cpu
+2025-07-18 18:39:33,790 - AOI_Base_Files_Schwabot.core.tensor_weight_memory - INFO - 🧠 TensorWeightMemory using CPU fallback: NumPy (CPU)
+2025-07-18 18:39:33,793 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 18:39:33,794 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧠 Neural Processing Engine initialized on cpu
+2025-07-18 18:39:33,794 - AOI_Base_Files_Schwabot.core.tensor_weight_memory - INFO - 🧠⚛️ TensorWeightMemory initialized
+2025-07-18 18:39:33,795 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 18:39:33,796 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Orbital BRAIN System initialized with 8 shells
+2025-07-18 18:39:33,797 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧠 Neural Processing Engine initialized on cpu
+2025-07-18 18:39:33,797 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧹 Neural Processing Engine resources cleaned up
+2025-07-18 18:39:33,798 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 18:39:33,799 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧠 Neural Processing Engine initialized on cpu
+2025-07-18 18:39:33,799 - AOI_Base_Files_Schwabot.core.tensor_weight_memory - INFO - 🧠⚛️ TensorWeightMemory initialized
+2025-07-18 18:39:33,799 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧹 Neural Processing Engine resources cleaned up
+2025-07-18 18:39:33,802 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧹 Neural Processing Engine resources cleaned up
+2025-07-18 18:39:33,802 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧹 Neural Processing Engine resources cleaned up
+2025-07-18 18:40:02,950 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 18:40:02,951 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 18:40:02,958 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Orbital BRAIN System initialized with 8 shells
+2025-07-18 18:40:02,958 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Orbital BRAIN System initialized with 8 shells
+2025-07-18 18:40:07,236 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧠 Neural Processing Engine initialized on cpu
+2025-07-18 18:40:07,241 - AOI_Base_Files_Schwabot.core.tensor_weight_memory - INFO - 🧠 TensorWeightMemory using CPU fallback: NumPy (CPU)
+2025-07-18 18:40:07,245 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 18:40:07,245 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧠 Neural Processing Engine initialized on cpu
+2025-07-18 18:40:07,246 - AOI_Base_Files_Schwabot.core.tensor_weight_memory - INFO - 🧠⚛️ TensorWeightMemory initialized
+2025-07-18 18:40:07,248 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 18:40:07,248 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Orbital BRAIN System initialized with 8 shells
+2025-07-18 18:40:07,250 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧠 Neural Processing Engine initialized on cpu
+2025-07-18 18:40:07,250 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧹 Neural Processing Engine resources cleaned up
+2025-07-18 18:40:07,252 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-18 18:40:07,252 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧠 Neural Processing Engine initialized on cpu
+2025-07-18 18:40:07,252 - AOI_Base_Files_Schwabot.core.tensor_weight_memory - INFO - 🧠⚛️ TensorWeightMemory initialized
+2025-07-18 18:40:07,253 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧹 Neural Processing Engine resources cleaned up
+2025-07-18 18:40:07,256 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧹 Neural Processing Engine resources cleaned up
+2025-07-18 18:40:07,256 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧹 Neural Processing Engine resources cleaned up

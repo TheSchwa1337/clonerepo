@@ -119,3 +119,22 @@
 2025-07-18 18:40:07,253 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧹 Neural Processing Engine resources cleaned up
 2025-07-18 18:40:07,256 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧹 Neural Processing Engine resources cleaned up
 2025-07-18 18:40:07,256 - AOI_Base_Files_Schwabot.core.neural_processing_engine - INFO - 🧹 Neural Processing Engine resources cleaned up
+2025-07-20 13:16:10,409 - AOI_Base_Files_Schwabot.main - ERROR - Failed to import hash_config_manager: cannot import name 'hash_config_manager' from 'core.hash_config_manager' (C:\Users\maxde\Downloads\clonerepo\core\hash_config_manager.py)
+2025-07-20 13:16:10,410 - AOI_Base_Files_Schwabot.main - WARNING - Enhanced GPU auto-detection system not available
+2025-07-20 13:16:10,430 - root - WARNING - Lantern Core not available: No module named 'core.lantern_core'
+2025-07-20 13:16:10,434 - core.mathlib.kaprekar_analyzer - INFO - Kaprekar Analyzer initialized
+2025-07-20 13:16:10,438 - core.mathlib.kaprekar_analyzer - INFO - Kaprekar Analyzer initialized
+2025-07-20 13:16:10,438 - AOI_Base_Files_Schwabot.core.strategy_mapper - INFO - Strategy Mapper initialized
+2025-07-20 13:16:10,450 - core.mathlib.kaprekar_analyzer - INFO - Kaprekar Analyzer initialized
+2025-07-20 13:16:10,450 - core.trg_analyzer - INFO - TRG Analyzer initialized
+2025-07-20 13:16:10,457 - core.mathlib.kaprekar_analyzer - INFO - Kaprekar Analyzer initialized
+2025-07-20 13:16:10,458 - core.mathlib.kaprekar_analyzer - INFO - Kaprekar Analyzer initialized
+2025-07-20 13:16:10,458 - core.trg_analyzer - INFO - TRG Analyzer initialized
+2025-07-20 13:16:10,458 - core.lantern_core_enhanced - INFO - Lantern Core Enhanced initialized with Kaprekar integration
+2025-07-20 13:16:10,501 - core.mathlib.kaprekar_analyzer - INFO - Kaprekar Analyzer initialized
+2025-07-20 13:16:10,501 - core.mathlib.kaprekar_analyzer - INFO - Kaprekar Analyzer initialized
+2025-07-20 13:16:10,503 - core.trg_analyzer - INFO - TRG Analyzer initialized
+2025-07-20 13:16:10,504 - core.mathlib.kaprekar_analyzer - INFO - Kaprekar Analyzer initialized
+2025-07-20 13:16:10,504 - core.mathlib.kaprekar_analyzer - INFO - Kaprekar Analyzer initialized
+2025-07-20 13:16:10,504 - core.trg_analyzer - INFO - TRG Analyzer initialized
+2025-07-20 13:16:10,505 - core.lantern_core_enhanced - INFO - Lantern Core Enhanced initialized with Kaprekar integration

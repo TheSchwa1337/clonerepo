@@ -1,0 +1,163 @@
+# 🧮 KAPREKAR SYSTEM CONFIGURATION
+# =================================
+# Configuration for Kaprekar's Constant (6174) integration
+# into the Schwabot trading system
+
+kaprekar_system:
+  # Core Kaprekar settings
+  enabled: true
+  version: "1.0.0"
+  description: "Kaprekar's Constant entropy classification system"
+  
+  # Mathematical constants
+  kaprekar_constant: 6174
+  max_steps: 7
+  reject_threshold: 99
+  
+  # Entropy classification thresholds
+  entropy_classes:
+    1: "ULTRA_STABLE"
+    2: "STABLE"
+    3: "MODERATE"
+    4: "ACTIVE"
+    5: "VOLATILE"
+    6: "HIGH_VOLATILITY"
+    7: "EXTREME_VOLATILITY"
+  
+  # Strategy mapping
+  strategy_mapping:
+    1: "conservative_hold"
+    2: "moderate_buy"
+    3: "aggressive_buy"
+    4: "volatility_play"
+    5: "momentum_follow"
+    6: "breakout_trade"
+    7: "swing_trading"
+
+# Integration settings
+integration:
+  # Strategy Mapper integration
+  strategy_mapper:
+    enabled: true
+    entropy_weight: 0.3
+    confidence_threshold: 0.7
+    strategy_boost: true
+    
+  # Hash Config Manager integration
+  hash_config:
+    enabled: true
+    confidence_threshold: 0.7
+    entropy_weight: 0.3
+    strategy_boost: true
+    
+  # Lantern Core integration
+  lantern_core:
+    enabled: true
+    echo_enhancement: true
+    confidence_boost: true
+    ghost_memory_integration: true
+
+# TRG (Technical Resonance Grid) settings
+trg_analyzer:
+  enabled: true
+  
+  # RSI phase bands
+  rsi_phases:
+    OVERSOLD: [0, 30]
+    LOW: [30, 45]
+    NEUTRAL: [45, 55]
+    HIGH: [55, 70]
+    OVERBOUGHT: [70, 100]
+  
+  # Signal classification rules
+  signal_rules:
+    btc_long_entry:
+      kcs_range: [1, 3]
+      rsi_range: [20, 35]
+      phantom_delta: "positive"
+      confidence_threshold: 0.7
+      
+    usdc_exit_trigger:
+      kcs_range: [5, 7]
+      rsi_range: [70, 100]
+      phantom_delta: "any"
+      confidence_threshold: 0.6
+      
+    phantom_band_swing:
+      kcs_range: [3, 5]
+      rsi_range: [35, 65]
+      phantom_delta: "any"
+      confidence_threshold: 0.5
+      
+    conservative_hold:
+      kcs_range: [1, 2]
+      rsi_range: [40, 60]
+      phantom_delta: "any"
+      confidence_threshold: 0.8
+
+# Performance monitoring
+monitoring:
+  enabled: true
+  
+  # Metrics tracking
+  metrics:
+    track_convergence_rate: true
+    track_chaotic_rate: true
+    track_signal_generation_rate: true
+    track_average_confidence: true
+    
+  # Logging
+  logging:
+    level: "INFO"
+    log_kaprekar_analysis: true
+    log_trg_analysis: true
+    log_enhanced_signals: true
+    
+  # Health monitoring
+  health:
+    check_interval: 60  # seconds
+    alert_threshold: 0.8
+    performance_threshold: 0.7
+
+# Advanced settings
+advanced:
+  # Caching
+  caching:
+    enabled: true
+    cache_size: 1000
+    cache_ttl: 3600  # seconds
+    
+  # Batch processing
+  batch_processing:
+    enabled: true
+    batch_size: 10
+    max_concurrent: 4
+    
+  # AI validation integration
+  ai_validation:
+    enabled: true
+    validation_endpoint: "http://localhost:5000/ai/validate"
+    timeout: 5.0  # seconds
+    retry_attempts: 3
+
+# Development and testing
+development:
+  # Demo mode
+  demo_mode: false
+  
+  # Test scenarios
+  test_scenarios:
+    - name: "BTC Long Entry"
+      hash_fragment: "a1b2c3d4"
+      rsi: 29.7
+      expected_result: "btc_long_entry"
+      
+    - name: "USDC Exit"
+      hash_fragment: "f4e3d2c1"
+      rsi: 75.2
+      expected_result: "usdc_exit_trigger"
+      
+    - name: "Phantom Swing"
+      hash_fragment: "12345678"
+      rsi: 52.1
+      expected_result: "phantom_band_swing" 

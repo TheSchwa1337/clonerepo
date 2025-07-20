@@ -12,6 +12,7 @@ Features:
 - Health diagnostics and recommendations
 - System health reporting
 - Cross-platform compatibility
+- Kaprekar entropy analysis integration
 """
 
 import os
@@ -32,12 +33,27 @@ try:
 except ImportError:
     CORE_COMPONENTS_AVAILABLE = False
 
+# Optional: Import Kaprekar components
+try:
+    from .mathlib.kaprekar_analyzer import KaprekarAnalyzer
+    from .trg_analyzer import TRGAnalyzer
+    from .lantern_core_enhanced import LanternCoreEnhanced
+    KAPREKAR_COMPONENTS_AVAILABLE = True
+except ImportError:
+    KAPREKAR_COMPONENTS_AVAILABLE = False
+
 class SystemHealthMonitor:
     """System Health Monitor for Schwabot trading system."""
     def __init__(self):
         self.tensor_algebra = AdvancedTensorAlgebra() if CORE_COMPONENTS_AVAILABLE else None
         self.profit_system = UnifiedProfitVectorizationSystem() if CORE_COMPONENTS_AVAILABLE else None
         self.trading_manager = TradingPipelineManager() if CORE_COMPONENTS_AVAILABLE else None
+        
+        # Initialize Kaprekar components
+        self.kaprekar_analyzer = KaprekarAnalyzer() if KAPREKAR_COMPONENTS_AVAILABLE else None
+        self.trg_analyzer = TRGAnalyzer() if KAPREKAR_COMPONENTS_AVAILABLE else None
+        self.lantern_enhanced = LanternCoreEnhanced() if KAPREKAR_COMPONENTS_AVAILABLE else None
+        
         self.start_time = time.time()
 
     def get_system_info(self) -> Dict[str, str]:
@@ -168,6 +184,37 @@ class SystemHealthMonitor:
             return self.profit_system.get_system_status()
         return None
 
+    def get_kaprekar_system_status(self) -> Optional[Dict[str, Any]]:
+        """Get Kaprekar system status and metrics."""
+        if not KAPREKAR_COMPONENTS_AVAILABLE:
+            return None
+            
+        try:
+            kaprekar_metrics = {}
+            trg_metrics = {}
+            lantern_metrics = {}
+            
+            if self.kaprekar_analyzer:
+                kaprekar_metrics = self.kaprekar_analyzer.get_performance_metrics()
+                
+            if self.trg_analyzer:
+                trg_metrics = self.trg_analyzer.get_performance_metrics()
+                
+            if self.lantern_enhanced:
+                lantern_metrics = self.lantern_enhanced.get_kaprekar_metrics()
+            
+            return {
+                "kaprekar_analyzer": "ACTIVE" if self.kaprekar_analyzer else "INACTIVE",
+                "trg_analyzer": "ACTIVE" if self.trg_analyzer else "INACTIVE", 
+                "lantern_enhanced": "ACTIVE" if self.lantern_enhanced else "INACTIVE",
+                "kaprekar_metrics": kaprekar_metrics,
+                "trg_metrics": trg_metrics,
+                "lantern_metrics": lantern_metrics,
+                "last_analysis": datetime.now().isoformat()
+            }
+        except Exception as e:
+            return {"error": str(e)}
+
     def get_full_report(self) -> Dict[str, Any]:
         """Return a comprehensive system health report."""
         return {
@@ -184,6 +231,7 @@ class SystemHealthMonitor:
             "trading_system_status": self.get_trading_system_status(),
             "tensor_system_status": self.get_tensor_system_status(),
             "profit_system_status": self.get_profit_system_status(),
+            "kaprekar_system_status": self.get_kaprekar_system_status(),
         }
 
 # Global instance

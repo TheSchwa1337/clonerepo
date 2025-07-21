@@ -1,0 +1,147 @@
+# 🔔 SCHWABOT NOTIFICATION CONFIGURATION
+# ======================================
+# 
+# Configuration for email, SMS, Telegram, Discord, and Slack notifications
+# This file should be kept secure and not committed to version control
+
+# Email Configuration
+# -------------------
+email:
+  enabled: false  # Set to true to enable email notifications
+  smtp_server: "smtp.gmail.com"
+  smtp_port: 587
+  username: ""  # Your email address
+  password: ""  # Your app password (not regular password)
+  recipients: []  # List of email addresses to receive notifications
+  from_address: "schwabot@yourdomain.com"
+
+# SMS Configuration (Twilio)
+# --------------------------
+sms:
+  enabled: false  # Set to true to enable SMS notifications
+  twilio_account_sid: ""  # Your Twilio Account SID
+  twilio_auth_token: ""   # Your Twilio Auth Token
+  twilio_phone_number: "" # Your Twilio phone number (+1234567890)
+  recipients: []          # List of phone numbers to receive SMS
+
+# Telegram Configuration
+# ----------------------
+telegram:
+  enabled: false  # Set to true to enable Telegram notifications
+  bot_token: ""   # Your Telegram bot token
+  chat_id: ""     # Your Telegram chat ID
+  parse_mode: "HTML"  # HTML or Markdown
+
+# Discord Configuration
+# --------------------
+discord:
+  enabled: false  # Set to true to enable Discord notifications
+  webhook_url: "" # Your Discord webhook URL
+
+# Slack Configuration
+# -------------------
+slack:
+  enabled: false  # Set to true to enable Slack notifications
+  webhook_url: "" # Your Slack webhook URL
+
+# Rate Limiting
+# -------------
+rate_limiting:
+  max_alerts_per_hour: 10  # Maximum alerts per hour
+  max_alerts_per_day: 50   # Maximum alerts per day
+  cooldown_minutes: 5      # Cooldown between alerts
+
+# Alert Type Configuration
+# ------------------------
+alert_types:
+  trade_executed:
+    priority: "high"
+    channels: ["email", "telegram"]
+    description: "When a trade is executed"
+  
+  profit_target:
+    priority: "high"
+    channels: ["email", "sms", "telegram"]
+    description: "When profit target is reached"
+  
+  stop_loss:
+    priority: "critical"
+    channels: ["email", "sms", "telegram", "discord"]
+    description: "When stop loss is triggered"
+  
+  system_error:
+    priority: "critical"
+    channels: ["email", "sms", "telegram", "slack"]
+    description: "When system errors occur"
+  
+  portfolio_update:
+    priority: "medium"
+    channels: ["email", "telegram"]
+    description: "Daily portfolio updates"
+  
+  market_alert:
+    priority: "medium"
+    channels: ["telegram", "discord"]
+    description: "Market condition alerts"
+
+# Notification Templates
+# ----------------------
+templates:
+  trade_executed: |
+    🚀 **Trade Executed**
+    Symbol: {symbol}
+    Type: {trade_type}
+    Amount: {amount}
+    Price: {price}
+    Time: {timestamp}
+    Profit: {profit}
+  
+  profit_target: |
+    💰 **Profit Target Reached**
+    Symbol: {symbol}
+    Target: {target}
+    Current: {current}
+    Profit: {profit}
+    ROI: {roi}%
+  
+  stop_loss: |
+    ⚠️ **Stop Loss Triggered**
+    Symbol: {symbol}
+    Loss: {loss}
+    Price: {price}
+    Time: {timestamp}
+  
+  system_error: |
+    🚨 **System Error**
+    Error: {error}
+    Component: {component}
+    Time: {timestamp}
+    Severity: {severity}
+  
+  portfolio_update: |
+    📊 **Portfolio Update**
+    Total Value: {total_value}
+    Change: {change}
+    ROI: {roi}%
+    Top Performer: {top_performer}
+  
+  market_alert: |
+    📈 **Market Alert**
+    Symbol: {symbol}
+    Event: {event}
+    Impact: {impact}
+    Recommendation: {recommendation}
+
+# Security Settings
+# -----------------
+security:
+  encrypt_credentials: true  # Encrypt sensitive data
+  max_retry_attempts: 3      # Maximum retry attempts for failed notifications
+  retry_delay_seconds: 30    # Delay between retry attempts
+
+# Logging Configuration
+# ---------------------
+logging:
+  log_notifications: true    # Log all notification attempts
+  log_level: "INFO"          # Log level for notification system
+  log_file: "logs/notifications.log"  # Log file path 

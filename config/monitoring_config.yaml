@@ -1,0 +1,354 @@
+# 📊 SCHWABOT MONITORING CONFIGURATION
+# ====================================
+# 
+# Configuration for production monitoring system
+# This file controls metrics collection, alerting, and health checks
+
+# Monitoring Settings
+# -------------------
+monitoring:
+  enabled: true
+  interval_seconds: 30  # How often to collect metrics
+  retention_days: 30    # How long to keep metrics
+  max_history_size: 1000  # Maximum number of data points per metric
+  
+  # Performance settings
+  performance:
+    enable_async_collection: true
+    parallel_health_checks: true
+    cache_metrics: true
+    cache_ttl_seconds: 300
+
+# Metrics Configuration
+# ---------------------
+metrics:
+  # System metrics
+  system:
+    cpu_usage:
+      threshold: 80
+      alert: true
+      description: "CPU usage percentage"
+      unit: "percent"
+    
+    memory_usage:
+      threshold: 85
+      alert: true
+      description: "Memory usage percentage"
+      unit: "percent"
+    
+    disk_usage:
+      threshold: 90
+      alert: true
+      description: "Disk usage percentage"
+      unit: "percent"
+    
+    network_latency:
+      threshold: 100
+      alert: true
+      description: "Network latency in milliseconds"
+      unit: "milliseconds"
+    
+    disk_io:
+      threshold: 1000
+      alert: false
+      description: "Disk I/O operations per second"
+      unit: "ops/sec"
+    
+    network_io:
+      threshold: 1000000
+      alert: false
+      description: "Network I/O bytes per second"
+      unit: "bytes/sec"
+  
+  # Trading metrics
+  trading:
+    api_response_time:
+      threshold: 1000
+      alert: true
+      description: "API response time in milliseconds"
+      unit: "milliseconds"
+    
+    trade_execution_time:
+      threshold: 5000
+      alert: true
+      description: "Trade execution time in milliseconds"
+      unit: "milliseconds"
+    
+    error_rate:
+      threshold: 5
+      alert: true
+      description: "Error rate percentage"
+      unit: "percent"
+    
+    profit_loss:
+      threshold: -1000
+      alert: true
+      description: "Daily profit/loss in USD"
+      unit: "USD"
+    
+    trade_volume:
+      threshold: 10000
+      alert: false
+      description: "Daily trade volume in USD"
+      unit: "USD"
+    
+    success_rate:
+      threshold: 90
+      alert: true
+      description: "Trade success rate percentage"
+      unit: "percent"
+  
+  # Application metrics
+  application:
+    request_rate:
+      threshold: 1000
+      alert: false
+      description: "Requests per minute"
+      unit: "requests/min"
+    
+    error_count:
+      threshold: 10
+      alert: true
+      description: "Error count in last hour"
+      unit: "count"
+    
+    active_connections:
+      threshold: 100
+      alert: false
+      description: "Active connections"
+      unit: "count"
+    
+    queue_size:
+      threshold: 50
+      alert: true
+      description: "Queue size"
+      unit: "count"
+    
+    response_time:
+      threshold: 2000
+      alert: true
+      description: "Application response time"
+      unit: "milliseconds"
+    
+    memory_usage:
+      threshold: 512
+      alert: true
+      description: "Application memory usage"
+      unit: "MB"
+
+# Alert Configuration
+# -------------------
+alerts:
+  # Notification channels
+  email_enabled: true
+  slack_enabled: false
+  telegram_enabled: false
+  discord_enabled: false
+  
+  # Alert settings
+  cooldown_minutes: 15  # Minimum time between alerts for same metric
+  escalation_enabled: true
+  escalation_threshold: 3  # Number of alerts before escalation
+  
+  # Alert severity levels
+  severity_levels:
+    info: 0
+    warning: 1
+    critical: 2
+    emergency: 3
+  
+  # Alert grouping
+  grouping:
+    enabled: true
+    group_by_metric: true
+    group_by_severity: true
+    max_group_size: 10
+
+# Health Checks Configuration
+# ---------------------------
+health_checks:
+  # API endpoints to check
+  api_endpoints:
+    - "http://localhost:5000/api/status"
+    - "http://localhost:5000/api/health"
+    - "http://localhost:5000/api/trading/status"
+  
+  # Database connection
+  database: "sqlite:///data/schwabot.db"
+  
+  # Health check settings
+  interval_seconds: 60
+  timeout_seconds: 10
+  retry_attempts: 3
+  retry_delay_seconds: 5
+  
+  # Custom health checks
+  custom_checks:
+    trading_engine:
+      type: "process"
+      process_name: "schwabot_trading"
+      enabled: true
+    
+    database_connection:
+      type: "database"
+      connection_string: "sqlite:///data/schwabot.db"
+      query: "SELECT 1"
+      timeout: 5
+      enabled: true
+    
+    file_system:
+      type: "filesystem"
+      paths:
+        - "data/"
+        - "logs/"
+        - "config/"
+      check_writable: true
+      enabled: true
+
+# Performance Baselines
+# ---------------------
+baselines:
+  # Auto-calculation settings
+  auto_calculate: true
+  calculation_window_hours: 24
+  update_interval_hours: 1
+  
+  # Baseline thresholds
+  threshold_multiplier: 1.5  # Alert if metric exceeds baseline * multiplier
+  
+  # Custom baselines
+  custom:
+    cpu_usage: 30.0
+    memory_usage: 50.0
+    disk_usage: 70.0
+    network_latency: 50.0
+    api_response_time: 200.0
+    trade_execution_time: 1000.0
+    error_rate: 0.1
+
+# Data Retention and Storage
+# --------------------------
+storage:
+  # Local storage
+  local:
+    enabled: true
+    directory: "data/metrics/"
+    max_file_size_mb: 100
+    compression: true
+  
+  # Database storage (optional)
+  database:
+    enabled: false
+    connection_string: "sqlite:///data/metrics.db"
+    table_name: "metrics"
+    batch_size: 1000
+  
+  # External storage (optional)
+  external:
+    enabled: false
+    type: "prometheus"  # or "influxdb", "graphite"
+    endpoint: "http://localhost:9090"
+    retention_days: 90
+
+# Reporting Configuration
+# -----------------------
+reporting:
+  # Automated reports
+  automated:
+    enabled: true
+    daily_report: true
+    weekly_report: true
+    monthly_report: true
+  
+  # Report formats
+  formats:
+    - "json"
+    - "csv"
+    - "html"
+    - "pdf"
+  
+  # Report recipients
+  recipients:
+    email: []
+    slack_channel: ""
+    telegram_chat_id: ""
+  
+  # Report content
+  content:
+    include_metrics: true
+    include_alerts: true
+    include_health_checks: true
+    include_performance_trends: true
+    include_recommendations: true
+
+# Integration Settings
+# --------------------
+integrations:
+  # Grafana integration
+  grafana:
+    enabled: false
+    url: "http://localhost:3000"
+    api_key: ""
+    dashboard_id: ""
+  
+  # Prometheus integration
+  prometheus:
+    enabled: false
+    endpoint: "http://localhost:9090"
+    job_name: "schwabot"
+    scrape_interval: 30
+  
+  # Slack integration
+  slack:
+    enabled: false
+    webhook_url: ""
+    channel: "#alerts"
+    username: "Schwabot Monitor"
+  
+  # PagerDuty integration
+  pagerduty:
+    enabled: false
+    api_key: ""
+    service_id: ""
+
+# Security Settings
+# -----------------
+security:
+  # Authentication for monitoring endpoints
+  authentication:
+    enabled: true
+    type: "api_key"  # or "basic", "oauth"
+    api_key_header: "X-API-Key"
+  
+  # Encryption
+  encryption:
+    enabled: true
+    encrypt_sensitive_metrics: true
+    encrypt_alert_data: true
+  
+  # Access control
+  access_control:
+    ip_whitelist: []
+    rate_limiting: true
+    max_requests_per_minute: 100
+
+# Development and Testing
+# -----------------------
+development:
+  # Debug mode
+  debug:
+    enabled: false
+    log_metrics: false
+    log_alerts: true
+  
+  # Testing
+  testing:
+    mock_metrics: false
+    test_alerts: false
+    test_health_checks: false
+  
+  # Performance profiling
+  profiling:
+    enabled: false
+    profile_metrics_collection: false
+    profile_health_checks: false 

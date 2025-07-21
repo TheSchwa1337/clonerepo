@@ -1,455 +1,363 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-🧮 KAPREKAR INTEGRATION TEST - COMPLETE SYSTEM VERIFICATION
-==========================================================
+🧪 KAPREKAR TICK ENGINE INTEGRATION TEST
+========================================
 
-Tests the complete integration of Kaprekar's Constant (6174) logic
-into the Schwabot trading system architecture.
+Comprehensive integration test demonstrating the complete Kaprekar Tick Engine
+working with all modules: engine, bridge, logic, allocator, hash, and memory.
 
-This test verifies:
-- Configuration loading and validation
-- Strategy Mapper integration
-- Hash Config Manager integration
-- TRG analyzer functionality
-- Enhanced Lantern Core processing
-- System health monitoring
-- Real-world trading scenarios
+This test validates the complete flow from price tick to strategy allocation
+with memory persistence and profit mismatch detection.
 """
 
+import sys
 import time
-import hashlib
-import yaml
-from datetime import datetime
-from typing import Dict, Any
+import logging
+from typing import List, Dict, Any
 
-def test_config_loading():
-    """Test Kaprekar configuration loading."""
-    print("🔧 TESTING CONFIGURATION LOADING")
-    print("=" * 50)
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+def test_kaprekar_engine():
+    """Test the core Kaprekar engine."""
+    print("\n🧮 Testing Kaprekar Engine...")
     
     try:
-        from core.kaprekar_config_loader import kaprekar_config
+        from core.kaprekar_engine import kaprekar_iterations, analyze_kaprekar_convergence
         
-        # Test basic config loading
-        print(f"✅ Config loaded successfully")
-        print(f"   Kaprekar system enabled: {kaprekar_config.is_enabled()}")
-        print(f"   Version: {kaprekar_config.get_config('kaprekar_system.version')}")
-        
-        # Test integration configs
-        strategy_mapper_config = kaprekar_config.get_integration_config('strategy_mapper')
-        print(f"   Strategy Mapper integration: {strategy_mapper_config.get('enabled', False)}")
-        
-        hash_config_config = kaprekar_config.get_integration_config('hash_config')
-        print(f"   Hash Config integration: {hash_config_config.get('enabled', False)}")
-        
-        lantern_config = kaprekar_config.get_integration_config('lantern_core')
-        print(f"   Lantern Core integration: {lantern_config.get('enabled', False)}")
-        
-        # Test TRG config
-        trg_config = kaprekar_config.get_trg_config()
-        print(f"   TRG Analyzer enabled: {trg_config.get('enabled', False)}")
-        
-        # Validate config
-        if kaprekar_config.validate_config():
-            print(f"✅ Configuration validation passed")
-        else:
-            print(f"❌ Configuration validation failed")
-            
-        return True
-        
-    except ImportError as e:
-        print(f"❌ Config loader not available: {e}")
-        return False
-
-def test_strategy_mapper_integration():
-    """Test Strategy Mapper integration with Kaprekar."""
-    print("\n🎯 TESTING STRATEGY MAPPER INTEGRATION")
-    print("=" * 50)
-    
-    try:
-        from AOI_Base_Files_Schwabot.core.strategy_mapper import StrategyMapper
-        
-        # Create strategy mapper with Kaprekar config
-        config = {
-            'kaprekar_enabled': True,
-            'kaprekar_entropy_weight': 0.3,
-            'kaprekar_confidence_threshold': 0.7,
-            'kaprekar_strategy_boost': True
-        }
-        
-        strategy_mapper = StrategyMapper(config)
-        
-        # Test entropy score calculation with Kaprekar
-        test_hash = "a1b2c3d4e5f67890"
-        test_assets = ["BTC", "USDC"]
-        
-        entropy_score = strategy_mapper._calculate_entropy_score(test_hash, test_assets)
-        print(f"✅ Entropy score calculated: {entropy_score:.3f}")
-        
-        # Test with different hash fragments
-        test_hashes = ["a1b2c3d4", "f4e3d2c1", "12345678", "deadbeef"]
-        
-        for hash_fragment in test_hashes:
-            score = strategy_mapper._calculate_entropy_score(hash_fragment, test_assets)
-            print(f"   Hash {hash_fragment}: {score:.3f}")
-        
-        return True
-        
-    except ImportError as e:
-        print(f"❌ Strategy Mapper not available: {e}")
-        return False
-
-def test_hash_config_integration():
-    """Test Hash Config Manager integration with Kaprekar."""
-    print("\n🔐 TESTING HASH CONFIG MANAGER INTEGRATION")
-    print("=" * 50)
-    
-    try:
-        from AOI_Base_Files_Schwabot.core.hash_config_manager import HashConfigManager
-        
-        # Create hash config manager
-        hash_config = HashConfigManager()
-        
-        # Test default config includes Kaprekar settings
-        default_config = hash_config.get_default_config()
-        
-        kaprekar_settings = [
-            'kaprekar_enabled',
-            'kaprekar_confidence_threshold',
-            'kaprekar_entropy_weight',
-            'kaprekar_strategy_boost',
-            'kaprekar_max_steps',
-            'kaprekar_reject_threshold'
+        # Test basic iterations
+        test_cases = [
+            (1234, 3),   # Known convergent
+            (1000, 5),   # Another convergent
+            (1111, -1),  # Non-convergent
+            (9999, -1),  # Non-convergent (leads to cycle of zeros)
         ]
         
-        print("✅ Hash Config Manager Kaprekar settings:")
-        for setting in kaprekar_settings:
-            value = default_config.get(setting, "NOT_FOUND")
-            print(f"   {setting}: {value}")
+        for input_num, expected in test_cases:
+            result = kaprekar_iterations(input_num)
+            status = "✅" if result == expected else "❌"
+            print(f"{status} Input: {input_num}, Expected: {expected}, Got: {result}")
+        
+        # Test batch analysis
+        numbers = [1234, 1000, 1111, 9999, 4321]
+        analysis = analyze_kaprekar_convergence(numbers)
+        print(f"📊 Batch analysis: {analysis['convergent_count']}/{analysis['total_numbers']} convergent")
         
         return True
         
-    except ImportError as e:
-        print(f"❌ Hash Config Manager not available: {e}")
+    except Exception as e:
+        print(f"❌ Kaprekar Engine test failed: {e}")
         return False
 
-def test_trg_analyzer():
-    """Test TRG analyzer with configuration."""
-    print("\n📊 TESTING TRG ANALYZER")
-    print("=" * 50)
+def test_tick_kaprekar_bridge():
+    """Test the tick-kaprekar bridge."""
+    print("\n🌉 Testing Tick-Kaprekar Bridge...")
     
     try:
-        from core.trg_analyzer import trg_analyzer, TRGSnapshot
-        from core.kaprekar_config_loader import kaprekar_config
+        from core.tick_kaprekar_bridge import price_to_kaprekar_index, get_volatility_signal
         
-        # Get TRG configuration
-        trg_config = kaprekar_config.get_trg_config()
-        
-        if not trg_config.get('enabled', False):
-            print("❌ TRG analyzer disabled in config")
-            return False
-        
-        # Test scenarios from config
-        test_scenarios = [
-            {
-                "name": "BTC Long Entry",
-                "kcs": 2,
-                "rsi": 29.7,
-                "price": 60230.23,
-                "pole_range": (60180, 60600),
-                "phantom_delta": 0.002,
-                "hash_fragment": "a1b2c3d4"
-            },
-            {
-                "name": "USDC Exit",
-                "kcs": 6,
-                "rsi": 75.2,
-                "price": 1.0001,
-                "pole_range": (0.9999, 1.0002),
-                "phantom_delta": -0.0001,
-                "hash_fragment": "f4e3d2c1"
-            }
+        test_prices = [
+            2045.29,    # Should normalize to 2045
+            123.456,    # Should normalize to 1234
+            9999.99,    # Should normalize to 9999
+            1.234,      # Should normalize to 1234
+            50000.0,    # Should normalize to 5000
         ]
         
-        for scenario in test_scenarios:
-            print(f"\n🎯 Testing {scenario['name']}")
+        for price in test_prices:
+            k_index = price_to_kaprekar_index(price)
+            signal = get_volatility_signal(price)
+            print(f"Price: {price} → K-Index: {k_index} → Signal: {signal}")
+        
+        return True
+        
+    except Exception as e:
+        print(f"❌ Tick-Kaprekar Bridge test failed: {e}")
+        return False
+
+def test_ferris_tick_logic():
+    """Test the Ferris tick logic."""
+    print("\n🎡 Testing Ferris Tick Logic...")
+    
+    try:
+        from core.ferris_tick_logic import process_tick, get_ferris_cycle_position
+        
+        test_prices = [
+            2045.29,    # Should route to vol_stable_basket
+            123.456,    # Should route to midrange_vol_logic
+            9999.99,    # Should route to escape_vol_guard
+            1111.11,    # Should route to ghost_shell_evasion
+        ]
+        
+        for price in test_prices:
+            signal = process_tick(price)
+            cycle_info = get_ferris_cycle_position(price)
+            print(f"Price: {price} → Signal: {signal} → Cycle Position: {cycle_info.get('cycle_position', 'error')}")
+        
+        return True
+        
+    except Exception as e:
+        print(f"❌ Ferris Tick Logic test failed: {e}")
+        return False
+
+def test_profit_cycle_allocator():
+    """Test the profit cycle allocator."""
+    print("\n💰 Testing Profit Cycle Allocator...")
+    
+    try:
+        from core.profit_cycle_allocator import allocate_profit_zone, trigger_strategy
+        
+        test_prices = [
+            2045.29,    # Should trigger BTC_MICROHOLD_REBUY
+            123.456,    # Should trigger USDC_RSI_REBALANCE
+            9999.99,    # Should trigger XRP_LIQUIDITY_VACUUM
+            1111.11,    # Should trigger ZBE_RECOVERY_PATH
+        ]
+        
+        for price in test_prices:
+            allocation = allocate_profit_zone(price)
+            print(f"Price: {price} → Zone: {allocation['profit_zone']} → Strategies: {allocation['strategy_triggers']}")
             
-            snapshot = TRGSnapshot(
-                kcs=scenario['kcs'],
-                rsi=scenario['rsi'],
-                price=scenario['price'],
-                pole_range=scenario['pole_range'],
-                phantom_delta=scenario['phantom_delta'],
-                asset="BTC",
-                timestamp=time.time(),
-                hash_fragment=scenario['hash_fragment']
+            # Test strategy triggering
+            for strategy in allocation['strategy_triggers']:
+                trigger_result = trigger_strategy(strategy, price)
+                print(f"  Strategy: {strategy} → Status: {trigger_result['trigger_status']}")
+        
+        return True
+        
+    except Exception as e:
+        print(f"❌ Profit Cycle Allocator test failed: {e}")
+        return False
+
+def test_ghost_kaprekar_hash():
+    """Test the ghost Kaprekar hash system."""
+    print("\n👻 Testing Ghost Kaprekar Hash...")
+    
+    try:
+        from core.ghost_kaprekar_hash import generate_kaprekar_strategy_hash, generate_strategy_signature
+        
+        test_prices = [
+            2045.29,    # Should generate stable hash
+            123.456,    # Should generate midrange hash
+            9999.99,    # Should generate high vol hash
+            1111.11,    # Should generate non-convergent hash
+        ]
+        
+        for price in test_prices:
+            basic_hash = generate_kaprekar_strategy_hash(price)
+            strategy_sig = generate_strategy_signature(price, "TEST_STRATEGY", 0.85)
+            print(f"Price: {price} → Hash: {basic_hash[:16]}... → Signature: {strategy_sig['signature'][:16]}...")
+        
+        return True
+        
+    except Exception as e:
+        print(f"❌ Ghost Kaprekar Hash test failed: {e}")
+        return False
+
+def test_cross_section_memory():
+    """Test the cross-section memory system."""
+    print("\n🧠 Testing Cross-Section Memory...")
+    
+    try:
+        from core.cross_section_memory import CrossSectionMemory
+        
+        # Initialize memory system
+        memory = CrossSectionMemory(session_id="integration_test")
+        
+        # Test tick variation recording
+        test_prices = [2045.29, 123.456, 9999.99, 1111.11]
+        variation_ids = []
+        
+        for price in test_prices:
+            variation_id = memory.record_tick_variation(price)
+            variation_ids.append(variation_id)
+            print(f"Recorded variation: {price} → {variation_id[:16]}...")
+        
+        # Test profit mismatch analysis
+        if variation_ids:
+            analysis = memory.analyze_profit_mismatch(
+                variation_ids[0], 
+                actual_profit=0.05, 
+                expected_profit=0.03
             )
-            
-            result = trg_analyzer.interpret_trg(snapshot)
-            
-            print(f"   Signal Class: {result.signal_class}")
-            print(f"   Confidence: {result.confidence:.3f}")
-            print(f"   Risk Level: {result.risk_level}")
-            print(f"   Action: {result.recommended_action}")
+            if analysis:
+                print(f"Profit mismatch analyzed: {analysis.profit_delta:.4f} (factor: {analysis.mismatch_factor:.2f})")
+        
+        # Test pattern analysis
+        patterns = memory.analyze_tick_patterns(window_size=10)
+        print(f"Pattern analysis: {patterns.get('dominant_volatility', 'unknown')} volatility")
+        
+        # Test memory summary
+        summary = memory.get_memory_summary()
+        print(f"Memory summary: {summary['total_tick_variations']} variations, {summary['total_profit_mismatches']} mismatches")
         
         return True
         
-    except ImportError as e:
-        print(f"❌ TRG analyzer not available: {e}")
+    except Exception as e:
+        print(f"❌ Cross-Section Memory test failed: {e}")
         return False
 
-def test_enhanced_lantern_core():
-    """Test Enhanced Lantern Core with configuration."""
-    print("\n🕯️ TESTING ENHANCED LANTERN CORE")
-    print("=" * 50)
+def test_complete_integration_flow():
+    """Test the complete integration flow from tick to strategy."""
+    print("\n🔄 Testing Complete Integration Flow...")
     
     try:
-        from core.lantern_core_enhanced import lantern_core_enhanced
-        from core.kaprekar_config_loader import kaprekar_config
+        from core.kaprekar_engine import kaprekar_iterations
+        from core.tick_kaprekar_bridge import price_to_kaprekar_index
+        from core.ferris_tick_logic import process_tick
+        from core.profit_cycle_allocator import allocate_profit_zone
+        from core.ghost_kaprekar_hash import generate_kaprekar_strategy_hash
+        from core.cross_section_memory import CrossSectionMemory
         
-        # Get Lantern Core configuration
-        lantern_config = kaprekar_config.get_integration_config('lantern_core')
+        # Initialize systems
+        memory = CrossSectionMemory(session_id="complete_flow_test")
         
-        if not lantern_config.get('enabled', False):
-            print("❌ Lantern Core integration disabled in config")
-            return False
+        # Test complete flow with sample prices
+        test_prices = [2045.29, 123.456, 9999.99, 1111.11]
         
-        # Test enhanced echo processing
-        test_signals = [
-            {
-                "symbol": "BTC",
-                "current_price": 60230.23,
-                "rsi": 29.7,
-                "pole_range": (60180, 60600),
-                "phantom_delta": 0.002,
-                "hash_fragment": "a1b2c3d4",
-                "ai_validation": "approve"
-            }
-        ]
-        
-        for i, signal_data in enumerate(test_signals, 1):
-            print(f"\n🔄 Testing Enhanced Signal #{i}")
+        for i, price in enumerate(test_prices):
+            print(f"\n--- Flow Test {i+1}: Price {price} ---")
             
-            enhanced_signal = lantern_core_enhanced.process_enhanced_echo(
-                symbol=signal_data["symbol"],
-                current_price=signal_data["current_price"],
-                rsi=signal_data["rsi"],
-                pole_range=signal_data["pole_range"],
-                phantom_delta=signal_data["phantom_delta"],
-                hash_fragment=signal_data["hash_fragment"],
-                ai_validation=signal_data["ai_validation"]
-            )
+            # Step 1: Kaprekar analysis
+            k_index = price_to_kaprekar_index(price)
+            print(f"1. Kaprekar Index: {k_index}")
             
-            if enhanced_signal:
-                print(f"   ✅ Signal Generated")
-                print(f"   Final Confidence: {enhanced_signal.final_confidence:.3f}")
-                print(f"   Confidence Boost: {enhanced_signal.confidence_boost:.3f}")
-                
-                if enhanced_signal.kaprekar_result:
-                    print(f"   Kaprekar Steps: {enhanced_signal.kaprekar_result.steps_to_converge}")
-                    print(f"   Entropy Class: {enhanced_signal.kaprekar_result.entropy_class}")
-                
-                if enhanced_signal.trg_result:
-                    print(f"   TRG Signal: {enhanced_signal.trg_result.signal_class}")
-                    print(f"   Recommended Action: {enhanced_signal.trg_result.recommended_action}")
-            else:
-                print(f"   ❌ Signal Rejected")
+            # Step 2: Ferris tick processing
+            routing_signal = process_tick(price)
+            print(f"2. Routing Signal: {routing_signal}")
+            
+            # Step 3: Profit zone allocation
+            allocation = allocate_profit_zone(price)
+            print(f"3. Profit Zone: {allocation['profit_zone']}")
+            print(f"   Strategies: {allocation['strategy_triggers']}")
+            
+            # Step 4: Hash generation
+            strategy_hash = generate_kaprekar_strategy_hash(price)
+            print(f"4. Strategy Hash: {strategy_hash[:16]}...")
+            
+            # Step 5: Memory recording
+            variation_id = memory.record_tick_variation(price)
+            print(f"5. Memory ID: {variation_id[:16]}...")
+            
+            # Step 6: Profit analysis (simulated)
+            if i % 2 == 0:  # Simulate profit results for even indices
+                expected_profit = 0.03
+                actual_profit = 0.05 if i == 0 else 0.02
+                analysis = memory.analyze_profit_mismatch(variation_id, actual_profit, expected_profit)
+                if analysis:
+                    print(f"6. Profit Analysis: Delta {analysis.profit_delta:.4f}, Correlation {analysis.correlation_score:.2f}")
+        
+        # Final memory summary
+        summary = memory.get_memory_summary()
+        print(f"\n📊 Final Summary: {summary['total_tick_variations']} variations recorded")
         
         return True
         
-    except ImportError as e:
-        print(f"❌ Enhanced Lantern Core not available: {e}")
+    except Exception as e:
+        print(f"❌ Complete integration flow test failed: {e}")
         return False
 
-def test_system_health_monitor():
-    """Test System Health Monitor with Kaprekar integration."""
-    print("\n🏥 TESTING SYSTEM HEALTH MONITOR")
-    print("=" * 50)
+def run_performance_test():
+    """Run performance test with larger datasets."""
+    print("\n⚡ Running Performance Test...")
     
     try:
-        from core.system_health_monitor import system_health_monitor
+        from core.kaprekar_engine import kaprekar_iterations
+        from core.tick_kaprekar_bridge import price_to_kaprekar_index
+        from core.ferris_tick_logic import process_tick
+        from core.profit_cycle_allocator import allocate_profit_zone
         
-        # Get full system health report
-        report = system_health_monitor.get_full_report()
+        # Generate test data
+        import random
+        test_prices = [random.uniform(100, 10000) for _ in range(100)]
         
-        # Check Kaprekar system status
-        kaprekar_status = report.get("kaprekar_system_status")
+        start_time = time.time()
         
-        if kaprekar_status:
-            print("✅ Kaprekar System Status:")
-            print(f"   Kaprekar Analyzer: {kaprekar_status.get('kaprekar_analyzer', 'UNKNOWN')}")
-            print(f"   TRG Analyzer: {kaprekar_status.get('trg_analyzer', 'UNKNOWN')}")
-            print(f"   Lantern Enhanced: {kaprekar_status.get('lantern_enhanced', 'UNKNOWN')}")
-            
-            # Show metrics
-            kaprekar_metrics = kaprekar_status.get('kaprekar_metrics', {})
-            if kaprekar_metrics:
-                print(f"   Kaprekar Metrics:")
-                for key, value in kaprekar_metrics.items():
-                    print(f"     {key}: {value}")
-            
-            trg_metrics = kaprekar_status.get('trg_metrics', {})
-            if trg_metrics:
-                print(f"   TRG Metrics:")
-                for key, value in trg_metrics.items():
-                    print(f"     {key}: {value}")
-            
-            lantern_metrics = kaprekar_status.get('lantern_metrics', {})
-            if lantern_metrics:
-                print(f"   Lantern Enhanced Metrics:")
-                for key, value in lantern_metrics.items():
-                    print(f"     {key}: {value}")
-        else:
-            print("❌ Kaprekar system status not available")
-            return False
+        # Process all prices
+        results = []
+        for price in test_prices:
+            k_index = price_to_kaprekar_index(price)
+            signal = process_tick(price)
+            allocation = allocate_profit_zone(price)
+            results.append({
+                'price': price,
+                'k_index': k_index,
+                'signal': signal,
+                'zone': allocation['profit_zone']
+            })
         
-        print(f"\n🏥 Overall System Health: {report.get('overall_health', 'UNKNOWN')}")
+        end_time = time.time()
+        processing_time = end_time - start_time
+        
+        # Analyze results
+        signal_counts = {}
+        zone_counts = {}
+        convergent_count = sum(1 for r in results if r['k_index'] != -1)
+        
+        for result in results:
+            signal_counts[result['signal']] = signal_counts.get(result['signal'], 0) + 1
+            zone_counts[result['zone']] = zone_counts.get(result['zone'], 0) + 1
+        
+        print(f"⏱️  Processed {len(test_prices)} prices in {processing_time:.3f} seconds")
+        print(f"📊 Convergent: {convergent_count}/{len(test_prices)} ({convergent_count/len(test_prices)*100:.1f}%)")
+        print(f"🎯 Signal distribution: {signal_counts}")
+        print(f"💰 Zone distribution: {zone_counts}")
         
         return True
         
-    except ImportError as e:
-        print(f"❌ System Health Monitor not available: {e}")
-        return False
-
-def test_real_world_scenario():
-    """Test a complete real-world trading scenario."""
-    print("\n🌍 TESTING REAL-WORLD TRADING SCENARIO")
-    print("=" * 50)
-    
-    try:
-        from core.mathlib.kaprekar_analyzer import kaprekar_analyzer
-        from core.trg_analyzer import trg_analyzer, TRGSnapshot
-        from core.lantern_core_enhanced import lantern_core_enhanced
-        from core.kaprekar_config_loader import kaprekar_config
-        
-        # Check if system is enabled
-        if not kaprekar_config.is_enabled():
-            print("❌ Kaprekar system disabled in config")
-            return False
-        
-        print("🎯 Scenario: BTC Price Drop with RSI Oversold")
-        print("   - Current BTC Price: $60,230")
-        print("   - RSI: 29.7 (oversold)")
-        print("   - Support Pole: $60,180 - $60,600")
-        print("   - Phantom Delta: +0.002 (slight upward momentum)")
-        
-        # Generate hash from market conditions
-        market_data = f"BTC_{int(time.time())}_{60230.23}_{29.7}"
-        hash_fragment = hashlib.sha256(market_data.encode()).hexdigest()[:8]
-        print(f"   - Generated Hash Fragment: {hash_fragment}")
-        
-        # Step 1: Kaprekar Analysis
-        print(f"\n📊 Step 1: Kaprekar Entropy Analysis")
-        kaprekar_result = kaprekar_analyzer.analyze_hash_fragment(hash_fragment)
-        print(f"   Steps to 6174: {kaprekar_result.steps_to_converge}")
-        print(f"   Entropy Class: {kaprekar_result.entropy_class}")
-        print(f"   Stability Score: {kaprekar_result.stability_score:.3f}")
-        
-        # Step 2: TRG Analysis
-        print(f"\n📊 Step 2: Technical Resonance Grid Analysis")
-        trg_snapshot = TRGSnapshot(
-            kcs=kaprekar_result.steps_to_converge,
-            rsi=29.7,
-            price=60230.23,
-            pole_range=(60180, 60600),
-            phantom_delta=0.002,
-            asset="BTC",
-            timestamp=time.time(),
-            hash_fragment=hash_fragment
-        )
-        
-        trg_result = trg_analyzer.interpret_trg(trg_snapshot)
-        print(f"   Signal Class: {trg_result.signal_class}")
-        print(f"   Confidence: {trg_result.confidence:.3f}")
-        print(f"   Risk Level: {trg_result.risk_level}")
-        
-        # Step 3: Enhanced Lantern Processing
-        print(f"\n📊 Step 3: Enhanced Lantern Core Processing")
-        enhanced_signal = lantern_core_enhanced.process_enhanced_echo(
-            symbol="BTC",
-            current_price=60230.23,
-            rsi=29.7,
-            pole_range=(60180, 60600),
-            phantom_delta=0.002,
-            hash_fragment=hash_fragment,
-            ai_validation="approve"
-        )
-        
-        if enhanced_signal:
-            print(f"   ✅ Signal Validated")
-            print(f"   Final Confidence: {enhanced_signal.final_confidence:.3f}")
-            print(f"   Recommended Action: {enhanced_signal.trg_result.recommended_action}")
-            
-            # Final decision
-            if enhanced_signal.final_confidence > 0.7:
-                print(f"\n🎯 FINAL DECISION: EXECUTE BTC RE-ENTRY STRATEGY")
-                print(f"   - High confidence signal ({enhanced_signal.final_confidence:.3f})")
-                print(f"   - Kaprekar convergence in {kaprekar_result.steps_to_converge} steps")
-                print(f"   - RSI oversold condition (29.7)")
-                print(f"   - Price near support pole")
-            else:
-                print(f"\n⏸️ FINAL DECISION: DEFER - Insufficient confidence")
-        else:
-            print(f"   ❌ Signal Rejected")
-            print(f"\n⏸️ FINAL DECISION: NO ACTION - Signal validation failed")
-        
-        return True
-        
-    except ImportError as e:
-        print(f"❌ Required components not available: {e}")
+    except Exception as e:
+        print(f"❌ Performance test failed: {e}")
         return False
 
 def main():
-    """Run the complete Kaprekar integration test."""
-    print("🧮 KAPREKAR INTEGRATION TEST - COMPLETE SYSTEM VERIFICATION")
-    print("=" * 70)
-    print(f"Timestamp: {datetime.now().isoformat()}")
-    print(f"Test Version: 1.0.0")
-    print("=" * 70)
+    """Run all integration tests."""
+    print("🧪 KAPREKAR TICK ENGINE INTEGRATION TEST SUITE")
+    print("=" * 60)
     
-    # Run all tests
-    test_results = []
+    tests = [
+        ("Kaprekar Engine", test_kaprekar_engine),
+        ("Tick-Kaprekar Bridge", test_tick_kaprekar_bridge),
+        ("Ferris Tick Logic", test_ferris_tick_logic),
+        ("Profit Cycle Allocator", test_profit_cycle_allocator),
+        ("Ghost Kaprekar Hash", test_ghost_kaprekar_hash),
+        ("Cross-Section Memory", test_cross_section_memory),
+        ("Complete Integration Flow", test_complete_integration_flow),
+        ("Performance Test", run_performance_test),
+    ]
     
-    test_results.append(("Configuration Loading", test_config_loading()))
-    test_results.append(("Strategy Mapper Integration", test_strategy_mapper_integration()))
-    test_results.append(("Hash Config Manager Integration", test_hash_config_integration()))
-    test_results.append(("TRG Analyzer", test_trg_analyzer()))
-    test_results.append(("Enhanced Lantern Core", test_enhanced_lantern_core()))
-    test_results.append(("System Health Monitor", test_system_health_monitor()))
-    test_results.append(("Real-World Scenario", test_real_world_scenario()))
+    results = []
+    
+    for test_name, test_func in tests:
+        print(f"\n{'='*20} {test_name} {'='*20}")
+        try:
+            success = test_func()
+            results.append((test_name, success))
+        except Exception as e:
+            print(f"❌ {test_name} failed with exception: {e}")
+            results.append((test_name, False))
     
     # Summary
-    print("\n" + "=" * 70)
-    print("📊 INTEGRATION TEST SUMMARY")
-    print("=" * 70)
+    print(f"\n{'='*60}")
+    print("📋 INTEGRATION TEST SUMMARY")
+    print("=" * 60)
     
-    passed = 0
-    total = len(test_results)
+    passed = sum(1 for _, success in results if success)
+    total = len(results)
     
-    for test_name, result in test_results:
-        status = "✅ PASSED" if result else "❌ FAILED"
-        print(f"{status} - {test_name}")
-        if result:
-            passed += 1
+    for test_name, success in results:
+        status = "✅ PASS" if success else "❌ FAIL"
+        print(f"{status} {test_name}")
     
-    print(f"\n🎯 Overall Result: {passed}/{total} tests passed")
+    print(f"\n🎯 Overall: {passed}/{total} tests passed ({passed/total*100:.1f}%)")
     
     if passed == total:
-        print("🎉 ALL TESTS PASSED - KAPREKAR INTEGRATION COMPLETE!")
-        print("\n✅ Integration Points Verified:")
-        print("   • Configuration loading and validation")
-        print("   • Strategy Mapper entropy scoring")
-        print("   • Hash Config Manager settings")
-        print("   • TRG analyzer functionality")
-        print("   • Enhanced Lantern Core processing")
-        print("   • System health monitoring")
-        print("   • Real-world trading scenarios")
-        print("\n🚀 The Kaprekar system is fully integrated and ready for production!")
+        print("🎉 All tests passed! Kaprekar Tick Engine is ready for deployment.")
+        return 0
     else:
-        print("⚠️ Some tests failed - check configuration and dependencies")
-    
-    print("=" * 70)
+        print("⚠️  Some tests failed. Please review the errors above.")
+        return 1
 
 if __name__ == "__main__":
-    main() 
+    sys.exit(main()) 

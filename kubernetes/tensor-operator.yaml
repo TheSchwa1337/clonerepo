@@ -1,0 +1,486 @@
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: tensoroperations.schwabot.ai
+spec:
+  group: schwabot.ai
+  names:
+    kind: TensorOperation
+    listKind: TensorOperationList
+    plural: tensoroperations
+    singular: tensoroperation
+    shortNames:
+    - to
+    - tensorop
+  scope: Namespaced
+  versions:
+  - name: v1alpha1
+    served: true
+    storage: true
+    schema:
+      openAPIV3Schema:
+        type: object
+        properties:
+          spec:
+            type: object
+            properties:
+              operationType:
+                type: string
+                enum: ["tensor_fusion", "quantum_calculation", "algebraic_logic", "cross_chain"]
+              priority:
+                type: string
+                enum: ["low", "medium", "high", "critical"]
+              tensorDepth:
+                type: integer
+                minimum: 1
+                maximum: 10
+              quantumDimension:
+                type: integer
+                minimum: 8
+                maximum: 32
+              gpuRequired:
+                type: boolean
+              memoryRequest:
+                type: string
+              cpuRequest:
+                type: string
+              inputData:
+                type: object
+              expectedOutput:
+                type: object
+              timeout:
+                type: string
+            required:
+            - operationType
+            - priority
+          status:
+            type: object
+            properties:
+              phase:
+                type: string
+                enum: ["pending", "running", "completed", "failed"]
+              startTime:
+                type: string
+                format: date-time
+              completionTime:
+                type: string
+                format: date-time
+              result:
+                type: object
+              error:
+                type: string
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: quantumcalculations.schwabot.ai
+spec:
+  group: schwabot.ai
+  names:
+    kind: QuantumCalculation
+    listKind: QuantumCalculationList
+    plural: quantumcalculations
+    singular: quantumcalculation
+    shortNames:
+    - qc
+    - quantumcalc
+  scope: Namespaced
+  versions:
+  - name: v1alpha1
+    served: true
+    storage: true
+    schema:
+      openAPIV3Schema:
+        type: object
+        properties:
+          spec:
+            type: object
+            properties:
+              calculationType:
+                type: string
+                enum: ["superposition", "entanglement", "measurement", "fourier_transform"]
+              quantumDimension:
+                type: integer
+                minimum: 8
+                maximum: 32
+              coherenceThreshold:
+                type: number
+                minimum: 0.0
+                maximum: 1.0
+              fidelityThreshold:
+                type: number
+                minimum: 0.0
+                maximum: 1.0
+              gpuRequired:
+                type: boolean
+              entanglementPairs:
+                type: array
+                items:
+                  type: object
+              inputState:
+                type: object
+            required:
+            - calculationType
+            - quantumDimension
+          status:
+            type: object
+            properties:
+              phase:
+                type: string
+                enum: ["initializing", "coherent", "entangled", "measured", "failed"]
+              coherence:
+                type: number
+              fidelity:
+                type: number
+              result:
+                type: object
+              error:
+                type: string
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: crosschaincalculations.schwabot.ai
+spec:
+  group: schwabot.ai
+  names:
+    kind: CrossChainCalculation
+    listKind: CrossChainCalculationList
+    plural: crosschaincalculations
+    singular: crosschaincalculation
+    shortNames:
+    - ccc
+    - crosschain
+  scope: Namespaced
+  versions:
+  - name: v1alpha1
+    served: true
+    storage: true
+    schema:
+      openAPIV3Schema:
+        type: object
+        properties:
+          spec:
+            type: object
+            properties:
+              chainCount:
+                type: integer
+                minimum: 2
+                maximum: 13
+              consensusRequired:
+                type: boolean
+              consensusThreshold:
+                type: number
+                minimum: 0.5
+                maximum: 1.0
+              calculationPipelines:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    operations:
+                      type: array
+                      items:
+                        type: string
+                    priority:
+                      type: string
+              crossChainLinks:
+                type: array
+                items:
+                  type: object
+            required:
+            - chainCount
+            - consensusRequired
+          status:
+            type: object
+            properties:
+              phase:
+                type: string
+                enum: ["coordinating", "calculating", "consensus", "completed", "failed"]
+              activeChains:
+                type: integer
+              consensusLevel:
+                type: number
+              results:
+                type: object
+              error:
+                type: string
+---
+# Tensor Operation Controller
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: schwabot-tensor-controller
+  namespace: schwabot-tensor
+  labels:
+    app: schwabot-tensor
+    component: tensor-controller
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: schwabot-tensor
+      component: tensor-controller
+  template:
+    metadata:
+      labels:
+        app: schwabot-tensor
+        component: tensor-controller
+    spec:
+      serviceAccountName: schwabot-tensor-sa
+      containers:
+      - name: tensor-controller
+        image: schwabot:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8086
+          name: controller-api
+        env:
+        - name: SCHWABOT_NODE_ROLE
+          value: "tensor-controller"
+        - name: SCHWABOT_CONTROLLER_MODE
+          value: "kubernetes"
+        - name: SCHWABOT_WATCH_NAMESPACE
+          value: "schwabot-tensor"
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "250m"
+          limits:
+            memory: "1Gi"
+            cpu: "500m"
+        command: ["python", "-m", "kubernetes.tensor_controller"]
+        args: ["--watch-namespace", "schwabot-tensor", "--log-level", "info"]
+        volumeMounts:
+        - name: controller-config
+          mountPath: /app/controller-config
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8086
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /ready
+            port: 8086
+          initialDelaySeconds: 15
+          periodSeconds: 5
+      volumes:
+      - name: controller-config
+        configMap:
+          name: schwabot-tensor-config
+---
+# Service for Tensor Controller
+apiVersion: v1
+kind: Service
+metadata:
+  name: schwabot-tensor-controller-service
+  namespace: schwabot-tensor
+  labels:
+    app: schwabot-tensor
+    component: tensor-controller
+spec:
+  type: ClusterIP
+  ports:
+  - port: 8086
+    targetPort: 8086
+    name: controller-api
+  selector:
+    app: schwabot-tensor
+    component: tensor-controller
+---
+# Tensor Operation Queue
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: schwabot-tensor-queue-config
+  namespace: schwabot-tensor
+data:
+  queue-config.yaml: |
+    # Tensor Operation Queue Configuration
+    queue:
+      max_concurrent_operations: 50
+      priority_levels: ["critical", "high", "medium", "low"]
+      timeout_default: "300s"
+      retry_attempts: 3
+      
+    # Operation Routing
+    routing:
+      tensor_fusion:
+        target_service: "schwabot-tensor-service"
+        target_port: 8081
+        gpu_required: true
+        
+      quantum_calculation:
+        target_service: "schwabot-quantum-service"
+        target_port: 8083
+        gpu_required: true
+        
+      algebraic_logic:
+        target_service: "schwabot-algebraic-service"
+        target_port: 8084
+        gpu_required: false
+        
+      cross_chain:
+        target_service: "schwabot-coordinator-service"
+        target_port: 8085
+        gpu_required: false
+        
+    # Load Balancing
+    load_balancing:
+      algorithm: "least_connections"
+      health_check_interval: "30s"
+      failover_enabled: true
+      
+    # Monitoring
+    monitoring:
+      metrics_enabled: true
+      prometheus_endpoint: "/metrics"
+      alerting_enabled: true
+---
+# Tensor Operation Metrics Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: schwabot-tensor-metrics
+  namespace: schwabot-tensor
+  labels:
+    app: schwabot-tensor
+    component: metrics
+spec:
+  type: ClusterIP
+  ports:
+  - port: 9090
+    targetPort: 9090
+    name: metrics
+  selector:
+    app: schwabot-tensor
+---
+# Prometheus ServiceMonitor for Tensor Operations
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: schwabot-tensor-monitor
+  namespace: schwabot-tensor
+  labels:
+    app: schwabot-tensor
+    component: monitoring
+spec:
+  selector:
+    matchLabels:
+      app: schwabot-tensor
+  endpoints:
+  - port: metrics
+    interval: 30s
+    path: /metrics
+  namespaceSelector:
+    matchNames:
+    - schwabot-tensor
+---
+# Tensor Operation Dashboard ConfigMap
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: schwabot-tensor-dashboard
+  namespace: schwabot-tensor
+data:
+  dashboard.json: |
+    {
+      "dashboard": {
+        "title": "Schwabot Tensor Operations Dashboard",
+        "panels": [
+          {
+            "title": "Tensor Operations per Second",
+            "type": "graph",
+            "targets": [
+              {
+                "expr": "rate(tensor_operations_total[5m])",
+                "legendFormat": "{{operation_type}}"
+              }
+            ]
+          },
+          {
+            "title": "Quantum Calculation Coherence",
+            "type": "graph",
+            "targets": [
+              {
+                "expr": "quantum_coherence_level",
+                "legendFormat": "{{calculation_type}}"
+              }
+            ]
+          },
+          {
+            "title": "Cross-Chain Consensus Level",
+            "type": "graph",
+            "targets": [
+              {
+                "expr": "cross_chain_consensus_level",
+                "legendFormat": "{{chain_id}}"
+              }
+            ]
+          },
+          {
+            "title": "GPU Utilization",
+            "type": "graph",
+            "targets": [
+              {
+                "expr": "gpu_utilization_percent",
+                "legendFormat": "{{pod_name}}"
+              }
+            ]
+          }
+        ]
+      }
+    }
+---
+# Tensor Operation Alert Rules
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: schwabot-tensor-alerts
+  namespace: schwabot-tensor
+  labels:
+    app: schwabot-tensor
+    component: monitoring
+spec:
+  groups:
+  - name: tensor-operations
+    rules:
+    - alert: TensorOperationHighLatency
+      expr: tensor_operation_duration_seconds > 30
+      for: 5m
+      labels:
+        severity: warning
+      annotations:
+        summary: "Tensor operation latency is high"
+        description: "Tensor operations are taking longer than 30 seconds"
+        
+    - alert: QuantumCoherenceLow
+      expr: quantum_coherence_level < 0.8
+      for: 2m
+      labels:
+        severity: critical
+      annotations:
+        summary: "Quantum coherence is low"
+        description: "Quantum calculations have low coherence level"
+        
+    - alert: CrossChainConsensusFailure
+      expr: cross_chain_consensus_level < 0.5
+      for: 1m
+      labels:
+        severity: critical
+      annotations:
+        summary: "Cross-chain consensus failure"
+        description: "Cross-chain calculations failed to reach consensus"
+        
+    - alert: GPUUtilizationHigh
+      expr: gpu_utilization_percent > 90
+      for: 5m
+      labels:
+        severity: warning
+      annotations:
+        summary: "GPU utilization is high"
+        description: "GPU utilization is above 90%" 

@@ -1,0 +1,176 @@
+# 💰 SMART MONEY CONFIGURATION
+# ============================
+# 
+# Configuration for institutional-grade smart money analytics
+# This file controls all smart money detection and analysis parameters
+
+# Smart Money Framework Settings
+# ------------------------------
+smart_money:
+  enabled: true
+  analysis_interval_seconds: 30  # How often to analyze smart money metrics
+  max_history_size: 1000  # Maximum number of data points to keep
+  
+  # Performance settings
+  performance:
+    enable_real_time_analysis: true
+    enable_parallel_processing: true
+    cache_results: true
+    cache_ttl_seconds: 300
+
+# Detection Thresholds
+# --------------------
+thresholds:
+  # Whale Detection
+  whale_threshold: 1000000  # $1M minimum for whale activity
+  volume_spike_threshold: 3.0  # 3x average volume for spike detection
+  
+  # Dark Pool Detection
+  dark_pool_threshold: 0.15  # DPI threshold for institutional activity
+  volume_variance_threshold: 0.2  # Volume variance threshold
+  
+  # VWAP Analysis
+  vwap_deviation_threshold: 0.02  # 2% deviation from VWAP
+  vwap_significance_threshold: 0.05  # 5% for significant deviation
+  
+  # Order Flow Analysis
+  order_flow_imbalance_threshold: 0.1  # 10% imbalance threshold
+  bid_ask_pressure_threshold: 0.2  # 20% pressure threshold
+
+# Smart Money Metrics
+# -------------------
+metrics:
+  # Volume Metrics
+  obv:
+    enabled: true
+    momentum_threshold: 0.3
+    signal_strength_multiplier: 2.0
+    
+  vwap:
+    enabled: true
+    deviation_multiplier: 10.0
+    institutional_confidence_multiplier: 5.0
+    
+  cvd:
+    enabled: true
+    ratio_threshold: 0.2
+    impact_multiplier: 0.08
+    
+  # Institutional Flow Metrics
+  whale_alerts:
+    enabled: true
+    alert_cooldown_seconds: 300  # 5 minutes between alerts
+    severity_levels:
+      low: 1000000    # $1M
+      medium: 5000000  # $5M
+      high: 10000000   # $10M
+      
+  dark_pool_index:
+    enabled: true
+    variance_window: 20  # Data points for variance calculation
+    institutional_confidence_multiplier: 3.0
+    
+  order_flow_imbalance:
+    enabled: true
+    urgency_thresholds:
+      low: 0.3
+      medium: 0.6
+      high: 0.8
+
+# Execution Optimization
+# ----------------------
+execution:
+  # Correlation Analysis
+  correlation_thresholds:
+    strong_execute: 0.8
+    execute: 0.6
+    cautious_execute: 0.4
+    hold: 0.2
+    
+  # Risk Management
+  max_position_multiplier: 2.0
+  smart_money_multiplier: 1.5
+  whale_multiplier: 1.8
+  
+  # Timing Windows
+  execution_windows:
+    critical: 30    # 30 seconds
+    high: 60        # 1 minute
+    medium: 300     # 5 minutes
+    low: 1800       # 30 minutes
+
+# API Integration
+# ---------------
+api:
+  # Endpoints
+  endpoints:
+    metrics: "/api/smart-money/metrics"
+    whale_alerts: "/api/smart-money/whale-alerts"
+    order_flow: "/api/smart-money/order-flow"
+    dark_pools: "/api/smart-money/dark-pools"
+    correlation: "/api/smart-money/correlation"
+    status: "/api/smart-money/status"
+    
+  # Rate Limiting
+  rate_limits:
+    requests_per_minute: 60
+    burst_limit: 10
+    
+  # Response Format
+  response_format:
+    include_metadata: true
+    include_timestamps: true
+    include_confidence_scores: true
+
+# Monitoring and Alerting
+# -----------------------
+monitoring:
+  # Performance Tracking
+  track_signals_generated: true
+  track_whale_detections: true
+  track_dark_pool_detections: true
+  
+  # Alerting
+  alerts:
+    whale_detection: true
+    dark_pool_activity: true
+    high_correlation: true
+    system_errors: true
+    
+  # Metrics Collection
+  collect_performance_metrics: true
+  metrics_retention_days: 30
+
+# Integration Settings
+# --------------------
+integration:
+  # Wall Street Strategy Integration
+  wall_street_integration: true
+  correlation_analysis: true
+  risk_adjusted_sizing: true
+  
+  # Mathematical Integration
+  mathematical_integration: true
+  tensor_algebra_integration: true
+  enhanced_strategy_framework: true
+  
+  # Trading Pipeline Integration
+  trading_pipeline_integration: true
+  real_time_execution: true
+  position_management: true
+
+# Development and Testing
+# -----------------------
+development:
+  # Testing
+  enable_test_mode: false
+  test_data_sources: ["simulated", "historical"]
+  
+  # Debugging
+  debug_mode: false
+  log_level: "INFO"
+  detailed_logging: false
+  
+  # Performance Testing
+  performance_testing: false
+  benchmark_mode: false 

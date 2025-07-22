@@ -138,3 +138,5 @@
 2025-07-20 13:16:10,504 - core.mathlib.kaprekar_analyzer - INFO - Kaprekar Analyzer initialized
 2025-07-20 13:16:10,504 - core.trg_analyzer - INFO - TRG Analyzer initialized
 2025-07-20 13:16:10,505 - core.lantern_core_enhanced - INFO - Lantern Core Enhanced initialized with Kaprekar integration
+2025-07-21 15:14:22,405 - AOI_Base_Files_Schwabot.main - ERROR - Failed to import hash_config_manager: cannot import name 'hash_config_manager' from 'core.hash_config_manager' (C:\Users\maxde\Downloads\clonerepo\core\hash_config_manager.py)
+2025-07-21 15:14:22,406 - AOI_Base_Files_Schwabot.main - WARNING - Enhanced GPU auto-detection system not available

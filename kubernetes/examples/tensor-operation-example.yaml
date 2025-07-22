@@ -1,0 +1,277 @@
+# Example Tensor Operation
+apiVersion: schwabot.ai/v1alpha1
+kind: TensorOperation
+metadata:
+  name: high-priority-tensor-fusion
+  namespace: schwabot-tensor
+  labels:
+    app: schwabot-tensor
+    operation-type: tensor-fusion
+spec:
+  operationType: tensor_fusion
+  priority: critical
+  tensorDepth: 4
+  quantumDimension: 16
+  gpuRequired: true
+  memoryRequest: "2Gi"
+  cpuRequest: "1000m"
+  timeout: "300s"
+  inputData:
+    tensor_a:
+      shape: [64, 64, 64]
+      dtype: "float32"
+      data_source: "market_data"
+    tensor_b:
+      shape: [64, 64, 64]
+      dtype: "float32"
+      data_source: "quantum_state"
+  expectedOutput:
+    shape: [64, 64, 64, 64, 64, 64]
+    dtype: "complex64"
+    operation: "tensor_dot_fusion"
+---
+# Example Quantum Calculation
+apiVersion: schwabot.ai/v1alpha1
+kind: QuantumCalculation
+metadata:
+  name: quantum-entanglement-calculation
+  namespace: schwabot-tensor
+  labels:
+    app: schwabot-tensor
+    calculation-type: entanglement
+spec:
+  calculationType: entanglement
+  quantumDimension: 16
+  coherenceThreshold: 0.95
+  fidelityThreshold: 0.99
+  gpuRequired: true
+  entanglementPairs:
+    - pair_id: "pair_001"
+      state_a: "trading_signal_1"
+      state_b: "market_volatility"
+      entanglement_type: "bell_state"
+    - pair_id: "pair_002"
+      state_a: "price_momentum"
+      state_b: "volume_flow"
+      entanglement_type: "ghz_state"
+  inputState:
+    superposition_components:
+      - amplitude: 0.707
+        phase: 0.0
+        basis_state: "|0⟩"
+      - amplitude: 0.707
+        phase: 3.14159
+        basis_state: "|1⟩"
+---
+# Example Cross-Chain Calculation
+apiVersion: schwabot.ai/v1alpha1
+kind: CrossChainCalculation
+metadata:
+  name: cross-chain-trading-analysis
+  namespace: schwabot-tensor
+  labels:
+    app: schwabot-tensor
+    calculation-type: cross-chain
+spec:
+  chainCount: 13
+  consensusRequired: true
+  consensusThreshold: 0.75
+  calculationPipelines:
+    - name: "tensor_fusion_pipeline"
+      operations: ["tensor_dot_fusion", "quantum_tensor_operation", "entropy_modulation"]
+      priority: "high"
+    - name: "quantum_calculation_pipeline"
+      operations: ["quantum_superposition", "quantum_entanglement", "quantum_measurement"]
+      priority: "critical"
+    - name: "algebraic_logic_pipeline"
+      operations: ["matrix_operations", "spectral_analysis", "group_theory_ops"]
+      priority: "medium"
+    - name: "cross_chain_pipeline"
+      operations: ["cross_chain_link", "distributed_calculation", "consensus_validation"]
+      priority: "high"
+  crossChainLinks:
+    - chain_id: "chain_001"
+      link_type: "tensor_fusion"
+      target_chain: "chain_002"
+      data_flow: "bidirectional"
+    - chain_id: "chain_002"
+      link_type: "quantum_entanglement"
+      target_chain: "chain_003"
+      data_flow: "unidirectional"
+    - chain_id: "chain_003"
+      link_type: "algebraic_operation"
+      target_chain: "chain_004"
+      data_flow: "bidirectional"
+---
+# Example Batch Tensor Operations
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: batch-tensor-operations
+  namespace: schwabot-tensor
+  labels:
+    app: schwabot-tensor
+    job-type: batch-tensor
+spec:
+  parallelism: 5
+  completions: 10
+  template:
+    spec:
+      serviceAccountName: schwabot-tensor-sa
+      containers:
+      - name: batch-tensor-worker
+        image: schwabot:latest
+        env:
+        - name: SCHWABOT_NODE_ROLE
+          value: "batch-tensor-worker"
+        - name: SCHWABOT_BATCH_SIZE
+          value: "100"
+        - name: SCHWABOT_OPERATION_TYPE
+          value: "tensor_fusion"
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: "500m"
+            nvidia.com/gpu: 1
+          limits:
+            memory: "2Gi"
+            cpu: "1000m"
+            nvidia.com/gpu: 1
+        command: ["python", "-m", "kubernetes.batch_tensor_worker"]
+        args: ["--batch-size", "100", "--operation-type", "tensor_fusion"]
+      restartPolicy: Never
+  backoffLimit: 3
+---
+# Example CronJob for Regular Tensor Operations
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: scheduled-tensor-operations
+  namespace: schwabot-tensor
+  labels:
+    app: schwabot-tensor
+    job-type: scheduled
+spec:
+  schedule: "*/5 * * * *"  # Every 5 minutes
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          serviceAccountName: schwabot-tensor-sa
+          containers:
+          - name: scheduled-tensor-worker
+            image: schwabot:latest
+            env:
+            - name: SCHWABOT_NODE_ROLE
+              value: "scheduled-tensor-worker"
+            - name: SCHWABOT_SCHEDULE_TYPE
+              value: "market_analysis"
+            resources:
+              requests:
+                memory: "512Mi"
+                cpu: "250m"
+              limits:
+                memory: "1Gi"
+                cpu: "500m"
+            command: ["python", "-m", "kubernetes.scheduled_tensor_worker"]
+            args: ["--schedule-type", "market_analysis", "--interval", "5m"]
+          restartPolicy: OnFailure
+---
+# Example Tensor Operation with Custom Metrics
+apiVersion: schwabot.ai/v1alpha1
+kind: TensorOperation
+metadata:
+  name: tensor-operation-with-metrics
+  namespace: schwabot-tensor
+  labels:
+    app: schwabot-tensor
+    operation-type: tensor-fusion
+    metrics-enabled: "true"
+spec:
+  operationType: tensor_fusion
+  priority: high
+  tensorDepth: 4
+  quantumDimension: 16
+  gpuRequired: true
+  memoryRequest: "2Gi"
+  cpuRequest: "1000m"
+  timeout: "300s"
+  inputData:
+    tensor_a:
+      shape: [128, 128]
+      dtype: "float32"
+      data_source: "real_time_market_data"
+      metrics:
+        - name: "tensor_norm"
+          threshold: 1.0
+        - name: "tensor_condition_number"
+          threshold: 100.0
+    tensor_b:
+      shape: [128, 128]
+      dtype: "float32"
+      data_source: "quantum_state_vector"
+      metrics:
+        - name: "quantum_coherence"
+          threshold: 0.95
+        - name: "quantum_fidelity"
+          threshold: 0.99
+  expectedOutput:
+    shape: [128, 128, 128, 128]
+    dtype: "complex64"
+    operation: "tensor_dot_fusion"
+    validation:
+      - metric: "output_norm"
+        threshold: 1.0
+      - metric: "output_entropy"
+        threshold: 0.8
+---
+# Example Quantum Calculation with Advanced Features
+apiVersion: schwabot.ai/v1alpha1
+kind: QuantumCalculation
+metadata:
+  name: advanced-quantum-calculation
+  namespace: schwabot-tensor
+  labels:
+    app: schwabot-tensor
+    calculation-type: advanced-quantum
+spec:
+  calculationType: fourier_transform
+  quantumDimension: 32
+  coherenceThreshold: 0.98
+  fidelityThreshold: 0.995
+  gpuRequired: true
+  entanglementPairs:
+    - pair_id: "advanced_pair_001"
+      state_a: "high_frequency_trading_signal"
+      state_b: "market_microstructure"
+      entanglement_type: "bell_state"
+      coherence_monitoring: true
+    - pair_id: "advanced_pair_002"
+      state_a: "volatility_surface"
+      state_b: "correlation_matrix"
+      entanglement_type: "ghz_state"
+      fidelity_monitoring: true
+  inputState:
+    superposition_components:
+      - amplitude: 0.5
+        phase: 0.0
+        basis_state: "|00⟩"
+      - amplitude: 0.5
+        phase: 1.5708
+        basis_state: "|01⟩"
+      - amplitude: 0.5
+        phase: 3.14159
+        basis_state: "|10⟩"
+      - amplitude: 0.5
+        phase: 4.7124
+        basis_state: "|11⟩"
+    quantum_gates:
+      - gate_type: "hadamard"
+        qubit: 0
+      - gate_type: "cnot"
+        control_qubit: 0
+        target_qubit: 1
+      - gate_type: "phase"
+        qubit: 1
+        phase: 1.5708 

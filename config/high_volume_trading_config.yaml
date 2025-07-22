@@ -1,0 +1,148 @@
+# High-Volume Trading Configuration
+# =================================
+# Production-ready configuration for high-volume trading with multi-exchange support
+
+# System Mode Configuration
+system_mode: "high_volume"  # demo, live, high_volume, production
+safe_mode: false
+debug_mode: false
+
+# High-Volume Trading Settings
+high_volume_trading:
+  enabled: true
+  mode: "production"
+  exchanges: ["binance", "coinbase", "kraken"]
+  max_concurrent_trades: 10
+  max_daily_volume_usd: 100000
+  rate_limit_optimization: true
+  circuit_breakers: true
+  
+  # Exchange Priority (for arbitrage)
+  exchange_priority:
+    primary: "binance"      # Highest limits
+    secondary: "coinbase"   # Most stable
+    tertiary: "kraken"      # Backup
+    
+  # Rate Limit Optimization Settings
+  rate_limit_settings:
+    use_80_percent_safety: true
+    intelligent_queuing: true
+    priority_critical_ops: true
+    batch_requests: true
+
+# Risk Management Configuration
+risk_management:
+  max_position_size_pct: 5.0
+  max_total_exposure_pct: 50.0
+  max_daily_loss_pct: 10.0
+  emergency_stop_loss_pct: 15.0
+  
+  # Circuit Breakers
+  circuit_breakers:
+    max_consecutive_losses: 5
+    max_daily_drawdown: 10.0
+    max_hourly_loss: 5.0
+    emergency_stop_enabled: true
+    
+  # Position Sizing
+  position_sizing:
+    dynamic_sizing: true
+    volatility_adjustment: true
+    market_regime_adjustment: true
+    correlation_adjustment: true
+
+# Performance Monitoring
+performance:
+  enable_monitoring: true
+  enable_alerts: true
+  
+  # Performance Thresholds
+  performance_thresholds:
+    min_win_rate: 0.55
+    max_drawdown: 0.15
+    min_profit_factor: 1.2
+    min_sharpe_ratio: 1.0
+    
+  # Alert Settings
+  alerts:
+    performance_alerts: true
+    risk_alerts: true
+    system_health_alerts: true
+    exchange_status_alerts: true
+
+# Exchange-Specific Settings
+exchanges:
+  binance:
+    enabled: true
+    rate_limit_per_minute: 960  # 80% of 1200
+    max_order_size_usd: 500000  # 10% of 5M
+    max_daily_volume_usd: 25000000  # 50% of 50M
+    priority: 1
+    
+  coinbase:
+    enabled: true
+    rate_limit_per_minute: 80   # 80% of 100
+    max_order_size_usd: 100000  # 10% of 1M
+    max_daily_volume_usd: 5000000   # 50% of 10M
+    priority: 2
+    
+  kraken:
+    enabled: true
+    rate_limit_per_15s: 12      # 80% of 15
+    max_order_size_usd: 100000  # 10% of 1M
+    max_daily_volume_usd: 5000000   # 50% of 10M
+    priority: 3
+
+# Arbitrage Settings
+arbitrage:
+  enabled: true
+  min_spread_pct: 0.1
+  max_arbitrage_size_usd: 10000
+  execution_timeout: 5.0
+  slippage_tolerance: 0.001
+
+# High-Frequency Trading
+hft:
+  enabled: true
+  max_orders_per_second: 5
+  order_timeout: 2.0
+  latency_optimization: true
+  cooldown_period: 1.0
+
+# API Integration
+api_integration:
+  ccxt_enabled: true
+  websocket_enabled: true
+  rest_api_enabled: true
+  
+  # CCXT Settings
+  ccxt:
+    timeout: 30000
+    enable_rate_limit: true
+    rate_limit: 1000
+    sandbox: true  # Set to false for production
+    
+  # WebSocket Settings
+  websocket:
+    reconnect_interval: 5
+    max_reconnect_attempts: 10
+    heartbeat_interval: 30
+
+# Monitoring and Logging
+monitoring:
+  log_level: "INFO"
+  log_file: "logs/high_volume_trading.log"
+  performance_log: "logs/performance.log"
+  trade_log: "logs/trades.log"
+  
+  # Real-time monitoring
+  real_time_monitoring:
+    enabled: true
+    update_interval: 1.0  # seconds
+    metrics_retention_hours: 24
+    
+  # Dashboard
+  dashboard:
+    enabled: true
+    port: 8080
+    refresh_interval: 5.0  # seconds 

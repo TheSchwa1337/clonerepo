@@ -1,0 +1,135 @@
+# 🚀 SCHWABOT 2025 REQUIREMENTS
+# Complete dependency list for 2025-ready trading system
+
+# Core Python packages
+Flask==2.3.3
+Flask-SocketIO==5.3.6
+requests==2.31.0
+psutil==5.9.6
+numpy==1.24.3
+pandas==2.0.3
+scipy==1.11.1
+
+# Data processing and analysis
+ccxt==4.1.13
+websocket-client==1.6.4
+aiohttp==3.8.6
+asyncio-mqtt==0.16.1
+
+# Machine Learning and AI
+scikit-learn==1.3.0
+tensorflow==2.13.0
+torch==2.0.1
+transformers==4.33.2
+optuna==3.3.0
+
+# GPU acceleration (optional)
+cupy-cuda11x==12.2.0; sys_platform != "win32"
+cupy-cuda12x==12.2.0; sys_platform != "win32"
+pyopencl==2023.1.6
+
+# Database and storage
+sqlalchemy==2.0.21
+redis==4.6.0
+pymongo==4.5.0
+influxdb-client==1.38.0
+
+# Security and encryption
+cryptography==41.0.4
+pycryptodome==3.19.0
+bcrypt==4.0.1
+
+# System monitoring and logging
+prometheus-client==0.17.1
+structlog==23.1.0
+colorama==0.4.6
+
+# Web interface and visualization
+plotly==5.16.1
+dash==2.13.0
+bokeh==3.2.2
+matplotlib==3.7.2
+seaborn==0.12.2
+
+# API and web services
+fastapi==0.103.1
+uvicorn==0.23.2
+pydantic==2.3.0
+httpx==0.24.1
+
+# Configuration and environment
+python-dotenv==1.0.0
+pyyaml==6.0.1
+click==8.1.7
+rich==13.5.2
+
+# Testing and development
+pytest==7.4.2
+pytest-asyncio==0.21.1
+black==23.7.0
+flake8==6.0.0
+mypy==1.5.1
+
+# System utilities
+pywin32==306; sys_platform == "win32"
+psutil==5.9.6
+GPUtil==1.4.0
+py-cpuinfo==9.0.0
+
+# Network and communication
+zeroconf==0.131.0
+netifaces==0.11.0
+paramiko==3.3.1
+
+# Time and scheduling
+schedule==1.2.0
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Data validation and processing
+marshmallow==3.20.1
+cerberus==1.3.5
+jsonschema==4.19.1
+
+# Performance optimization
+numba==0.57.1
+cython==3.0.4
+llvmlite==0.40.1
+
+# Real-time processing
+asyncio-mqtt==0.16.1
+aioredis==2.0.1
+aiofiles==23.2.1
+
+# Cross-platform compatibility
+pathlib2==2.3.7; python_version < "3.4"
+typing-extensions==4.7.1
+
+# Development tools
+ipython==8.15.0
+jupyter==1.0.0
+notebook==7.0.2
+
+# Documentation
+sphinx==7.2.4
+sphinx-rtd-theme==1.3.0
+
+# Deployment and packaging
+docker==6.1.3
+kubernetes==27.2.0
+helm==0.0.1
+
+# Monitoring and observability
+jaeger-client==4.8.0
+opentelemetry-api==1.20.0
+opentelemetry-sdk==1.20.0
+
+# Backup and recovery
+boto3==1.28.44
+google-cloud-storage==2.10.0
+azure-storage-blob==12.17.0
+
+# Additional utilities
+tqdm==4.65.0
+colorlog==6.7.0
+python-multipart==0.0.6 

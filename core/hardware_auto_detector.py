@@ -9,7 +9,7 @@ import psutil
 import platform
 import os
 from typing import Dict, Any, Optional
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from enum import Enum
 
 
@@ -58,8 +58,10 @@ class HardwareInfo:
     ram_tier: RAMTier
     optimization_mode: OptimizationMode
     cpu_count: int
+    cpu_cores: int  # Add this for compatibility
     cpu_freq_mhz: float
     system_type: str
+    memory_pools: Dict[str, Any] = field(default_factory=dict)  # Add memory_pools
 
 
 @dataclass
@@ -121,17 +123,87 @@ class HardwareAutoDetector:
             else:
                 optimization_mode = OptimizationMode.POWER_SAVING
             
+            # Generate memory pools configuration
+            memory_pools = self._generate_memory_pools(ram_gb, system_info.cpu_count)
+            
             self._hardware_info = HardwareInfo(
                 platform=platform.platform(),
                 ram_gb=ram_gb,
                 ram_tier=ram_tier,
                 optimization_mode=optimization_mode,
                 cpu_count=system_info.cpu_count,
+                cpu_cores=system_info.cpu_count,  # Use cpu_count for both
                 cpu_freq_mhz=system_info.cpu_freq,
-                system_type=system_info.system_type.value
+                system_type=system_info.system_type.value,
+                memory_pools=memory_pools
             )
         
         return self._hardware_info
+    
+    def _generate_memory_pools(self, ram_gb: float, cpu_count: int) -> Dict[str, Any]:
+        """Generate memory pool configuration for the system."""
+        if ram_gb >= 32:
+            # High-end system
+            config = {
+                'max_workers': 16,
+                'memory_pool_size': int(ram_gb * 0.7 * 1024**3),  # 70% of RAM
+                'cache_size': int(ram_gb * 0.2 * 1024**3),  # 20% of RAM
+                'batch_size': 1000,
+                'queue_size': 10000,
+                'optimization_level': 'high'
+            }
+        elif ram_gb >= 16:
+            # Mid-range system
+            config = {
+                'max_workers': 8,
+                'memory_pool_size': int(ram_gb * 0.6 * 1024**3),  # 60% of RAM
+                'cache_size': int(ram_gb * 0.15 * 1024**3),  # 15% of RAM
+                'batch_size': 500,
+                'queue_size': 5000,
+                'optimization_level': 'medium'
+            }
+        elif ram_gb >= 8:
+            # Low-end system
+            config = {
+                'max_workers': 4,
+                'memory_pool_size': int(ram_gb * 0.5 * 1024**3),  # 50% of RAM
+                'cache_size': int(ram_gb * 0.1 * 1024**3),  # 10% of RAM
+                'batch_size': 250,
+                'queue_size': 2500,
+                'optimization_level': 'low'
+            }
+        else:
+            # Minimal system
+            config = {
+                'max_workers': 2,
+                'memory_pool_size': int(ram_gb * 0.4 * 1024**3),  # 40% of RAM
+                'cache_size': int(ram_gb * 0.05 * 1024**3),  # 5% of RAM
+                'batch_size': 100,
+                'queue_size': 1000,
+                'optimization_level': 'minimal'
+            }
+        
+        # Add current memory status
+        config.update({
+            'total_memory_gb': ram_gb,
+            'available_memory_gb': psutil.virtual_memory().available / (1024**3),
+            'memory_usage_percent': psutil.virtual_memory().percent,
+            'ram_tier': self._get_ram_tier(ram_gb).value,
+            'cpu_cores': cpu_count
+        })
+        
+        return config
+    
+    def _get_ram_tier(self, ram_gb: float) -> RAMTier:
+        """Get RAM tier based on memory size."""
+        if ram_gb < 8:
+            return RAMTier.LOW
+        elif ram_gb < 16:
+            return RAMTier.MEDIUM
+        elif ram_gb < 32:
+            return RAMTier.HIGH
+        else:
+            return RAMTier.EXTREME
     
     def generate_memory_config(self) -> Dict[str, Any]:
         """Generate memory configuration for the system."""
@@ -198,7 +270,19 @@ class HardwareAutoDetector:
         if self._system_info is None:
             cpu_freq = psutil.cpu_freq()
             memory = psutil.virtual_memory()
-            disk = psutil.disk_usage('/')
+            
+            # Handle disk usage for different platforms
+            try:
+                if platform.system().lower() == "windows":
+                    disk = psutil.disk_usage('C:\\')
+                else:
+                    disk = psutil.disk_usage('/')
+            except:
+                # Fallback if disk detection fails
+                disk = type('Disk', (), {
+                    'total': 0,
+                    'free': 0
+                })()
             
             self._system_info = SystemInfo(
                 system_type=self.detect_system_type(),
@@ -233,7 +317,7 @@ class HardwareAutoDetector:
     
     def get_cpu_usage(self) -> float:
         """Get current CPU usage percentage."""
-        return psutil.cpu_percent(interval=1)
+        return psutil.cpu_percent(interval=None)  # Don't block
     
     def get_memory_usage(self) -> float:
         """Get current memory usage percentage."""
@@ -241,7 +325,10 @@ class HardwareAutoDetector:
     
     def get_disk_usage(self) -> float:
         """Get current disk usage percentage."""
-        return psutil.disk_usage('/').percent
+        try:
+            return psutil.disk_usage('/').percent
+        except:
+            return 0.0  # Fallback for Windows
     
     def get_network_io(self) -> Dict[str, int]:
         """Get network I/O statistics."""
@@ -320,3 +407,15 @@ class HardwareAutoDetector:
             'network_io': network_io,
             'timestamp': psutil.boot_time()
         } 
+
+# Global hardware detector instance
+hardware_detector = HardwareAutoDetector()
+
+if __name__ == "__main__":
+    # Test the hardware detector
+    detector = HardwareAutoDetector()
+    hw_info = detector.detect_hardware()
+    print(f"Hardware detected: {hw_info.platform}")
+    print(f"CPU Cores: {hw_info.cpu_cores}")
+    print(f"RAM: {hw_info.ram_gb:.1f}GB")
+    print(f"Optimization Mode: {hw_info.optimization_mode.value}") 

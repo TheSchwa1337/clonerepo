@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "hardware_auto_detected": true,
+  "system_info": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "ram_gb": 23.95028305053711,
+    "optimization_mode": "performance"
+  },
+  "visualization_settings": {
+    "output_dir": "visualizations",
+    "enable_ai_analysis": true,
+    "enable_pattern_recognition": true,
+    "enable_real_time_rendering": true,
+    "max_concurrent_charts": 5,
+    "chart_quality": "high"
+  },
+  "chart_config": {
+    "width": 1200,
+    "height": 800,
+    "dpi": 100,
+    "style": "dark_background"
+  },
+  "ai_integration": {
+    "enable_kobold_analysis": true,
+    "analysis_timeout_ms": 30000,
+    "enable_pattern_detection": true,
+    "confidence_threshold": 0.7
+  }
+}

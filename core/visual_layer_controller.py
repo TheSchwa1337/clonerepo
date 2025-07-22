@@ -44,7 +44,11 @@ except ImportError:
     CV2_AVAILABLE = False
     cv2 = None
 
-from .hardware_auto_detector import HardwareAutoDetector
+import sys
+import os
+sys.path.append('.')
+from unified_hardware_detector import UnifiedHardwareDetector
+HardwareAutoDetector = UnifiedHardwareDetector
 
 logger = logging.getLogger(__name__)
 

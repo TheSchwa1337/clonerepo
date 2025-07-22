@@ -140,3 +140,553 @@
 2025-07-20 13:16:10,505 - core.lantern_core_enhanced - INFO - Lantern Core Enhanced initialized with Kaprekar integration
 2025-07-21 15:14:22,405 - AOI_Base_Files_Schwabot.main - ERROR - Failed to import hash_config_manager: cannot import name 'hash_config_manager' from 'core.hash_config_manager' (C:\Users\maxde\Downloads\clonerepo\core\hash_config_manager.py)
 2025-07-21 15:14:22,406 - AOI_Base_Files_Schwabot.main - WARNING - Enhanced GPU auto-detection system not available
+2025-07-22 08:39:03,090 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:03,091 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra initialized with backend: numpy (CPU)
+2025-07-22 08:39:03,091 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:03,094 - AOI_Base_Files_Schwabot.core.entropy_math - INFO - 🔄 Entropy Math using CPU fallback: numpy (CPU)
+2025-07-22 08:39:03,095 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:03,095 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:03,096 - AOI_Base_Files_Schwabot.core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:39:03,099 - AOI_Base_Files_Schwabot.core.unified_profit_vectorization_system - INFO - 🔄 UnifiedProfitVectorizationSystem using CPU fallback: numpy (CPU)
+2025-07-22 08:39:03,104 - AOI_Base_Files_Schwabot.core.unified_profit_vectorization_system - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-22 08:39:03,105 - AOI_Base_Files_Schwabot.core.distributed_mathematical_processor - INFO - 🔄 Distributed Mathematical Processor using CPU fallback: numpy (CPU)
+2025-07-22 08:39:03,109 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:03,111 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:03,111 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:03,112 - AOI_Base_Files_Schwabot.core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:39:03,112 - AOI_Base_Files_Schwabot.core.unified_profit_vectorization_system - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-22 08:39:03,112 - AOI_Base_Files_Schwabot.core.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor initialized with 4 workers
+2025-07-22 08:39:03,116 - AOI_Base_Files_Schwabot.core.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
+2025-07-22 08:39:03,168 - core.math.tensor_algebra - INFO - Unified Tensor Algebra initialized
+2025-07-22 08:39:03,175 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:03,180 - core.distributed_mathematical_processor - INFO - 🔄 Distributed Mathematical Processor using CPU fallback: numpy (CPU)
+2025-07-22 08:39:03,184 - core.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor initialized with 4 workers
+2025-07-22 08:39:03,188 - core.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
+2025-07-22 08:39:03,192 - core.ghost_core - WARNING - Math infrastructure not available
+2025-07-22 08:39:03,194 - core.ghost_core - INFO - Initializing GhostSignal
+2025-07-22 08:39:03,194 - core.ghost_core - INFO - ✅ GhostSignal initialized successfully
+2025-07-22 08:39:03,204 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:03,205 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra initialized with backend: numpy (CPU)
+2025-07-22 08:39:03,206 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:03,207 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:03,207 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:03,215 - core.entropy_math - INFO - 🔄 Entropy Math using CPU fallback: numpy (CPU)
+2025-07-22 08:39:03,217 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:03,219 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:03,220 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:03,220 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:03,220 - core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:39:03,222 - core.unified_profit_vectorization_system - INFO - 🔄 UnifiedProfitVectorizationSystem using CPU fallback: numpy (CPU)
+2025-07-22 08:39:03,228 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:03,229 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:03,229 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:03,231 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:03,231 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:03,232 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:03,232 - core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:39:03,233 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:03,234 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:03,234 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:03,235 - core.unified_profit_vectorization_system - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-22 08:39:03,240 - core.clean_unified_math - INFO - 🔄 Clean Unified Math using CPU fallback: NumPy (CPU)
+2025-07-22 08:39:03,240 - core.clean_unified_math - INFO - 🧠 Profit vector integration: ENABLED
+2025-07-22 08:39:03,241 - core.clean_unified_math - INFO - 🧠 Big Bro Logic Module integration: ENABLED
+2025-07-22 08:39:03,242 - core.bro_logic_module - INFO - 🧠 Big Bro Logic Module initialized - Nexus.BigBro.TheoremAlpha active
+2025-07-22 08:39:03,243 - core.clean_unified_math - INFO - 🧠 Big Bro Logic Module integrated into Clean Unified Math System
+2025-07-22 08:39:03,253 - core.math.mathematical_framework_integrator - INFO - Initializing Math Config Manager
+2025-07-22 08:39:03,254 - core.math.mathematical_framework_integrator - INFO - ✅ Math Config Manager initialized successfully
+2025-07-22 08:39:03,254 - core.math.mathematical_framework_integrator - INFO - Initializing Math Result Cache
+2025-07-22 08:39:03,255 - core.math.mathematical_framework_integrator - INFO - ✅ Math Result Cache initialized successfully
+2025-07-22 08:39:03,255 - core.math.mathematical_framework_integrator - INFO - Initializing Math Config Manager
+2025-07-22 08:39:03,256 - core.math.mathematical_framework_integrator - INFO - ✅ Math Config Manager initialized successfully
+2025-07-22 08:39:03,256 - core.math.mathematical_framework_integrator - INFO - Initializing Math Result Cache
+2025-07-22 08:39:03,256 - core.math.mathematical_framework_integrator - INFO - ✅ Math Result Cache initialized successfully
+2025-07-22 08:39:03,256 - core.math.mathematical_framework_integrator - INFO - Initializing Math Orchestrator
+2025-07-22 08:39:03,257 - core.math.mathematical_framework_integrator - INFO - ✅ Math Config Manager activated
+2025-07-22 08:39:03,257 - core.math.mathematical_framework_integrator - INFO - ✅ Math Result Cache activated
+2025-07-22 08:39:03,257 - core.math.mathematical_framework_integrator - INFO - ✅ Math Orchestrator initialized successfully
+2025-07-22 08:39:03,258 - AOI_Base_Files_Schwabot.core.ghost_core - INFO - Initializing GhostSignal
+2025-07-22 08:39:03,258 - AOI_Base_Files_Schwabot.core.ghost_core - INFO - ✅ GhostSignal initialized successfully
+2025-07-22 08:39:03,267 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:18,672 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:18,673 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra initialized with backend: numpy (CPU)
+2025-07-22 08:39:18,674 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:18,679 - AOI_Base_Files_Schwabot.core.entropy_math - INFO - 🔄 Entropy Math using CPU fallback: numpy (CPU)
+2025-07-22 08:39:18,680 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:18,681 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:18,681 - AOI_Base_Files_Schwabot.core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:39:18,686 - AOI_Base_Files_Schwabot.core.unified_profit_vectorization_system - INFO - 🔄 UnifiedProfitVectorizationSystem using CPU fallback: numpy (CPU)
+2025-07-22 08:39:18,694 - AOI_Base_Files_Schwabot.core.unified_profit_vectorization_system - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-22 08:39:18,695 - AOI_Base_Files_Schwabot.core.distributed_mathematical_processor - INFO - 🔄 Distributed Mathematical Processor using CPU fallback: numpy (CPU)
+2025-07-22 08:39:18,703 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:18,705 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:18,706 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:18,706 - AOI_Base_Files_Schwabot.core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:39:18,707 - AOI_Base_Files_Schwabot.core.unified_profit_vectorization_system - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-22 08:39:18,707 - AOI_Base_Files_Schwabot.core.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor initialized with 4 workers
+2025-07-22 08:39:18,710 - AOI_Base_Files_Schwabot.core.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
+2025-07-22 08:39:18,764 - core.math.tensor_algebra - INFO - Unified Tensor Algebra initialized
+2025-07-22 08:39:18,772 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:18,776 - core.distributed_mathematical_processor - INFO - 🔄 Distributed Mathematical Processor using CPU fallback: numpy (CPU)
+2025-07-22 08:39:18,781 - core.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor initialized with 4 workers
+2025-07-22 08:39:18,789 - core.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
+2025-07-22 08:39:18,798 - core.ghost_core - WARNING - Math infrastructure not available
+2025-07-22 08:39:18,801 - core.ghost_core - INFO - Initializing GhostSignal
+2025-07-22 08:39:18,801 - core.ghost_core - INFO - ✅ GhostSignal initialized successfully
+2025-07-22 08:39:18,808 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:18,810 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra initialized with backend: numpy (CPU)
+2025-07-22 08:39:18,812 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:18,813 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:18,814 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:18,820 - core.entropy_math - INFO - 🔄 Entropy Math using CPU fallback: numpy (CPU)
+2025-07-22 08:39:18,824 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:18,827 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:18,828 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:18,828 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:18,829 - core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:39:18,831 - core.unified_profit_vectorization_system - INFO - 🔄 UnifiedProfitVectorizationSystem using CPU fallback: numpy (CPU)
+2025-07-22 08:39:18,840 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:18,841 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:18,843 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:18,845 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:18,846 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:18,846 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:18,847 - core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:39:18,849 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:18,850 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:18,851 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:18,852 - core.unified_profit_vectorization_system - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-22 08:39:18,858 - core.clean_unified_math - INFO - 🔄 Clean Unified Math using CPU fallback: NumPy (CPU)
+2025-07-22 08:39:18,859 - core.clean_unified_math - INFO - 🧠 Profit vector integration: ENABLED
+2025-07-22 08:39:18,859 - core.clean_unified_math - INFO - 🧠 Big Bro Logic Module integration: ENABLED
+2025-07-22 08:39:18,864 - core.bro_logic_module - INFO - 🧠 Big Bro Logic Module initialized - Nexus.BigBro.TheoremAlpha active
+2025-07-22 08:39:18,865 - core.clean_unified_math - INFO - 🧠 Big Bro Logic Module integrated into Clean Unified Math System
+2025-07-22 08:39:18,879 - core.math.mathematical_framework_integrator - INFO - Initializing Math Config Manager
+2025-07-22 08:39:18,880 - core.math.mathematical_framework_integrator - INFO - ✅ Math Config Manager initialized successfully
+2025-07-22 08:39:18,880 - core.math.mathematical_framework_integrator - INFO - Initializing Math Result Cache
+2025-07-22 08:39:18,881 - core.math.mathematical_framework_integrator - INFO - ✅ Math Result Cache initialized successfully
+2025-07-22 08:39:18,881 - core.math.mathematical_framework_integrator - INFO - Initializing Math Config Manager
+2025-07-22 08:39:18,882 - core.math.mathematical_framework_integrator - INFO - ✅ Math Config Manager initialized successfully
+2025-07-22 08:39:18,882 - core.math.mathematical_framework_integrator - INFO - Initializing Math Result Cache
+2025-07-22 08:39:18,882 - core.math.mathematical_framework_integrator - INFO - ✅ Math Result Cache initialized successfully
+2025-07-22 08:39:18,883 - core.math.mathematical_framework_integrator - INFO - Initializing Math Orchestrator
+2025-07-22 08:39:18,883 - core.math.mathematical_framework_integrator - INFO - ✅ Math Config Manager activated
+2025-07-22 08:39:18,883 - core.math.mathematical_framework_integrator - INFO - ✅ Math Result Cache activated
+2025-07-22 08:39:18,884 - core.math.mathematical_framework_integrator - INFO - ✅ Math Orchestrator initialized successfully
+2025-07-22 08:39:18,884 - AOI_Base_Files_Schwabot.core.ghost_core - INFO - Initializing GhostSignal
+2025-07-22 08:39:18,885 - AOI_Base_Files_Schwabot.core.ghost_core - INFO - ✅ GhostSignal initialized successfully
+2025-07-22 08:39:18,895 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:18,896 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:27,120 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:27,121 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra initialized with backend: numpy (CPU)
+2025-07-22 08:39:27,122 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:27,124 - AOI_Base_Files_Schwabot.core.entropy_math - INFO - 🔄 Entropy Math using CPU fallback: numpy (CPU)
+2025-07-22 08:39:27,125 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:27,125 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:27,126 - AOI_Base_Files_Schwabot.core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:39:27,130 - AOI_Base_Files_Schwabot.core.unified_profit_vectorization_system - INFO - 🔄 UnifiedProfitVectorizationSystem using CPU fallback: numpy (CPU)
+2025-07-22 08:39:27,134 - AOI_Base_Files_Schwabot.core.unified_profit_vectorization_system - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-22 08:39:27,134 - AOI_Base_Files_Schwabot.core.distributed_mathematical_processor - INFO - 🔄 Distributed Mathematical Processor using CPU fallback: numpy (CPU)
+2025-07-22 08:39:27,138 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:27,139 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:27,139 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:27,139 - AOI_Base_Files_Schwabot.core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:39:27,140 - AOI_Base_Files_Schwabot.core.unified_profit_vectorization_system - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-22 08:39:27,140 - AOI_Base_Files_Schwabot.core.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor initialized with 4 workers
+2025-07-22 08:39:27,144 - AOI_Base_Files_Schwabot.core.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
+2025-07-22 08:39:27,188 - core.math.tensor_algebra - INFO - Unified Tensor Algebra initialized
+2025-07-22 08:39:27,195 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:27,200 - core.distributed_mathematical_processor - INFO - 🔄 Distributed Mathematical Processor using CPU fallback: numpy (CPU)
+2025-07-22 08:39:27,205 - core.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor initialized with 4 workers
+2025-07-22 08:39:27,210 - core.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
+2025-07-22 08:39:27,214 - core.ghost_core - WARNING - Math infrastructure not available
+2025-07-22 08:39:27,217 - core.ghost_core - INFO - Initializing GhostSignal
+2025-07-22 08:39:27,217 - core.ghost_core - INFO - ✅ GhostSignal initialized successfully
+2025-07-22 08:39:27,226 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:27,226 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra initialized with backend: numpy (CPU)
+2025-07-22 08:39:27,227 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:27,228 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:27,229 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:27,234 - core.entropy_math - INFO - 🔄 Entropy Math using CPU fallback: numpy (CPU)
+2025-07-22 08:39:27,237 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:27,238 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:27,239 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:27,239 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:27,239 - core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:39:27,241 - core.unified_profit_vectorization_system - INFO - 🔄 UnifiedProfitVectorizationSystem using CPU fallback: numpy (CPU)
+2025-07-22 08:39:27,246 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:27,247 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:27,248 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:27,250 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:27,251 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:27,251 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:27,252 - core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:39:27,252 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:39:27,253 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:27,253 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:39:27,254 - core.unified_profit_vectorization_system - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-22 08:39:27,258 - core.clean_unified_math - INFO - 🔄 Clean Unified Math using CPU fallback: NumPy (CPU)
+2025-07-22 08:39:27,259 - core.clean_unified_math - INFO - 🧠 Profit vector integration: ENABLED
+2025-07-22 08:39:27,259 - core.clean_unified_math - INFO - 🧠 Big Bro Logic Module integration: ENABLED
+2025-07-22 08:39:27,260 - core.bro_logic_module - INFO - 🧠 Big Bro Logic Module initialized - Nexus.BigBro.TheoremAlpha active
+2025-07-22 08:39:27,261 - core.clean_unified_math - INFO - 🧠 Big Bro Logic Module integrated into Clean Unified Math System
+2025-07-22 08:39:27,271 - core.math.mathematical_framework_integrator - INFO - Initializing Math Config Manager
+2025-07-22 08:39:27,271 - core.math.mathematical_framework_integrator - INFO - ✅ Math Config Manager initialized successfully
+2025-07-22 08:39:27,272 - core.math.mathematical_framework_integrator - INFO - Initializing Math Result Cache
+2025-07-22 08:39:27,272 - core.math.mathematical_framework_integrator - INFO - ✅ Math Result Cache initialized successfully
+2025-07-22 08:39:27,273 - core.math.mathematical_framework_integrator - INFO - Initializing Math Config Manager
+2025-07-22 08:39:27,273 - core.math.mathematical_framework_integrator - INFO - ✅ Math Config Manager initialized successfully
+2025-07-22 08:39:27,273 - core.math.mathematical_framework_integrator - INFO - Initializing Math Result Cache
+2025-07-22 08:39:27,274 - core.math.mathematical_framework_integrator - INFO - ✅ Math Result Cache initialized successfully
+2025-07-22 08:39:27,274 - core.math.mathematical_framework_integrator - INFO - Initializing Math Orchestrator
+2025-07-22 08:39:27,275 - core.math.mathematical_framework_integrator - INFO - ✅ Math Config Manager activated
+2025-07-22 08:39:27,276 - core.math.mathematical_framework_integrator - INFO - ✅ Math Result Cache activated
+2025-07-22 08:39:27,277 - core.math.mathematical_framework_integrator - INFO - ✅ Math Orchestrator initialized successfully
+2025-07-22 08:39:27,277 - AOI_Base_Files_Schwabot.core.ghost_core - INFO - Initializing GhostSignal
+2025-07-22 08:39:27,277 - AOI_Base_Files_Schwabot.core.ghost_core - INFO - ✅ GhostSignal initialized successfully
+2025-07-22 08:39:27,284 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:39:27,285 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:40:58,605 - core.hash_config_manager - INFO - Hash configuration manager initialized successfully
+2025-07-22 08:41:01,084 - core.entropy_enhanced_trading_executor - INFO - 🔄 Exchange connection initialized: binance
+2025-07-22 08:41:01,084 - core.entropy_enhanced_trading_executor - INFO - 🔄 Entropy-Enhanced Trading Executor initialized
+2025-07-22 08:41:01,090 - core.risk_manager - INFO - ⚡ RiskManager using numpy (CPU) for tensor operations
+2025-07-22 08:41:01,098 - core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-22 08:41:01,100 - core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-22 08:41:01,107 - __main__ - ERROR - Failed to initialize components: expected an indented block after 'try' statement on line 32 (unified_btc_trading_pipeline.py, line 33)
+2025-07-22 08:41:01,108 - __main__ - INFO - 🎮 GPU auto-detection disabled, using basic fallback
+2025-07-22 08:41:01,108 - __main__ - INFO - GETTING SYSTEM STATUS
+2025-07-22 08:41:01,108 - __main__ - ERROR - Failed to get system status: 'RiskManager' object has no attribute 'get_error_statistics'
+2025-07-22 08:41:55,011 - core.hash_config_manager - INFO - Hash configuration manager initialized successfully
+2025-07-22 08:41:56,336 - core.entropy_enhanced_trading_executor - INFO - 🔄 Exchange connection initialized: binance
+2025-07-22 08:41:56,336 - core.entropy_enhanced_trading_executor - INFO - 🔄 Entropy-Enhanced Trading Executor initialized
+2025-07-22 08:41:56,347 - core.risk_manager - INFO - ⚡ RiskManager using numpy (CPU) for tensor operations
+2025-07-22 08:41:56,353 - core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-22 08:41:56,353 - core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-22 08:41:56,356 - __main__ - ERROR - Failed to initialize components: expected an indented block after class definition on line 56 (unified_btc_trading_pipeline.py, line 57)
+2025-07-22 08:41:56,356 - __main__ - INFO - 🎮 GPU auto-detection disabled, using basic fallback
+2025-07-22 08:41:56,356 - __main__ - INFO - GETTING SYSTEM STATUS
+2025-07-22 08:41:56,357 - __main__ - ERROR - Failed to get system status: 'RiskManager' object has no attribute 'last_error_time'
+2025-07-22 08:42:14,515 - core.hash_config_manager - INFO - Hash configuration manager initialized successfully
+2025-07-22 08:42:15,833 - core.entropy_enhanced_trading_executor - INFO - 🔄 Exchange connection initialized: binance
+2025-07-22 08:42:15,833 - core.entropy_enhanced_trading_executor - INFO - 🔄 Entropy-Enhanced Trading Executor initialized
+2025-07-22 08:42:15,844 - core.risk_manager - INFO - ⚡ RiskManager using numpy (CPU) for tensor operations
+2025-07-22 08:42:15,850 - core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-22 08:42:15,850 - core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-22 08:42:15,853 - __main__ - ERROR - Failed to initialize components: expected an indented block after class definition on line 56 (unified_btc_trading_pipeline.py, line 57)
+2025-07-22 08:42:15,853 - __main__ - INFO - 🎮 GPU auto-detection disabled, using basic fallback
+2025-07-22 08:42:15,853 - __main__ - INFO - GETTING SYSTEM STATUS
+2025-07-22 08:45:22,154 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:22,155 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra initialized with backend: numpy (CPU)
+2025-07-22 08:45:22,155 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:45:22,159 - AOI_Base_Files_Schwabot.core.entropy_math - INFO - 🔄 Entropy Math using CPU fallback: numpy (CPU)
+2025-07-22 08:45:22,161 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:22,162 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:45:22,163 - AOI_Base_Files_Schwabot.core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:45:22,173 - AOI_Base_Files_Schwabot.core.unified_profit_vectorization_system - INFO - 🔄 UnifiedProfitVectorizationSystem using CPU fallback: numpy (CPU)
+2025-07-22 08:45:22,177 - AOI_Base_Files_Schwabot.core.unified_profit_vectorization_system - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-22 08:45:22,178 - AOI_Base_Files_Schwabot.core.distributed_mathematical_processor - INFO - 🔄 Distributed Mathematical Processor using CPU fallback: numpy (CPU)
+2025-07-22 08:45:22,182 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:45:22,184 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:22,185 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:45:22,186 - AOI_Base_Files_Schwabot.core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:45:22,186 - AOI_Base_Files_Schwabot.core.unified_profit_vectorization_system - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-22 08:45:22,186 - AOI_Base_Files_Schwabot.core.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor initialized with 4 workers
+2025-07-22 08:45:22,191 - AOI_Base_Files_Schwabot.core.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
+2025-07-22 08:45:22,248 - core.math.tensor_algebra - INFO - Unified Tensor Algebra initialized
+2025-07-22 08:45:22,258 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:22,263 - core.distributed_mathematical_processor - INFO - 🔄 Distributed Mathematical Processor using CPU fallback: numpy (CPU)
+2025-07-22 08:45:22,268 - core.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor initialized with 4 workers
+2025-07-22 08:45:22,272 - core.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
+2025-07-22 08:45:22,280 - core.ghost_core - WARNING - Math infrastructure not available
+2025-07-22 08:45:22,282 - core.ghost_core - INFO - Initializing GhostSignal
+2025-07-22 08:45:22,283 - core.ghost_core - INFO - ✅ GhostSignal initialized successfully
+2025-07-22 08:45:22,293 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:45:22,294 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra initialized with backend: numpy (CPU)
+2025-07-22 08:45:22,296 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:22,297 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:45:22,297 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:45:22,305 - core.entropy_math - INFO - 🔄 Entropy Math using CPU fallback: numpy (CPU)
+2025-07-22 08:45:22,307 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:22,308 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:22,309 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:45:22,310 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:45:22,311 - core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:45:22,313 - core.unified_profit_vectorization_system - INFO - 🔄 UnifiedProfitVectorizationSystem using CPU fallback: numpy (CPU)
+2025-07-22 08:45:22,323 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:22,324 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:45:22,326 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:22,332 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:22,333 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:45:22,334 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:45:22,335 - core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:45:22,337 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:22,338 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:45:22,338 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:45:22,340 - core.unified_profit_vectorization_system - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-22 08:45:22,348 - core.clean_unified_math - INFO - 🔄 Clean Unified Math using CPU fallback: NumPy (CPU)
+2025-07-22 08:45:22,349 - core.clean_unified_math - INFO - 🧠 Profit vector integration: ENABLED
+2025-07-22 08:45:22,350 - core.clean_unified_math - INFO - 🧠 Big Bro Logic Module integration: ENABLED
+2025-07-22 08:45:22,353 - core.bro_logic_module - INFO - 🧠 Big Bro Logic Module initialized - Nexus.BigBro.TheoremAlpha active
+2025-07-22 08:45:22,353 - core.clean_unified_math - INFO - 🧠 Big Bro Logic Module integrated into Clean Unified Math System
+2025-07-22 08:45:22,380 - core.math.mathematical_framework_integrator - INFO - Initializing Math Config Manager
+2025-07-22 08:45:22,381 - core.math.mathematical_framework_integrator - INFO - ✅ Math Config Manager initialized successfully
+2025-07-22 08:45:22,381 - core.math.mathematical_framework_integrator - INFO - Initializing Math Result Cache
+2025-07-22 08:45:22,386 - core.math.mathematical_framework_integrator - INFO - ✅ Math Result Cache initialized successfully
+2025-07-22 08:45:22,387 - core.math.mathematical_framework_integrator - INFO - Initializing Math Config Manager
+2025-07-22 08:45:22,388 - core.math.mathematical_framework_integrator - INFO - ✅ Math Config Manager initialized successfully
+2025-07-22 08:45:22,389 - core.math.mathematical_framework_integrator - INFO - Initializing Math Result Cache
+2025-07-22 08:45:22,389 - core.math.mathematical_framework_integrator - INFO - ✅ Math Result Cache initialized successfully
+2025-07-22 08:45:22,390 - core.math.mathematical_framework_integrator - INFO - Initializing Math Orchestrator
+2025-07-22 08:45:22,390 - core.math.mathematical_framework_integrator - INFO - ✅ Math Config Manager activated
+2025-07-22 08:45:22,391 - core.math.mathematical_framework_integrator - INFO - ✅ Math Result Cache activated
+2025-07-22 08:45:22,391 - core.math.mathematical_framework_integrator - INFO - ✅ Math Orchestrator initialized successfully
+2025-07-22 08:45:22,392 - AOI_Base_Files_Schwabot.core.ghost_core - INFO - Initializing GhostSignal
+2025-07-22 08:45:22,393 - AOI_Base_Files_Schwabot.core.ghost_core - INFO - ✅ GhostSignal initialized successfully
+2025-07-22 08:45:22,420 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:45:22,425 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - ⚡ RiskManager using numpy (CPU) for tensor operations
+2025-07-22 08:45:22,434 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-22 08:45:24,406 - AOI_Base_Files_Schwabot.core.entropy_enhanced_trading_executor - INFO - 🔄 Exchange connection initialized: binance
+2025-07-22 08:45:24,406 - AOI_Base_Files_Schwabot.core.entropy_enhanced_trading_executor - INFO - 🔄 Entropy-Enhanced Trading Executor initialized
+2025-07-22 08:45:24,610 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:45:24,830 - baseline_logic_validator - INFO - 🧠 Starting Schwabot Baseline Logic Validation
+2025-07-22 08:45:24,830 - baseline_logic_validator - INFO - ============================================================
+2025-07-22 08:45:24,831 - baseline_logic_validator - INFO - 🔍 Check 1: Bidirectional Trade Path Validation
+2025-07-22 08:45:24,831 - baseline_logic_validator - INFO -   ✅ All required bidirectional pairs configured
+2025-07-22 08:45:24,832 - baseline_logic_validator - INFO - 🔍 Check 2: Wallet State Awareness
+2025-07-22 08:45:24,833 - baseline_logic_validator - INFO -   ✅ Wallet balance checks implemented
+2025-07-22 08:45:24,833 - baseline_logic_validator - INFO - 🔍 Check 3: Base Profit Logic - Buy Low, Sell High
+2025-07-22 08:45:24,835 - baseline_logic_validator - INFO -   ✅ Profit logic indicators found: ['position_profit', 'entry_price', 'stop_loss']
+2025-07-22 08:45:24,835 - baseline_logic_validator - INFO - 🔍 Check 4: Order Structure Sanity
+2025-07-22 08:45:24,837 - baseline_logic_validator - WARNING -   ⚠️ Limited order safety: []
+2025-07-22 08:45:24,838 - baseline_logic_validator - INFO - 🔍 Check 5: Cycle Loop Integrity
+2025-07-22 08:45:24,840 - baseline_logic_validator - WARNING -   ⚠️ Limited cycle components: ['tick']
+2025-07-22 08:45:24,841 - baseline_logic_validator - INFO - 🔍 Check 6: Randomized Portfolio Targeting
+2025-07-22 08:45:24,842 - baseline_logic_validator - INFO -   ✅ Portfolio randomization implemented
+2025-07-22 08:45:24,842 - baseline_logic_validator - INFO - 🔍 Check 7: Emergency Stop Functionality
+2025-07-22 08:45:24,843 - baseline_logic_validator - INFO -   ✅ Emergency stop script found
+2025-07-22 08:45:24,843 - baseline_logic_validator - INFO - 🔍 Check 8: Exchange & Pair Validation
+2025-07-22 08:45:24,857 - baseline_logic_validator - INFO -   ✅ No banned pairs found in config files
+2025-07-22 08:45:24,858 - baseline_logic_validator - INFO - 🔍 Check 9: Config Sync Check
+2025-07-22 08:45:24,859 - baseline_logic_validator - INFO -   ✅ Configuration files found: 2
+2025-07-22 08:45:24,859 - baseline_logic_validator - INFO - 🔍 Check 10: Logging & Memory System
+2025-07-22 08:45:24,861 - baseline_logic_validator - WARNING -   ⚠️ Limited memory system: ['timestamp', 'timestamp']
+2025-07-22 08:45:24,862 - baseline_logic_validator - INFO - 🔍 Check 11: Backtest/Data Mode Reflection
+2025-07-22 08:45:24,862 - baseline_logic_validator - INFO -   ✅ Backtest engine found
+2025-07-22 08:45:24,862 - baseline_logic_validator - INFO - 🔍 Check 12: GUI/CLI/Watchdog Bridges
+2025-07-22 08:45:24,864 - baseline_logic_validator - INFO -   ✅ Interface implementations found: 3
+2025-07-22 08:45:24,865 - baseline_logic_validator - INFO - 🔍 Check 13: Math Off, Still Works
+2025-07-22 08:45:24,866 - baseline_logic_validator - INFO -   ✅ Basic trading logic found: ['price_delta', 'profit_target', 'stop_loss', 'stop_loss']
+2025-07-22 08:45:40,235 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:40,235 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra initialized with backend: numpy (CPU)
+2025-07-22 08:45:40,236 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:45:40,239 - AOI_Base_Files_Schwabot.core.entropy_math - INFO - 🔄 Entropy Math using CPU fallback: numpy (CPU)
+2025-07-22 08:45:40,241 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:40,241 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:45:40,242 - AOI_Base_Files_Schwabot.core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:45:40,245 - AOI_Base_Files_Schwabot.core.unified_profit_vectorization_system - INFO - 🔄 UnifiedProfitVectorizationSystem using CPU fallback: numpy (CPU)
+2025-07-22 08:45:40,248 - AOI_Base_Files_Schwabot.core.unified_profit_vectorization_system - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-22 08:45:40,248 - AOI_Base_Files_Schwabot.core.distributed_mathematical_processor - INFO - 🔄 Distributed Mathematical Processor using CPU fallback: numpy (CPU)
+2025-07-22 08:45:40,253 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:45:40,254 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:40,254 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:45:40,255 - AOI_Base_Files_Schwabot.core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:45:40,255 - AOI_Base_Files_Schwabot.core.unified_profit_vectorization_system - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-22 08:45:40,256 - AOI_Base_Files_Schwabot.core.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor initialized with 4 workers
+2025-07-22 08:45:40,258 - AOI_Base_Files_Schwabot.core.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
+2025-07-22 08:45:40,300 - core.math.tensor_algebra - INFO - Unified Tensor Algebra initialized
+2025-07-22 08:45:40,307 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:40,311 - core.distributed_mathematical_processor - INFO - 🔄 Distributed Mathematical Processor using CPU fallback: numpy (CPU)
+2025-07-22 08:45:40,314 - core.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor initialized with 4 workers
+2025-07-22 08:45:40,319 - core.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
+2025-07-22 08:45:40,324 - core.ghost_core - WARNING - Math infrastructure not available
+2025-07-22 08:45:40,326 - core.ghost_core - INFO - Initializing GhostSignal
+2025-07-22 08:45:40,327 - core.ghost_core - INFO - ✅ GhostSignal initialized successfully
+2025-07-22 08:45:40,333 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:45:40,334 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra initialized with backend: numpy (CPU)
+2025-07-22 08:45:40,335 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:40,336 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:45:40,336 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:45:40,341 - core.entropy_math - INFO - 🔄 Entropy Math using CPU fallback: numpy (CPU)
+2025-07-22 08:45:40,345 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:40,346 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:40,347 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:45:40,348 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:45:40,348 - core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:45:40,350 - core.unified_profit_vectorization_system - INFO - 🔄 UnifiedProfitVectorizationSystem using CPU fallback: numpy (CPU)
+2025-07-22 08:45:40,354 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:40,355 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:45:40,357 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:40,358 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:40,359 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:45:40,359 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:45:40,360 - core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:45:40,360 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:45:40,361 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:45:40,361 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:45:40,362 - core.unified_profit_vectorization_system - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-22 08:45:40,366 - core.clean_unified_math - INFO - 🔄 Clean Unified Math using CPU fallback: NumPy (CPU)
+2025-07-22 08:45:40,367 - core.clean_unified_math - INFO - 🧠 Profit vector integration: ENABLED
+2025-07-22 08:45:40,367 - core.clean_unified_math - INFO - 🧠 Big Bro Logic Module integration: ENABLED
+2025-07-22 08:45:40,369 - core.bro_logic_module - INFO - 🧠 Big Bro Logic Module initialized - Nexus.BigBro.TheoremAlpha active
+2025-07-22 08:45:40,369 - core.clean_unified_math - INFO - 🧠 Big Bro Logic Module integrated into Clean Unified Math System
+2025-07-22 08:45:40,378 - core.math.mathematical_framework_integrator - INFO - Initializing Math Config Manager
+2025-07-22 08:45:40,379 - core.math.mathematical_framework_integrator - INFO - ✅ Math Config Manager initialized successfully
+2025-07-22 08:45:40,380 - core.math.mathematical_framework_integrator - INFO - Initializing Math Result Cache
+2025-07-22 08:45:40,380 - core.math.mathematical_framework_integrator - INFO - ✅ Math Result Cache initialized successfully
+2025-07-22 08:45:40,380 - core.math.mathematical_framework_integrator - INFO - Initializing Math Config Manager
+2025-07-22 08:45:40,381 - core.math.mathematical_framework_integrator - INFO - ✅ Math Config Manager initialized successfully
+2025-07-22 08:45:40,381 - core.math.mathematical_framework_integrator - INFO - Initializing Math Result Cache
+2025-07-22 08:45:40,381 - core.math.mathematical_framework_integrator - INFO - ✅ Math Result Cache initialized successfully
+2025-07-22 08:45:40,382 - core.math.mathematical_framework_integrator - INFO - Initializing Math Orchestrator
+2025-07-22 08:45:40,382 - core.math.mathematical_framework_integrator - INFO - ✅ Math Config Manager activated
+2025-07-22 08:45:40,383 - core.math.mathematical_framework_integrator - INFO - ✅ Math Result Cache activated
+2025-07-22 08:45:40,384 - core.math.mathematical_framework_integrator - INFO - ✅ Math Orchestrator initialized successfully
+2025-07-22 08:45:40,384 - AOI_Base_Files_Schwabot.core.ghost_core - INFO - Initializing GhostSignal
+2025-07-22 08:45:40,385 - AOI_Base_Files_Schwabot.core.ghost_core - INFO - ✅ GhostSignal initialized successfully
+2025-07-22 08:45:40,392 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:45:40,395 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - ⚡ RiskManager using numpy (CPU) for tensor operations
+2025-07-22 08:45:40,401 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-22 08:45:41,733 - AOI_Base_Files_Schwabot.core.entropy_enhanced_trading_executor - INFO - 🔄 Exchange connection initialized: binance
+2025-07-22 08:45:41,733 - AOI_Base_Files_Schwabot.core.entropy_enhanced_trading_executor - INFO - 🔄 Entropy-Enhanced Trading Executor initialized
+2025-07-22 08:45:41,834 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-22 08:45:41,937 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:45:42,144 - baseline_logic_validator - INFO - 🧠 Starting Schwabot Baseline Logic Validation
+2025-07-22 08:45:42,145 - baseline_logic_validator - INFO - ============================================================
+2025-07-22 08:45:42,145 - baseline_logic_validator - INFO - 🔍 Check 1: Bidirectional Trade Path Validation
+2025-07-22 08:45:42,146 - baseline_logic_validator - INFO -   ✅ All required bidirectional pairs configured
+2025-07-22 08:45:42,146 - baseline_logic_validator - INFO - 🔍 Check 2: Wallet State Awareness
+2025-07-22 08:45:42,147 - baseline_logic_validator - INFO -   ✅ Wallet balance checks implemented
+2025-07-22 08:45:42,148 - baseline_logic_validator - INFO - 🔍 Check 3: Base Profit Logic - Buy Low, Sell High
+2025-07-22 08:45:42,149 - baseline_logic_validator - INFO -   ✅ Profit logic indicators found: ['position_profit', 'entry_price', 'stop_loss']
+2025-07-22 08:45:42,150 - baseline_logic_validator - INFO - 🔍 Check 4: Order Structure Sanity
+2025-07-22 08:45:42,152 - baseline_logic_validator - WARNING -   ⚠️ Limited order safety: []
+2025-07-22 08:45:42,152 - baseline_logic_validator - INFO - 🔍 Check 5: Cycle Loop Integrity
+2025-07-22 08:45:42,153 - baseline_logic_validator - WARNING -   ⚠️ Limited cycle components: ['tick']
+2025-07-22 08:45:42,154 - baseline_logic_validator - INFO - 🔍 Check 6: Randomized Portfolio Targeting
+2025-07-22 08:45:42,154 - baseline_logic_validator - INFO -   ✅ Portfolio randomization implemented
+2025-07-22 08:45:42,154 - baseline_logic_validator - INFO - 🔍 Check 7: Emergency Stop Functionality
+2025-07-22 08:45:42,155 - baseline_logic_validator - INFO -   ✅ Emergency stop script found
+2025-07-22 08:45:42,156 - baseline_logic_validator - INFO - 🔍 Check 8: Exchange & Pair Validation
+2025-07-22 08:45:42,168 - baseline_logic_validator - INFO -   ✅ No banned pairs found in config files
+2025-07-22 08:45:42,170 - baseline_logic_validator - INFO - 🔍 Check 9: Config Sync Check
+2025-07-22 08:45:42,170 - baseline_logic_validator - INFO -   ✅ Configuration files found: 2
+2025-07-22 08:45:42,171 - baseline_logic_validator - INFO - 🔍 Check 10: Logging & Memory System
+2025-07-22 08:45:42,173 - baseline_logic_validator - WARNING -   ⚠️ Limited memory system: ['timestamp', 'timestamp']
+2025-07-22 08:45:42,173 - baseline_logic_validator - INFO - 🔍 Check 11: Backtest/Data Mode Reflection
+2025-07-22 08:45:42,174 - baseline_logic_validator - INFO -   ✅ Backtest engine found
+2025-07-22 08:45:42,175 - baseline_logic_validator - INFO - 🔍 Check 12: GUI/CLI/Watchdog Bridges
+2025-07-22 08:45:42,175 - baseline_logic_validator - INFO -   ✅ Interface implementations found: 3
+2025-07-22 08:45:42,176 - baseline_logic_validator - INFO - 🔍 Check 13: Math Off, Still Works
+2025-07-22 08:45:42,177 - baseline_logic_validator - INFO -   ✅ Basic trading logic found: ['price_delta', 'profit_target', 'stop_loss', 'stop_loss']
+2025-07-22 08:52:40,070 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:52:40,071 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra initialized with backend: numpy (CPU)
+2025-07-22 08:52:40,072 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:52:40,074 - AOI_Base_Files_Schwabot.core.entropy_math - INFO - 🔄 Entropy Math using CPU fallback: numpy (CPU)
+2025-07-22 08:52:40,075 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:52:40,075 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:52:40,076 - AOI_Base_Files_Schwabot.core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:52:40,080 - AOI_Base_Files_Schwabot.core.unified_profit_vectorization_system - INFO - 🔄 UnifiedProfitVectorizationSystem using CPU fallback: numpy (CPU)
+2025-07-22 08:52:40,084 - AOI_Base_Files_Schwabot.core.unified_profit_vectorization_system - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-22 08:52:40,085 - AOI_Base_Files_Schwabot.core.distributed_mathematical_processor - INFO - 🔄 Distributed Mathematical Processor using CPU fallback: numpy (CPU)
+2025-07-22 08:52:40,088 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:52:40,089 - AOI_Base_Files_Schwabot.core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:52:40,089 - AOI_Base_Files_Schwabot.core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:52:40,090 - AOI_Base_Files_Schwabot.core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:52:40,108 - AOI_Base_Files_Schwabot.core.unified_profit_vectorization_system - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-22 08:52:40,109 - AOI_Base_Files_Schwabot.core.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor initialized with 4 workers
+2025-07-22 08:52:40,112 - AOI_Base_Files_Schwabot.core.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
+2025-07-22 08:52:40,164 - core.math.tensor_algebra - INFO - Unified Tensor Algebra initialized
+2025-07-22 08:52:40,173 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:52:40,177 - core.distributed_mathematical_processor - INFO - 🔄 Distributed Mathematical Processor using CPU fallback: numpy (CPU)
+2025-07-22 08:52:40,180 - core.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor initialized with 4 workers
+2025-07-22 08:52:40,184 - core.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
+2025-07-22 08:52:40,191 - core.ghost_core - WARNING - Math infrastructure not available
+2025-07-22 08:52:40,192 - core.ghost_core - INFO - Initializing GhostSignal
+2025-07-22 08:52:40,193 - core.ghost_core - INFO - ✅ GhostSignal initialized successfully
+2025-07-22 08:52:40,200 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:52:40,201 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra initialized with backend: numpy (CPU)
+2025-07-22 08:52:40,202 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:52:40,203 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:52:40,203 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:52:40,208 - core.entropy_math - INFO - 🔄 Entropy Math using CPU fallback: numpy (CPU)
+2025-07-22 08:52:40,211 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:52:40,213 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:52:40,213 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:52:40,214 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:52:40,214 - core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:52:40,215 - core.unified_profit_vectorization_system - INFO - 🔄 UnifiedProfitVectorizationSystem using CPU fallback: numpy (CPU)
+2025-07-22 08:52:40,221 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:52:40,222 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:52:40,223 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:52:40,226 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:52:40,227 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:52:40,227 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:52:40,228 - core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-22 08:52:40,229 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-22 08:52:40,229 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:52:40,230 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-22 08:52:40,230 - core.unified_profit_vectorization_system - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-22 08:52:40,235 - core.clean_unified_math - INFO - 🔄 Clean Unified Math using CPU fallback: NumPy (CPU)
+2025-07-22 08:52:40,235 - core.clean_unified_math - INFO - 🧠 Profit vector integration: ENABLED
+2025-07-22 08:52:40,236 - core.clean_unified_math - INFO - 🧠 Big Bro Logic Module integration: ENABLED
+2025-07-22 08:52:40,237 - core.bro_logic_module - INFO - 🧠 Big Bro Logic Module initialized - Nexus.BigBro.TheoremAlpha active
+2025-07-22 08:52:40,238 - core.clean_unified_math - INFO - 🧠 Big Bro Logic Module integrated into Clean Unified Math System
+2025-07-22 08:52:40,249 - core.math.mathematical_framework_integrator - INFO - Initializing Math Config Manager
+2025-07-22 08:52:40,250 - core.math.mathematical_framework_integrator - INFO - ✅ Math Config Manager initialized successfully
+2025-07-22 08:52:40,250 - core.math.mathematical_framework_integrator - INFO - Initializing Math Result Cache
+2025-07-22 08:52:40,251 - core.math.mathematical_framework_integrator - INFO - ✅ Math Result Cache initialized successfully
+2025-07-22 08:52:40,256 - core.math.mathematical_framework_integrator - INFO - Initializing Math Config Manager
+2025-07-22 08:52:40,257 - core.math.mathematical_framework_integrator - INFO - ✅ Math Config Manager initialized successfully
+2025-07-22 08:52:40,258 - core.math.mathematical_framework_integrator - INFO - Initializing Math Result Cache
+2025-07-22 08:52:40,259 - core.math.mathematical_framework_integrator - INFO - ✅ Math Result Cache initialized successfully
+2025-07-22 08:52:40,259 - core.math.mathematical_framework_integrator - INFO - Initializing Math Orchestrator
+2025-07-22 08:52:40,259 - core.math.mathematical_framework_integrator - INFO - ✅ Math Config Manager activated
+2025-07-22 08:52:40,260 - core.math.mathematical_framework_integrator - INFO - ✅ Math Result Cache activated
+2025-07-22 08:52:40,260 - core.math.mathematical_framework_integrator - INFO - ✅ Math Orchestrator initialized successfully
+2025-07-22 08:52:40,261 - AOI_Base_Files_Schwabot.core.ghost_core - INFO - Initializing GhostSignal
+2025-07-22 08:52:40,261 - AOI_Base_Files_Schwabot.core.ghost_core - INFO - ✅ GhostSignal initialized successfully
+2025-07-22 08:52:40,269 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:52:40,273 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - ⚡ RiskManager using numpy (CPU) for tensor operations
+2025-07-22 08:52:40,279 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-22 08:52:41,805 - AOI_Base_Files_Schwabot.core.entropy_enhanced_trading_executor - INFO - 🔄 Exchange connection initialized: binance
+2025-07-22 08:52:41,806 - AOI_Base_Files_Schwabot.core.entropy_enhanced_trading_executor - INFO - 🔄 Entropy-Enhanced Trading Executor initialized
+2025-07-22 08:52:41,920 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-22 08:52:42,022 - AOI_Base_Files_Schwabot.core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-22 08:52:42,229 - baseline_logic_validator - INFO - 🧠 Starting Schwabot Baseline Logic Validation
+2025-07-22 08:52:42,229 - baseline_logic_validator - INFO - ============================================================
+2025-07-22 08:52:42,229 - baseline_logic_validator - INFO - 🔍 Check 1: Bidirectional Trade Path Validation
+2025-07-22 08:52:42,230 - baseline_logic_validator - INFO -   ✅ All required bidirectional pairs configured
+2025-07-22 08:52:42,231 - baseline_logic_validator - INFO - 🔍 Check 2: Wallet State Awareness
+2025-07-22 08:52:42,232 - baseline_logic_validator - INFO -   ✅ Wallet balance checks implemented
+2025-07-22 08:52:42,232 - baseline_logic_validator - INFO - 🔍 Check 3: Base Profit Logic - Buy Low, Sell High
+2025-07-22 08:52:42,234 - baseline_logic_validator - INFO -   ✅ Profit logic indicators found: ['position_profit', 'entry_price', 'stop_loss']
+2025-07-22 08:52:42,234 - baseline_logic_validator - INFO - 🔍 Check 4: Order Structure Sanity
+2025-07-22 08:52:42,236 - baseline_logic_validator - WARNING -   ⚠️ Limited order safety: []
+2025-07-22 08:52:42,236 - baseline_logic_validator - INFO - 🔍 Check 5: Cycle Loop Integrity
+2025-07-22 08:52:42,239 - baseline_logic_validator - WARNING -   ⚠️ Limited cycle components: ['tick']
+2025-07-22 08:52:42,240 - baseline_logic_validator - INFO - 🔍 Check 6: Randomized Portfolio Targeting
+2025-07-22 08:52:42,241 - baseline_logic_validator - INFO -   ✅ Portfolio randomization implemented
+2025-07-22 08:52:42,241 - baseline_logic_validator - INFO - 🔍 Check 7: Emergency Stop Functionality
+2025-07-22 08:52:42,242 - baseline_logic_validator - INFO -   ✅ Emergency stop script found
+2025-07-22 08:52:42,242 - baseline_logic_validator - INFO - 🔍 Check 8: Exchange & Pair Validation
+2025-07-22 08:52:42,260 - baseline_logic_validator - INFO -   ✅ No banned pairs found in config files
+2025-07-22 08:52:42,261 - baseline_logic_validator - INFO - 🔍 Check 9: Config Sync Check
+2025-07-22 08:52:42,262 - baseline_logic_validator - INFO -   ✅ Configuration files found: 2
+2025-07-22 08:52:42,262 - baseline_logic_validator - INFO - 🔍 Check 10: Logging & Memory System
+2025-07-22 08:52:42,264 - baseline_logic_validator - WARNING -   ⚠️ Limited memory system: ['timestamp', 'timestamp']
+2025-07-22 08:52:42,264 - baseline_logic_validator - INFO - 🔍 Check 11: Backtest/Data Mode Reflection
+2025-07-22 08:52:42,265 - baseline_logic_validator - INFO -   ✅ Backtest engine found
+2025-07-22 08:52:42,266 - baseline_logic_validator - INFO - 🔍 Check 12: GUI/CLI/Watchdog Bridges
+2025-07-22 08:52:42,266 - baseline_logic_validator - INFO -   ✅ Interface implementations found: 3
+2025-07-22 08:52:42,267 - baseline_logic_validator - INFO - 🔍 Check 13: Math Off, Still Works
+2025-07-22 08:52:42,269 - baseline_logic_validator - INFO -   ✅ Basic trading logic found: ['price_delta', 'profit_target', 'stop_loss', 'stop_loss']
+2025-07-22 09:24:18,888 - AOI_Base_Files_Schwabot.usb_manager - INFO - Detected 0 USB drives
+2025-07-22 09:24:19,317 - AOI_Base_Files_Schwabot.usb_manager - INFO - Detected 0 USB drives
+2025-07-22 09:26:37,543 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - ⚡ RiskManager using numpy (CPU) for tensor operations
+2025-07-22 09:26:37,554 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-22 09:26:37,554 - AOI_Base_Files_Schwabot.core.risk_manager - INFO - RiskManager initialized with numpy (CPU) backend
+2025-07-22 09:26:39,224 - usb_manager - INFO - Detected 0 USB drives
+2025-07-22 09:26:40,233 - usb_manager - INFO - Detected 0 USB drives
+2025-07-22 09:27:34,498 - usb_manager - INFO - Detected 0 USB drives
+2025-07-22 09:27:38,100 - usb_manager - INFO - Detected 0 USB drives
+2025-07-22 09:28:02,054 - usb_manager - INFO - Detected 1 USB drives

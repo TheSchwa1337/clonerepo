@@ -998,30 +998,172 @@ This isn't just compression - it's intelligent data management that makes your t
                                     font=('Arial', 10))
         debug_check.pack(anchor='w', pady=5)
         
-        # Action Buttons
-        button_frame = ttk.Frame(scrollable_frame)
-        button_frame.pack(fill='x', padx=20, pady=20)
+        # Advanced Trading System (Ghost Mode)
+        ghost_frame = ttk.LabelFrame(scrollable_frame, text="👻 Advanced Trading System (Ghost Mode)", padding=15)
+        ghost_frame.pack(fill='x', padx=20, pady=10)
         
-        # Save settings
-        save_btn = tk.Button(button_frame, text="💾 Save Advanced Settings", 
-                            command=self._save_advanced_settings,
-                            bg='#00aa00', fg='white', font=('Arial', 12, 'bold'), padx=20, pady=10)
-        save_btn.pack(side='left', padx=10)
+        # Ghost Mode toggle
+        self.ghost_mode = tk.BooleanVar(value=True)
+        ghost_check = tk.Checkbutton(ghost_frame, text="Enable Ghost Mode (BTC/USDC Bilateral Trading)", 
+                                   variable=self.ghost_mode,
+                                   bg='#1e1e1e', fg='white', selectcolor='#404040',
+                                   font=('Arial', 10))
+        ghost_check.pack(anchor='w', pady=5)
         
-        # Load defaults
-        defaults_btn = tk.Button(button_frame, text="🔄 Load Default Settings", 
-                                command=self._load_default_advanced_settings,
-                                bg='#aa6600', fg='white', font=('Arial', 12, 'bold'), padx=20, pady=10)
-        defaults_btn.pack(side='left', padx=10)
+        # Orbital trading range
+        orbital_frame = ttk.Frame(ghost_frame)
+        orbital_frame.pack(fill='x', pady=5)
+        ttk.Label(orbital_frame, text="Orbital Trading Range (cents):", style='Label.TLabel').pack(anchor='w')
+        self.orbital_range = tk.StringVar(value="0.23")
+        orbital_entry = ttk.Entry(orbital_frame, textvariable=self.orbital_range, width=10)
+        orbital_entry.pack(anchor='w', pady=2)
         
-        # Test settings
-        test_btn = tk.Button(button_frame, text="🧪 Test Configuration", 
-                            command=self._test_advanced_settings,
-                            bg='#0066aa', fg='white', font=('Arial', 12, 'bold'), padx=20, pady=10)
-        test_btn.pack(side='left', padx=10)
+        # Advanced stop loss
+        adv_stop_frame = ttk.Frame(ghost_frame)
+        adv_stop_frame.pack(fill='x', pady=5)
+        ttk.Label(adv_stop_frame, text="Advanced Stop Loss (%):", style='Label.TLabel').pack(anchor='w')
+        self.adv_stop_loss = tk.StringVar(value="0.05")
+        adv_stop_entry = ttk.Entry(adv_stop_frame, textvariable=self.adv_stop_loss, width=10)
+        adv_stop_entry.pack(anchor='w', pady=2)
         
-        canvas.pack(side="left", fill="both", expand=True)
-        scrollbar.pack(side="right", fill="y")
+        # Tick map size
+        tick_frame = ttk.Frame(ghost_frame)
+        tick_frame.pack(fill='x', pady=5)
+        ttk.Label(tick_frame, text="Tick Map Size:", style='Label.TLabel').pack(anchor='w')
+        self.tick_map_size = tk.StringVar(value="10000")
+        tick_entry = ttk.Entry(tick_frame, textvariable=self.tick_map_size, width=10)
+        tick_entry.pack(anchor='w', pady=2)
+        
+        # Order book depth
+        orderbook_frame = ttk.Frame(ghost_frame)
+        orderbook_frame.pack(fill='x', pady=5)
+        ttk.Label(orderbook_frame, text="Order Book Depth (ticks):", style='Label.TLabel').pack(anchor='w')
+        self.orderbook_depth = tk.StringVar(value="16")
+        orderbook_entry = ttk.Entry(orderbook_frame, textvariable=self.orderbook_depth, width=10)
+        orderbook_entry.pack(anchor='w', pady=2)
+        
+        # High frequency trading
+        self.hft_enabled = tk.BooleanVar(value=True)
+        hft_check = tk.Checkbutton(ghost_frame, text="Enable High Frequency Trading", 
+                                 variable=self.hft_enabled,
+                                 bg='#1e1e1e', fg='white', selectcolor='#404040',
+                                 font=('Arial', 10))
+        hft_check.pack(anchor='w', pady=5)
+        
+        # Market context building
+        self.context_building = tk.BooleanVar(value=True)
+        context_check = tk.Checkbutton(ghost_frame, text="Enable Market Context Building", 
+                                     variable=self.context_building,
+                                     bg='#1e1e1e', fg='white', selectcolor='#404040',
+                                     font=('Arial', 10))
+        context_check.pack(anchor='w', pady=5)
+        
+        # Memory registry
+        self.memory_registry = tk.BooleanVar(value=True)
+        memory_check = tk.Checkbutton(ghost_frame, text="Enable Memory Registry", 
+                                    variable=self.memory_registry,
+                                    bg='#1e1e1e', fg='white', selectcolor='#404040',
+                                    font=('Arial', 10))
+        memory_check.pack(anchor='w', pady=5)
+        
+        # Dynamic Worker Optimization System
+        optimization_frame = ttk.LabelFrame(scrollable_frame, text="🚀 Dynamic Worker Optimization System", padding=15)
+        optimization_frame.pack(fill='x', padx=20, pady=10)
+        
+        # Optimization toggle
+        self.optimization_enabled = tk.BooleanVar(value=True)
+        opt_check = tk.Checkbutton(optimization_frame, text="Enable Dynamic Worker Optimization", 
+                                 variable=self.optimization_enabled,
+                                 bg='#1e1e1e', fg='white', selectcolor='#404040',
+                                 font=('Arial', 10))
+        opt_check.pack(anchor='w', pady=5)
+        
+        # Downtime optimization hours
+        downtime_frame = ttk.Frame(optimization_frame)
+        downtime_frame.pack(fill='x', pady=5)
+        ttk.Label(downtime_frame, text="Downtime Optimization Hours:", style='Label.TLabel').pack(anchor='w')
+        downtime_hours_frame = ttk.Frame(downtime_frame)
+        downtime_hours_frame.pack(anchor='w', pady=2)
+        
+        self.downtime_start = tk.StringVar(value="1")
+        self.downtime_end = tk.StringVar(value="4")
+        ttk.Label(downtime_hours_frame, text="Start:", style='Label.TLabel').pack(side='left')
+        ttk.Entry(downtime_hours_frame, textvariable=self.downtime_start, width=5).pack(side='left', padx=5)
+        ttk.Label(downtime_hours_frame, text="End:", style='Label.TLabel').pack(side='left', padx=10)
+        ttk.Entry(downtime_hours_frame, textvariable=self.downtime_end, width=5).pack(side='left', padx=5)
+        ttk.Label(downtime_hours_frame, text="(24-hour format)", style='Label.TLabel').pack(side='left', padx=5)
+        
+        # Optimization interval
+        interval_frame = ttk.Frame(optimization_frame)
+        interval_frame.pack(fill='x', pady=5)
+        ttk.Label(interval_frame, text="Optimization Interval (seconds):", style='Label.TLabel').pack(anchor='w')
+        self.optimization_interval = tk.StringVar(value="300")
+        interval_entry = ttk.Entry(interval_frame, textvariable=self.optimization_interval, width=10)
+        interval_entry.pack(anchor='w', pady=2)
+        
+        # Max workers
+        max_workers_frame = ttk.Frame(optimization_frame)
+        max_workers_frame.pack(fill='x', pady=5)
+        ttk.Label(max_workers_frame, text="Maximum Workers:", style='Label.TLabel').pack(anchor='w')
+        self.max_workers = tk.StringVar(value="10")
+        max_workers_entry = ttk.Entry(max_workers_frame, textvariable=self.max_workers, width=10)
+        max_workers_entry.pack(anchor='w', pady=2)
+        
+        # Max assets per worker
+        max_assets_frame = ttk.Frame(optimization_frame)
+        max_assets_frame.pack(fill='x', pady=5)
+        ttk.Label(max_assets_frame, text="Max Assets per Worker:", style='Label.TLabel').pack(anchor='w')
+        self.max_assets_per_worker = tk.StringVar(value="5")
+        max_assets_entry = ttk.Entry(max_assets_frame, textvariable=self.max_assets_per_worker, width=10)
+        max_assets_entry.pack(anchor='w', pady=2)
+        
+        # Flask AI agents
+        self.flask_ai_enabled = tk.BooleanVar(value=True)
+        flask_check = tk.Checkbutton(optimization_frame, text="Enable Flask AI Agent Communication", 
+                                   variable=self.flask_ai_enabled,
+                                   bg='#1e1e1e', fg='white', selectcolor='#404040',
+                                   font=('Arial', 10))
+        flask_check.pack(anchor='w', pady=5)
+        
+        # Flask server URL
+        flask_url_frame = ttk.Frame(optimization_frame)
+        flask_url_frame.pack(fill='x', pady=5)
+        ttk.Label(flask_url_frame, text="Flask Server URL:", style='Label.TLabel').pack(anchor='w')
+        self.flask_server_url = tk.StringVar(value="http://localhost:5000")
+        flask_url_entry = ttk.Entry(flask_url_frame, textvariable=self.flask_server_url, width=30)
+        flask_url_entry.pack(anchor='w', pady=2)
+        
+        # Profit lattice features
+        lattice_frame = ttk.Frame(optimization_frame)
+        lattice_frame.pack(fill='x', pady=5)
+        
+        self.profit_lattice_enabled = tk.BooleanVar(value=True)
+        lattice_check = tk.Checkbutton(lattice_frame, text="Enable Profit Lattice Mapping", 
+                                     variable=self.profit_lattice_enabled,
+                                     bg='#1e1e1e', fg='white', selectcolor='#404040',
+                                     font=('Arial', 10))
+        lattice_check.pack(anchor='w', pady=2)
+        
+        self.weighted_randomization = tk.BooleanVar(value=True)
+        weighted_check = tk.Checkbutton(lattice_frame, text="Enable Weighted Randomization", 
+                                      variable=self.weighted_randomization,
+                                      bg='#1e1e1e', fg='white', selectcolor='#404040',
+                                      font=('Arial', 10))
+        weighted_check.pack(anchor='w', pady=2)
+        
+        self.orbital_tracking = tk.BooleanVar(value=True)
+        orbital_check = tk.Checkbutton(lattice_frame, text="Enable Orbital Performance Tracking", 
+                                     variable=self.orbital_tracking,
+                                     bg='#1e1e1e', fg='white', selectcolor='#404040',
+                                     font=('Arial', 10))
+        orbital_check.pack(anchor='w', pady=2)
+        
+        self.swing_timing = tk.BooleanVar(value=True)
+        swing_check = tk.Checkbutton(lattice_frame, text="Enable Swing Timing Optimization", 
+                                   variable=self.swing_timing,
+                                   bg='#1e1e1e', fg='white', selectcolor='#404040',
+                                   font=('Arial', 10))
+        swing_check.pack(anchor='w', pady=2)
     
     def _create_status_bar(self):
         """Create the status bar."""
@@ -1231,6 +1373,16 @@ This isn't just compression - it's intelligent data management that makes your t
                     'ai_learning': self.ai_learning.get(),
                     'real_time_monitoring': self.real_time_monitor.get(),
                     'debug_mode': self.debug_mode.get()
+                },
+                'advanced_trading': {
+                    'ghost_mode': self.ghost_mode.get(),
+                    'orbital_range': float(self.orbital_range.get()),
+                    'adv_stop_loss': float(self.adv_stop_loss.get()),
+                    'tick_map_size': int(self.tick_map_size.get()),
+                    'orderbook_depth': int(self.orderbook_depth.get()),
+                    'hft_enabled': self.hft_enabled.get(),
+                    'context_building': self.context_building.get(),
+                    'memory_registry': self.memory_registry.get()
                 }
             }
             
@@ -1283,6 +1435,16 @@ This isn't just compression - it's intelligent data management that makes your t
             self.ai_learning.set(True)
             self.real_time_monitor.set(True)
             self.debug_mode.set(False)
+
+            # Advanced Trading System (Ghost Mode)
+            self.ghost_mode.set(False)
+            self.orbital_range.set("0.23")
+            self.adv_stop_loss.set("0.05")
+            self.tick_map_size.set("10000")
+            self.orderbook_depth.set("16")
+            self.hft_enabled.set(True)
+            self.context_building.set(True)
+            self.memory_registry.set(True)
             
             self._update_status("✅ Default advanced settings loaded")
             messagebox.showinfo("Defaults Loaded", "Default advanced settings have been loaded!")
@@ -1334,6 +1496,35 @@ This isn't just compression - it's intelligent data management that makes your t
             if max_log_size < 1 or max_log_size > 100:
                 raise ValueError("Max log size must be between 1 and 100 MB")
             
+            # Validate advanced features
+            ghost_mode = self.ghost_mode.get()
+            orbital_range = float(self.orbital_range.get())
+            adv_stop_loss = float(self.adv_stop_loss.get())
+            tick_map_size = int(self.tick_map_size.get())
+            orderbook_depth = int(self.orderbook_depth.get())
+            hft_enabled = self.hft_enabled.get()
+            context_building = self.context_building.get()
+            memory_registry = self.memory_registry.get()
+
+            if ghost_mode:
+                if orbital_range < 0.01 or orbital_range > 1.0:
+                    raise ValueError("Orbital trading range must be between 0.01 and 1.0 cents")
+                if adv_stop_loss < 0.0001 or adv_stop_loss > 0.1:
+                    raise ValueError("Advanced stop loss must be between 0.0001% and 0.1%")
+                if tick_map_size < 1000 or tick_map_size > 16000:
+                    raise ValueError("Tick map size must be between 1000 and 16000")
+                if orderbook_depth < 8 or orderbook_depth > 64:
+                    raise ValueError("Order book depth must be between 8 and 64")
+                if hft_enabled == "1": # Assuming "1" means True for boolean check
+                    pass # No specific range for HFT enabled
+                if context_building == "1": # Assuming "1" means True for boolean check
+                    pass # No specific range for context building
+                if memory_registry == "1": # Assuming "1" means True for boolean check
+                    pass # No specific range for memory registry
+            else:
+                if orbital_range != 0.23 or adv_stop_loss != 0.05 or tick_map_size != 10000 or orderbook_depth != 16 or hft_enabled == "1" or context_building == "1" or memory_registry == "1":
+                    raise ValueError("Ghost Mode settings must be set to default for testing.")
+
             # Show test results
             results_text = "Advanced Settings Test Results:\n\n"
             results_text += "✅ Performance Settings:\n"
@@ -1366,6 +1557,16 @@ This isn't just compression - it's intelligent data management that makes your t
             results_text += f"  • AI Learning: {'Enabled' if self.ai_learning.get() else 'Disabled'}\n"
             results_text += f"  • Real-Time Monitoring: {'Enabled' if self.real_time_monitor.get() else 'Disabled'}\n"
             results_text += f"  • Debug Mode: {'Enabled' if self.debug_mode.get() else 'Disabled'}\n\n"
+            
+            results_text += "✅ Advanced Trading System (Ghost Mode):\n"
+            results_text += f"  • Ghost Mode: {'Enabled' if self.ghost_mode.get() else 'Disabled'}\n"
+            results_text += f"  • Orbital Range: {self.orbital_range.get()} cents\n"
+            results_text += f"  • Advanced Stop Loss: {self.adv_stop_loss.get()}%\n"
+            results_text += f"  • Tick Map Size: {self.tick_map_size.get()}\n"
+            results_text += f"  • Order Book Depth: {self.orderbook_depth.get()}\n"
+            results_text += f"  • HFT Enabled: {'Enabled' if self.hft_enabled.get() else 'Disabled'}\n"
+            results_text += f"  • Context Building: {'Enabled' if self.context_building.get() else 'Disabled'}\n"
+            results_text += f"  • Memory Registry: {'Enabled' if self.memory_registry.get() else 'Disabled'}\n\n"
             
             results_text += "🎉 All settings are valid and ready for use!"
             

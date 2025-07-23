@@ -47,10 +47,45 @@ except ImportError:
 import sys
 import os
 sys.path.append('.')
-from unified_hardware_detector import UnifiedHardwareDetector
+from unified_hardware_detector import UnifiedHardwareDetector, SystemInfo, OptimizationMode
 HardwareAutoDetector = UnifiedHardwareDetector
 
 logger = logging.getLogger(__name__)
+
+# Compatibility wrapper for SystemInfo to HardwareInfo conversion
+@dataclass
+class HardwareInfo:
+    """Compatibility wrapper for SystemInfo to match expected HardwareInfo interface."""
+    platform: str = ""
+    cpu_model: str = ""
+    cpu_cores: int = 0
+    cpu_frequency_mhz: float = 0.0
+    ram_gb: float = 0.0
+    storage_gb: float = 0.0
+    gpu_name: str = ""
+    gpu_memory_gb: float = 0.0
+    cuda_version: str = ""
+    vram_gb: float = 0.0
+    memory_pools: Dict[str, Any] = field(default_factory=dict)
+    optimization_mode: OptimizationMode = OptimizationMode.BALANCED
+    
+    @classmethod
+    def from_system_info(cls, system_info: SystemInfo):
+        """Create HardwareInfo from SystemInfo for compatibility."""
+        return cls(
+            platform=system_info.platform,
+            cpu_model=system_info.cpu_model,
+            cpu_cores=system_info.cpu_cores,
+            cpu_frequency_mhz=system_info.cpu_frequency_mhz,
+            ram_gb=system_info.ram_gb,
+            storage_gb=system_info.storage_gb,
+            gpu_name=system_info.gpu.name,
+            gpu_memory_gb=system_info.gpu.memory_gb,
+            cuda_version=system_info.cuda_version,
+            vram_gb=system_info.vram_gb,
+            memory_pools=system_info.memory_pools,
+            optimization_mode=system_info.optimization_mode
+        )
 
 # Import real implementations instead of stubs
 try:
@@ -284,8 +319,11 @@ class VisualLayerController:
         try:
             logger.info("🔍 Initializing visual layer controller with hardware auto-detection...")
             
-            # Detect hardware capabilities
-            self.system_info = self.hardware_detector.detect_hardware()
+            # Detect hardware capabilities using unified detector
+            raw_system_info = self.hardware_detector.detect_hardware()
+            
+            # Convert to HardwareInfo for compatibility
+            self.system_info = HardwareInfo.from_system_info(raw_system_info)
             self.memory_config = self.hardware_detector.generate_memory_config()
             self.auto_detected = True
             
@@ -316,7 +354,7 @@ class VisualLayerController:
             
         # Determine optimal chart configuration based on hardware
         memory_gb = self.system_info.ram_gb
-        gpu_memory_gb = getattr(self.system_info.gpu, 'memory_gb', 0.0)
+        gpu_memory_gb = self.system_info.gpu_memory_gb
         
         # Configure chart parameters based on hardware tier
         if memory_gb >= 16 and gpu_memory_gb >= 4:

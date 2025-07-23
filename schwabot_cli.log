@@ -690,3 +690,175 @@
 2025-07-22 09:27:34,498 - usb_manager - INFO - Detected 0 USB drives
 2025-07-22 09:27:38,100 - usb_manager - INFO - Detected 0 USB drives
 2025-07-22 09:28:02,054 - usb_manager - INFO - Detected 1 USB drives
+2025-07-22 22:22:14,086 - AOI_Base_Files_Schwabot.main - ERROR - Failed to import hash_config_manager: cannot import name 'hash_config_manager' from 'core.hash_config_manager' (C:\Users\maxde\Downloads\clonerepo\core\hash_config_manager.py)
+2025-07-22 22:22:14,087 - AOI_Base_Files_Schwabot.main - WARNING - Enhanced GPU auto-detection system not available
+2025-07-22 22:22:14,907 - unified_hardware_detector - INFO - 🔍 Unified Hardware Detector initialized
+2025-07-22 22:22:14,928 - AOI_Base_Files_Schwabot.visual_controls_gui - WARNING - Ghost Mode Manager not available
+2025-07-22 22:30:08,708 - AOI_Base_Files_Schwabot.visual_controls_gui - WARNING - Visual Layer Controller not available
+2025-07-22 22:30:08,741 - core.ghost_mode_manager - ERROR - ❌ Failed to load Ghost Mode config: GhostModeConfig.__init__() got an unexpected keyword argument 'safe_mode'
+2025-07-22 22:35:42,078 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - 🎯 Mode Integration System initialized
+2025-07-22 22:35:42,080 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - 🎯 Trading mode set to: DEFAULT
+2025-07-22 22:35:42,080 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Position Size: 10.0%
+2025-07-22 22:35:42,080 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Stop Loss: 2.0%
+2025-07-22 22:35:42,080 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Take Profit: 3.0%
+2025-07-22 22:35:42,081 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Max Exposure: 30.0%
+2025-07-22 22:35:42,081 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    AI Priority: 50.0%
+2025-07-22 22:35:42,081 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Update Interval: 1.0s
+2025-07-22 22:35:42,082 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Supported Symbols: 8 pairs
+2025-07-22 22:35:42,082 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Orbital Shells: [1, 2, 3, 4, 5, 6, 7, 8]
+2025-07-22 22:35:42,083 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Profit Target: $30.0
+2025-07-22 22:35:42,083 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Win Rate Target: 75.0%
+2025-07-22 22:35:42,084 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - 🎯 Trading mode set to: GHOST
+2025-07-22 22:35:42,085 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Position Size: 15.0%
+2025-07-22 22:35:42,085 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Stop Loss: 2.5%
+2025-07-22 22:35:42,086 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Take Profit: 4.0%
+2025-07-22 22:35:42,086 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Max Exposure: 40.0%
+2025-07-22 22:35:42,086 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    AI Priority: 80.0%
+2025-07-22 22:35:42,087 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Update Interval: 0.5s
+2025-07-22 22:35:42,087 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Supported Symbols: 2 pairs
+2025-07-22 22:35:42,087 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Orbital Shells: [2, 6, 8]
+2025-07-22 22:35:42,088 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Profit Target: $75.0
+2025-07-22 22:35:42,088 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Win Rate Target: 70.0%
+2025-07-22 22:35:42,090 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - 🎯 Trading mode set to: HYBRID
+2025-07-22 22:35:42,091 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Position Size: 30.5%
+2025-07-22 22:35:42,091 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Stop Loss: 2.33%
+2025-07-22 22:35:42,092 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Take Profit: 4.47%
+2025-07-22 22:35:42,092 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Max Exposure: 85.0%
+2025-07-22 22:35:42,093 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    AI Priority: 81.0%
+2025-07-22 22:35:42,093 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Update Interval: 0.33s
+2025-07-22 22:35:42,094 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Supported Symbols: 10 pairs
+2025-07-22 22:35:42,094 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Orbital Shells: [1, 3, 5, 7, 9]
+2025-07-22 22:35:42,095 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Profit Target: $147.7
+2025-07-22 22:35:42,095 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Win Rate Target: 81.0%
+2025-07-22 22:35:42,098 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - 🎯 Trading mode set to: DEFAULT
+2025-07-22 22:35:42,098 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Position Size: 10.0%
+2025-07-22 22:35:42,099 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Stop Loss: 2.0%
+2025-07-22 22:35:42,099 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Take Profit: 3.0%
+2025-07-22 22:35:42,099 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Max Exposure: 30.0%
+2025-07-22 22:35:42,100 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    AI Priority: 50.0%
+2025-07-22 22:35:42,100 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Update Interval: 1.0s
+2025-07-22 22:35:42,101 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Supported Symbols: 8 pairs
+2025-07-22 22:35:42,101 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Orbital Shells: [1, 2, 3, 4, 5, 6, 7, 8]
+2025-07-22 22:35:42,101 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Profit Target: $30.0
+2025-07-22 22:35:42,102 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Win Rate Target: 75.0%
+2025-07-22 22:35:42,102 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - 🎯 Trading mode set to: GHOST
+2025-07-22 22:35:42,103 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Position Size: 15.0%
+2025-07-22 22:35:42,103 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Stop Loss: 2.5%
+2025-07-22 22:35:42,104 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Take Profit: 4.0%
+2025-07-22 22:35:42,104 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Max Exposure: 40.0%
+2025-07-22 22:35:42,105 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    AI Priority: 80.0%
+2025-07-22 22:35:42,105 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Update Interval: 0.5s
+2025-07-22 22:35:42,106 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Supported Symbols: 2 pairs
+2025-07-22 22:35:42,106 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Orbital Shells: [2, 6, 8]
+2025-07-22 22:35:42,107 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Profit Target: $75.0
+2025-07-22 22:35:42,107 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Win Rate Target: 70.0%
+2025-07-22 22:35:42,108 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - 🎯 Trading mode set to: HYBRID
+2025-07-22 22:35:42,109 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Position Size: 30.5%
+2025-07-22 22:35:42,109 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Stop Loss: 2.33%
+2025-07-22 22:35:42,110 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Take Profit: 4.47%
+2025-07-22 22:35:42,110 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Max Exposure: 85.0%
+2025-07-22 22:35:42,111 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    AI Priority: 81.0%
+2025-07-22 22:35:42,111 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Update Interval: 0.33s
+2025-07-22 22:35:42,112 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Supported Symbols: 10 pairs
+2025-07-22 22:35:42,113 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Orbital Shells: [1, 3, 5, 7, 9]
+2025-07-22 22:35:42,113 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Profit Target: $147.7
+2025-07-22 22:35:42,114 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Win Rate Target: 81.0%
+2025-07-22 22:35:42,116 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - 🎯 Trading mode set to: DEFAULT
+2025-07-22 22:35:42,117 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Position Size: 10.0%
+2025-07-22 22:35:42,117 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Stop Loss: 2.0%
+2025-07-22 22:35:42,118 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Take Profit: 3.0%
+2025-07-22 22:35:42,119 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Max Exposure: 30.0%
+2025-07-22 22:35:42,120 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    AI Priority: 50.0%
+2025-07-22 22:35:42,121 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Update Interval: 1.0s
+2025-07-22 22:35:42,122 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Supported Symbols: 8 pairs
+2025-07-22 22:35:42,122 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Orbital Shells: [1, 2, 3, 4, 5, 6, 7, 8]
+2025-07-22 22:35:42,123 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Profit Target: $30.0
+2025-07-22 22:35:42,123 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Win Rate Target: 75.0%
+2025-07-22 22:35:42,123 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - 💰 Executing DEFAULT trade: buy BTC/USDC
+2025-07-22 22:35:42,124 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Entry Price: $65000.0000
+2025-07-22 22:35:42,124 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Position Size: 0.015385
+2025-07-22 22:35:42,125 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Stop Loss: $63700.0000
+2025-07-22 22:35:42,125 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Take Profit: $66950.0000
+2025-07-22 22:35:42,125 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Confidence: 75.0%
+2025-07-22 22:35:42,126 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Reasoning: Default mode: Oversold conditions with positive momentum
+2025-07-22 22:35:42,126 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - ✅ DEFAULT BUY executed successfully
+2025-07-22 22:35:42,128 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - 🎯 Trading mode set to: GHOST
+2025-07-22 22:35:42,128 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Position Size: 15.0%
+2025-07-22 22:35:42,129 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Stop Loss: 2.5%
+2025-07-22 22:35:42,129 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Take Profit: 4.0%
+2025-07-22 22:35:42,130 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Max Exposure: 40.0%
+2025-07-22 22:35:42,130 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    AI Priority: 80.0%
+2025-07-22 22:35:42,130 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Update Interval: 0.5s
+2025-07-22 22:35:42,131 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Supported Symbols: 2 pairs
+2025-07-22 22:35:42,132 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Orbital Shells: [2, 6, 8]
+2025-07-22 22:35:42,132 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Profit Target: $75.0
+2025-07-22 22:35:42,133 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Win Rate Target: 70.0%
+2025-07-22 22:35:42,134 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - 💰 Executing GHOST trade: buy BTC/USDC
+2025-07-22 22:35:42,134 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Entry Price: $65000.0000
+2025-07-22 22:35:42,135 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Position Size: 0.031154
+2025-07-22 22:35:42,135 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Stop Loss: $63375.0000
+2025-07-22 22:35:42,136 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Take Profit: $67600.0000
+2025-07-22 22:35:42,136 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Confidence: 70.0%
+2025-07-22 22:35:42,137 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Reasoning: Ghost mode: BTC/USDC oversold with momentum
+2025-07-22 22:35:42,138 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - ✅ GHOST BUY executed successfully
+2025-07-22 22:35:42,139 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - 🎯 Trading mode set to: HYBRID
+2025-07-22 22:35:42,140 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Position Size: 30.5%
+2025-07-22 22:35:42,140 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Stop Loss: 2.33%
+2025-07-22 22:35:42,141 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Take Profit: 4.47%
+2025-07-22 22:35:42,141 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Max Exposure: 85.0%
+2025-07-22 22:35:42,142 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    AI Priority: 81.0%
+2025-07-22 22:35:42,142 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Update Interval: 0.33s
+2025-07-22 22:35:42,142 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Supported Symbols: 10 pairs
+2025-07-22 22:35:42,143 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Orbital Shells: [1, 3, 5, 7, 9]
+2025-07-22 22:35:42,143 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Profit Target: $147.7
+2025-07-22 22:35:42,144 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Win Rate Target: 81.0%
+2025-07-22 22:35:42,144 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - 💰 Executing HYBRID trade: buy BTC/USDC
+2025-07-22 22:35:42,145 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Entry Price: $65000.0000
+2025-07-22 22:35:42,146 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Position Size: 0.083233
+2025-07-22 22:35:42,146 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Stop Loss: $63485.5000
+2025-07-22 22:35:42,147 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Take Profit: $67905.5000
+2025-07-22 22:35:42,147 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Confidence: 107.3%
+2025-07-22 22:35:42,147 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Reasoning: Hybrid mode: Quantum consciousness detects buying opportunity
+2025-07-22 22:35:42,148 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - ✅ HYBRID BUY executed successfully
+2025-07-22 22:35:42,150 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - 🎯 Trading mode set to: DEFAULT
+2025-07-22 22:35:42,150 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Position Size: 10.0%
+2025-07-22 22:35:42,151 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Stop Loss: 2.0%
+2025-07-22 22:35:42,151 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Take Profit: 3.0%
+2025-07-22 22:35:42,152 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Max Exposure: 30.0%
+2025-07-22 22:35:42,152 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    AI Priority: 50.0%
+2025-07-22 22:35:42,153 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Update Interval: 1.0s
+2025-07-22 22:35:42,153 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Supported Symbols: 8 pairs
+2025-07-22 22:35:42,154 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Orbital Shells: [1, 2, 3, 4, 5, 6, 7, 8]
+2025-07-22 22:35:42,154 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Profit Target: $30.0
+2025-07-22 22:35:42,155 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Win Rate Target: 75.0%
+2025-07-22 22:35:42,157 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - 🎯 Trading mode set to: GHOST
+2025-07-22 22:35:42,158 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Position Size: 15.0%
+2025-07-22 22:35:42,158 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Stop Loss: 2.5%
+2025-07-22 22:35:42,159 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Take Profit: 4.0%
+2025-07-22 22:35:42,159 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Max Exposure: 40.0%
+2025-07-22 22:35:42,160 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    AI Priority: 80.0%
+2025-07-22 22:35:42,161 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Update Interval: 0.5s
+2025-07-22 22:35:42,161 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Supported Symbols: 2 pairs
+2025-07-22 22:35:42,162 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Orbital Shells: [2, 6, 8]
+2025-07-22 22:35:42,162 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Profit Target: $75.0
+2025-07-22 22:35:42,162 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Win Rate Target: 70.0%
+2025-07-22 22:35:42,163 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - 💰 Executing GHOST trade: sell BTC/USDC
+2025-07-22 22:35:42,163 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Entry Price: $69676.4413
+2025-07-22 22:35:42,164 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Position Size: 0.005053
+2025-07-22 22:35:42,164 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Stop Loss: $67934.5303
+2025-07-22 22:35:42,165 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Take Profit: $72463.4989
+2025-07-22 22:35:42,165 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Confidence: 65.0%
+2025-07-22 22:35:42,166 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Reasoning: Ghost mode: BTC/USDC overbought with reversal
+2025-07-22 22:35:42,166 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - ✅ GHOST SELL executed successfully
+2025-07-22 22:35:42,166 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Profit: $0.00
+2025-07-22 22:35:42,168 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO - 🎯 Trading mode set to: HYBRID
+2025-07-22 22:35:42,169 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Position Size: 30.5%
+2025-07-22 22:35:42,169 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Stop Loss: 2.33%
+2025-07-22 22:35:42,170 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Take Profit: 4.47%
+2025-07-22 22:35:42,170 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Max Exposure: 85.0%
+2025-07-22 22:35:42,170 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    AI Priority: 81.0%
+2025-07-22 22:35:42,171 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Update Interval: 0.33s
+2025-07-22 22:35:42,172 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Supported Symbols: 10 pairs
+2025-07-22 22:35:42,173 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Orbital Shells: [1, 3, 5, 7, 9]
+2025-07-22 22:35:42,174 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Profit Target: $147.7
+2025-07-22 22:35:42,175 - AOI_Base_Files_Schwabot.core.mode_integration_system - INFO -    Win Rate Target: 81.0%

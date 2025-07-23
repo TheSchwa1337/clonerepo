@@ -72,19 +72,41 @@ class HardwareInfo:
     @classmethod
     def from_system_info(cls, system_info: SystemInfo):
         """Create HardwareInfo from SystemInfo for compatibility."""
+        # Safely extract GPU information with proper error handling
+        gpu_name = ""
+        gpu_memory_gb = 0.0
+        
+        try:
+            if hasattr(system_info, 'gpu') and system_info.gpu is not None:
+                gpu_name = getattr(system_info.gpu, 'name', '')
+                gpu_memory_gb = getattr(system_info.gpu, 'memory_gb', 0.0)
+        except Exception as e:
+            logger.warning(f"GPU information extraction failed: {e}")
+            gpu_name = ""
+            gpu_memory_gb = 0.0
+        
+        # Safely extract memory_pools with fallback
+        try:
+            memory_pools = getattr(system_info, 'memory_pools', {})
+            if not isinstance(memory_pools, dict):
+                memory_pools = {}
+        except Exception as e:
+            logger.warning(f"Memory pools extraction failed: {e}")
+            memory_pools = {}
+        
         return cls(
-            platform=system_info.platform,
-            cpu_model=system_info.cpu_model,
-            cpu_cores=system_info.cpu_cores,
-            cpu_frequency_mhz=system_info.cpu_frequency_mhz,
-            ram_gb=system_info.ram_gb,
-            storage_gb=system_info.storage_gb,
-            gpu_name=system_info.gpu.name,
-            gpu_memory_gb=system_info.gpu.memory_gb,
-            cuda_version=system_info.cuda_version,
-            vram_gb=system_info.vram_gb,
-            memory_pools=system_info.memory_pools,
-            optimization_mode=system_info.optimization_mode
+            platform=getattr(system_info, 'platform', ''),
+            cpu_model=getattr(system_info, 'cpu_model', ''),
+            cpu_cores=getattr(system_info, 'cpu_cores', 0),
+            cpu_frequency_mhz=getattr(system_info, 'cpu_frequency_mhz', 0.0),
+            ram_gb=getattr(system_info, 'ram_gb', 0.0),
+            storage_gb=getattr(system_info, 'storage_gb', 0.0),
+            gpu_name=gpu_name,
+            gpu_memory_gb=gpu_memory_gb,
+            cuda_version=getattr(system_info, 'cuda_version', ''),
+            vram_gb=getattr(system_info, 'vram_gb', 0.0),
+            memory_pools=memory_pools,
+            optimization_mode=getattr(system_info, 'optimization_mode', OptimizationMode.BALANCED)
         )
 
 # Import real implementations instead of stubs

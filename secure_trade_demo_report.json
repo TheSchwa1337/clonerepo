@@ -1,0 +1,83 @@
+{
+  "timestamp": 1753244360.972005,
+  "demo_trades_count": 10,
+  "average_security_score": 92.5,
+  "average_processing_time": 0.0014141321182250977,
+  "demo_types": {
+    "basic_encryption": 1,
+    "ultra_realistic_dummy_injection": 1,
+    "hash_id_routing": 2,
+    "integration_simulation": 5,
+    "ultra_realistic_analysis": 1
+  },
+  "secure_handler_status": {
+    "enabled": true,
+    "key_pool_size": 55,
+    "security_events_count": 15,
+    "last_key_rotation": 1753244360.8740165,
+    "cryptography_available": true,
+    "layer_weights": {
+      "ephemeral": 0.25,
+      "chacha20": 0.25,
+      "nonce": 0.2,
+      "dummy": 0.15,
+      "hash_id": 0.15
+    },
+    "config": {
+      "dummy_packet_count": 2,
+      "enable_dummy_injection": true,
+      "enable_hash_id_routing": true
+    }
+  },
+  "integration_status": {
+    "enabled": true,
+    "integrations_active": {
+      "real_trading_engine": false,
+      "strategy_execution_engine": false,
+      "api_routes": false,
+      "ccxt_engine": false,
+      "profile_router": false
+    },
+    "statistics": {
+      "total_trades_secured": 5,
+      "successful_secures": 5,
+      "failed_secures": 0,
+      "success_rate": 1.0,
+      "average_security_score": 92.5,
+      "average_processing_time": 0.001027822494506836
+    },
+    "secure_handler_status": {
+      "enabled": true,
+      "key_pool_size": 85,
+      "security_events_count": 5,
+      "last_key_rotation": 1753244360.8750167,
+      "cryptography_available": true,
+      "layer_weights": {
+        "ephemeral": 0.25,
+        "chacha20": 0.25,
+        "nonce": 0.2,
+        "dummy": 0.15,
+        "hash_id": 0.15
+      },
+      "config": {
+        "dummy_packet_count": 2,
+        "enable_dummy_injection": true,
+        "enable_hash_id_routing": true
+      }
+    },
+    "config": {
+      "secure_handler_config": {
+        "dummy_packet_count": 2,
+        "enable_dummy_injection": true,
+        "enable_hash_id_routing": true,
+        "security_logging": true
+      },
+      "integration_config": {
+        "enable_all_integrations": true,
+        "force_secure_trades": true,
+        "log_integration_events": true,
+        "security_threshold": 80.0
+      }
+    }
+  }
+}

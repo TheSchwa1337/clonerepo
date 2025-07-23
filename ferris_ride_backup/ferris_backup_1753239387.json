@@ -1,0 +1,103 @@
+{
+  "timestamp": 1753239387.966895,
+  "detected_capital": 10000.0,
+  "detected_tickers": [
+    "MATIC/USDC",
+    "ADA/USDC",
+    "USDC/SOL",
+    "DOT/USDC",
+    "XRP/USDC",
+    "LINK/USDC",
+    "AVAX/USDC",
+    "UNI/USDC",
+    "USDC/ADA",
+    "SOL/USDC",
+    "USDC/ETH",
+    "USDC/XRP",
+    "USDC/BTC",
+    "ETH/USDC",
+    "BTC/USDC"
+  ],
+  "active_zones": {},
+  "studied_patterns": {
+    "BTC/USDC": {
+      "symbol": "BTC/USDC",
+      "hash_pattern": "13e563ce440dd76a9a1a375cc3f16d3bdc5451d834382fc575482c8de6db7c22",
+      "rsi_trend": "oversold",
+      "volume_profile": "high",
+      "price_momentum": "positive",
+      "usdc_correlation": 0.8,
+      "risk_assessment": 0.1,
+      "study_start": 1753239387.948905,
+      "study_duration": 72,
+      "confidence_factors": [
+        0.15,
+        0.25,
+        0.2,
+        0.2
+      ],
+      "total_confidence": 0.8
+    },
+    "ETH/USDC": {
+      "symbol": "ETH/USDC",
+      "hash_pattern": "8a63f6950bb88b24632067cc63a9b9a0243b2cf0a48e06232226a2c3be616682",
+      "rsi_trend": "neutral",
+      "volume_profile": "high",
+      "price_momentum": "negative",
+      "usdc_correlation": 0.8,
+      "risk_assessment": 0.1,
+      "study_start": 1753239387.9529014,
+      "study_duration": 72,
+      "confidence_factors": [
+        0.2,
+        0.15,
+        0.25,
+        0.2
+      ],
+      "total_confidence": 0.8
+    },
+    "SOL/USDC": {
+      "symbol": "SOL/USDC",
+      "hash_pattern": "0e08a1950abc9d3a5e34d6b92cb601f71517dc8ddacca826f2b662adf93d8afc",
+      "rsi_trend": "neutral",
+      "volume_profile": "high",
+      "price_momentum": "negative",
+      "usdc_correlation": 0.8,
+      "risk_assessment": 0.1,
+      "study_start": 1753239387.9569,
+      "study_duration": 72,
+      "confidence_factors": [
+        0.2,
+        0.15,
+        0.25,
+        0.2
+      ],
+      "total_confidence": 0.8
+    }
+  },
+  "profit_history": [],
+  "hash_patterns": {
+    "BTC/USDC": [
+      "13e563ce440dd76a9a1a375cc3f16d3bdc5451d834382fc575482c8de6db7c22"
+    ],
+    "ETH/USDC": [
+      "8a63f6950bb88b24632067cc63a9b9a0243b2cf0a48e06232226a2c3be616682"
+    ],
+    "SOL/USDC": [
+      "0e08a1950abc9d3a5e34d6b92cb601f71517dc8ddacca826f2b662adf93d8afc"
+    ]
+  },
+  "ferris_rde_state": {
+    "current_rotation": 0,
+    "momentum_factor": 1.0,
+    "gravity_center": 0.5,
+    "orbital_velocity": 1.0,
+    "spiral_radius": 1.0
+  },
+  "performance": {
+    "total_trades": 0,
+    "winning_trades": 0,
+    "total_profit": 0.0,
+    "confidence_bonus": 0.0
+  }
+}

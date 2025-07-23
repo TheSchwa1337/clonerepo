@@ -35,6 +35,14 @@ from schwabot_ai_integration import AnalysisType
 # MATHEMATICAL INTEGRATION - ALL YOUR SYSTEMS
 from backtesting.mathematical_integration import mathematical_integration, MathematicalSignal
 
+# Import Mode Integration System
+try:
+    from AOI_Base_Files_Schwabot.core.mode_integration_system import mode_integration_system, TradingMode
+    MODE_INTEGRATION_AVAILABLE = True
+except ImportError:
+    MODE_INTEGRATION_AVAILABLE = False
+    logger.warning("Mode Integration System not available")
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -57,9 +65,18 @@ class SchwabotTradingBot:
         self.pipeline = TradingPipelineManager(self.config.get("pipeline", {}))
         self.simulator = MarketDataSimulator(self.config.get("symbols", ["BTC/USD", "ETH/USD"]))
         
-        # Bot state
-        self.running = False
-        self.start_time = None
+        # Initialize mode integration system
+        if MODE_INTEGRATION_AVAILABLE:
+            self.mode_system = mode_integration_system
+            logger.info("🎯 Mode Integration System initialized")
+        else:
+            self.mode_system = None
+            logger.warning("⚠️ Mode Integration System not available")
+        
+        # Performance tracking
+        self.start_time = time.time()
+        self.is_running = False
+        self.emergency_stop_triggered = False
         self.total_trades = 0
         self.total_pnl = 0.0
         
@@ -87,7 +104,7 @@ class SchwabotTradingBot:
         signal.signal(signal.SIGTERM, self._signal_handler)
         
         logger.info("🚀 Schwabot Trading Bot initialized with COMPLETE MATHEMATICAL INTEGRATION")
-        logger.info("🧮 All mathematical systems enabled: DLT, Dualistic Engines, Bit Phases, Ferris RDE, etc.")
+        logger.info("🧮 All mathematical systems enabled: DLT, Dualistic Engines, Bit Phases, etc.")
     
     def _load_config(self, config_path: Optional[str]) -> Dict:
         """Load configuration from file or use defaults."""
@@ -220,17 +237,67 @@ class SchwabotTradingBot:
             # Step 2: Process through AI pipeline
             ai_decision = await self.pipeline.process_market_data(market_data)
             
-            # Step 3: Combine mathematical and AI decisions
-            final_decision = self._combine_mathematical_and_ai_decisions(mathematical_signal, ai_decision, market_data)
-            
-            if final_decision and final_decision.confidence >= self.config["min_confidence"]:
-                # Execute trade
-                success = await self._execute_trade(final_decision, market_data)
+            # Step 3: Apply Mode Integration System for real trading decisions
+            if self.mode_system and MODE_INTEGRATION_AVAILABLE:
+                # Convert market data to format expected by mode system
+                mode_market_data = {
+                    'symbol': market_data.symbol,
+                    'price': market_data.price,
+                    'volume': market_data.volume,
+                    'rsi': market_data.rsi if hasattr(market_data, 'rsi') else 50,
+                    'macd': market_data.macd if hasattr(market_data, 'macd') else 0,
+                    'sentiment': market_data.sentiment if hasattr(market_data, 'sentiment') else 0.5,
+                    'volatility': market_data.volatility if hasattr(market_data, 'volatility') else 0.02
+                }
                 
-                if success:
-                    logger.debug(f"💰 Trade executed: {final_decision.action} {final_decision.symbol} @ ${final_decision.entry_price:.4f}")
+                # Generate mode-specific trading decision
+                mode_decision = self.mode_system.generate_trading_decision(mode_market_data)
+                
+                if mode_decision:
+                    # Execute mode-specific trade
+                    success = self.mode_system.execute_trade(mode_decision)
+                    
+                    if success:
+                        logger.info(f"🎯 {self.mode_system.current_mode.value.upper()} trade executed: {mode_decision.action.value} {mode_decision.symbol}")
+                        logger.info(f"   Entry: ${mode_decision.entry_price:.4f}, Size: {mode_decision.position_size:.6f}")
+                        logger.info(f"   Stop Loss: ${mode_decision.stop_loss:.4f}, Take Profit: ${mode_decision.take_profit:.4f}")
+                        logger.info(f"   Confidence: {mode_decision.confidence:.1%}")
+                        logger.info(f"   Reasoning: {mode_decision.reasoning}")
+                        
+                        # Update performance metrics
+                        self.total_trades += 1
+                        
+                        # Display mode performance summary
+                        performance = self.mode_system.get_performance_summary()
+                        if performance:
+                            logger.info(f"📊 {self.mode_system.current_mode.value.upper()} Performance:")
+                            logger.info(f"   Portfolio Balance: ${performance['portfolio_balance']:.2f}")
+                            logger.info(f"   Total Profit: ${performance['total_profit']:.2f}")
+                            logger.info(f"   Win Rate: {performance['win_rate']:.1%}")
+                            logger.info(f"   Trades Today: {performance['trades_today']}")
+                            logger.info(f"   Target Profit/Trade: ${performance['target_profit_per_trade']:.2f}")
+                            logger.info(f"   Target Win Rate: {performance['target_win_rate']:.1%}")
+                
+                # Continue with mathematical and AI processing for analysis
+                final_decision = self._combine_mathematical_and_ai_decisions(mathematical_signal, ai_decision, market_data)
+                
+                if final_decision and final_decision.confidence >= self.config["min_confidence"]:
+                    # Log the decision for analysis (but mode system already executed the trade)
                     logger.debug(f"🧮 Mathematical confidence: {mathematical_signal.confidence:.3f}")
                     logger.debug(f"🤖 AI confidence: {ai_decision.confidence if ai_decision else 0.5:.3f}")
+            
+            else:
+                # Fallback to original logic if mode system not available
+                final_decision = self._combine_mathematical_and_ai_decisions(mathematical_signal, ai_decision, market_data)
+                
+                if final_decision and final_decision.confidence >= self.config["min_confidence"]:
+                    # Execute trade using original logic
+                    success = await self._execute_trade(final_decision, market_data)
+                    
+                    if success:
+                        logger.debug(f"💰 Trade executed: {final_decision.action} {final_decision.symbol} @ ${final_decision.entry_price:.4f}")
+                        logger.debug(f"🧮 Mathematical confidence: {mathematical_signal.confidence:.3f}")
+                        logger.debug(f"🤖 AI confidence: {ai_decision.confidence if ai_decision else 0.5:.3f}")
             
         except Exception as e:
             logger.error(f"❌ Market data processing error: {e}")
@@ -535,6 +602,88 @@ class SchwabotTradingBot:
         """Handle shutdown signals."""
         logger.info(f"🛑 Received signal {signum}, shutting down...")
         self.running = False
+
+    def switch_trading_mode(self, mode: str) -> bool:
+        """Switch to a different trading mode."""
+        try:
+            if not self.mode_system or not MODE_INTEGRATION_AVAILABLE:
+                logger.error("❌ Mode Integration System not available")
+                return False
+            
+            # Convert string to TradingMode enum
+            mode_map = {
+                'default': TradingMode.DEFAULT,
+                'ghost': TradingMode.GHOST,
+                'hybrid': TradingMode.HYBRID
+            }
+            
+            if mode.lower() not in mode_map:
+                logger.error(f"❌ Invalid mode: {mode}. Available modes: {list(mode_map.keys())}")
+                return False
+            
+            trading_mode = mode_map[mode.lower()]
+            success = self.mode_system.set_mode(trading_mode)
+            
+            if success:
+                logger.info(f"🎯 Successfully switched to {mode.upper()} mode")
+                self._display_mode_information()
+            else:
+                logger.error(f"❌ Failed to switch to {mode.upper()} mode")
+            
+            return success
+            
+        except Exception as e:
+            logger.error(f"❌ Error switching trading mode: {e}")
+            return False
+    
+    def _display_mode_information(self):
+        """Display current mode information."""
+        try:
+            if not self.mode_system or not MODE_INTEGRATION_AVAILABLE:
+                return
+            
+            config = self.mode_system.get_current_config()
+            performance = self.mode_system.get_performance_summary()
+            
+            logger.info("🎯 CURRENT TRADING MODE INFORMATION")
+            logger.info("=" * 50)
+            logger.info(f"Mode: {self.mode_system.current_mode.value.upper()}")
+            logger.info(f"Position Size: {config.position_size_pct}%")
+            logger.info(f"Stop Loss: {config.stop_loss_pct}%")
+            logger.info(f"Take Profit: {config.take_profit_pct}%")
+            logger.info(f"Max Exposure: {config.max_exposure_pct}%")
+            logger.info(f"AI Priority: {config.ai_priority:.1%}")
+            logger.info(f"Update Interval: {config.update_interval}s")
+            logger.info(f"Supported Symbols: {len(config.supported_symbols)} pairs")
+            logger.info(f"Orbital Shells: {config.orbital_shells}")
+            logger.info(f"Profit Target: ${config.profit_target_usd}")
+            logger.info(f"Win Rate Target: {config.win_rate_target:.1%}")
+            
+            if performance:
+                logger.info("\n📊 PERFORMANCE SUMMARY")
+                logger.info("=" * 30)
+                logger.info(f"Portfolio Balance: ${performance['portfolio_balance']:.2f}")
+                logger.info(f"Total Profit: ${performance['total_profit']:.2f}")
+                logger.info(f"Win Rate: {performance['win_rate']:.1%}")
+                logger.info(f"Trades Today: {performance['trades_today']}")
+                logger.info(f"Total Trades: {performance['total_trades']}")
+                logger.info(f"Average Profit/Trade: ${performance['avg_profit_per_trade']:.2f}")
+            
+            logger.info("=" * 50)
+            
+        except Exception as e:
+            logger.error(f"❌ Error displaying mode information: {e}")
+    
+    def get_current_mode(self) -> str:
+        """Get current trading mode."""
+        try:
+            if self.mode_system and MODE_INTEGRATION_AVAILABLE:
+                return self.mode_system.current_mode.value
+            else:
+                return "default"
+        except Exception as e:
+            logger.error(f"❌ Error getting current mode: {e}")
+            return "default"
 
 async def main():
     """Main entry point for the Schwabot trading bot."""

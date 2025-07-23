@@ -1,0 +1,100 @@
+{
+  "timestamp": 1753244994.7201421,
+  "config": {
+    "default_enabled": true,
+    "auto_protection": true,
+    "logical_protection": true,
+    "secure_handler_config": {
+      "dummy_packet_count": 2,
+      "enable_dummy_injection": true,
+      "enable_hash_id_routing": true,
+      "security_logging": true,
+      "ephemeral_weight": 0.25,
+      "chacha20_weight": 0.25,
+      "nonce_weight": 0.2,
+      "dummy_weight": 0.15,
+      "hash_id_weight": 0.15
+    },
+    "integration_config": {
+      "enable_all_integrations": true,
+      "force_secure_trades": true,
+      "log_integration_events": true,
+      "security_threshold": 80.0
+    },
+    "gui_config": {
+      "theme": "dark",
+      "auto_refresh": true,
+      "show_statistics": true,
+      "show_security_events": true
+    }
+  },
+  "statistics": {
+    "security_enabled": true,
+    "auto_protection": true,
+    "logical_protection": true,
+    "total_trades_protected": 1,
+    "security_events_count": 3,
+    "secure_handler_status": {
+      "enabled": true,
+      "key_pool_size": 97,
+      "security_events_count": 1,
+      "last_key_rotation": 1753244994.6994815,
+      "cryptography_available": true,
+      "layer_weights": {
+        "ephemeral": 0.25,
+        "chacha20": 0.25,
+        "nonce": 0.2,
+        "dummy": 0.15,
+        "hash_id": 0.15
+      },
+      "config": {
+        "dummy_packet_count": 2,
+        "enable_dummy_injection": true,
+        "enable_hash_id_routing": true
+      }
+    },
+    "integration_status": {
+      "enabled": true,
+      "integrations_active": {
+        "real_trading_engine": false,
+        "strategy_execution_engine": false,
+        "api_routes": false,
+        "ccxt_engine": false,
+        "profile_router": false
+      },
+      "statistics": {
+        "total_trades_secured": 0,
+        "successful_secures": 0,
+        "failed_secures": 0,
+        "success_rate": 0.0,
+        "average_security_score": 0.0,
+        "average_processing_time": 0.0
+      },
+      "secure_handler_status": {
+        "enabled": true,
+        "key_pool_size": 100,
+        "security_events_count": 0,
+        "last_key_rotation": 1753244994.7005095,
+        "cryptography_available": true,
+        "layer_weights": {
+          "ephemeral": 0.25,
+          "chacha20": 0.25,
+          "nonce": 0.2,
+          "dummy": 0.15,
+          "hash_id": 0.15
+        },
+        "config": {
+          "dummy_packet_count": 2,
+          "enable_dummy_injection": true,
+          "enable_hash_id_routing": true
+        }
+      },
+      "config": {
+        "enable_all_integrations": true,
+        "force_secure_trades": true,
+        "log_integration_events": true,
+        "security_threshold": 80.0
+      }
+    }
+  }
+}

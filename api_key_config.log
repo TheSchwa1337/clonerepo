@@ -1,0 +1,26 @@
+2025-07-24 08:29:51,908 - __main__ - INFO - ✅ USB storage detected: D:\
+2025-07-24 08:29:51,908 - __main__ - INFO - 🔑 API Key Manager initialized
+2025-07-24 08:44:13,519 - __main__ - INFO - ✅ Alpha256 encryption system available
+2025-07-24 08:44:13,533 - AOI_Base_Files_Schwabot.main - ERROR - Failed to import hash_config_manager: cannot import name 'hash_config_manager' from 'core.hash_config_manager' (C:\Users\maxde\Downloads\clonerepo\core\hash_config_manager.py)
+2025-07-24 08:44:13,533 - AOI_Base_Files_Schwabot.main - WARNING - Enhanced GPU auto-detection system not available
+2025-07-24 08:44:14,588 - __main__ - INFO - ✅ Alpha Encryption (Ω-B-Γ Logic) system available
+2025-07-24 08:44:14,591 - core.encryption_manager - ERROR - Error creating Fernet instance: 'EncryptionManager' object has no attribute 'backend'
+2025-07-24 08:44:33,856 - __main__ - INFO - ✅ Alpha256 encryption system available
+2025-07-24 08:44:33,879 - AOI_Base_Files_Schwabot.main - ERROR - Failed to import hash_config_manager: cannot import name 'hash_config_manager' from 'core.hash_config_manager' (C:\Users\maxde\Downloads\clonerepo\core\hash_config_manager.py)
+2025-07-24 08:44:33,880 - AOI_Base_Files_Schwabot.main - WARNING - Enhanced GPU auto-detection system not available
+2025-07-24 08:44:35,805 - __main__ - INFO - ✅ Alpha Encryption (Ω-B-Γ Logic) system available
+2025-07-24 08:44:36,322 - core.encryption_manager - INFO - Encryption manager initialized with AES-256
+2025-07-24 08:44:36,323 - __main__ - INFO - ✅ Encryption Manager (AES-256) system available
+2025-07-24 08:44:36,349 - core.alpha256_encryption - INFO - Master key loaded successfully
+2025-07-24 08:44:36,397 - core.alpha256_encryption - INFO - Loaded 24 API keys
+2025-07-24 08:44:36,399 - core.alpha256_encryption - INFO - Alpha256 Encryption System initialized
+2025-07-24 08:44:36,400 - __main__ - INFO - ✅ Alpha256 encryption system initialized
+2025-07-24 08:44:36,414 - schwabot.vortex_security - INFO - ✅ VMSP initialized successfully
+2025-07-24 08:44:36,415 - AOI_Base_Files_Schwabot.schwabot.alpha_encryption - INFO - ✅ VMSP integration enabled
+2025-07-24 08:44:36,416 - AOI_Base_Files_Schwabot.schwabot.alpha_encryption - INFO - 🔐 Alpha Encryption (Ω-B-Γ Logic) initialized
+2025-07-24 08:44:36,417 - __main__ - INFO - ✅ Alpha Encryption (Ω-B-Γ Logic) system initialized
+2025-07-24 08:44:36,749 - core.encryption_manager - INFO - Encryption manager initialized with AES-256
+2025-07-24 08:44:36,775 - __main__ - INFO - ✅ Encryption Manager (AES-256) system initialized
+2025-07-24 08:44:36,852 - __main__ - INFO - 🔐 Active encryption systems: Alpha256, Alpha (Ω-B-Γ), AES-256
+2025-07-24 08:44:36,883 - __main__ - INFO - ✅ USB storage detected: D:\
+2025-07-24 08:44:36,883 - __main__ - INFO - 🔑 API Key Manager initialized with 5-layer encryption integration

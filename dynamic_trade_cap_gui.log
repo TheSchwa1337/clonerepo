@@ -1,0 +1,68 @@
+2025-07-24 14:50:08,749 - INFO - ============================================================
+2025-07-24 14:50:08,749 - INFO - 
+2025-07-24 14:50:08,813 - INFO - Found USB drive via WMI: F: (Size: 115.4GB)
+2025-07-24 14:50:08,814 - INFO - Found USB drive via WMI: G: (Size: 28.9GB)
+2025-07-24 14:50:08,814 - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 14:50:08,816 - INFO - USB memory initialized: F:\SchwabotMemory
+2025-07-24 14:50:08,818 - INFO - Memory sync thread started
+2025-07-24 14:50:08,818 - INFO - Found USB drive via win32api: F:\
+2025-07-24 14:50:08,819 - INFO - Found USB drive via win32api: G:\
+2025-07-24 14:50:08,820 - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 14:50:09,045 - INFO - Backed up: schwabot_monitoring.log
+2025-07-24 14:50:09,103 - INFO - Backed up: schwabot_cli.log
+2025-07-24 14:50:09,829 - INFO - Unified Tensor Algebra initialized
+2025-07-24 14:50:09,881 - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 14:50:09,959 - WARNING - Math infrastructure not available
+2025-07-24 14:50:09,961 - INFO - Initializing GhostSignal
+2025-07-24 14:50:10,016 - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 14:50:10,065 - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 14:50:10,065 - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 14:50:10,137 - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 14:50:10,155 - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 14:50:10,156 - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 14:50:10,205 - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 14:50:10,627 - INFO - 
+2025-07-24 14:50:10,636 - INFO -    Hourly: $0.01
+2025-07-24 14:50:10,636 - INFO -    Daily: $0.29
+2025-07-24 14:50:10,636 - INFO -    Weekly: $2.02
+2025-07-24 14:50:10,637 - INFO -    Monthly: $8.64
+2025-07-24 14:50:10,637 - INFO - 
+2025-07-24 14:50:10,641 - INFO -    Hourly: $0.07
+2025-07-24 14:50:10,642 - INFO -    Daily: $1.80
+2025-07-24 14:50:10,642 - INFO -    Weekly: $12.60
+2025-07-24 14:50:10,642 - INFO -    Monthly: $54.00
+2025-07-24 14:50:10,643 - INFO - 
+2025-07-24 14:50:10,647 - INFO -    Hourly: $0.30
+2025-07-24 14:50:10,647 - INFO -    Daily: $7.20
+2025-07-24 14:50:10,647 - INFO -    Weekly: $50.40
+2025-07-24 14:50:10,647 - INFO -    Monthly: $216.00
+2025-07-24 14:50:10,648 - INFO - 
+2025-07-24 14:50:10,651 - INFO -    Hourly: $0.67
+2025-07-24 14:50:10,652 - INFO -    Daily: $16.20
+2025-07-24 14:50:10,652 - INFO -    Weekly: $113.40
+2025-07-24 14:50:10,652 - INFO -    Monthly: $486.00
+2025-07-24 14:50:10,652 - INFO - 
+2025-07-24 14:50:10,657 - INFO -    Hourly: $1.20
+2025-07-24 14:50:10,657 - INFO -    Daily: $28.80
+2025-07-24 14:50:10,657 - INFO -    Weekly: $201.60
+2025-07-24 14:50:10,657 - INFO -    Monthly: $864.00
+2025-07-24 14:50:10,658 - INFO - 
+2025-07-24 14:50:10,669 - INFO - Backed up: config directory
+2025-07-24 14:50:10,672 - INFO - 
+2025-07-24 14:50:10,683 - INFO -    Confidence: 90.0%
+2025-07-24 14:50:10,684 - INFO -    Adaptation Rate: 0.5%
+2025-07-24 14:50:10,684 - INFO - 
+2025-07-24 14:50:10,691 - INFO -    Confidence: 70.0%
+2025-07-24 14:50:10,692 - INFO -    Adaptation Rate: 1.5%
+2025-07-24 14:50:10,692 - INFO - 
+2025-07-24 14:50:10,701 - INFO -    Confidence: 50.0%
+2025-07-24 14:50:10,702 - INFO -    Adaptation Rate: 2.5%
+2025-07-24 14:50:10,702 - INFO - 
+2025-07-24 14:50:10,709 - INFO -    Confidence: 50.0%
+2025-07-24 14:50:10,710 - INFO -    Adaptation Rate: 3.5%
+2025-07-24 14:50:10,710 - INFO - 
+2025-07-24 14:50:10,718 - INFO -    Confidence: 50.0%
+2025-07-24 14:50:10,718 - INFO - Memory backup completed: F:\SchwabotMemory\backups\backup_20250724_145008
+2025-07-24 14:50:10,718 - INFO -    Adaptation Rate: 4.5%
+2025-07-24 14:50:10,719 - INFO - 
+2025-07-24 14:50:10,724 - INFO - 

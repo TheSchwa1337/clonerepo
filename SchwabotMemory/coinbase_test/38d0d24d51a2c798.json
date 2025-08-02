@@ -1,0 +1,19 @@
+{
+  "entry_id": "38d0d24d51a2c798",
+  "timestamp": "2025-07-24T08:55:03.766339",
+  "data_type": "coinbase_test",
+  "data": {
+    "symbol": "BTC/USD",
+    "exchange": "coinbase",
+    "price": 50000.0,
+    "timestamp": "2025-07-24T08:55:03.766339",
+    "test_type": "coinbase_integration_test"
+  },
+  "source": "coinbase_test",
+  "priority": 1,
+  "tags": [
+    "coinbase",
+    "test",
+    "integration"
+  ]
+}

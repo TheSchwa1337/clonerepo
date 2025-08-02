@@ -1,0 +1,218 @@
+core_system:
+  allocator_mode: dynamic
+  dlt_waveform_engine_enabled: true
+  enable_aleph_core_integration: true
+  enable_centralized_pipelines: true
+  enable_internalized_mathematical_systems: true
+  enable_mathlib_integration: true
+  enable_ncco_core_integration: true
+  fractal_core_engine_enabled: true
+  matrix_fault_resolver_enabled: true
+demo_system:
+  demo_backtest_enabled: true
+  demo_config_files:
+  - settings/demo_backtest_mode.yaml
+  - demo/demo_backtest_matrix.yaml
+  - demo/demo_trade_sequence.py
+  - demo/demo_logic_flow.py
+  demo_entry_simulator_enabled: true
+  demo_integration_enabled: true
+  demo_logic_flow_enabled: true
+description: Unified settings configuration for Schwabot trading system
+dlt_waveform_engine:
+  analysis_window: 100
+  background_analysis_interval: 60
+  enabled: true
+  history_size: 1000
+  pattern_detection_enabled: true
+  real_time_analysis_enabled: true
+  waveform_types:
+  - price_waveform
+  - volume_waveform
+  - volatility_waveform
+  - momentum_waveform
+  - fractal_waveform
+fault_bus:
+  async_threshold: 0.5
+  enabled: true
+  max_queue_size: 50
+  recovery_profiles:
+    bitmap:
+      retry_attempts: 3
+      timeout: 15
+    gpu:
+      retry_attempts: 2
+      timeout: 20
+    profit:
+      retry_attempts: 2
+      timeout: 10
+    recursive:
+      retry_attempts: 1
+      timeout: 5
+    thermal:
+      retry_attempts: 3
+      timeout: 5
+  severity_threshold: 0.5
+fractal_core_engine:
+  enabled: true
+  fractal_dimension_limit: 2.5
+  ghost_vector_alignment_threshold: 0.7
+  integration_points:
+  - dlt_waveform_engine
+  - multi_bit_btc_processor
+  - ghost_strategy_handler
+  - profit_routing_engine
+  pattern_recognition_confidence: 0.85
+  processing_modes:
+  - 4_bit
+  - 8_bit
+  - 16_bit
+  - 42_bit
+  self_similarity_threshold: 0.8
+ghost_strategy_handler:
+  enabled: true
+  ghost_components:
+  - ghost_memory
+  - ghost_pipeline
+  - ghost_trigger
+  - ghost_swap_vector
+  - ghost_conditionals
+  ghost_signal_threshold: 0.6
+  memory_router_enabled: true
+  profit_tracker_enabled: true
+  strategy_matrix_enabled: true
+integration_orchestrator:
+  component_integration:
+    core_components:
+    - fault_bus
+    - dlt_waveform_engine
+    - multi_bit_btc_processor
+    - ghost_strategy_handler
+    - profit_routing_engine
+    demo_components:
+    - demo_logic_flow
+    - demo_backtest_runner
+    - demo_entry_simulator
+    - demo_integration_system
+    mathematical_components:
+    - unified_mathematics_framework
+    - advanced_mathematical_core
+    - btc_vector_aggregator
+    - quantum_btc_intelligence
+  enabled: true
+  orchestration_mode: unified
+last_updated: '2024-01-01T00:00:00Z'
+mathematical_framework:
+  constants:
+    kelly_safety_factor: 0.25
+    planck_constant: 6.62607015e-34
+    psi_infinity: 1.618033988749895
+    thermal_conductivity_btc: 0.024
+  enabled: true
+  epsilon: 1e-12
+  integration_points:
+  - unified_mathematics_framework
+  - btc256sha_pipeline
+  - quantum_btc_intelligence
+  - advanced_mathematical_core
+  precision: 18
+matrix_fault_resolver:
+  enable_automatic_recovery: true
+  enabled: true
+  fault_threshold: 0.8
+  max_retry_attempts: 3
+  recovery_profiles:
+    critical:
+      fallback_mode: safe
+      retry_attempts: 5
+      timeout: 10
+    high:
+      fallback_mode: degraded
+      retry_attempts: 3
+      timeout: 20
+    low:
+      fallback_mode: normal
+      retry_attempts: 1
+      timeout: 60
+    medium:
+      fallback_mode: normal
+      retry_attempts: 2
+      timeout: 30
+  recovery_timeout: 30
+multi_bit_btc_processor:
+  bit_levels:
+  - 4_bit
+  - 8_bit
+  - 16_bit
+  - 32_bit
+  - 42_bit
+  bit_pattern_analysis_enabled: true
+  confidence_scoring_enabled: true
+  enabled: true
+  entropy_weighting_enabled: true
+  timeframes:
+    15m: 900
+    1d: 86400
+    1h: 3600
+    1m: 60
+    4h: 14400
+    5m: 300
+performance_monitoring:
+  alert_thresholds:
+    cpu_usage: 0.8
+    gpu_usage: 0.9
+    memory_usage: 0.8
+    thermal_state: 0.7
+  enabled: true
+  metrics_collection: true
+  monitoring_interval: 1
+profit_routing_engine:
+  allocator_rules:
+    max_drawdown: 0.15
+    max_position_size: 0.05
+    risk_tolerance: 0.5
+    target_profit: 0.25
+  enabled: true
+  profit_crystallization_threshold: 0.15
+  routing_modes:
+  - conservative
+  - moderate
+  - aggressive
+  sustainment_principles_enabled: true
+temporal_execution_correction_layer:
+  correction_window: 100
+  enabled: true
+  max_drift_threshold: 0.1
+  timing_profiles:
+    fast_execution:
+      correction_strength: 1.0
+      max_delay: 0.1
+    normal_execution:
+      correction_strength: 0.8
+      max_delay: 0.5
+    slow_execution:
+      correction_strength: 0.6
+      max_delay: 1.0
+validation:
+  auto_correct: true
+  enabled: true
+  validate_integrations: true
+  validate_on_startup: true
+  validate_parameters: true
+  validation_rules:
+  - yaml_schema_valid
+  - component_connectivity_valid
+  - mathematical_framework_valid
+  - pipeline_integration_valid
+  validation_timeout: 30
+version: 1.0.0
+windows_cli_compatibility:
+  cli_flags:
+    enable_color: false
+    enable_emoji: false
+    enable_progress_bars: false
+    enable_unicode: false
+  emoji_handling: asic_plain_text
+  enabled: true
+  error_formatting: windows_friendly
+  unicode_handling: safe_ascii

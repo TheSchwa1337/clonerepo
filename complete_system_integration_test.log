@@ -1,0 +1,254 @@
+2025-07-24 08:06:46,494 - schwabot_usb_memory - INFO - Found USB drive via WMI: F: (Size: 115.4GB)
+2025-07-24 08:06:46,495 - schwabot_usb_memory - INFO - Found USB drive via WMI: G: (Size: 28.9GB)
+2025-07-24 08:06:46,496 - schwabot_usb_memory - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 08:06:46,497 - schwabot_usb_memory - INFO - USB memory initialized: F:\SchwabotMemory
+2025-07-24 08:06:46,500 - schwabot_usb_memory - INFO - Memory sync thread started
+2025-07-24 08:06:46,500 - schwabot_usb_memory - INFO - Found USB drive via win32api: F:\
+2025-07-24 08:06:46,502 - schwabot_usb_memory - INFO - Found USB drive via win32api: G:\
+2025-07-24 08:06:46,502 - schwabot_usb_memory - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 08:06:46,730 - schwabot_usb_memory - INFO - Backed up: schwabot_monitoring.log
+2025-07-24 08:06:46,803 - schwabot_usb_memory - INFO - Backed up: schwabot_cli.log
+2025-07-24 08:06:46,917 - core.math.tensor_algebra - INFO - Unified Tensor Algebra initialized
+2025-07-24 08:06:48,225 - schwabot_usb_memory - INFO - Backed up: config directory
+2025-07-24 08:06:48,275 - schwabot_usb_memory - INFO - Memory backup completed: F:\SchwabotMemory\backups\backup_20250724_080646
+2025-07-24 08:06:57,189 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 08:06:57,296 - core.ghost_core - WARNING - Math infrastructure not available
+2025-07-24 08:06:57,299 - core.ghost_core - INFO - Initializing GhostSignal
+2025-07-24 08:06:57,369 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 08:06:57,441 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 08:06:57,441 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 08:06:57,534 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 08:06:57,558 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 08:06:57,560 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 08:06:57,616 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 08:06:58,278 - schwabot_usb_memory - INFO - Found USB drive via win32api: F:\
+2025-07-24 08:06:58,278 - schwabot_usb_memory - INFO - Found USB drive via win32api: G:\
+2025-07-24 08:06:58,279 - schwabot_usb_memory - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 08:07:08,281 - schwabot_usb_memory - INFO - Found USB drive via win32api: F:\
+2025-07-24 08:07:08,281 - schwabot_usb_memory - INFO - Found USB drive via win32api: G:\
+2025-07-24 08:07:08,282 - schwabot_usb_memory - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 08:07:18,283 - schwabot_usb_memory - INFO - Found USB drive via win32api: F:\
+2025-07-24 08:07:18,283 - schwabot_usb_memory - INFO - Found USB drive via win32api: G:\
+2025-07-24 08:07:18,291 - schwabot_usb_memory - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 08:07:28,292 - schwabot_usb_memory - INFO - Found USB drive via win32api: F:\
+2025-07-24 08:07:28,293 - schwabot_usb_memory - INFO - Found USB drive via win32api: G:\
+2025-07-24 08:07:28,293 - schwabot_usb_memory - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 08:07:38,295 - schwabot_usb_memory - INFO - Found USB drive via win32api: F:\
+2025-07-24 08:07:38,296 - schwabot_usb_memory - INFO - Found USB drive via win32api: G:\
+2025-07-24 08:07:38,297 - schwabot_usb_memory - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 08:07:43,492 - schwabot_usb_memory - INFO - USB memory system stopped
+2025-07-24 08:07:44,969 - root - WARNING - Schwabot components not available: No module named 'core.schwabot_real_trading_executor'
+2025-07-24 08:07:45,025 - unified_live_backtesting_system - INFO -    Mode: live_api_backtest
+2025-07-24 08:07:45,026 - unified_live_backtesting_system - INFO -    Symbols: ['BTCUSDT']
+2025-07-24 08:07:45,026 - unified_live_backtesting_system - INFO -    Initial Balance: $1,000.00
+2025-07-24 08:07:45,128 - unified_live_backtesting_system - INFO -    Total Trades: 0
+2025-07-24 08:07:45,128 - unified_live_backtesting_system - INFO -    Win Rate: 0.0%
+2025-07-24 08:07:45,129 - unified_live_backtesting_system - INFO -    Final Balance: $1,000.00
+2025-07-24 08:08:16,321 - __main__ - INFO - ============================================================
+2025-07-24 08:08:16,330 - __main__ - INFO - ============================================================
+2025-07-24 08:08:16,377 - __main__ - INFO - ============================================================
+2025-07-24 08:22:28,845 - __main__ - INFO - 🧪 Starting Complete System Integration Test Suite
+2025-07-24 08:22:28,846 - __main__ - INFO - 🧪 Complete System Integration Test initialized
+2025-07-24 08:22:28,846 - __main__ - INFO - 🚀 Starting Complete System Integration Test Suite
+2025-07-24 08:22:28,846 - __main__ - INFO - 🔧 Testing individual components...
+2025-07-24 08:22:28,846 - __main__ - INFO - 📡 Testing Real API Pricing & Memory System...
+2025-07-24 08:22:28,849 - __main__ - ERROR - ❌ real_api_system FAILED: unexpected indent (real_api_pricing_memory_system.py, line 58)
+2025-07-24 08:22:28,850 - __main__ - INFO - 🧮 Testing Mathematical Integration Engine...
+2025-07-24 08:22:30,630 - backtesting.mathematical_integration_simplified - INFO - ✅ Simplified DLT Engine initialized
+2025-07-24 08:22:30,630 - backtesting.mathematical_integration_simplified - INFO - ✅ Simplified ALEPH Engine initialized
+2025-07-24 08:22:30,630 - backtesting.mathematical_integration_simplified - INFO - ✅ Simplified ALIF Engine initialized
+2025-07-24 08:22:30,631 - backtesting.mathematical_integration_simplified - INFO - ✅ Simplified RITL Engine initialized
+2025-07-24 08:22:30,631 - backtesting.mathematical_integration_simplified - INFO - ✅ Simplified RITTLE Engine initialized
+2025-07-24 08:22:30,632 - backtesting.mathematical_integration_simplified - INFO - ✅ Simplified Mathematical Integration Engine initialized
+2025-07-24 08:22:30,667 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.clean_math_foundation - INFO - ⚡ CleanMathFoundation using GPU acceleration: cupy (GPU)
+2025-07-24 08:22:31,152 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor using GPU acceleration: cupy (GPU)
+2025-07-24 08:22:31,158 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
+2025-07-24 08:22:31,167 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.ghost_core - INFO - 🔄 Ghost Core using CPU fallback: numpy (CPU)
+2025-07-24 08:22:40,941 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 08:22:42,265 - AOI_Base_Files_Schwabot.archive.old_versions.backups.phase2_backup.chrono_recursive_logic_function - INFO - 🔄 CRLF using CPU fallback: numpy (CPU)
+2025-07-24 08:22:42,286 - __main__ - ERROR - ❌ mathematical_engine FAILED: unexpected indent (gpu_dna_autodetect.py, line 22)
+2025-07-24 08:22:42,286 - __main__ - INFO - 🕐 Testing Clock Mode System...
+2025-07-24 08:22:42,288 - __main__ - ERROR - ❌ clock_mode_system FAILED: unmatched ')' (clock_mode_system.py, line 40)
+2025-07-24 08:22:42,289 - __main__ - INFO - 📊 Testing Unified Live Backtesting System...
+2025-07-24 08:22:42,523 - __main__ - ERROR - ❌ backtesting_system FAILED: unexpected indent (real_api_pricing_memory_system.py, line 58)
+2025-07-24 08:22:42,523 - __main__ - INFO - 🎯 Testing Mode Integration System...
+2025-07-24 08:22:42,576 - __main__ - ERROR - ❌ mode_integration_system FAILED: unexpected indent (real_api_pricing_memory_system.py, line 58)
+2025-07-24 08:22:42,577 - __main__ - INFO - 🔗 Testing system integrations...
+2025-07-24 08:22:42,577 - __main__ - INFO - 🧠 Testing Memory-Mathematical Integration...
+2025-07-24 08:22:42,579 - __main__ - ERROR - ❌ memory_mathematical_integration FAILED: unexpected indent (real_api_pricing_memory_system.py, line 58)
+2025-07-24 08:22:42,579 - __main__ - INFO - 📈 Testing API-Backtesting Integration...
+2025-07-24 08:22:42,579 - __main__ - INFO - ✅ api_backtesting_integration PASSED
+2025-07-24 08:22:42,580 - __main__ - INFO - 🕐 Testing Clock-Memory Integration...
+2025-07-24 08:22:42,580 - __main__ - INFO - ✅ clock_memory_integration PASSED
+2025-07-24 08:22:42,580 - __main__ - INFO - 🚀 Testing Complete System Launcher...
+2025-07-24 08:22:42,599 - __main__ - ERROR - ❌ complete_system_launcher FAILED: unexpected indent (real_api_pricing_memory_system.py, line 58)
+2025-07-24 08:22:42,600 - __main__ - INFO - ⚡ Testing Performance and Stress...
+2025-07-24 08:22:42,600 - __main__ - INFO - ⚡ Testing Rapid API Calls...
+2025-07-24 08:22:42,602 - __main__ - ERROR - ❌ rapid_api_calls FAILED: unexpected indent (real_api_pricing_memory_system.py, line 58)
+2025-07-24 08:22:42,603 - __main__ - INFO - 💾 Testing Memory Storage Stress...
+2025-07-24 08:22:42,605 - __main__ - ERROR - ❌ memory_storage_stress FAILED: unexpected indent (real_api_pricing_memory_system.py, line 58)
+2025-07-24 08:22:42,605 - __main__ - INFO - 🧮 Testing Mathematical Processing Stress...
+2025-07-24 08:22:42,626 - __main__ - ERROR - ❌ mathematical_stress FAILED: unexpected indent (gpu_dna_autodetect.py, line 22)
+2025-07-24 08:22:42,628 - __main__ - INFO - 📄 Test report saved to: complete_system_integration_test_report_20250724_082242.json
+2025-07-24 08:22:42,628 - __main__ - INFO - ============================================================
+2025-07-24 08:22:42,628 - __main__ - INFO - 🧪 COMPLETE SYSTEM INTEGRATION TEST RESULTS
+2025-07-24 08:22:42,629 - __main__ - INFO - ============================================================
+2025-07-24 08:22:42,629 - __main__ - INFO - 📊 Total Tests: 12
+2025-07-24 08:22:42,629 - __main__ - INFO - ✅ Passed: 2
+2025-07-24 08:22:42,629 - __main__ - INFO - ❌ Failed: 10
+2025-07-24 08:22:42,630 - __main__ - INFO - 📈 Success Rate: 16.7%
+2025-07-24 08:22:42,630 - __main__ - INFO - ⏱️ Duration: 13.8 seconds
+2025-07-24 08:22:42,630 - __main__ - INFO - ============================================================
+2025-07-24 08:22:42,630 - __main__ - INFO - 💡 RECOMMENDATIONS:
+2025-07-24 08:22:42,630 - __main__ - INFO -    ❌ Poor! Major issues need to be addressed.
+2025-07-24 08:22:42,631 - __main__ - INFO -    🔧 10 errors found - review error logs.
+2025-07-24 08:22:42,631 - __main__ - ERROR - ❌ SYSTEM INTEGRATION TEST FAILED - Issues need to be resolved
+2025-07-24 08:23:15,803 - __main__ - INFO - 🧪 Starting Complete System Integration Test Suite
+2025-07-24 08:23:15,804 - __main__ - INFO - 🧪 Complete System Integration Test initialized
+2025-07-24 08:23:15,804 - __main__ - INFO - 🚀 Starting Complete System Integration Test Suite
+2025-07-24 08:23:15,804 - __main__ - INFO - 🔧 Testing individual components...
+2025-07-24 08:23:15,804 - __main__ - INFO - 📡 Testing Real API Pricing & Memory System...
+2025-07-24 08:23:16,192 - real_api_pricing_memory_system - INFO - 🚀 Initializing Real API Pricing & Memory Storage System
+2025-07-24 08:23:16,274 - schwabot_usb_memory - INFO - Found USB drive via WMI: F: (Size: 115.4GB)
+2025-07-24 08:23:16,279 - schwabot_usb_memory - INFO - Found USB drive via WMI: G: (Size: 28.9GB)
+2025-07-24 08:23:16,280 - schwabot_usb_memory - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 08:23:16,281 - schwabot_usb_memory - INFO - USB memory initialized: F:\SchwabotMemory
+2025-07-24 08:23:16,282 - schwabot_usb_memory - INFO - Memory sync thread started
+2025-07-24 08:23:16,282 - schwabot_usb_memory - INFO - Found USB drive via win32api: F:\
+2025-07-24 08:23:16,283 - schwabot_usb_memory - INFO - Found USB drive via win32api: G:\
+2025-07-24 08:23:16,283 - schwabot_usb_memory - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 08:23:16,478 - real_api_pricing_memory_system - INFO - ✅ USB memory initialized: F:\SchwabotMemory
+2025-07-24 08:23:16,480 - real_api_pricing_memory_system - INFO - ✅ Memory database initialized
+2025-07-24 08:23:16,481 - real_api_pricing_memory_system - WARNING - ⚠️ No API keys found - using fallback data sources
+2025-07-24 08:23:16,482 - real_api_pricing_memory_system - ERROR - ❌ Error getting real price data: No live price data available for BTC/USDC - API connection required
+2025-07-24 08:23:16,482 - real_api_pricing_memory_system - INFO - ✅ Background threads started
+2025-07-24 08:23:16,483 - real_api_pricing_memory_system - ERROR - ❌ Error getting real price data: No live price data available for ETH/USDC - API connection required
+2025-07-24 08:23:16,483 - real_api_pricing_memory_system - INFO - ✅ Real API Pricing & Memory Storage System initialized
+2025-07-24 08:23:16,483 - real_api_pricing_memory_system - ERROR - ❌ Error getting real price data: No live price data available for BTC/USDT - API connection required
+2025-07-24 08:23:16,484 - real_api_pricing_memory_system - ERROR - ❌ Error getting real price data: No live price data available for BTC/USDC - API connection required
+2025-07-24 08:23:16,484 - real_api_pricing_memory_system - ERROR - ❌ Error getting real price data: No live price data available for ETH/USDT - API connection required
+2025-07-24 08:23:16,484 - __main__ - ERROR - ❌ real_api_system FAILED: Cannot get live price data for BTC/USDC: No live price data available for BTC/USDC - API connection required
+2025-07-24 08:23:16,485 - __main__ - INFO - 🧮 Testing Mathematical Integration Engine...
+2025-07-24 08:23:16,508 - schwabot_usb_memory - INFO - Backed up: schwabot_monitoring.log
+2025-07-24 08:23:16,558 - core.math.tensor_algebra - INFO - Unified Tensor Algebra initialized
+2025-07-24 08:23:16,566 - schwabot_usb_memory - INFO - Backed up: schwabot_cli.log
+2025-07-24 08:23:18,130 - schwabot_usb_memory - INFO - Backed up: config directory
+2025-07-24 08:23:18,156 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 08:23:18,167 - core.distributed_mathematical_processor - INFO - 🔄 Distributed Mathematical Processor using CPU fallback: numpy (CPU)
+2025-07-24 08:23:18,182 - core.distributed_mathematical_processor - INFO - ⚡ Distributed Mathematical Processor initialized with 4 workers
+2025-07-24 08:23:18,183 - schwabot_usb_memory - INFO - Memory backup completed: F:\SchwabotMemory\backups\backup_20250724_082316
+2025-07-24 08:23:18,191 - core.enhanced_error_recovery_system - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
+2025-07-24 08:23:18,204 - core.ghost_core - WARNING - Math infrastructure not available
+2025-07-24 08:23:18,213 - core.ghost_core - INFO - Initializing GhostSignal
+2025-07-24 08:23:18,214 - core.ghost_core - INFO - ✅ GhostSignal initialized successfully
+2025-07-24 08:23:18,225 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-24 08:23:18,226 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra initialized with backend: numpy (CPU)
+2025-07-24 08:23:18,228 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 08:23:18,229 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-24 08:23:18,230 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-24 08:23:18,239 - core.entropy_math - INFO - 🔄 Entropy Math using CPU fallback: numpy (CPU)
+2025-07-24 08:23:18,243 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 08:23:18,245 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 08:23:18,246 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-24 08:23:18,247 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-24 08:23:18,248 - core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-24 08:23:18,251 - core.unified_profit_vectorization_system - INFO - 🔄 UnifiedProfitVectorizationSystem using CPU fallback: numpy (CPU)
+2025-07-24 08:23:18,284 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 08:23:18,285 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-24 08:23:18,287 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 08:23:18,289 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 08:23:18,290 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-24 08:23:18,291 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-24 08:23:18,291 - core.entropy_math - INFO - 📊 Entropy Math System initialized
+2025-07-24 08:23:18,293 - core.quantum_mathematical_bridge - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 08:23:18,294 - core.orbital_shell_brain_system - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-24 08:23:18,294 - core.advanced_tensor_algebra - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-24 08:23:18,295 - core.unified_profit_vectorization_system - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-24 08:23:18,308 - core.clean_unified_math - INFO - 🔄 Clean Unified Math using CPU fallback: NumPy (CPU)
+2025-07-24 08:23:18,308 - core.clean_unified_math - INFO - 🧠 Profit vector integration: ENABLED
+2025-07-24 08:23:18,309 - core.clean_unified_math - INFO - 🧠 Big Bro Logic Module integration: ENABLED
+2025-07-24 08:23:18,312 - core.bro_logic_module - INFO - 🧠 Big Bro Logic Module initialized - Nexus.BigBro.TheoremAlpha active
+2025-07-24 08:23:18,313 - core.clean_unified_math - INFO - 🧠 Big Bro Logic Module integrated into Clean Unified Math System
+2025-07-24 08:23:18,350 - __main__ - WARNING - ⚠️ mathematical_engine SKIPPED - System not available
+2025-07-24 08:23:18,365 - __main__ - INFO - 🕐 Testing Clock Mode System...
+2025-07-24 08:23:18,384 - __main__ - ERROR - ❌ clock_mode_system FAILED: unmatched ')' (clock_mode_system.py, line 40)
+2025-07-24 08:23:18,391 - __main__ - INFO - 📊 Testing Unified Live Backtesting System...
+2025-07-24 08:23:20,206 - root - WARNING - Schwabot components not available: No module named 'core.schwabot_real_trading_executor'
+2025-07-24 08:23:20,213 - unified_live_backtesting_system - WARNING - 🎯 Schwabot components not available
+2025-07-24 08:23:20,213 - unified_live_backtesting_system - INFO - 🎯 Unified Live Backtesting System initialized: backtest_1753359800213
+2025-07-24 08:23:20,214 - unified_live_backtesting_system - INFO - 🚀 Starting live backtest: backtest_1753359800213
+2025-07-24 08:23:20,214 - unified_live_backtesting_system - INFO -    Mode: live_api_backtest
+2025-07-24 08:23:20,214 - unified_live_backtesting_system - INFO -    Symbols: ['BTCUSDT']
+2025-07-24 08:23:20,215 - unified_live_backtesting_system - INFO -    Initial Balance: $1,000.00
+2025-07-24 08:23:20,215 - unified_live_backtesting_system - ERROR - ❌ API connection failed: 'UnifiedLiveBacktestingSystem' object has no attribute 'api_clients'
+2025-07-24 08:23:20,215 - unified_live_backtesting_system - ERROR - ❌ Live backtest failed: 'UnifiedLiveBacktestingSystem' object has no attribute 'api_clients'
+2025-07-24 08:23:28,186 - schwabot_usb_memory - INFO - Found USB drive via win32api: F:\
+2025-07-24 08:23:28,187 - schwabot_usb_memory - INFO - Found USB drive via win32api: G:\
+2025-07-24 08:23:28,187 - schwabot_usb_memory - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 08:23:38,199 - schwabot_usb_memory - INFO - Found USB drive via win32api: F:\
+2025-07-24 08:23:38,201 - schwabot_usb_memory - INFO - Found USB drive via win32api: G:\
+2025-07-24 08:23:38,201 - schwabot_usb_memory - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 08:23:48,217 - schwabot_usb_memory - INFO - Found USB drive via win32api: F:\
+2025-07-24 08:23:48,224 - schwabot_usb_memory - INFO - Found USB drive via win32api: G:\
+2025-07-24 08:23:48,229 - schwabot_usb_memory - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 08:23:50,231 - __main__ - ERROR - ❌ backtesting_system FAILED: BacktestResult.__init__() got an unexpected keyword argument 'initial_balance'
+2025-07-24 08:23:50,231 - __main__ - INFO - 🎯 Testing Mode Integration System...
+2025-07-24 08:23:50,236 - legacy_mode_system - INFO - 🛡️ LEGACY SHADOW MODE - Analysis only, no trading execution
+2025-07-24 08:23:50,254 - core.adaptive_profitability_selector - INFO - 🎯 Adaptive Profitability Selector initialized
+2025-07-24 08:23:50,255 - core.mode_integration_system - INFO - 🛡️ SHADOW MODE - Analysis only, no trading execution
+2025-07-24 08:23:50,256 - core.mode_integration_system - INFO - ✅ Real API pricing and memory storage system initialized for ModeSafetyConfig
+2025-07-24 08:23:50,257 - core.mode_integration_system - INFO - ✅ Real API pricing and memory storage system initialized for ModeConfig
+2025-07-24 08:23:50,257 - core.mode_integration_system - INFO - ✅ Real API pricing and memory storage system initialized for TradingDecision
+2025-07-24 08:23:50,258 - core.mode_integration_system - INFO - ✅ Real API pricing and memory storage system initialized for BTCPriceHashEvent
+2025-07-24 08:23:50,258 - core.mode_integration_system - INFO - ✅ Real API pricing and memory storage system initialized for DualisticConsensus
+2025-07-24 08:23:50,259 - core.mode_integration_system - INFO - ✅ Real API pricing and memory storage system initialized for ModeIntegrationSystem
+2025-07-24 08:23:50,267 - __main__ - ERROR - ❌ mode_integration_system FAILED: 'ModeIntegrationSystem' object has no attribute '_apply_global_safety_overrides'
+2025-07-24 08:23:50,269 - __main__ - INFO - 🔗 Testing system integrations...
+2025-07-24 08:23:50,269 - __main__ - INFO - 🧠 Testing Memory-Mathematical Integration...
+2025-07-24 08:23:50,270 - __main__ - WARNING - ⚠️ memory_mathematical_integration SKIPPED - Systems not available
+2025-07-24 08:23:50,271 - __main__ - INFO - 📈 Testing API-Backtesting Integration...
+2025-07-24 08:23:50,271 - __main__ - INFO - ✅ api_backtesting_integration PASSED
+2025-07-24 08:23:50,272 - __main__ - INFO - 🕐 Testing Clock-Memory Integration...
+2025-07-24 08:23:50,273 - __main__ - INFO - ✅ clock_memory_integration PASSED
+2025-07-24 08:23:50,273 - __main__ - INFO - 🚀 Testing Complete System Launcher...
+2025-07-24 08:23:50,278 - core.mode_integration_system - INFO - 🛡️ SHADOW MODE - Analysis only, no trading execution
+2025-07-24 08:23:50,278 - core.mode_integration_system - INFO - ✅ Real API pricing and memory storage system initialized for ModeSafetyConfig
+2025-07-24 08:23:50,279 - core.mode_integration_system - INFO - ✅ Real API pricing and memory storage system initialized for ModeConfig
+2025-07-24 08:23:50,279 - core.mode_integration_system - INFO - ✅ Real API pricing and memory storage system initialized for TradingDecision
+2025-07-24 08:23:50,280 - core.mode_integration_system - INFO - ✅ Real API pricing and memory storage system initialized for BTCPriceHashEvent
+2025-07-24 08:23:50,280 - core.mode_integration_system - INFO - ✅ Real API pricing and memory storage system initialized for DualisticConsensus
+2025-07-24 08:23:50,280 - core.mode_integration_system - INFO - ✅ Real API pricing and memory storage system initialized for ModeIntegrationSystem
+2025-07-24 08:23:50,285 - __main__ - ERROR - ❌ complete_system_launcher FAILED: 'ModeIntegrationSystem' object has no attribute '_apply_global_safety_overrides'
+2025-07-24 08:23:50,286 - __main__ - INFO - ⚡ Testing Performance and Stress...
+2025-07-24 08:23:50,287 - __main__ - INFO - ⚡ Testing Rapid API Calls...
+2025-07-24 08:23:50,287 - real_api_pricing_memory_system - ERROR - ❌ Error getting real price data: No live price data available for BTC/USDC - API connection required
+2025-07-24 08:23:50,287 - __main__ - ERROR - ❌ rapid_api_calls FAILED: Cannot get live price data for BTC/USDC: No live price data available for BTC/USDC - API connection required
+2025-07-24 08:23:50,288 - __main__ - INFO - 💾 Testing Memory Storage Stress...
+2025-07-24 08:23:50,352 - real_api_pricing_memory_system - INFO - 💾 Stored memory entry: 79e6188a7974d1d6 (stress_test)
+2025-07-24 08:23:50,384 - real_api_pricing_memory_system - INFO - 💾 Stored memory entry: f2abef921dcb1c5c (stress_test)
+2025-07-24 08:23:50,416 - real_api_pricing_memory_system - INFO - 💾 Stored memory entry: de19b79049bf52e1 (stress_test)
+2025-07-24 08:23:50,447 - real_api_pricing_memory_system - INFO - 💾 Stored memory entry: d6fe1bf37e53bb1a (stress_test)
+2025-07-24 08:23:50,479 - real_api_pricing_memory_system - INFO - 💾 Stored memory entry: ad458a5dafc9095f (stress_test)
+2025-07-24 08:23:50,511 - real_api_pricing_memory_system - INFO - 💾 Stored memory entry: 559613f8427374d1 (stress_test)
+2025-07-24 08:23:50,542 - real_api_pricing_memory_system - INFO - 💾 Stored memory entry: c40f7dc1e18dcd26 (stress_test)
+2025-07-24 08:23:50,574 - real_api_pricing_memory_system - INFO - 💾 Stored memory entry: b1bd21d9a683dbbd (stress_test)
+2025-07-24 08:23:50,606 - real_api_pricing_memory_system - INFO - 💾 Stored memory entry: 96238dcce7401a93 (stress_test)
+2025-07-24 08:23:50,636 - real_api_pricing_memory_system - INFO - 💾 Stored memory entry: f035110f0b7a6fcb (stress_test)
+2025-07-24 08:23:50,637 - __main__ - INFO - ✅ memory_storage_stress PASSED - Avg time: 35.0ms
+2025-07-24 08:23:50,637 - __main__ - INFO - 🧮 Testing Mathematical Processing Stress...
+2025-07-24 08:23:50,638 - __main__ - WARNING - ⚠️ mathematical_stress SKIPPED - System not available
+2025-07-24 08:23:50,640 - __main__ - INFO - 📄 Test report saved to: complete_system_integration_test_report_20250724_082350.json
+2025-07-24 08:23:50,640 - __main__ - INFO - ============================================================
+2025-07-24 08:23:50,641 - __main__ - INFO - 🧪 COMPLETE SYSTEM INTEGRATION TEST RESULTS
+2025-07-24 08:23:50,641 - __main__ - INFO - ============================================================
+2025-07-24 08:23:50,641 - __main__ - INFO - 📊 Total Tests: 12
+2025-07-24 08:23:50,642 - __main__ - INFO - ✅ Passed: 3
+2025-07-24 08:23:50,642 - __main__ - INFO - ❌ Failed: 6
+2025-07-24 08:23:50,642 - __main__ - INFO - 📈 Success Rate: 25.0%
+2025-07-24 08:23:50,643 - __main__ - INFO - ⏱️ Duration: 34.8 seconds
+2025-07-24 08:23:50,643 - __main__ - INFO - ============================================================
+2025-07-24 08:23:50,643 - __main__ - INFO - 💡 RECOMMENDATIONS:
+2025-07-24 08:23:50,644 - __main__ - INFO -    ❌ Poor! Major issues need to be addressed.
+2025-07-24 08:23:50,644 - __main__ - INFO -    🔧 6 errors found - review error logs.
+2025-07-24 08:23:50,644 - __main__ - INFO -    📦 1 components skipped - ensure all dependencies are installed.
+2025-07-24 08:23:50,645 - __main__ - ERROR - ❌ SYSTEM INTEGRATION TEST FAILED - Issues need to be resolved

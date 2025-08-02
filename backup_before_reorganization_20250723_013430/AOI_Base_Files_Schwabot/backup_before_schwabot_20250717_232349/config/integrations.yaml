@@ -1,0 +1,143 @@
+backup:
+  compression: true
+  enabled: true
+  encryption: false
+  retention_days: 30
+  schedule: 0 2 * * *
+binance:
+  api_key: ''
+  enabled: false
+  rate_limit: 1200
+  secret_key: ''
+  testnet: false
+  websocket_enabled: true
+coinbase_pro:
+  api_key: ''
+  enabled: false
+  passphrase: ''
+  sandbox: false
+  secret: ''
+coingecko:
+  base_url: https://api.coingecko.com/api/v3
+  enabled: true
+  rate_limit: 50
+  update_interval: 60
+development:
+  debug_mode: false
+  hot_reload: true
+  mock_trading: false
+  test_networks: true
+discord:
+  enabled: false
+  notifications:
+  - trades
+  - alerts
+  - system_status
+  - portfolio_updates
+  webhook_url: ''
+email:
+  enabled: false
+  notifications:
+  - daily_summary
+  - error_alerts
+  - portfolio_reports
+  password: ''
+  recipients: []
+  smtp_port: 587
+  smtp_server: ''
+  username: ''
+ftx:
+  api_key: ''
+  enabled: false
+  secret: ''
+  subaccount: ''
+glassnode:
+  api_key: ''
+  base_url: https://api.glassnode.com
+  enabled: false
+  metrics:
+  - market/price_usd_close
+  - indicators/sopr
+  - indicators/nupl
+  - indicators/puell_multiple
+  - indicators/mvrv
+  update_interval: 300
+kraken:
+  api_key: ''
+  enabled: false
+  secret: ''
+monitoring:
+  alert_thresholds:
+    api_latency: 1000
+    cpu_usage: 80
+    disk_usage: 90
+    memory_usage: 80
+  health_check_interval: 60
+  metrics:
+    backend: prometheus
+    enabled: true
+    port: 9090
+ngrok:
+  authtoken: ''
+  enabled: false
+  port: 8000
+  protocol: http
+  region: us
+  subdomain: ''
+performance:
+  max_concurrent_orders: 10
+  order_timeout: 30
+  rate_limiting: true
+  retry_attempts: 3
+security:
+  api_rate_limit: 100
+  ip_whitelist: []
+  max_order_size: 10000
+  require_2fa: false
+  session_timeout: 3600
+storage:
+  cache:
+    host: localhost
+    port: 6379
+    ttl: 3600
+    type: redis
+  database:
+    backup_interval: 86400
+    path: data/schwabot.db
+    type: sqlite
+  logs:
+    backup_count: 5
+    format: json
+    level: INFO
+    max_size: 100MB
+telegram:
+  bot_token: ''
+  chat_id: ''
+  enabled: false
+  notifications:
+  - trades
+  - alerts
+  - system_status
+  - portfolio_updates
+tradingview:
+  alerts:
+  - price_breakout
+  - volume_spike
+  - technical_signal
+  enabled: false
+  webhook_secret: ''
+whale_watcher:
+  alert_types:
+  - large_transfer
+  - exchange_deposit
+  - exchange_withdrawal
+  - whale_movement
+  api_key: ''
+  currencies:
+  - BTC
+  - ETH
+  - USDT
+  - USDC
+  enabled: false
+  min_amount: 1000000
+  webhook_url: ''

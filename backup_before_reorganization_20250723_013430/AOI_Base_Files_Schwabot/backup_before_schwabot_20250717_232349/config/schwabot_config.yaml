@@ -1,0 +1,82 @@
+advanced:
+  chart_update_interval: 1000
+  gan_batch_size: 64
+  gan_confidence_threshold: 0.75
+  gan_enabled: true
+  gan_model_path: ./models/entropy_gan.pth
+  gpu_allow_growth: true
+  gpu_enabled: false
+  gpu_memory_fraction: 0.5
+  max_chart_points: 10000
+  quantum_backend: simulator
+  quantum_enabled: false
+  quantum_shots: 1024
+  visualization_enabled: true
+integration:
+  backup_enabled: true
+  backup_interval_hours: 24
+  backup_retention_days: 30
+  database_pool_size: 10
+  database_timeout: 30
+  database_url: null
+  email_enabled: false
+  email_smtp_host: null
+  email_smtp_port: 587
+  external_apis: {}
+  webhook_endpoints: []
+mathlib:
+  convergence_threshold: 1.0e-08
+  decimal_precision: 18
+  dual_number_precision: 16
+  enable_auto_diff: true
+  enable_gpu_acceleration: false
+  floating_point_precision: double
+  gpu_device_id: 0
+  gradient_check_enabled: true
+  learning_rate: 0.001
+  matrix_backend: numpy
+  max_iterations: 10000
+  numerical_tolerance: 1.0e-10
+  optimization_algorithm: adam
+realtime:
+  alert_thresholds:
+    cpu_usage: 0.8
+    error_rate: 0.05
+    memory_usage: 0.8
+  batch_size: 100
+  data_compression_enabled: true
+  health_check_interval: 30
+  max_tick_age_seconds: 60
+  performance_monitoring: true
+  processing_interval_ms: 100
+  processing_threads: 2
+  tick_buffer_size: 10000
+system:
+  api_rate_limit: 1000
+  cli_compatibility_mode: true
+  cpu_usage_limit: 0.8
+  debug: true
+  enable_emoji_fallback: true
+  encryption_enabled: true
+  environment: development
+  force_ascii_output: false
+  log_file: null
+  log_level: INFO
+  max_workers: 4
+  memory_limit_mb: 2048
+  session_timeout: 3600
+trading:
+  api_timeout: 30
+  backtest_period_days: 30
+  default_exchange: coinbase
+  default_order_type: limit
+  enable_backtesting: true
+  max_daily_loss: 500.0
+  max_order_size: 1000.0
+  max_position_size: 10000.0
+  min_order_size: 0.001
+  retry_attempts: 3
+  risk_tolerance: 0.02
+  sandbox_mode: true
+  strategy_timeout: 300
+version: 1.0.0

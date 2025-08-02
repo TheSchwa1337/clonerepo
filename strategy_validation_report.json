@@ -1,0 +1,105 @@
+{
+  "report_timestamp": "2025-07-24T14:31:53.448533",
+  "test_results": {
+    "micro_mode": {
+      "mode": "MICRO",
+      "total_trades": 0,
+      "total_volume": 0.0,
+      "daily_trades": 0,
+      "daily_volume": 0.0,
+      "trade_cap": 1.0,
+      "confidence_threshold": 0.9,
+      "triple_confirmation": true,
+      "timestamp": "2025-07-24T14:31:53.445556"
+    },
+    "paper_mode": {
+      "mode": "PAPER",
+      "error": "No paper trading data available",
+      "timestamp": "2025-07-24T14:31:53.446549"
+    },
+    "shadow_mode": {
+      "mode": "SHADOW",
+      "description": "Analysis only - no real trading",
+      "real_market_data": true,
+      "kraken_integration": true,
+      "50ms_timing": true,
+      "market_delta_detection": true,
+      "timestamp": "2025-07-24T14:31:53.446549",
+      "decisions_analyzed": 100,
+      "confidence_avg": 0.75,
+      "efficiency_avg": 0.65,
+      "market_conditions_tested": "various"
+    }
+  },
+  "profit_projections": {},
+  "strategy_comparison": {
+    "micro_mode": {
+      "mode": "MICRO",
+      "total_trades": 0,
+      "total_volume": 0.0,
+      "daily_trades": 0,
+      "daily_volume": 0.0,
+      "trade_cap": 1.0,
+      "confidence_threshold": 0.9,
+      "triple_confirmation": true,
+      "timestamp": "2025-07-24T14:31:53.445556"
+    },
+    "paper_mode": {
+      "mode": "PAPER",
+      "error": "No paper trading data available",
+      "timestamp": "2025-07-24T14:31:53.446549"
+    },
+    "shadow_mode": {
+      "mode": "SHADOW",
+      "description": "Analysis only - no real trading",
+      "real_market_data": true,
+      "kraken_integration": true,
+      "50ms_timing": true,
+      "market_delta_detection": true,
+      "timestamp": "2025-07-24T14:31:53.446549",
+      "decisions_analyzed": 100,
+      "confidence_avg": 0.75,
+      "efficiency_avg": 0.65,
+      "market_conditions_tested": "various"
+    },
+    "comparison_metrics": {}
+  },
+  "validation_summary": {
+    "strategy_validation": {
+      "micro_mode_functional": false,
+      "safety_protocols_working": true,
+      "real_market_integration": true,
+      "profit_potential_confirmed": false
+    },
+    "performance_assessment": {
+      "win_rate_acceptable": false,
+      "profitability_confirmed": false,
+      "scalability_potential": false,
+      "risk_management_effective": true
+    },
+    "technical_validation": {
+      "50ms_timing_precision": true,
+      "kraken_integration": true,
+      "market_delta_detection": true,
+      "usb_memory_storage": true
+    }
+  },
+  "recommendations": {
+    "immediate_actions": [
+      "Optimize strategy parameters to improve win rate",
+      "Increase trade frequency or optimize profit per trade"
+    ],
+    "optimization_suggestions": [
+      "Consider lowering confidence threshold from 90% to 80-85%",
+      "Implement dynamic thresholds based on market conditions",
+      "Add more trading pairs for diversification"
+    ],
+    "scaling_recommendations": [],
+    "risk_management": [
+      "Maintain $1 trade caps for safety",
+      "Keep triple confirmation protocols",
+      "Monitor win rate closely",
+      "Implement stop-loss mechanisms"
+    ]
+  }
+}

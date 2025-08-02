@@ -1,0 +1,216 @@
+{
+  "timestamp": "2025-07-24T02:25:01.593322",
+  "total_issues": 13,
+  "critical_issues": 11,
+  "high_issues": 2,
+  "medium_issues": 0,
+  "low_issues": 0,
+  "phantom_mode_issues": 4,
+  "mode_integration_issues": 4,
+  "backend_math_issues": 0,
+  "entry_exit_issues": 5,
+  "all_results": [
+    {
+      "function_name": "ZeroBoundEntropy.compress_entropy",
+      "file_path": "core/phantom_mode_engine.py",
+      "line_number": 120,
+      "issue_type": "overflow_protection",
+      "severity": "critical",
+      "description": "Exponent 999.72 exceeds safe limit, should be clamped to 700",
+      "fix_suggestion": "Ensure exponent clamping is implemented",
+      "test_cases": [
+        {
+          "entropy": 1000.0,
+          "expected": "clamped"
+        }
+      ]
+    },
+    {
+      "function_name": "ZeroBoundEntropy.compress_entropy",
+      "file_path": "core/phantom_mode_engine.py",
+      "line_number": 120,
+      "issue_type": "underflow_protection",
+      "severity": "critical",
+      "description": "Exponent -1000.28 below safe limit, should be clamped to -700",
+      "fix_suggestion": "Ensure exponent clamping is implemented",
+      "test_cases": [
+        {
+          "entropy": -1000.0,
+          "expected": "clamped"
+        }
+      ]
+    },
+    {
+      "function_name": "CycleBloomPrediction.predict_next_cycle",
+      "file_path": "core/phantom_mode_engine.py",
+      "line_number": 380,
+      "issue_type": "overflow_protection",
+      "severity": "critical",
+      "description": "Sigmoid input 1000.0 exceeds safe limit",
+      "fix_suggestion": "Ensure sigmoid input clamping is implemented",
+      "test_cases": [
+        {
+          "sigmoid_input": 1000.0,
+          "expected": "clamped"
+        }
+      ]
+    },
+    {
+      "function_name": "CycleBloomPrediction.predict_next_cycle",
+      "file_path": "core/phantom_mode_engine.py",
+      "line_number": 380,
+      "issue_type": "underflow_protection",
+      "severity": "critical",
+      "description": "Sigmoid input -1000.0 below safe limit",
+      "fix_suggestion": "Ensure sigmoid input clamping is implemented",
+      "test_cases": [
+        {
+          "sigmoid_input": -1000.0,
+          "expected": "clamped"
+        }
+      ]
+    },
+    {
+      "function_name": "_calculate_position_size",
+      "file_path": "AOI_Base_Files_Schwabot/core/mode_integration_system.py",
+      "line_number": 470,
+      "issue_type": "division_by_zero",
+      "severity": "critical",
+      "description": "Division by zero when price is 0.0",
+      "fix_suggestion": "Add price validation: if price <= 0: return 0.0",
+      "test_cases": [
+        {
+          "price": 0.0,
+          "balance": 10000.0,
+          "position_size_pct": 10.0,
+          "expected": "error"
+        }
+      ]
+    },
+    {
+      "function_name": "_calculate_position_size",
+      "file_path": "AOI_Base_Files_Schwabot/core/mode_integration_system.py",
+      "line_number": 470,
+      "issue_type": "negative_price",
+      "severity": "high",
+      "description": "Negative price should be handled",
+      "fix_suggestion": "Add price validation: if price < 0: return 0.0",
+      "test_cases": [
+        {
+          "price": -50000.0,
+          "balance": 10000.0,
+          "position_size_pct": 10.0,
+          "expected": "error"
+        }
+      ]
+    },
+    {
+      "function_name": "stop_loss_take_profit_calculation",
+      "file_path": "AOI_Base_Files_Schwabot/core/mode_integration_system.py",
+      "line_number": 450,
+      "issue_type": "negative_price_levels",
+      "severity": "high",
+      "description": "Negative stop loss or take profit calculated",
+      "fix_suggestion": "Add bounds checking for price levels",
+      "test_cases": [
+        {
+          "entry_price": -50000.0,
+          "stop_loss_pct": 1.0,
+          "take_profit_pct": 10.0
+        }
+      ]
+    },
+    {
+      "function_name": "stop_loss_take_profit_calculation",
+      "file_path": "AOI_Base_Files_Schwabot/core/mode_integration_system.py",
+      "line_number": 450,
+      "issue_type": "logical_error",
+      "severity": "critical",
+      "description": "Stop loss greater than take profit",
+      "fix_suggestion": "Validate stop loss < take profit",
+      "test_cases": [
+        {
+          "entry_price": -50000.0,
+          "stop_loss_pct": 1.0,
+          "take_profit_pct": 10.0
+        }
+      ]
+    },
+    {
+      "function_name": "entry_price_calculation",
+      "file_path": "AOI_Base_Files_Schwabot/core/mode_integration_system.py",
+      "line_number": 450,
+      "issue_type": "invalid_entry_price",
+      "severity": "critical",
+      "description": "Invalid entry price: 0.0",
+      "fix_suggestion": "Add positive price validation",
+      "test_cases": [
+        {
+          "current_price": 0.0,
+          "expected": "error"
+        }
+      ]
+    },
+    {
+      "function_name": "entry_price_calculation",
+      "file_path": "AOI_Base_Files_Schwabot/core/mode_integration_system.py",
+      "line_number": 450,
+      "issue_type": "invalid_entry_price",
+      "severity": "critical",
+      "description": "Invalid entry price: -50000.0",
+      "fix_suggestion": "Add positive price validation",
+      "test_cases": [
+        {
+          "current_price": -50000.0,
+          "expected": "error"
+        }
+      ]
+    },
+    {
+      "function_name": "entry_price_calculation",
+      "file_path": "AOI_Base_Files_Schwabot/core/mode_integration_system.py",
+      "line_number": 450,
+      "issue_type": "non_finite_entry_price",
+      "severity": "critical",
+      "description": "Non-finite entry price: inf",
+      "fix_suggestion": "Add price validation before assignment",
+      "test_cases": [
+        {
+          "current_price": Infinity,
+          "expected": "error"
+        }
+      ]
+    },
+    {
+      "function_name": "entry_price_calculation",
+      "file_path": "AOI_Base_Files_Schwabot/core/mode_integration_system.py",
+      "line_number": 450,
+      "issue_type": "non_finite_entry_price",
+      "severity": "critical",
+      "description": "Non-finite entry price: nan",
+      "fix_suggestion": "Add price validation before assignment",
+      "test_cases": [
+        {
+          "current_price": NaN,
+          "expected": "error"
+        }
+      ]
+    },
+    {
+      "function_name": "exit_points_calculation",
+      "file_path": "AOI_Base_Files_Schwabot/core/mode_integration_system.py",
+      "line_number": 451,
+      "issue_type": "logical_error",
+      "severity": "critical",
+      "description": "Stop loss (49500.0) >= Take profit (45000.0)",
+      "fix_suggestion": "Ensure stop_loss < take_profit",
+      "test_cases": [
+        {
+          "entry_price": 50000.0,
+          "stop_loss_pct": 1.0,
+          "take_profit_pct": -10.0
+        }
+      ]
+    }
+  ]
+}

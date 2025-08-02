@@ -1,12 +1,8 @@
-# Development Directory
+# Development
 
-This directory contains development tools, scripts, and debugging utilities.
+This directory contains development tools and scripts:
 
-## Structure
-- `scripts/`: Utility scripts for development and maintenance
-- `tools/`: Development tools and utilities
-- `debug/`: Debugging scripts and tools
+- `scripts/` - Utility scripts
+- `fixes/` - Fix scripts
+- `tools/` - Development tools
 
-## Usage
-These files are primarily for developers and system maintenance.
-Most users will not need to interact with these files directly.

@@ -1,0 +1,20 @@
+{
+  "overall_status": true,
+  "total_tests": 7,
+  "passed_tests": 7,
+  "failed_tests": 0,
+  "success_rate": 100.0,
+  "results": {
+    "file_structure": true,
+    "imports": true,
+    "cli_interface": true,
+    "web_interface": true,
+    "configuration": true,
+    "dependencies": true,
+    "documentation": true
+  },
+  "errors": [],
+  "warnings": [
+    "Warning in gui.unified_schwabot_interface: name 'Dict' is not defined"
+  ]
+}

@@ -1,0 +1,312 @@
+2025-07-24 03:49:19,060 - ERROR - Error finding USB drives: module 'win32api' has no attribute 'GetDriveType'
+2025-07-24 03:49:19,062 - INFO - Local memory initialized: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory
+2025-07-24 03:49:21,799 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_034921
+2025-07-24 03:50:23,501 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_035023
+2025-07-24 03:51:23,661 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_035123
+2025-07-24 03:52:03,916 - ERROR - Error finding USB drives: module 'win32api' has no attribute 'GetDriveType'
+2025-07-24 03:52:06,955 - ERROR - Error finding USB drives: module 'win32api' has no attribute 'GetDriveType'
+2025-07-24 03:52:11,095 - ERROR - Error finding USB drives: module 'win32api' has no attribute 'GetDriveType'
+2025-07-24 03:52:24,458 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_035224
+2025-07-24 03:52:50,814 - INFO - USB memory initialized: F:\SchwabotMemory
+2025-07-24 03:52:51,182 - INFO - Memory sync thread started
+2025-07-24 03:52:51,310 - INFO - Backed up: schwabot_monitoring.log
+2025-07-24 03:52:51,364 - INFO - Backed up: schwabot_cli.log
+2025-07-24 03:52:52,600 - INFO - Backed up: config directory
+2025-07-24 03:52:52,643 - INFO - Memory backup completed: F:\SchwabotMemory\backups\backup_20250724_035251
+2025-07-24 03:52:56,318 - INFO - USB memory system stopped
+2025-07-24 03:52:56,856 - INFO - USB memory initialized: F:\SchwabotMemory
+2025-07-24 03:52:56,859 - INFO - Memory sync thread started
+2025-07-24 03:52:56,999 - INFO - Backed up: schwabot_monitoring.log
+2025-07-24 03:52:57,053 - INFO - Backed up: schwabot_cli.log
+2025-07-24 03:52:58,280 - INFO - Backed up: config directory
+2025-07-24 03:52:58,323 - INFO - Memory backup completed: F:\SchwabotMemory\backups\backup_20250724_035256
+2025-07-24 03:53:02,058 - INFO - USB memory system stopped
+2025-07-24 03:53:03,519 - INFO - USB memory initialized: F:\SchwabotMemory
+2025-07-24 03:53:03,521 - INFO - Memory sync thread started
+2025-07-24 03:53:06,573 - INFO - Backed up: schwabot_monitoring.log
+2025-07-24 03:53:06,626 - INFO - Backed up: schwabot_cli.log
+2025-07-24 03:53:07,864 - INFO - Backed up: config directory
+2025-07-24 03:53:07,906 - INFO - Memory backup completed: F:\SchwabotMemory\backups\backup_20250724_035303
+2025-07-24 03:53:11,610 - INFO - USB memory system stopped
+2025-07-24 03:53:24,674 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_035324
+2025-07-24 03:54:24,880 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_035424
+2025-07-24 03:54:41,116 - ERROR - Error finding USB drives: module 'win32api' has no attribute 'GetDriveType'
+2025-07-24 03:54:44,428 - ERROR - Error finding USB drives: module 'win32api' has no attribute 'GetDriveType'
+2025-07-24 03:54:48,311 - ERROR - Error finding USB drives: module 'win32api' has no attribute 'GetDriveType'
+2025-07-24 03:55:26,973 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_035526
+2025-07-24 03:56:28,616 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_035628
+2025-07-24 03:57:29,461 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_035729
+2025-07-24 03:58:29,715 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_035829
+2025-07-24 03:59:29,772 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_035929
+2025-07-24 04:00:32,499 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_040032
+2025-07-24 04:01:33,606 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_040133
+2025-07-24 04:02:35,273 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_040235
+2025-07-24 04:03:35,818 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_040335
+2025-07-24 04:04:36,535 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_040436
+2025-07-24 04:05:37,800 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_040537
+2025-07-24 04:06:38,278 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_040638
+2025-07-24 04:07:38,361 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_040738
+2025-07-24 04:08:38,478 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_040838
+2025-07-24 04:09:40,692 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_040940
+2025-07-24 04:10:40,719 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_041040
+2025-07-24 04:11:43,079 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_041143
+2025-07-24 04:12:43,174 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_041243
+2025-07-24 04:13:45,467 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_041345
+2025-07-24 04:14:47,967 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_041447
+2025-07-24 04:15:50,276 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_041550
+2025-07-24 04:16:52,517 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_041652
+2025-07-24 04:17:54,954 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_041754
+2025-07-24 04:18:57,365 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_041857
+2025-07-24 04:19:40,806 - ERROR - Error finding USB drives: module 'win32api' has no attribute 'GetDriveType'
+2025-07-24 04:19:59,026 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_041959
+2025-07-24 04:20:42,271 - INFO - Found USB drive via WMI: F: (Size: 115.4GB)
+2025-07-24 04:20:42,272 - INFO - Found USB drive via WMI: G: (Size: 28.9GB)
+2025-07-24 04:20:42,273 - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 04:20:42,274 - INFO - USB memory initialized: F:\SchwabotMemory
+2025-07-24 04:20:43,136 - INFO - Found USB drive via WMI: F: (Size: 115.4GB)
+2025-07-24 04:20:43,138 - INFO - Found USB drive via WMI: G: (Size: 28.9GB)
+2025-07-24 04:20:43,141 - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 04:20:44,091 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_042043
+2025-07-24 04:21:00,610 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_042100
+2025-07-24 04:21:01,547 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_042101
+2025-07-24 04:22:00,885 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_042200
+2025-07-24 04:23:01,131 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_042301
+2025-07-24 04:24:01,165 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_042401
+2025-07-24 04:25:02,660 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_042502
+2025-07-24 04:25:49,534 - INFO - Found USB drive via WMI: F: (Size: 115.4GB)
+2025-07-24 04:25:49,539 - INFO - Found USB drive via WMI: G: (Size: 28.9GB)
+2025-07-24 04:25:49,540 - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 04:25:49,542 - INFO - USB memory initialized: F:\SchwabotMemory
+2025-07-24 04:25:52,340 - INFO - Found USB drive via WMI: F: (Size: 115.4GB)
+2025-07-24 04:25:52,342 - INFO - Found USB drive via WMI: G: (Size: 28.9GB)
+2025-07-24 04:25:52,343 - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 04:25:53,689 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_042553
+2025-07-24 04:26:03,157 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_042603
+2025-07-24 04:26:55,227 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_042655
+2025-07-24 04:27:03,495 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_042703
+2025-07-24 04:27:56,257 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_042756
+2025-07-24 04:28:04,163 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_042804
+2025-07-24 04:28:58,631 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_042858
+2025-07-24 04:29:06,123 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_042906
+2025-07-24 04:29:58,890 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_042958
+2025-07-24 04:30:06,482 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_043006
+2025-07-24 04:30:59,830 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_043059
+2025-07-24 04:31:07,972 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_043107
+2025-07-24 04:32:00,594 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_043200
+2025-07-24 04:32:08,224 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_043208
+2025-07-24 04:33:02,713 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_043302
+2025-07-24 04:33:10,753 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_043310
+2025-07-24 04:34:04,304 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_043404
+2025-07-24 04:34:11,978 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_043411
+2025-07-24 04:35:04,854 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_043504
+2025-07-24 04:35:14,190 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_043514
+2025-07-24 04:36:06,938 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_043606
+2025-07-24 04:36:14,674 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_043614
+2025-07-24 04:37:07,830 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_043707
+2025-07-24 04:37:15,755 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_043715
+2025-07-24 04:38:08,906 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_043808
+2025-07-24 04:38:17,370 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_043817
+2025-07-24 04:39:11,207 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_043911
+2025-07-24 04:39:17,400 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_043917
+2025-07-24 04:40:13,384 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_044013
+2025-07-24 04:40:18,660 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_044018
+2025-07-24 04:41:16,142 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_044116
+2025-07-24 04:41:19,273 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_044119
+2025-07-24 04:42:17,942 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_044217
+2025-07-24 04:42:20,405 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_044220
+2025-07-24 04:43:19,024 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_044318
+2025-07-24 04:43:21,529 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_044321
+2025-07-24 04:44:20,803 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_044420
+2025-07-24 04:44:23,424 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_044423
+2025-07-24 04:45:22,408 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_044522
+2025-07-24 04:45:25,486 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_044525
+2025-07-24 04:46:25,079 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_044624
+2025-07-24 04:46:27,026 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_044627
+2025-07-24 04:47:26,646 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_044726
+2025-07-24 04:47:28,563 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_044728
+2025-07-24 04:48:28,286 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_044828
+2025-07-24 04:48:30,378 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_044830
+2025-07-24 04:49:30,828 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_044930
+2025-07-24 04:49:30,939 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_044930
+2025-07-24 04:50:30,851 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_045030
+2025-07-24 04:50:31,189 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_045031
+2025-07-24 04:51:31,649 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_045131
+2025-07-24 04:51:32,028 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_045131
+2025-07-24 04:52:32,577 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_045232
+2025-07-24 04:52:34,613 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_045234
+2025-07-24 04:53:32,805 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_045332
+2025-07-24 04:53:36,379 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_045336
+2025-07-24 04:54:34,755 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_045434
+2025-07-24 04:54:36,827 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_045436
+2025-07-24 04:55:35,152 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_045534
+2025-07-24 04:55:40,000 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_045539
+2025-07-24 04:56:36,294 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_045636
+2025-07-24 04:56:41,940 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_045641
+2025-07-24 04:57:36,715 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_045736
+2025-07-24 04:57:42,054 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_045742
+2025-07-24 04:58:38,760 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_045838
+2025-07-24 04:58:43,946 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_045843
+2025-07-24 04:59:40,801 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_045940
+2025-07-24 04:59:45,972 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_045945
+2025-07-24 05:00:41,720 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_050041
+2025-07-24 05:00:47,342 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_050047
+2025-07-24 05:01:44,945 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_050144
+2025-07-24 05:01:49,424 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_050149
+2025-07-24 05:02:45,394 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_050245
+2025-07-24 05:02:49,802 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_050249
+2025-07-24 05:03:46,726 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_050346
+2025-07-24 05:03:52,396 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_050352
+2025-07-24 05:04:48,475 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_050448
+2025-07-24 05:04:52,448 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_050452
+2025-07-24 05:05:48,683 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_050548
+2025-07-24 05:05:53,455 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_050553
+2025-07-24 05:06:49,538 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_050649
+2025-07-24 05:06:54,584 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_050654
+2025-07-24 05:07:49,848 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_050749
+2025-07-24 05:07:55,022 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_050755
+2025-07-24 05:08:52,468 - INFO - Found USB drive via WMI: F: (Size: 115.4GB)
+2025-07-24 05:08:52,471 - INFO - Found USB drive via WMI: G: (Size: 28.9GB)
+2025-07-24 05:08:52,472 - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 05:08:52,475 - INFO - USB memory initialized: F:\SchwabotMemory
+2025-07-24 05:08:53,031 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_050852
+2025-07-24 05:08:54,808 - INFO - Found USB drive via WMI: F: (Size: 115.4GB)
+2025-07-24 05:08:54,810 - INFO - Found USB drive via WMI: G: (Size: 28.9GB)
+2025-07-24 05:08:54,810 - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 05:08:55,974 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_050855
+2025-07-24 05:08:56,251 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_050856
+2025-07-24 05:09:54,072 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_050953
+2025-07-24 05:09:56,998 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_050956
+2025-07-24 05:09:57,542 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_050957
+2025-07-24 05:10:55,705 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_051055
+2025-07-24 05:10:58,261 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_051058
+2025-07-24 05:11:00,583 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_051100
+2025-07-24 05:11:57,773 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_051157
+2025-07-24 05:12:00,003 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_051159
+2025-07-24 05:12:01,184 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_051201
+2025-07-24 05:12:58,462 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_051258
+2025-07-24 05:13:00,708 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_051300
+2025-07-24 05:13:02,224 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_051302
+2025-07-24 05:14:00,163 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_051400
+2025-07-24 05:14:02,885 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_051402
+2025-07-24 05:14:03,427 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_051403
+2025-07-24 05:15:00,713 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_051500
+2025-07-24 05:15:03,332 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_051503
+2025-07-24 05:15:04,762 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_051504
+2025-07-24 05:16:03,108 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_051602
+2025-07-24 05:16:05,235 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_051605
+2025-07-24 05:16:05,996 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_051605
+2025-07-24 05:17:05,898 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_051705
+2025-07-24 05:17:06,640 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_051706
+2025-07-24 05:17:07,827 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_051707
+2025-07-24 05:18:07,316 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_051807
+2025-07-24 05:18:08,668 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_051808
+2025-07-24 05:18:08,947 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_051808
+2025-07-24 05:19:09,534 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_051909
+2025-07-24 05:19:09,920 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_051909
+2025-07-24 05:19:11,064 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_051911
+2025-07-24 05:20:10,692 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052010
+2025-07-24 05:20:11,172 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052011
+2025-07-24 05:20:13,679 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_052013
+2025-07-24 05:21:12,813 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052112
+2025-07-24 05:21:13,312 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052113
+2025-07-24 05:21:13,787 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_052113
+2025-07-24 05:22:13,230 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052213
+2025-07-24 05:22:14,612 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_052214
+2025-07-24 05:22:16,080 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052215
+2025-07-24 05:23:14,395 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052314
+2025-07-24 05:23:15,449 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_052315
+2025-07-24 05:23:18,679 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052318
+2025-07-24 05:24:15,570 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052415
+2025-07-24 05:24:19,581 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_052419
+2025-07-24 05:24:19,641 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052419
+2025-07-24 05:25:17,297 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052517
+2025-07-24 05:25:21,056 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_052521
+2025-07-24 05:25:22,264 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052522
+2025-07-24 05:26:20,590 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052620
+2025-07-24 05:26:21,753 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_052621
+2025-07-24 05:26:22,960 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052622
+2025-07-24 05:27:23,427 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_052723
+2025-07-24 05:27:23,518 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052723
+2025-07-24 05:27:25,010 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052724
+2025-07-24 05:28:23,714 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_052823
+2025-07-24 05:28:23,839 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052823
+2025-07-24 05:28:25,766 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052825
+2025-07-24 05:29:25,231 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_052925
+2025-07-24 05:29:25,603 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052925
+2025-07-24 05:29:26,048 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_052925
+2025-07-24 05:30:25,539 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_053025
+2025-07-24 05:30:26,134 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053025
+2025-07-24 05:30:26,355 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053026
+2025-07-24 05:31:26,781 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_053126
+2025-07-24 05:31:27,580 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053127
+2025-07-24 05:31:28,013 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053127
+2025-07-24 05:32:27,021 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_053227
+2025-07-24 05:32:27,929 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053227
+2025-07-24 05:32:30,551 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053230
+2025-07-24 05:33:29,065 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053328
+2025-07-24 05:33:29,259 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_053329
+2025-07-24 05:33:31,776 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053331
+2025-07-24 05:34:29,579 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_053429
+2025-07-24 05:34:29,648 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053429
+2025-07-24 05:34:32,810 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053432
+2025-07-24 05:35:31,903 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_053531
+2025-07-24 05:35:32,013 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053531
+2025-07-24 05:35:35,430 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053535
+2025-07-24 05:36:32,345 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_053632
+2025-07-24 05:36:32,541 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053632
+2025-07-24 05:36:35,986 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053635
+2025-07-24 05:37:32,373 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_053732
+2025-07-24 05:37:35,435 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053735
+2025-07-24 05:37:37,721 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053737
+2025-07-24 05:38:32,625 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_053832
+2025-07-24 05:38:35,626 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053835
+2025-07-24 05:38:39,394 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053839
+2025-07-24 05:39:33,799 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_053933
+2025-07-24 05:39:37,178 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053937
+2025-07-24 05:39:40,526 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_053940
+2025-07-24 05:40:35,263 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_054035
+2025-07-24 05:40:38,387 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_054038
+2025-07-24 05:40:41,005 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_054040
+2025-07-24 05:41:35,466 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_054135
+2025-07-24 05:41:39,593 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_054139
+2025-07-24 05:41:42,121 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_054141
+2025-07-24 05:42:37,261 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_054237
+2025-07-24 05:42:41,509 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_054241
+2025-07-24 05:42:45,161 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_054245
+2025-07-24 05:43:38,372 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_054338
+2025-07-24 05:43:42,997 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_054342
+2025-07-24 05:43:47,206 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_054347
+2025-07-24 05:44:40,137 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_054440
+2025-07-24 05:44:45,919 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_054445
+2025-07-24 05:44:51,137 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_054450
+2025-07-24 05:45:40,368 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_054540
+2025-07-24 05:45:46,895 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_054546
+2025-07-24 05:45:54,754 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_054553
+2025-07-24 05:46:41,007 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_054641
+2025-07-24 05:46:47,566 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_054647
+2025-07-24 05:46:55,502 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_054655
+2025-07-24 05:47:42,475 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_054742
+2025-07-24 05:47:51,090 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_054750
+2025-07-24 05:47:59,301 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_054757
+2025-07-24 05:48:44,534 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_054844
+2025-07-24 05:48:52,608 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_054852
+2025-07-24 05:49:01,150 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_054900
+2025-07-24 05:49:46,808 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_054946
+2025-07-24 05:49:53,618 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_054952
+2025-07-24 05:50:04,230 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_055004
+2025-07-24 05:50:12,212 - INFO - Found USB drive via WMI: F: (Size: 115.4GB)
+2025-07-24 05:50:12,217 - INFO - Found USB drive via WMI: G: (Size: 28.9GB)
+2025-07-24 05:50:12,218 - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 05:50:12,219 - INFO - USB memory initialized: F:\SchwabotMemory
+2025-07-24 05:50:15,451 - ERROR - SECURITY VIOLATION: External bridge detected: _winapi
+2025-07-24 05:50:15,451 - ERROR - Error initializing isolated database: External bridges detected during database initialization
+2025-07-24 05:50:15,456 - ERROR - Error initializing security system: Database isolation failed: External bridges detected during database initialization
+2025-07-24 05:50:15,957 - ERROR - Error initializing advanced security: unexpected character after line continuation character (secure_trade_handler.py, line 265)
+2025-07-24 05:50:19,809 - INFO - Found USB drive via WMI: F: (Size: 115.4GB)
+2025-07-24 05:50:19,821 - INFO - Found USB drive via WMI: G: (Size: 28.9GB)
+2025-07-24 05:50:19,833 - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 05:50:22,002 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_055021
+2025-07-24 05:50:49,678 - INFO - Silent memory backup completed: C:\Users\maxde\Downloads\clonerepo\SchwabotMemory\backups\backup_20250724_055049
+2025-07-24 05:50:52,640 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_055052
+2025-07-24 05:50:54,643 - INFO - Closing trading positions safely
+2025-07-24 05:50:54,785 - INFO - Silent memory backup completed: F:\SchwabotMemory\backups\backup_20250724_055054

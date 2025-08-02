@@ -67,6 +67,7 @@ class ExchangeType(Enum):
     KRAKEN = "kraken"
     FINANCE_API = "finance_api"
     BINANCE = "binance"
+    BINANCE_USA = "binance_usa"
     COINGECKO = "coingecko"
 
 class TimePhase(Enum):
@@ -163,6 +164,7 @@ class LiveMarketDataIntegration:
         self.coinbase_config = config.get('coinbase', {})
         self.kraken_config = config.get('kraken', {})
         self.binance_config = config.get('binance', {})
+        self.binance_usa_config = config.get('binance_usa', {})
         self.finance_api_config = config.get('finance_api', {})
         
         # Finance API key
@@ -212,12 +214,12 @@ class LiveMarketDataIntegration:
     def _initialize_exchanges(self):
         """Initialize exchange connections."""
         try:
-            # Coinbase (updated from coinbasepro)
+            # Coinbase (updated - Coinbase Pro is deprecated, now unified)
             if self.coinbase_config:
                 coinbase_config = {
                     'apiKey': self.coinbase_config.get('api_key'),
                     'secret': self.coinbase_config.get('secret'),
-                    'password': self.coinbase_config.get('password')
+                    'password': self.coinbase_config.get('password')  # CCXT uses 'password' for passphrase
                 }
                 
                 # Handle sandbox mode properly
@@ -226,17 +228,19 @@ class LiveMarketDataIntegration:
                     coinbase_config['sandbox'] = True
                     # Note: Coinbase may not support sandbox in newer CCXT versions
                     try:
+                        # Use ONLY the current Coinbase exchange
                         self.exchanges['coinbase'] = ccxt.coinbase(coinbase_config)
-                        logger.info("Coinbase sandbox initialized")
+                        logger.info("Coinbase sandbox initialized (current unified exchange)")
                     except Exception as sandbox_error:
                         logger.warning(f"Coinbase sandbox not available: {sandbox_error}")
                         # Fallback to regular Coinbase without sandbox
                         coinbase_config.pop('sandbox', None)
                         self.exchanges['coinbase'] = ccxt.coinbase(coinbase_config)
-                        logger.info("Coinbase initialized (sandbox fallback)")
+                        logger.info("Coinbase initialized (sandbox fallback - current unified exchange)")
                 else:
+                    # Use ONLY the current Coinbase exchange
                     self.exchanges['coinbase'] = ccxt.coinbase(coinbase_config)
-                    logger.info("Coinbase initialized")
+                    logger.info("Coinbase initialized (current unified exchange)")
             
             # Kraken
             if self.kraken_config:
@@ -255,6 +259,15 @@ class LiveMarketDataIntegration:
                     'sandbox': self.binance_config.get('sandbox', False)
                 })
                 logger.info("Binance initialized")
+            
+            # Binance USA
+            if self.binance_usa_config:
+                self.exchanges['binance_usa'] = ccxt.binanceus({
+                    'apiKey': self.binance_usa_config.get('api_key'),
+                    'secret': self.binance_usa_config.get('secret'),
+                    'sandbox': self.binance_usa_config.get('sandbox', False)
+                })
+                logger.info("Binance USA initialized")
             
             logger.info(f"Initialized {len(self.exchanges)} exchanges")
             

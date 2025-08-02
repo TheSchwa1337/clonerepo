@@ -1,0 +1,81 @@
+{
+  "test_summary": {
+    "start_time": "2025-07-24T08:22:28.845936",
+    "end_time": "2025-07-24T08:22:42.626414",
+    "total_duration_seconds": 13.780478,
+    "total_tests": 12,
+    "passed_tests": 2,
+    "failed_tests": 10,
+    "success_rate_percent": 16.666666666666664
+  },
+  "component_tests": {
+    "real_api_system": {
+      "status": "FAILED",
+      "error": "unexpected indent (real_api_pricing_memory_system.py, line 58)"
+    },
+    "mathematical_engine": {
+      "status": "FAILED",
+      "error": "unexpected indent (gpu_dna_autodetect.py, line 22)"
+    },
+    "clock_mode_system": {
+      "status": "FAILED",
+      "error": "unmatched ')' (clock_mode_system.py, line 40)"
+    },
+    "backtesting_system": {
+      "status": "FAILED",
+      "error": "unexpected indent (real_api_pricing_memory_system.py, line 58)"
+    },
+    "mode_integration_system": {
+      "status": "FAILED",
+      "error": "unexpected indent (real_api_pricing_memory_system.py, line 58)"
+    },
+    "complete_system_launcher": {
+      "status": "FAILED",
+      "error": "unexpected indent (real_api_pricing_memory_system.py, line 58)"
+    }
+  },
+  "integration_tests": {
+    "memory_mathematical_integration": {
+      "status": "FAILED",
+      "error": "unexpected indent (real_api_pricing_memory_system.py, line 58)"
+    },
+    "api_backtesting_integration": {
+      "status": "PASSED",
+      "note": "Integration handled within backtesting system"
+    },
+    "clock_memory_integration": {
+      "status": "PASSED",
+      "note": "Integration handled within clock mode system"
+    }
+  },
+  "performance_metrics": {
+    "rapid_api_calls": {
+      "status": "FAILED",
+      "error": "unexpected indent (real_api_pricing_memory_system.py, line 58)"
+    },
+    "memory_storage_stress": {
+      "status": "FAILED",
+      "error": "unexpected indent (real_api_pricing_memory_system.py, line 58)"
+    },
+    "mathematical_stress": {
+      "status": "FAILED",
+      "error": "unexpected indent (gpu_dna_autodetect.py, line 22)"
+    }
+  },
+  "errors": [
+    "real_api_system: unexpected indent (real_api_pricing_memory_system.py, line 58)",
+    "mathematical_engine: unexpected indent (gpu_dna_autodetect.py, line 22)",
+    "clock_mode_system: unmatched ')' (clock_mode_system.py, line 40)",
+    "backtesting_system: unexpected indent (real_api_pricing_memory_system.py, line 58)",
+    "mode_integration_system: unexpected indent (real_api_pricing_memory_system.py, line 58)",
+    "memory_mathematical_integration: unexpected indent (real_api_pricing_memory_system.py, line 58)",
+    "complete_system_launcher: unexpected indent (real_api_pricing_memory_system.py, line 58)",
+    "rapid_api_calls: unexpected indent (real_api_pricing_memory_system.py, line 58)",
+    "memory_storage_stress: unexpected indent (real_api_pricing_memory_system.py, line 58)",
+    "mathematical_stress: unexpected indent (gpu_dna_autodetect.py, line 22)"
+  ],
+  "recommendations": [
+    "\u274c Poor! Major issues need to be addressed.",
+    "\ud83d\udd27 10 errors found - review error logs."
+  ]
+}

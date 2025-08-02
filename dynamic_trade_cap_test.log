@@ -1,0 +1,162 @@
+2025-07-24 14:50:47,524 - INFO - 🛡️ SHADOW MODE - Analysis only, no trading execution
+2025-07-24 14:50:49,307 - INFO - SCHWABOT DYNAMIC TRADE CAP SLIDER TEST SUITE
+2025-07-24 14:50:49,308 - INFO - ============================================================
+2025-07-24 14:50:49,308 - INFO - 
+2025-07-24 14:50:49,309 - INFO - Testing Slider Integration with Clock System
+2025-07-24 14:50:49,309 - INFO - 🚀 Initializing Real API Pricing & Memory Storage System
+2025-07-24 14:50:49,383 - INFO - Found USB drive via WMI: F: (Size: 115.4GB)
+2025-07-24 14:50:49,384 - INFO - Found USB drive via WMI: G: (Size: 28.9GB)
+2025-07-24 14:50:49,385 - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 14:50:49,386 - INFO - USB memory initialized: F:\SchwabotMemory
+2025-07-24 14:50:49,387 - INFO - Memory sync thread started
+2025-07-24 14:50:49,388 - INFO - Found USB drive via win32api: F:\
+2025-07-24 14:50:49,388 - INFO - Found USB drive via win32api: G:\
+2025-07-24 14:50:49,389 - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 14:50:49,579 - INFO - ✅ USB memory initialized: F:\SchwabotMemory
+2025-07-24 14:50:49,582 - INFO - ✅ Memory database initialized
+2025-07-24 14:50:49,583 - INFO - ℹ️ Alpha256 encryption system not available
+2025-07-24 14:50:49,586 - WARNING - ⚠️ Alpha256 encryption system not available
+2025-07-24 14:50:49,596 - INFO - ⚡ ProfitOptimizationEngine using numpy (CPU) for tensor operations
+2025-07-24 14:50:49,612 - INFO - Backed up: schwabot_monitoring.log
+2025-07-24 14:50:49,669 - INFO - Backed up: schwabot_cli.log
+2025-07-24 14:50:50,360 - INFO - Unified Tensor Algebra initialized
+2025-07-24 14:50:50,416 - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 14:50:50,425 - INFO - 🔄 Distributed Mathematical Processor using CPU fallback: numpy (CPU)
+2025-07-24 14:50:50,428 - INFO - ⚡ Distributed Mathematical Processor initialized with 4 workers
+2025-07-24 14:50:50,431 - INFO - 🔄 Enhanced Error Recovery System using CPU fallback: numpy (CPU)
+2025-07-24 14:50:50,436 - WARNING - Math infrastructure not available
+2025-07-24 14:50:50,438 - INFO - Initializing GhostSignal
+2025-07-24 14:50:50,438 - INFO - ✅ GhostSignal initialized successfully
+2025-07-24 14:50:50,445 - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-24 14:50:50,446 - INFO - 🧮 Advanced Tensor Algebra initialized with backend: numpy (CPU)
+2025-07-24 14:50:50,447 - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 14:50:50,448 - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-24 14:50:50,448 - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-24 14:50:50,455 - INFO - 🔄 Entropy Math using CPU fallback: numpy (CPU)
+2025-07-24 14:50:50,458 - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 14:50:50,459 - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 14:50:50,459 - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-24 14:50:50,459 - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-24 14:50:50,460 - INFO - 📊 Entropy Math System initialized
+2025-07-24 14:50:50,461 - INFO - 🔄 UnifiedProfitVectorizationSystem using CPU fallback: numpy (CPU)
+2025-07-24 14:50:50,465 - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 14:50:50,466 - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-24 14:50:50,467 - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 14:50:50,469 - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 14:50:50,470 - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-24 14:50:50,470 - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-24 14:50:50,470 - INFO - 📊 Entropy Math System initialized
+2025-07-24 14:50:50,471 - INFO - Quantum Mathematical Bridge initialized with dimension 16
+2025-07-24 14:50:50,472 - INFO - 🧠⚛️ Enhanced Orbital BRAIN System initialized with 268 decimal hashing
+2025-07-24 14:50:50,472 - INFO - 🧮 Advanced Tensor Algebra system initialized
+2025-07-24 14:50:50,472 - INFO - 💰 Unified Profit Vectorization System initialized
+2025-07-24 14:50:50,476 - INFO - 🔄 Clean Unified Math using CPU fallback: NumPy (CPU)
+2025-07-24 14:50:50,476 - INFO - 🧠 Profit vector integration: ENABLED
+2025-07-24 14:50:50,477 - INFO - 🧠 Big Bro Logic Module integration: ENABLED
+2025-07-24 14:50:50,478 - INFO - 🧠 Big Bro Logic Module initialized - Nexus.BigBro.TheoremAlpha active
+2025-07-24 14:50:50,478 - INFO - 🧠 Big Bro Logic Module integrated into Clean Unified Math System
+2025-07-24 14:50:50,488 - INFO - 🔄 Entropy Signal Integration enabled in Pure Profit Calculator
+2025-07-24 14:50:50,508 - INFO - ✅ Alpha Encryption (Ω-B-Γ Logic) system available
+2025-07-24 14:50:50,509 - WARNING - ⚠️ Encryption Manager (AES-256) system not available
+2025-07-24 14:50:50,511 - INFO - ✅ VMSP initialized successfully
+2025-07-24 14:50:50,511 - INFO - ✅ VMSP integration enabled
+2025-07-24 14:50:50,511 - INFO - 🔐 Alpha Encryption (Ω-B-Γ Logic) initialized
+2025-07-24 14:50:50,512 - INFO - ✅ Alpha Encryption (Ω-B-Γ Logic) system initialized
+2025-07-24 14:50:50,512 - INFO - 🔐 Active encryption systems: Alpha (Ω-B-Γ)
+2025-07-24 14:50:50,512 - INFO - ✅ USB storage detected: D:\
+2025-07-24 14:50:50,513 - INFO - 🔑 API Key Manager initialized with 5-layer encryption integration
+2025-07-24 14:50:50,515 - INFO - ✅ Loaded binance keys from API key configuration
+2025-07-24 14:50:50,516 - INFO - ✅ Loaded coinbase keys from API key configuration
+2025-07-24 14:50:50,517 - INFO - ✅ Loaded kraken keys from API key configuration
+2025-07-24 14:50:50,517 - INFO - ✅ Loaded 3 exchange configurations from API key system
+2025-07-24 14:50:50,533 - INFO - ✅ BINANCE API client initialized
+2025-07-24 14:50:50,541 - INFO - ✅ Coinbase API client initialized (current unified exchange)
+2025-07-24 14:50:50,541 - INFO - ✅ COINBASE API client initialized
+2025-07-24 14:50:50,548 - INFO - ✅ KRAKEN API client initialized
+2025-07-24 14:50:50,551 - INFO - ✅ Background threads started
+2025-07-24 14:50:50,552 - INFO - ✅ Real API Pricing & Memory Storage System initialized
+2025-07-24 14:50:50,552 - INFO - ✅ Real API pricing and memory storage system initialized for Clock Mode
+2025-07-24 14:50:50,613 - INFO - 💾 Stored memory entry: 5a7c2e24d29e9409 (first_real_test_session)
+2025-07-24 14:50:50,614 - INFO - 🧠 FIRST REAL TEST SESSION INITIALIZED: first_real_test_1753383050
+2025-07-24 14:50:50,614 - INFO - 📊 Comprehensive data collection enabled for Schwabot's foundational intelligence!
+2025-07-24 14:50:50,615 - INFO - 🕐 Created default clock mechanism: default_clock
+2025-07-24 14:50:50,615 - INFO - 🛡️ Clock Mode System initialized in shadow mode
+2025-07-24 14:50:50,615 - INFO - 📊 SHADOW MODE - Using REAL market data for analysis only
+2025-07-24 14:50:50,616 - ERROR - Integration test error: 'ClockModeSystem' object has no attribute 'SAFETY_CONFIG'
+2025-07-24 14:50:50,616 - INFO - 
+2025-07-24 14:50:50,616 - INFO - Testing Profit Projection Calculations
+2025-07-24 14:50:50,617 - INFO - Testing Conservative Strategy ($1.00)
+2025-07-24 14:50:50,617 - INFO -    Hourly: $0.01
+2025-07-24 14:50:50,618 - INFO -    Daily: $0.29
+2025-07-24 14:50:50,618 - INFO -    Weekly: $2.02
+2025-07-24 14:50:50,618 - INFO -    Monthly: $8.64
+2025-07-24 14:50:50,618 - INFO - 
+2025-07-24 14:50:50,618 - INFO - Testing Moderate Strategy ($2.50)
+2025-07-24 14:50:50,619 - INFO -    Hourly: $0.07
+2025-07-24 14:50:50,619 - INFO -    Daily: $1.80
+2025-07-24 14:50:50,619 - INFO -    Weekly: $12.60
+2025-07-24 14:50:50,619 - INFO -    Monthly: $54.00
+2025-07-24 14:50:50,620 - INFO - 
+2025-07-24 14:50:50,620 - INFO - Testing Balanced Strategy ($5.00)
+2025-07-24 14:50:50,620 - INFO -    Hourly: $0.30
+2025-07-24 14:50:50,620 - INFO -    Daily: $7.20
+2025-07-24 14:50:50,621 - INFO -    Weekly: $50.40
+2025-07-24 14:50:50,621 - INFO -    Monthly: $216.00
+2025-07-24 14:50:50,621 - INFO - 
+2025-07-24 14:50:50,621 - INFO - Testing Aggressive Strategy ($7.50)
+2025-07-24 14:50:50,622 - INFO -    Hourly: $0.67
+2025-07-24 14:50:50,622 - INFO -    Daily: $16.20
+2025-07-24 14:50:50,622 - INFO -    Weekly: $113.40
+2025-07-24 14:50:50,622 - INFO -    Monthly: $486.00
+2025-07-24 14:50:50,622 - INFO - 
+2025-07-24 14:50:50,623 - INFO - Testing Maximum Strategy ($10.00)
+2025-07-24 14:50:50,623 - INFO -    Hourly: $1.20
+2025-07-24 14:50:50,623 - INFO -    Daily: $28.80
+2025-07-24 14:50:50,623 - INFO -    Weekly: $201.60
+2025-07-24 14:50:50,624 - INFO -    Monthly: $864.00
+2025-07-24 14:50:50,624 - INFO - 
+2025-07-24 14:50:50,624 - INFO - Profit projection test completed
+2025-07-24 14:50:50,624 - INFO - 
+2025-07-24 14:50:50,625 - INFO - Testing Entropy-Based Strategy Shifting
+2025-07-24 14:50:50,625 - INFO - Testing entropy level: 0.1
+2025-07-24 14:50:50,625 - INFO -    Strategy: Conservative Conservative
+2025-07-24 14:50:50,626 - INFO -    Confidence: 90.0%
+2025-07-24 14:50:50,626 - INFO -    Adaptation Rate: 0.5%
+2025-07-24 14:50:50,626 - INFO - 
+2025-07-24 14:50:50,626 - INFO - Testing entropy level: 0.3
+2025-07-24 14:50:50,627 - INFO -    Strategy: Balanced Balanced
+2025-07-24 14:50:50,627 - INFO -    Confidence: 70.0%
+2025-07-24 14:50:50,628 - INFO -    Adaptation Rate: 1.5%
+2025-07-24 14:50:50,628 - INFO - 
+2025-07-24 14:50:50,628 - INFO - Testing entropy level: 0.5
+2025-07-24 14:50:50,628 - INFO -    Strategy: Balanced Balanced
+2025-07-24 14:50:50,629 - INFO -    Confidence: 50.0%
+2025-07-24 14:50:50,629 - INFO -    Adaptation Rate: 2.5%
+2025-07-24 14:50:50,629 - INFO - 
+2025-07-24 14:50:50,630 - INFO - Testing entropy level: 0.7
+2025-07-24 14:50:50,630 - INFO -    Strategy: Aggressive Aggressive
+2025-07-24 14:50:50,630 - INFO -    Confidence: 50.0%
+2025-07-24 14:50:50,630 - INFO -    Adaptation Rate: 3.5%
+2025-07-24 14:50:50,631 - INFO - 
+2025-07-24 14:50:50,631 - INFO - Testing entropy level: 0.9
+2025-07-24 14:50:50,631 - INFO -    Strategy: Aggressive Aggressive
+2025-07-24 14:50:50,632 - INFO -    Confidence: 50.0%
+2025-07-24 14:50:50,632 - INFO -    Adaptation Rate: 4.5%
+2025-07-24 14:50:50,632 - INFO - 
+2025-07-24 14:50:50,632 - INFO - Entropy strategy shifting test completed
+2025-07-24 14:50:50,633 - INFO - 
+2025-07-24 14:50:50,633 - INFO - Starting Interactive GUI Test...
+2025-07-24 14:50:50,633 - INFO - Starting Dynamic Trade Cap Slider Test
+2025-07-24 14:50:50,633 - INFO - Initializing Clock Mode System...
+2025-07-24 14:50:50,634 - INFO - ✅ Real API pricing and memory storage system initialized for Clock Mode
+2025-07-24 14:50:50,689 - WARNING - ⚠️ Error getting price from binance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1753383050549&recvWindow=10000&signature=bce367efb7fa9ada338a03215ce4853a6e0ed60d5d5ad83ca0e9a7a336d00cbe 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2025-07-24 14:50:50,690 - INFO - 💾 Stored memory entry: 3754949234826947 (first_real_test_session)
+2025-07-24 14:50:50,692 - INFO - 🧠 FIRST REAL TEST SESSION INITIALIZED: first_real_test_1753383050
+2025-07-24 14:50:50,692 - INFO - 📊 Comprehensive data collection enabled for Schwabot's foundational intelligence!
+2025-07-24 14:50:50,693 - INFO - 🕐 Created default clock mechanism: default_clock
+2025-07-24 14:50:50,693 - INFO - 🛡️ Clock Mode System initialized in shadow mode
+2025-07-24 14:50:50,694 - INFO - 📊 SHADOW MODE - Using REAL market data for analysis only
+2025-07-24 14:50:50,694 - ERROR - Test error: 'ClockModeSystem' object has no attribute 'SAFETY_CONFIG'

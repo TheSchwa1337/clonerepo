@@ -41,12 +41,13 @@ class EncryptionManager:
     def __init__(self, master_key: Optional[str] = None, key_file: str = "config/encryption.key"):
         self.key_file = key_file
         self.master_key = master_key or self._load_or_generate_master_key()
-        self.fernet = self._create_fernet()
-        self.key_rotation_schedule = {}
-        self.audit_log = []
         
         # Initialize encryption backend
         self.backend = default_backend()
+        
+        self.fernet = self._create_fernet()
+        self.key_rotation_schedule = {}
+        self.audit_log = []
         
         logger.info("Encryption manager initialized with AES-256")
     
@@ -426,5 +427,5 @@ class EncryptionManager:
             'key_file_permissions': oct(os.stat(self.key_file).st_mode)[-3:] if os.path.exists(self.key_file) else None
         }
 
-# Global encryption manager instance
-encryption_manager = EncryptionManager() 
+# Global instance
+# encryption_manager = EncryptionManager()  # Commented out to prevent initialization errors 

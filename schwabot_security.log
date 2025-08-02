@@ -1,0 +1,6 @@
+2025-07-24 04:26:18,674 - ERROR - Error during authentication: no such table: user_sessions
+2025-07-24 04:26:24,424 - ERROR - Error during authentication: database is locked
+2025-07-24 04:26:30,333 - ERROR - Error during authentication: database is locked
+2025-07-24 04:26:36,115 - ERROR - Error during authentication: database is locked
+2025-07-24 04:26:42,118 - ERROR - Error during authentication: database is locked
+2025-07-24 04:26:47,854 - ERROR - Error during authentication: database is locked

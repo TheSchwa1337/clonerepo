@@ -253,7 +253,7 @@ class IntegratedAdvancedTradingSystem:
     def _generate_market_data(self) -> Dict[str, Any]:
         """Generate simulated market data for testing."""
         # This would be replaced with real market data feed
-        current_price = 50000.0 + np.random.normal(0, 100)  # Simulate BTC price
+        current_price = self._get_real_price_data() + np.random.normal(0, 100)  # Simulate BTC price
         return {
             "symbol": "BTC/USDC",
             "price": current_price,
@@ -575,4 +575,38 @@ def create_integrated_advanced_trading_system(config: Dict[str, Any] = None) -> 
 
 
 # Global instance for easy access
+
+    def _get_real_price_data(self) -> float:
+        """Get real price data from API - NO MORE STATIC 50000.0!"""
+        try:
+            # Try to get real price from API
+            if hasattr(self, 'api_client') and self.api_client:
+                try:
+                    ticker = self.api_client.fetch_ticker('BTC/USDC')
+                    if ticker and 'last' in ticker and ticker['last']:
+                        return float(ticker['last'])
+                except Exception as e:
+                    pass
+            
+            # Try to get from market data provider
+            if hasattr(self, 'market_data_provider') and self.market_data_provider:
+                try:
+                    price = self.market_data_provider.get_current_price('BTC/USDC')
+                    if price and price > 0:
+                        return price
+                except Exception as e:
+                    pass
+            
+            # Try to get from cache
+            if hasattr(self, 'market_data_cache') and 'BTC/USDC' in self.market_data_cache:
+                cached_price = self.market_data_cache['BTC/USDC'].get('price')
+                if cached_price and cached_price > 0:
+                    return cached_price
+            
+            # CRITICAL: No real data available - fail properly
+            raise ValueError("No live price data available - API connection required")
+            
+        except Exception as e:
+            raise ValueError(f"Cannot get live price data: {e}")
+
 integrated_trading_system = create_integrated_advanced_trading_system() 

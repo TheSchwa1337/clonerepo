@@ -1,0 +1,133 @@
+{
+  "phantom_mode": {
+    "enabled": true,
+    "version": "1.0.0",
+    "description": "Phantom Mode - Entropy-Based Trading System"
+  },
+  "mathematical_framework": {
+    "wave_entropy_capture": {
+      "window_size": 256,
+      "frequency_range": [0.001, 0.1],
+      "description": "Wave Entropy Capture (WEC) parameters"
+    },
+    "zero_bound_entropy": {
+      "threshold": 0.28,
+      "compression_factor": 1.0,
+      "description": "Zero-Bound Entropy Compression (ZBE) parameters"
+    },
+    "bitmap_drift_memory": {
+      "grid_size": 64,
+      "memory_depth": 1024,
+      "description": "Bitmap Drift Memory Encoding (BDME) parameters"
+    },
+    "ghost_phase_alignment": {
+      "threshold": 0.75,
+      "integration_window": 128,
+      "description": "Ghost Phase Alignment Function (GPAF) parameters"
+    },
+    "phantom_trigger": {
+      "phase_threshold": 0.65,
+      "entropy_threshold": 0.45,
+      "description": "Phantom Trigger Function (PTF) parameters"
+    },
+    "recursive_retiming": {
+      "learning_rate": 0.01,
+      "momentum": 0.9,
+      "description": "Recursive Retiming Vector Field (RRVF) parameters"
+    },
+    "cycle_bloom_prediction": {
+      "forecast_horizon": 512,
+      "sigmoid_scale": 1.0,
+      "description": "Cycle Bloom Prediction (CBP) parameters"
+    }
+  },
+  "hardware_integration": {
+    "node_configuration": {
+      "xfx_7970": {
+        "name": "XFX 7970",
+        "gpu_model": "AMD Radeon HD 7970",
+        "vram_gb": 3.0,
+        "thermal_limit_celsius": 84.0,
+        "power_watts": 250.0,
+        "processing_capacity": 1.0,
+        "role": "primary_execution"
+      },
+      "pi4": {
+        "name": "Raspberry Pi 4",
+        "gpu_model": "Broadcom VideoCore VI",
+        "vram_gb": 0.0,
+        "thermal_limit_celsius": 67.0,
+        "power_watts": 5.0,
+        "processing_capacity": 0.1,
+        "role": "swap_buffer"
+      },
+      "gtx_1070": {
+        "name": "GTX 1070",
+        "gpu_model": "NVIDIA GeForce GTX 1070",
+        "vram_gb": 8.0,
+        "thermal_limit_celsius": 78.0,
+        "power_watts": 150.0,
+        "processing_capacity": 2.5,
+        "role": "high_bandwidth_execution"
+      }
+    },
+    "load_balancing": {
+      "thermal_warning_threshold": 0.8,
+      "node_monitoring_interval": 5.0,
+      "load_distribution_strategy": "thermal_aware",
+      "auto_scaling_enabled": true
+    }
+  },
+  "trading_parameters": {
+    "position_sizing": {
+      "base_position_size_pct": 50.0,
+      "max_position_size_pct": 100.0,
+      "min_position_size_pct": 10.0,
+      "description": "Very aggressive position sizing for Phantom Mode"
+    },
+    "risk_management": {
+      "stop_loss_pct": 1.0,
+      "take_profit_pct": 10.0,
+      "max_daily_loss_pct": 5.0,
+      "max_exposure_pct": 100.0,
+      "description": "Very aggressive risk management for Phantom Mode"
+    },
+    "confidence_thresholds": {
+      "minimum_confidence": 0.85,
+      "ai_priority": 0.95,
+      "win_rate_target": 0.90,
+      "description": "High confidence requirements for Phantom Mode"
+    },
+    "execution": {
+      "update_interval": 0.1,
+      "max_concurrent_trades": 5,
+      "profit_target_usd": 500.0,
+      "description": "Very fast execution for Phantom Mode"
+    }
+  },
+  "supported_symbols": [
+    "BTC/USDC",
+    "USDC/BTC",
+    "ETH/USDC",
+    "USDC/ETH",
+    "XRP/USDC",
+    "USDC/XRP",
+    "SOL/USDC",
+    "USDC/SOL"
+  ],
+  "orbital_shells": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "monitoring": {
+    "enable_logging": true,
+    "log_level": "INFO",
+    "performance_tracking": true,
+    "thermal_monitoring": true,
+    "entropy_tracking": true,
+    "pattern_recognition": true
+  },
+  "integration": {
+    "auto_detect_hardware": true,
+    "hardware_scaling_enabled": true,
+    "fallback_modes": ["ghost", "hybrid", "default"],
+    "emergency_stop_enabled": true
+  }
+} 

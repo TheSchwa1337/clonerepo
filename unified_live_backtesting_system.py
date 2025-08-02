@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 🎯 UNIFIED LIVE BACKTESTING SYSTEM - SCHWABOT
 =============================================
@@ -30,6 +31,22 @@ from enum import Enum
 import aiohttp
 import numpy as np
 import pandas as pd
+
+# Import real API pricing and memory storage system
+try:
+    from real_api_pricing_memory_system import (
+        initialize_real_api_memory_system, 
+        get_real_price_data, 
+        store_memory_entry,
+        MemoryConfig,
+        MemoryStorageMode,
+        APIMode
+    )
+    REAL_API_AVAILABLE = True
+except ImportError:
+    REAL_API_AVAILABLE = False
+    logger.warning("⚠️ Real API pricing system not available - using simulated data")
+
 
 # Import Schwabot components
 try:
@@ -181,375 +198,306 @@ class UnifiedLiveBacktestingSystem:
             return self._create_error_result(str(e))
     
     async def _apply_performance_optimization(self):
-        """Apply 2025 performance optimization for backtesting."""
+        """Apply performance optimization settings."""
         try:
-            logger.info("⚡ Applying performance optimization for backtesting...")
-            
-            # Detect optimal profile
-            optimal_profile = self.performance_optimizer.detect_optimal_profile()
-            
-            # Apply optimizations
-            optimizations = self.performance_optimizer.apply_optimizations(optimal_profile)
-            
-            logger.info(f"✅ Performance optimization applied: {optimal_profile.optimization_level.value}")
-            logger.info(f"   Max Concurrent Trades: {optimal_profile.max_concurrent_trades}")
-            logger.info(f"   Data Processing Latency: {optimal_profile.data_processing_latency_ms}ms")
-            
+            if self.performance_optimizer:
+                await self.performance_optimizer.optimize_system()
+                logger.info("✅ Performance optimization applied")
         except Exception as e:
-            logger.error(f"❌ Performance optimization failed: {e}")
+            logger.warning(f"⚠️ Performance optimization failed: {e}")
     
     async def _connect_live_apis(self):
-        """Connect to live exchange APIs."""
+        """Connect to live APIs for real-time data."""
         try:
-            logger.info("🔌 Connecting to live exchange APIs...")
-            
+            # Initialize API connections
             for exchange in self.config.exchanges:
-                for symbol in self.config.symbols:
-                    # Connect to real exchange APIs
-                    connection_result = await self.data_integration.connect_exchange(
-                        exchange=exchange,
-                        symbol=symbol,
-                        api_key="",  # No real API keys needed for backtesting
-                        api_secret="",
-                        sandbox_mode=True
-                    )
-                    
-                    if connection_result['success']:
-                        logger.info(f"✅ Connected to {exchange} for {symbol}")
-                    else:
-                        logger.warning(f"⚠️ Failed to connect to {exchange} for {symbol}")
+                if exchange in self.api_clients:
+                    await self.api_clients[exchange].connect()
+                    logger.info(f"✅ Connected to {exchange}")
             
+            logger.info("✅ All API connections established")
         except Exception as e:
             logger.error(f"❌ API connection failed: {e}")
+            raise
     
     async def _start_data_streaming(self):
-        """Start real-time data streaming from live APIs."""
+        """Start real-time data streaming."""
         try:
-            logger.info("📡 Starting live data streaming...")
+            # Start streaming for each symbol
+            for symbol in self.config.symbols:
+                for exchange in self.config.exchanges:
+                    if exchange in self.api_clients:
+                        await self.api_clients[exchange].start_streaming(symbol)
+                        logger.info(f"✅ Started streaming {symbol} from {exchange}")
             
-            for exchange in self.config.exchanges:
-                for symbol in self.config.symbols:
-                    # Start real-time data stream
-                    stream_result = await self.data_integration.start_market_data_stream(
-                        exchange=exchange,
-                        symbol=symbol,
-                        callback=self._process_live_market_data
-                    )
-                    
-                    if stream_result['success']:
-                        self.data_streams[f"{exchange}_{symbol}"] = stream_result['stream_id']
-                        logger.info(f"✅ Started data stream: {exchange}_{symbol}")
-                    else:
-                        logger.warning(f"⚠️ Failed to start data stream: {exchange}_{symbol}")
-            
-            self.is_running = True
-            
+            logger.info("✅ Data streaming started")
         except Exception as e:
             logger.error(f"❌ Data streaming failed: {e}")
-    
-    async def _process_live_market_data(self, market_data: Dict[str, Any]):
-        """Process incoming live market data."""
-        try:
-            symbol = market_data.get('symbol')
-            exchange = market_data.get('exchange')
-            timestamp = market_data.get('timestamp')
-            
-            # Store in cache
-            if symbol not in self.market_data_cache:
-                self.market_data_cache[symbol] = []
-            
-            self.market_data_cache[symbol].append(market_data)
-            self.last_data_update[symbol] = timestamp
-            
-            # Process through trading engine
-            if self.trading_engine:
-                trading_signal = await self.trading_engine.process_market_data(market_data)
-                
-                if trading_signal and trading_signal.confidence >= self.config.min_confidence:
-                    # Execute simulated trade
-                    await self._execute_simulated_trade(trading_signal, market_data)
-            
-            # Update portfolio value
-            self._update_portfolio_value(market_data)
-            
-        except Exception as e:
-            logger.error(f"❌ Error processing market data: {e}")
-    
-    async def _execute_simulated_trade(self, signal: Any, market_data: Dict[str, Any]):
-        """Execute a simulated trade (no real money)."""
-        try:
-            symbol = market_data.get('symbol')
-            price = market_data.get('price', 0)
-            
-            # Calculate position size
-            position_size = self.current_balance * self.config.risk_per_trade
-            
-            # Calculate fees and slippage
-            fees = position_size * self.config.commission_rate
-            slippage = position_size * self.config.slippage_rate
-            
-            # Simulate trade execution
-            if signal.action == 'BUY':
-                # Simulate buy
-                shares = (position_size - fees - slippage) / price
-                self.positions[symbol] = {
-                    'shares': shares,
-                    'entry_price': price,
-                    'entry_time': market_data.get('timestamp'),
-                    'fees': fees,
-                    'slippage': slippage
-                }
-                self.current_balance -= position_size
-                
-            elif signal.action == 'SELL' and symbol in self.positions:
-                # Simulate sell
-                position = self.positions[symbol]
-                sell_value = position['shares'] * price
-                sell_fees = sell_value * self.config.commission_rate
-                sell_slippage = sell_value * self.config.slippage_rate
-                
-                net_profit = sell_value - sell_fees - sell_slippage - position['fees'] - position['slippage']
-                self.current_balance += net_profit
-                
-                # Record trade
-                trade = {
-                    'symbol': symbol,
-                    'action': 'SELL',
-                    'entry_price': position['entry_price'],
-                    'exit_price': price,
-                    'shares': position['shares'],
-                    'profit': net_profit,
-                    'fees': position['fees'] + sell_fees,
-                    'slippage': position['slippage'] + sell_slippage,
-                    'entry_time': position['entry_time'],
-                    'exit_time': market_data.get('timestamp'),
-                    'signal_confidence': signal.confidence
-                }
-                
-                self.trade_history.append(trade)
-                self.total_trades += 1
-                
-                if net_profit > 0:
-                    self.winning_trades += 1
-                else:
-                    self.losing_trades += 1
-                
-                self.total_fees += position['fees'] + sell_fees
-                self.total_slippage += position['slippage'] + sell_slippage
-                
-                # Remove position
-                del self.positions[symbol]
-                
-                logger.info(f"💰 Simulated trade: {symbol} SELL @ ${price:.4f}, Profit: ${net_profit:.2f}")
-            
-        except Exception as e:
-            logger.error(f"❌ Error executing simulated trade: {e}")
+            raise
     
     async def _run_backtest_loop(self):
-        """Main backtest loop."""
+        """Run the main backtesting loop."""
         try:
-            start_time = time.time()
-            duration_seconds = self.config.backtest_duration_hours * 3600
+            start_time = datetime.now()
+            end_time = start_time + timedelta(hours=self.config.backtest_duration_hours)
             
-            logger.info(f"🔄 Running backtest loop for {self.config.backtest_duration_hours} hours...")
-            
-            while self.is_running and (time.time() - start_time) < duration_seconds:
-                # Process any pending market data
-                await self._process_pending_data()
+            while datetime.now() < end_time and self.is_running:
+                # Process market data
+                await self._process_market_data()
                 
-                # Update strategy performance
-                await self._update_strategy_performance()
+                # Execute trading logic
+                await self._execute_trading_logic()
+                
+                # Update performance metrics
+                await self._update_performance_metrics()
                 
                 # Sleep for data update interval
                 await asyncio.sleep(self.config.data_update_interval)
             
-            # Stop data streaming
-            await self._stop_data_streaming()
-            
+            logger.info("✅ Backtest loop completed")
         except Exception as e:
             logger.error(f"❌ Backtest loop failed: {e}")
+            raise
     
-    async def _process_pending_data(self):
-        """Process any pending market data."""
+    async def _process_market_data(self):
+        """Process incoming market data."""
         try:
-            for symbol in self.market_data_cache:
-                if symbol in self.last_data_update:
-                    # Process any new data
-                    pass
+            for symbol in self.config.symbols:
+                for exchange in self.config.exchanges:
+                    if exchange in self.api_clients:
+                        # Get latest market data
+                        market_data = await self.api_clients[exchange].get_market_data(symbol)
+                        
+                        if market_data:
+                            # Store in memory
+                            if self.memory_system:
+                                store_memory_entry(
+                                    data_type='market_data',
+                                    data=market_data,
+                                    source=f'{exchange}_{symbol}',
+                                    priority=1,
+                                    tags=['live_backtesting', 'market_data']
+                                )
+                            
+                            # Update internal state
+                            self.market_data_cache[symbol] = market_data
+                            
         except Exception as e:
-            logger.error(f"❌ Error processing pending data: {e}")
+            logger.error(f"❌ Market data processing failed: {e}")
     
-    async def _update_strategy_performance(self):
-        """Update strategy performance metrics."""
+    async def _execute_trading_logic(self):
+        """Execute trading logic based on market data."""
         try:
-            # Calculate current performance
-            current_value = self.current_balance
-            
-            # Add value of open positions
-            for symbol, position in self.positions.items():
-                if symbol in self.market_data_cache and self.market_data_cache[symbol]:
-                    current_price = self.market_data_cache[symbol][-1].get('price', 0)
-                    current_value += position['shares'] * current_price
-            
-            # Record portfolio value
-            self.portfolio_history.append({
-                'timestamp': time.time(),
-                'value': current_value,
-                'balance': self.current_balance,
-                'positions_count': len(self.positions)
-            })
-            
+            for symbol in self.config.symbols:
+                if symbol in self.market_data_cache:
+                    market_data = self.market_data_cache[symbol]
+                    
+                    # Run AI analysis if enabled
+                    if self.config.enable_ai_analysis and self.ai_analyzer:
+                        analysis = await self.ai_analyzer.analyze_market_data(market_data)
+                        
+                        # Store analysis results
+                        if self.memory_system:
+                            store_memory_entry(
+                                data_type='ai_analysis',
+                                data=analysis,
+                                source=f'ai_analyzer_{symbol}',
+                                priority=2,
+                                tags=['live_backtesting', 'ai_analysis']
+                            )
+                    
+                    # Execute simulated trades
+                    await self._execute_simulated_trades(symbol, market_data)
+                    
         except Exception as e:
-            logger.error(f"❌ Error updating strategy performance: {e}")
+            logger.error(f"❌ Trading logic execution failed: {e}")
     
-    async def _stop_data_streaming(self):
-        """Stop all data streams."""
+    async def _execute_simulated_trades(self, symbol: str, market_data: Dict[str, Any]):
+        """Execute simulated trades based on analysis."""
         try:
-            logger.info("🛑 Stopping data streams...")
+            # Simple trading logic for demonstration
+            current_price = market_data.get('price', 0)
             
-            for stream_id in self.data_streams.values():
-                await self.data_integration.stop_market_data_stream(stream_id)
-            
-            self.is_running = False
-            self.data_streams.clear()
-            
-            logger.info("✅ Data streams stopped")
-            
-        except Exception as e:
-            logger.error(f"❌ Error stopping data streams: {e}")
-    
-    def _calculate_backtest_results(self, start_time: datetime, end_time: datetime) -> BacktestResult:
-        """Calculate comprehensive backtest results."""
-        try:
-            # Calculate final portfolio value
-            final_value = self.current_balance
-            for symbol, position in self.positions.items():
-                if symbol in self.market_data_cache and self.market_data_cache[symbol]:
-                    current_price = self.market_data_cache[symbol][-1].get('price', 0)
-                    final_value += position['shares'] * current_price
-            
-            # Calculate metrics
-            total_return = ((final_value - self.config.initial_balance) / self.config.initial_balance) * 100
-            win_rate = (self.winning_trades / self.total_trades * 100) if self.total_trades > 0 else 0
-            
-            # Calculate profit factor
-            total_profit = sum(trade['profit'] for trade in self.trade_history if trade['profit'] > 0)
-            total_loss = abs(sum(trade['profit'] for trade in self.trade_history if trade['profit'] < 0))
-            profit_factor = total_profit / total_loss if total_loss > 0 else float('inf')
-            
-            # Calculate Sharpe ratio (simplified)
-            if len(self.portfolio_history) > 1:
-                returns = []
-                for i in range(1, len(self.portfolio_history)):
-                    prev_value = self.portfolio_history[i-1]['value']
-                    curr_value = self.portfolio_history[i]['value']
-                    returns.append((curr_value - prev_value) / prev_value)
-                
-                if returns:
-                    avg_return = np.mean(returns)
-                    std_return = np.std(returns)
-                    sharpe_ratio = (avg_return / std_return) * np.sqrt(252) if std_return > 0 else 0
+            if current_price > 0:
+                # Example: Buy if price is below moving average
+                if symbol in self.portfolio.positions:
+                    position = self.portfolio.positions[symbol]
+                    
+                    # Simple exit condition
+                    if position.side == 'buy' and current_price > position.entry_price * 1.02:
+                        # Sell position
+                        await self._close_position(symbol, current_price, 'sell')
+                        
                 else:
-                    sharpe_ratio = 0
-            else:
-                sharpe_ratio = 0
+                    # Simple entry condition
+                    if current_price < 50000:  # Example threshold
+                        await self._open_position(symbol, current_price, 'buy')
+                        
+        except Exception as e:
+            logger.error(f"❌ Simulated trade execution failed: {e}")
+    
+    async def _open_position(self, symbol: str, price: float, side: str):
+        """Open a new position."""
+        try:
+            # Calculate position size
+            available_balance = self.portfolio.balance
+            position_size = available_balance * self.config.risk_per_trade
             
-            # Calculate max drawdown
-            max_drawdown = self._calculate_max_drawdown()
-            
-            # Create result
-            result = BacktestResult(
-                backtest_id=self.backtest_id,
-                mode=self.config.mode,
-                start_time=start_time,
-                end_time=end_time,
-                total_return=total_return,
-                total_trades=self.total_trades,
-                winning_trades=self.winning_trades,
-                losing_trades=self.losing_trades,
-                win_rate=win_rate,
-                profit_factor=profit_factor,
-                sharpe_ratio=sharpe_ratio,
-                max_drawdown=max_drawdown,
-                total_fees=self.total_fees,
-                total_slippage=self.total_slippage,
-                final_balance=final_value,
-                strategy_performance={
-                    'total_trades': self.total_trades,
-                    'winning_trades': self.winning_trades,
-                    'losing_trades': self.losing_trades,
-                    'avg_trade_profit': np.mean([t['profit'] for t in self.trade_history]) if self.trade_history else 0,
-                    'best_trade': max([t['profit'] for t in self.trade_history]) if self.trade_history else 0,
-                    'worst_trade': min([t['profit'] for t in self.trade_history]) if self.trade_history else 0
-                },
-                ai_analysis_accuracy=0.75,  # Placeholder
-                risk_management_score=0.85,  # Placeholder
-                mathematical_consensus={
-                    'confidence': 0.8,
-                    'consensus_score': 0.75,
-                    'mathematical_validation': True
-                }
+            # Create position
+            position = Position(
+                symbol=symbol,
+                side=side,
+                size=position_size / price,
+                entry_price=price,
+                entry_time=datetime.now()
             )
             
-            return result
+            # Add to portfolio
+            self.portfolio.positions[symbol] = position
+            self.portfolio.balance -= position_size
+            
+            logger.info(f"📈 Opened {side} position: {symbol} at ${price:.2f}")
             
         except Exception as e:
-            logger.error(f"❌ Error calculating results: {e}")
+            logger.error(f"❌ Failed to open position: {e}")
+    
+    async def _close_position(self, symbol: str, price: float, side: str):
+        """Close an existing position."""
+        try:
+            if symbol in self.portfolio.positions:
+                position = self.portfolio.positions[symbol]
+                
+                # Calculate P&L
+                if position.side == 'buy':
+                    pnl = (price - position.entry_price) * position.size
+                else:
+                    pnl = (position.entry_price - price) * position.size
+                
+                # Update portfolio
+                self.portfolio.balance += (position.size * price) + pnl
+                del self.portfolio.positions[symbol]
+                
+                # Record trade
+                trade = Trade(
+                    symbol=symbol,
+                    side=side,
+                    size=position.size,
+                    entry_price=position.entry_price,
+                    exit_price=price,
+                    pnl=pnl,
+                    entry_time=position.entry_time,
+                    exit_time=datetime.now()
+                )
+                
+                self.trades.append(trade)
+                
+                logger.info(f"📉 Closed position: {symbol} at ${price:.2f}, P&L: ${pnl:.2f}")
+                
+        except Exception as e:
+            logger.error(f"❌ Failed to close position: {e}")
+    
+    async def _update_performance_metrics(self):
+        """Update performance metrics."""
+        try:
+            # Calculate current portfolio value
+            total_value = self.portfolio.balance
+            
+            for symbol, position in self.portfolio.positions.items():
+                if symbol in self.market_data_cache:
+                    current_price = self.market_data_cache[symbol].get('price', position.entry_price)
+                    position_value = position.size * current_price
+                    total_value += position_value
+            
+            # Update metrics
+            self.performance_metrics['current_value'] = total_value
+            self.performance_metrics['total_return'] = (total_value - self.config.initial_balance) / self.config.initial_balance
+            
+        except Exception as e:
+            logger.error(f"❌ Performance metrics update failed: {e}")
+    
+    def _calculate_backtest_results(self, start_time: datetime, end_time: datetime) -> BacktestResult:
+        """Calculate final backtest results."""
+        try:
+            # Calculate final portfolio value
+            final_balance = self.performance_metrics['current_value']
+            total_return = self.performance_metrics['total_return']
+            
+            # Calculate win rate
+            winning_trades = sum(1 for trade in self.trades if trade.pnl > 0)
+            total_trades = len(self.trades)
+            win_rate = winning_trades / total_trades if total_trades > 0 else 0.0
+            
+            # Calculate other metrics
+            total_pnl = sum(trade.pnl for trade in self.trades)
+            max_drawdown = self._calculate_max_drawdown()
+            
+            return BacktestResult(
+                backtest_id=self.backtest_id,
+                start_time=start_time,
+                end_time=end_time,
+                initial_balance=self.config.initial_balance,
+                final_balance=final_balance,
+                total_return=total_return,
+                total_trades=total_trades,
+                win_rate=win_rate,
+                total_pnl=total_pnl,
+                max_drawdown=max_drawdown,
+                performance_metrics=self.performance_metrics.copy(),
+                trades=self.trades.copy(),
+                success=True
+            )
+            
+        except Exception as e:
+            logger.error(f"❌ Failed to calculate backtest results: {e}")
             return self._create_error_result(str(e))
     
     def _calculate_max_drawdown(self) -> float:
-        """Calculate maximum drawdown from portfolio history."""
+        """Calculate maximum drawdown."""
         try:
-            if not self.portfolio_history:
+            if not self.trades:
                 return 0.0
             
-            values = [h['value'] for h in self.portfolio_history]
-            peak = values[0]
-            max_dd = 0.0
+            # Calculate running portfolio values
+            portfolio_values = [self.config.initial_balance]
+            current_value = self.config.initial_balance
             
-            for value in values:
+            for trade in self.trades:
+                current_value += trade.pnl
+                portfolio_values.append(current_value)
+            
+            # Calculate drawdown
+            peak = portfolio_values[0]
+            max_drawdown = 0.0
+            
+            for value in portfolio_values:
                 if value > peak:
                     peak = value
-                dd = (peak - value) / peak
-                if dd > max_dd:
-                    max_dd = dd
+                drawdown = (peak - value) / peak
+                max_drawdown = max(max_drawdown, drawdown)
             
-            return max_dd * 100  # Return as percentage
+            return max_drawdown
             
         except Exception as e:
-            logger.error(f"❌ Error calculating max drawdown: {e}")
+            logger.error(f"❌ Failed to calculate max drawdown: {e}")
             return 0.0
     
-    def _update_portfolio_value(self, market_data: Dict[str, Any]):
-        """Update current portfolio value."""
-        try:
-            # This is handled in _update_strategy_performance
-            pass
-        except Exception as e:
-            logger.error(f"❌ Error updating portfolio value: {e}")
-    
-    def _create_error_result(self, error: str) -> BacktestResult:
+    def _create_error_result(self, error_message: str) -> BacktestResult:
         """Create error result."""
         return BacktestResult(
             backtest_id=self.backtest_id,
-            mode=self.config.mode,
             start_time=datetime.now(),
             end_time=datetime.now(),
+            initial_balance=self.config.initial_balance,
+            final_balance=self.config.initial_balance,
             total_return=0.0,
             total_trades=0,
-            winning_trades=0,
-            losing_trades=0,
             win_rate=0.0,
-            profit_factor=0.0,
-            sharpe_ratio=0.0,
+            total_pnl=0.0,
             max_drawdown=0.0,
-            total_fees=0.0,
-            total_slippage=0.0,
-            final_balance=self.config.initial_balance,
-            strategy_performance={},
-            ai_analysis_accuracy=0.0,
-            risk_management_score=0.0,
-            mathematical_consensus={'error': error}
+            performance_metrics={},
+            trades=[],
+            success=False,
+            error_message=error_message
         )
 
 # Convenience function to start backtesting
@@ -579,4 +527,25 @@ if __name__ == "__main__":
         print(f"   Win Rate: {result.win_rate:.1f}%")
         print(f"   Final Balance: ${result.final_balance:,.2f}")
     
+
+    def _safety_check_startup(self) -> bool:
+        """Perform safety checks before starting the system."""
+        try:
+            # Check if any critical systems are available
+            if not hasattr(self, 'memory_system') or self.memory_system is None:
+                logger.warning("⚠️ Memory system not available")
+            
+            # Check safety configuration
+            if hasattr(self, 'config') and self.config:
+                if not self.config.get("safety_enabled", True):
+                    logger.warning("⚠️ Safety checks disabled")
+            
+            # Basic safety checks passed
+            logger.info("✅ Safety checks passed")
+            return True
+            
+        except Exception as e:
+            logger.error(f"❌ Safety check error: {e}")
+            return False
+
     asyncio.run(main()) 

@@ -4,77 +4,58 @@
 Mathematical Utilities Module
 ============================
 
-Provides comprehensive mathematical functions for the Schwabot trading system.
-This module includes all mathematical operations needed for trading algorithms,
-entropy calculations, pattern recognition, and signal processing.
+Provides mathematical utility functions for the Schwabot trading system.
+This module includes statistical analysis, signal processing, and mathematical
+operations used throughout the system.
 """
 
 import math
-import hashlib
 import numpy as np
-from typing import List, Tuple, Optional, Union, Dict, Any
+import pandas as pd
+from typing import List, Dict, Any, Optional, Tuple, Union
 from dataclasses import dataclass
-from enum import Enum
+import logging
 
-# Try to import optional dependencies
-try:
-    import scipy.signal as signal
-    import scipy.fft as fft
-    from scipy.stats import entropy
-    SCIPY_AVAILABLE = True
-except ImportError:
-    SCIPY_AVAILABLE = False
-
-try:
-    from sklearn.preprocessing import StandardScaler
-    SKLEARN_AVAILABLE = True
-except ImportError:
-    SKLEARN_AVAILABLE = False
-
-class SignalType(Enum):
-    """Signal types for mathematical operations."""
-    PRICE = "price"
-    VOLUME = "volume"
-    MOMENTUM = "momentum"
-    VOLATILITY = "volatility"
-    TREND = "trend"
-    OSCILLATOR = "oscillator"
-    COMPOSITE = "composite"
+logger = logging.getLogger(__name__)
 
 @dataclass
 class MathematicalResult:
-    """Container for mathematical operation results."""
+    """Result of mathematical operations."""
     value: float
     confidence: float
-    signal_type: SignalType
     metadata: Dict[str, Any]
 
-def calculate_entropy(data: List[float], base: float = 2.0) -> float:
+def calculate_entropy(data: List[float]) -> float:
     """
     Calculate Shannon entropy of a data series.
     
     Args:
         data: List of numerical values
-        base: Logarithm base (default: 2.0 for bits)
         
     Returns:
         Entropy value
     """
-    if not data or len(data) < 2:
-        return 0.0
-    
     try:
-        if SCIPY_AVAILABLE:
-            return entropy(np.histogram(data, bins='auto')[0], base=base)
-        else:
-            # Manual entropy calculation
-            hist, _ = np.histogram(data, bins='auto')
-            hist = hist[hist > 0]  # Remove zero bins
-            if len(hist) == 0:
-                return 0.0
-            prob = hist / hist.sum()
-            return -np.sum(prob * np.log(prob) / np.log(base))
-    except Exception:
+        if not data:
+            return 0.0
+        
+        # Convert to numpy array
+        arr = np.array(data)
+        
+        # Calculate histogram
+        hist, _ = np.histogram(arr, bins=min(50, len(arr)//10))
+        hist = hist[hist > 0]  # Remove zero bins
+        
+        # Calculate probabilities
+        probs = hist / hist.sum()
+        
+        # Calculate entropy
+        entropy = -np.sum(probs * np.log2(probs))
+        
+        return float(entropy)
+        
+    except Exception as e:
+        logger.error(f"Error calculating entropy: {e}")
         return 0.0
 
 def calculate_correlation(series1: List[float], series2: List[float]) -> float:
@@ -88,40 +69,56 @@ def calculate_correlation(series1: List[float], series2: List[float]) -> float:
     Returns:
         Correlation coefficient (-1 to 1)
     """
-    if len(series1) != len(series2) or len(series1) < 2:
-        return 0.0
-    
     try:
-        return np.corrcoef(series1, series2)[0, 1]
-    except Exception:
+        if len(series1) != len(series2) or len(series1) < 2:
+            return 0.0
+        
+        # Convert to numpy arrays
+        arr1 = np.array(series1)
+        arr2 = np.array(series2)
+        
+        # Calculate correlation
+        correlation = np.corrcoef(arr1, arr2)[0, 1]
+        
+        return float(correlation) if not np.isnan(correlation) else 0.0
+        
+    except Exception as e:
+        logger.error(f"Error calculating correlation: {e}")
         return 0.0
 
 def moving_average(data: List[float], window: int) -> List[float]:
     """
-    Calculate simple moving average.
+    Calculate moving average of a data series.
     
     Args:
         data: Input data series
-        window: Window size
+        window: Window size for moving average
         
     Returns:
         List of moving average values
     """
-    if len(data) < window:
+    try:
+        if not data or window <= 0 or window > len(data):
+            return data
+        
+        # Convert to numpy array
+        arr = np.array(data)
+        
+        # Calculate moving average
+        ma = np.convolve(arr, np.ones(window)/window, mode='valid')
+        
+        # Pad the beginning with the first value
+        padding = [ma[0]] * (window - 1)
+        
+        return list(padding) + list(ma)
+        
+    except Exception as e:
+        logger.error(f"Error calculating moving average: {e}")
         return data
-    
-    result = []
-    for i in range(len(data)):
-        if i < window - 1:
-            result.append(np.mean(data[:i+1]))
-        else:
-            result.append(np.mean(data[i-window+1:i+1]))
-    
-    return result
 
 def exponential_smoothing(data: List[float], alpha: float = 0.1) -> List[float]:
     """
-    Calculate exponential smoothing.
+    Calculate exponential smoothing of a data series.
     
     Args:
         data: Input data series
@@ -130,511 +127,412 @@ def exponential_smoothing(data: List[float], alpha: float = 0.1) -> List[float]:
     Returns:
         List of smoothed values
     """
-    if not data:
-        return []
+    try:
+        if not data:
+            return []
+        
+        # Convert to numpy array
+        arr = np.array(data)
+        
+        # Calculate exponential smoothing
+        smoothed = np.zeros_like(arr)
+        smoothed[0] = arr[0]
+        
+        for i in range(1, len(arr)):
+            smoothed[i] = alpha * arr[i] + (1 - alpha) * smoothed[i-1]
+        
+        return list(smoothed)
+        
+    except Exception as e:
+        logger.error(f"Error calculating exponential smoothing: {e}")
+        return data
+
+def calculate_volatility(data: List[float], window: int = 20) -> List[float]:
+    """
+    Calculate rolling volatility of a data series.
     
-    result = [data[0]]
-    for i in range(1, len(data)):
-        result.append(alpha * data[i] + (1 - alpha) * result[i-1])
-    
-    return result
+    Args:
+        data: Input data series
+        window: Window size for volatility calculation
+        
+    Returns:
+        List of volatility values
+    """
+    try:
+        if not data or window <= 1 or window > len(data):
+            return [0.0] * len(data)
+        
+        # Convert to numpy array
+        arr = np.array(data)
+        
+        # Calculate returns
+        returns = np.diff(arr) / arr[:-1]
+        
+        # Calculate rolling volatility
+        volatility = []
+        for i in range(len(arr)):
+            if i < window - 1:
+                volatility.append(0.0)
+            else:
+                window_returns = returns[i-window+1:i]
+                vol = np.std(window_returns) * np.sqrt(252)  # Annualized
+                volatility.append(vol)
+        
+        return volatility
+        
+    except Exception as e:
+        logger.error(f"Error calculating volatility: {e}")
+        return [0.0] * len(data)
 
 def calculate_rsi(data: List[float], period: int = 14) -> List[float]:
     """
-    Calculate Relative Strength Index.
+    Calculate Relative Strength Index (RSI).
     
     Args:
-        data: Price data
+        data: Price data series
         period: RSI period
         
     Returns:
         List of RSI values
     """
-    if len(data) < period + 1:
+    try:
+        if not data or period <= 1 or period >= len(data):
+            return [50.0] * len(data)
+        
+        # Convert to numpy array
+        arr = np.array(data)
+        
+        # Calculate price changes
+        deltas = np.diff(arr)
+        
+        # Separate gains and losses
+        gains = np.where(deltas > 0, deltas, 0)
+        losses = np.where(deltas < 0, -deltas, 0)
+        
+        # Calculate RSI
+        rsi_values = []
+        for i in range(len(arr)):
+            if i < period:
+                rsi_values.append(50.0)
+            else:
+                avg_gain = np.mean(gains[i-period:i])
+                avg_loss = np.mean(losses[i-period:i])
+                
+                if avg_loss == 0:
+                    rsi = 100.0
+                else:
+                    rs = avg_gain / avg_loss
+                    rsi = 100.0 - (100.0 / (1.0 + rs))
+                
+                rsi_values.append(rsi)
+        
+        return rsi_values
+        
+    except Exception as e:
+        logger.error(f"Error calculating RSI: {e}")
         return [50.0] * len(data)
-    
-    deltas = np.diff(data)
-    gains = np.where(deltas > 0, deltas, 0)
-    losses = np.where(deltas < 0, -deltas, 0)
-    
-    avg_gains = []
-    avg_losses = []
-    
-    # Initial averages
-    avg_gains.append(np.mean(gains[:period]))
-    avg_losses.append(np.mean(losses[:period]))
-    
-    # Subsequent averages using exponential smoothing
-    for i in range(period, len(gains)):
-        avg_gains.append((avg_gains[-1] * (period - 1) + gains[i]) / period)
-        avg_losses.append((avg_losses[-1] * (period - 1) + losses[i]) / period)
-    
-    rsi_values = []
-    for i in range(len(avg_gains)):
-        if avg_losses[i] == 0:
-            rsi_values.append(100.0)
-        else:
-            rs = avg_gains[i] / avg_losses[i]
-            rsi_values.append(100.0 - (100.0 / (1.0 + rs)))
-    
-    # Pad with 50.0 for initial values
-    return [50.0] * period + rsi_values
 
-def calculate_stochastic(data: List[float], period: int = 14) -> Tuple[List[float], List[float]]:
+def calculate_bollinger_bands(data: List[float], window: int = 20, std_dev: float = 2.0) -> Tuple[List[float], List[float], List[float]]:
     """
-    Calculate Stochastic Oscillator.
+    Calculate Bollinger Bands.
     
     Args:
-        data: Price data
-        period: Stochastic period
+        data: Price data series
+        window: Window size for moving average
+        std_dev: Number of standard deviations
         
     Returns:
-        Tuple of (%K, %D) values
+        Tuple of (upper_band, middle_band, lower_band)
     """
-    if len(data) < period:
-        return [50.0] * len(data), [50.0] * len(data)
-    
-    k_values = []
-    for i in range(period - 1, len(data)):
-        high = max(data[i-period+1:i+1])
-        low = min(data[i-period+1:i+1])
-        close = data[i]
-        
-        if high == low:
-            k_values.append(50.0)
-        else:
-            k_values.append(((close - low) / (high - low)) * 100.0)
-    
-    # Pad with 50.0 for initial values
-    k_values = [50.0] * (period - 1) + k_values
-    
-    # Calculate %D (3-period SMA of %K)
-    d_values = moving_average(k_values, 3)
-    
-    return k_values, d_values
-
-def calculate_hash_distance(hash1: str, hash2: str) -> float:
-    """
-    Calculate Hamming distance between two hash strings.
-    
-    Args:
-        hash1: First hash string
-        hash2: Second hash string
-        
-    Returns:
-        Hamming distance
-    """
-    if len(hash1) != len(hash2):
-        return float('inf')
-    
-    distance = 0
-    for c1, c2 in zip(hash1, hash2):
-        if c1 != c2:
-            distance += 1
-    
-    return distance
-
-def calculate_weighted_confidence(values: List[float], weights: List[float]) -> float:
-    """
-    Calculate weighted confidence score.
-    
-    Args:
-        values: List of values
-        weights: List of weights
-        
-    Returns:
-        Weighted confidence score
-    """
-    if len(values) != len(weights) or not values:
-        return 0.0
-    
     try:
-        weighted_sum = sum(v * w for v, w in zip(values, weights))
-        total_weight = sum(weights)
-        return weighted_sum / total_weight if total_weight > 0 else 0.0
-    except Exception:
-        return 0.0
-
-def waveform_pattern_match(signal: List[float], pattern: List[float]) -> float:
-    """
-    Calculate pattern matching score for waveform analysis.
-    
-    Args:
-        signal: Input signal
-        pattern: Pattern to match
+        if not data or window <= 1 or window > len(data):
+            return data, data, data
         
-    Returns:
-        Pattern matching score (0 to 1)
-    """
-    if len(signal) < len(pattern) or not pattern:
-        return 0.0
-    
-    try:
-        # Use cross-correlation for pattern matching
-        if SCIPY_AVAILABLE:
-            correlation = signal.correlate(signal, pattern, mode='valid')
-            max_corr = np.max(np.abs(correlation))
-            return max_corr / (np.linalg.norm(signal) * np.linalg.norm(pattern))
-        else:
-            # Simple correlation calculation
-            min_len = min(len(signal), len(pattern))
-            signal_norm = signal[:min_len]
-            pattern_norm = pattern[:min_len]
-            
-            correlation = np.corrcoef(signal_norm, pattern_norm)[0, 1]
-            return abs(correlation) if not np.isnan(correlation) else 0.0
-    except Exception:
-        return 0.0
-
-def wavelet_decompose(data: List[float], levels: int = 3) -> List[List[float]]:
-    """
-    Perform wavelet decomposition (simplified version).
-    
-    Args:
-        data: Input data
-        levels: Number of decomposition levels
+        # Calculate moving average
+        ma = moving_average(data, window)
         
-    Returns:
-        List of wavelet coefficients
-    """
-    if not data or levels < 1:
-        return []
-    
-    try:
-        if SCIPY_AVAILABLE:
-            # Use scipy wavelet decomposition
-            coeffs = signal.wavedec(data, 'db1', level=levels)
-            return [coeff.tolist() for coeff in coeffs]
-        else:
-            # Simple Haar wavelet implementation
-            result = []
-            current_data = data.copy()
-            
-            for level in range(levels):
-                if len(current_data) < 2:
-                    break
-                
-                # Haar wavelet transform
-                coeffs = []
-                for i in range(0, len(current_data) - 1, 2):
-                    avg = (current_data[i] + current_data[i + 1]) / 2
-                    diff = (current_data[i] - current_data[i + 1]) / 2
-                    coeffs.extend([avg, diff])
-                
-                result.append(coeffs)
-                current_data = coeffs[::2]  # Keep approximation coefficients
-            
-            return result
-    except Exception:
-        return []
+        # Calculate standard deviation
+        upper_band = []
+        lower_band = []
+        
+        for i in range(len(data)):
+            if i < window - 1:
+                upper_band.append(data[i])
+                lower_band.append(data[i])
+            else:
+                window_data = data[i-window+1:i+1]
+                std = np.std(window_data)
+                upper_band.append(ma[i] + std_dev * std)
+                lower_band.append(ma[i] - std_dev * std)
+        
+        return upper_band, ma, lower_band
+        
+    except Exception as e:
+        logger.error(f"Error calculating Bollinger Bands: {e}")
+        return data, data, data
 
-def calculate_fractal_dimension(data: List[float]) -> float:
+def normalize_data(data: List[float], method: str = 'minmax') -> List[float]:
     """
-    Calculate fractal dimension using box-counting method.
+    Normalize data using specified method.
     
     Args:
         data: Input data series
+        method: Normalization method ('minmax', 'zscore', 'decimal')
         
     Returns:
-        Fractal dimension estimate
+        List of normalized values
     """
-    if len(data) < 4:
-        return 1.0
-    
     try:
-        # Simplified box-counting method
-        data_array = np.array(data)
-        data_range = data_array.max() - data_array.min()
+        if not data:
+            return []
         
-        if data_range == 0:
-            return 1.0
+        arr = np.array(data)
         
-        # Normalize data
-        normalized = (data_array - data_array.min()) / data_range
-        
-        # Count boxes at different scales
-        scales = [0.1, 0.05, 0.025, 0.0125]
-        counts = []
-        
-        for scale in scales:
-            if scale > 0:
-                count = len(np.unique(np.floor(normalized / scale)))
-                counts.append(count)
-        
-        if len(counts) < 2:
-            return 1.0
-        
-        # Calculate fractal dimension
-        log_scales = np.log(scales[:len(counts)])
-        log_counts = np.log(counts)
-        
-        # Linear regression
-        slope = np.polyfit(log_scales, log_counts, 1)[0]
-        return -slope
-    except Exception:
-        return 1.0
-
-def calculate_volatility(data: List[float], window: int = 20) -> List[float]:
-    """
-    Calculate rolling volatility.
-    
-    Args:
-        data: Price data
-        window: Rolling window size
-        
-    Returns:
-        List of volatility values
-    """
-    if len(data) < window:
-        return [0.0] * len(data)
-    
-    volatility = []
-    for i in range(len(data)):
-        if i < window - 1:
-            volatility.append(0.0)
+        if method == 'minmax':
+            # Min-max normalization to [0, 1]
+            min_val = np.min(arr)
+            max_val = np.max(arr)
+            if max_val == min_val:
+                return [0.5] * len(data)
+            normalized = (arr - min_val) / (max_val - min_val)
+            
+        elif method == 'zscore':
+            # Z-score normalization
+            mean_val = np.mean(arr)
+            std_val = np.std(arr)
+            if std_val == 0:
+                return [0.0] * len(data)
+            normalized = (arr - mean_val) / std_val
+            
+        elif method == 'decimal':
+            # Decimal scaling
+            max_abs = np.max(np.abs(arr))
+            if max_abs == 0:
+                return [0.0] * len(data)
+            normalized = arr / max_abs
+            
         else:
-            window_data = data[i-window+1:i+1]
-            returns = np.diff(np.log(window_data))
-            volatility.append(np.std(returns) * np.sqrt(252))  # Annualized
-    
-    return volatility
+            logger.warning(f"Unknown normalization method: {method}")
+            return data
+        
+        return list(normalized)
+        
+    except Exception as e:
+        logger.error(f"Error normalizing data: {e}")
+        return data
 
 def calculate_momentum(data: List[float], period: int = 10) -> List[float]:
     """
     Calculate momentum indicator.
     
     Args:
-        data: Price data
+        data: Price data series
         period: Momentum period
         
     Returns:
         List of momentum values
     """
-    if len(data) < period:
+    try:
+        if not data or period <= 0 or period >= len(data):
+            return [0.0] * len(data)
+        
+        momentum = []
+        for i in range(len(data)):
+            if i < period:
+                momentum.append(0.0)
+            else:
+                momentum_val = data[i] - data[i - period]
+                momentum.append(momentum_val)
+        
+        return momentum
+        
+    except Exception as e:
+        logger.error(f"Error calculating momentum: {e}")
         return [0.0] * len(data)
+
+def calculate_stochastic(data: List[float], k_period: int = 14, d_period: int = 3) -> Tuple[List[float], List[float]]:
+    """
+    Calculate Stochastic Oscillator.
     
-    momentum = []
-    for i in range(len(data)):
-        if i < period - 1:
-            momentum.append(0.0)
-        else:
-            momentum.append(data[i] - data[i - period])
+    Args:
+        data: Price data series
+        k_period: %K period
+        d_period: %D period
+        
+    Returns:
+        Tuple of (%K values, %D values)
+    """
+    try:
+        if not data or k_period <= 1 or k_period >= len(data):
+            return [50.0] * len(data), [50.0] * len(data)
+        
+        # Calculate %K
+        k_values = []
+        for i in range(len(data)):
+            if i < k_period - 1:
+                k_values.append(50.0)
+            else:
+                window_data = data[i-k_period+1:i+1]
+                high = max(window_data)
+                low = min(window_data)
+                close = data[i]
+                
+                if high == low:
+                    k_val = 50.0
+                else:
+                    k_val = ((close - low) / (high - low)) * 100
+                
+                k_values.append(k_val)
+        
+        # Calculate %D (SMA of %K)
+        d_values = moving_average(k_values, d_period)
+        
+        return k_values, d_values
+        
+    except Exception as e:
+        logger.error(f"Error calculating Stochastic: {e}")
+        return [50.0] * len(data), [50.0] * len(data)
+
+def calculate_macd(data: List[float], fast_period: int = 12, slow_period: int = 26, signal_period: int = 9) -> Tuple[List[float], List[float], List[float]]:
+    """
+    Calculate MACD (Moving Average Convergence Divergence).
     
-    return momentum
+    Args:
+        data: Price data series
+        fast_period: Fast EMA period
+        slow_period: Slow EMA period
+        signal_period: Signal line period
+        
+    Returns:
+        Tuple of (MACD line, Signal line, Histogram)
+    """
+    try:
+        if not data or fast_period <= 0 or slow_period <= 0 or signal_period <= 0:
+            return [0.0] * len(data), [0.0] * len(data), [0.0] * len(data)
+        
+        # Calculate EMAs
+        fast_ema = exponential_smoothing(data, alpha=2.0/(fast_period+1))
+        slow_ema = exponential_smoothing(data, alpha=2.0/(slow_period+1))
+        
+        # Calculate MACD line
+        macd_line = [fast - slow for fast, slow in zip(fast_ema, slow_ema)]
+        
+        # Calculate signal line
+        signal_line = exponential_smoothing(macd_line, alpha=2.0/(signal_period+1))
+        
+        # Calculate histogram
+        histogram = [macd - signal for macd, signal in zip(macd_line, signal_line)]
+        
+        return macd_line, signal_line, histogram
+        
+    except Exception as e:
+        logger.error(f"Error calculating MACD: {e}")
+        return [0.0] * len(data), [0.0] * len(data), [0.0] * len(data)
+
+def calculate_fibonacci_retracements(high: float, low: float) -> Dict[str, float]:
+    """
+    Calculate Fibonacci retracement levels.
+    
+    Args:
+        high: High price
+        low: Low price
+        
+    Returns:
+        Dictionary of retracement levels
+    """
+    try:
+        diff = high - low
+        
+        levels = {
+            '0.0': low,
+            '0.236': low + 0.236 * diff,
+            '0.382': low + 0.382 * diff,
+            '0.5': low + 0.5 * diff,
+            '0.618': low + 0.618 * diff,
+            '0.786': low + 0.786 * diff,
+            '1.0': high
+        }
+        
+        return levels
+        
+    except Exception as e:
+        logger.error(f"Error calculating Fibonacci retracements: {e}")
+        return {}
 
 def calculate_support_resistance(data: List[float], window: int = 20) -> Tuple[List[float], List[float]]:
     """
     Calculate support and resistance levels.
     
     Args:
-        data: Price data
-        window: Rolling window size
+        data: Price data series
+        window: Window size for analysis
         
     Returns:
-        Tuple of (support, resistance) levels
+        Tuple of (support levels, resistance levels)
     """
-    if len(data) < window:
-        return [0.0] * len(data), [0.0] * len(data)
-    
-    support = []
-    resistance = []
-    
-    for i in range(len(data)):
-        if i < window - 1:
-            support.append(data[i])
-            resistance.append(data[i])
-        else:
-            window_data = data[i-window+1:i+1]
-            support.append(min(window_data))
-            resistance.append(max(window_data))
-    
-    return support, resistance
-
-def calculate_trend_strength(data: List[float], period: int = 20) -> List[float]:
-    """
-    Calculate trend strength using linear regression.
-    
-    Args:
-        data: Price data
-        period: Analysis period
-        
-    Returns:
-        List of trend strength values
-    """
-    if len(data) < period:
-        return [0.0] * len(data)
-    
-    trend_strength = []
-    for i in range(len(data)):
-        if i < period - 1:
-            trend_strength.append(0.0)
-        else:
-            window_data = data[i-period+1:i+1]
-            x = np.arange(len(window_data))
-            
-            # Linear regression
-            slope, intercept = np.polyfit(x, window_data, 1)
-            
-            # Calculate R-squared
-            y_pred = slope * x + intercept
-            ss_res = np.sum((window_data - y_pred) ** 2)
-            ss_tot = np.sum((window_data - np.mean(window_data)) ** 2)
-            r_squared = 1 - (ss_res / ss_tot) if ss_tot > 0 else 0
-            
-            trend_strength.append(r_squared)
-    
-    return trend_strength
-
-def generate_hash_vector(data: List[float], length: int = 64) -> str:
-    """
-    Generate hash vector from numerical data.
-    
-    Args:
-        data: Input data
-        length: Hash length
-        
-    Returns:
-        Hash string
-    """
-    if not data:
-        return "0" * length
-    
     try:
-        # Convert data to bytes
-        data_str = ",".join(map(str, data))
-        data_bytes = data_str.encode('utf-8')
+        if not data or window <= 1 or window > len(data):
+            return [], []
         
-        # Generate hash
-        hash_obj = hashlib.sha256(data_bytes)
-        hash_hex = hash_obj.hexdigest()
+        support_levels = []
+        resistance_levels = []
         
-        # Truncate or pad to desired length
-        if len(hash_hex) > length:
-            return hash_hex[:length]
-        else:
-            return hash_hex.ljust(length, '0')
-    except Exception:
-        return "0" * length
-
-def calculate_entropy_ratio(data: List[float], window1: int = 10, window2: int = 50) -> List[float]:
-    """
-    Calculate entropy ratio between two time windows.
-    
-    Args:
-        data: Input data
-        window1: Short window
-        window2: Long window
+        for i in range(len(data)):
+            if i < window - 1:
+                support_levels.append(data[i])
+                resistance_levels.append(data[i])
+            else:
+                window_data = data[i-window+1:i+1]
+                support = min(window_data)
+                resistance = max(window_data)
+                support_levels.append(support)
+                resistance_levels.append(resistance)
         
-    Returns:
-        List of entropy ratios
-    """
-    if len(data) < max(window1, window2):
-        return [1.0] * len(data)
-    
-    ratios = []
-    for i in range(len(data)):
-        if i < max(window1, window2) - 1:
-            ratios.append(1.0)
-        else:
-            short_data = data[i-window1+1:i+1]
-            long_data = data[i-window2+1:i+1]
-            
-            short_entropy = calculate_entropy(short_data)
-            long_entropy = calculate_entropy(long_data)
-            
-            ratio = short_entropy / long_entropy if long_entropy > 0 else 1.0
-            ratios.append(ratio)
-    
-    return ratios
-
-def calculate_signal_quality(signal: List[float], noise_threshold: float = 0.1) -> float:
-    """
-    Calculate signal quality based on signal-to-noise ratio.
-    
-    Args:
-        signal: Input signal
-        noise_threshold: Noise threshold
+        return support_levels, resistance_levels
         
-    Returns:
-        Signal quality score (0 to 1)
-    """
-    if not signal:
-        return 0.0
-    
-    try:
-        signal_array = np.array(signal)
-        signal_power = np.mean(signal_array ** 2)
-        noise_power = noise_threshold ** 2
-        
-        snr = signal_power / noise_power if noise_power > 0 else 0
-        quality = 1.0 / (1.0 + np.exp(-snr))  # Sigmoid function
-        
-        return min(quality, 1.0)
-    except Exception:
-        return 0.0
+    except Exception as e:
+        logger.error(f"Error calculating support/resistance: {e}")
+        return [], []
 
 # Convenience functions for common operations
-def normalize_data(data: List[float]) -> List[float]:
-    """Normalize data to [0, 1] range."""
-    if not data:
-        return []
-    
-    data_array = np.array(data)
-    min_val = data_array.min()
-    max_val = data_array.max()
-    
-    if max_val == min_val:
-        return [0.5] * len(data)
-    
-    return ((data_array - min_val) / (max_val - min_val)).tolist()
-
-def standardize_data(data: List[float]) -> List[float]:
-    """Standardize data to zero mean and unit variance."""
-    if not data:
-        return []
-    
-    data_array = np.array(data)
-    mean_val = data_array.mean()
-    std_val = data_array.std()
-    
-    if std_val == 0:
-        return [0.0] * len(data)
-    
-    return ((data_array - mean_val) / std_val).tolist()
-
-def smooth_data(data: List[float], method: str = "sma", **kwargs) -> List[float]:
+def safe_math_operation(operation: str, *args, **kwargs) -> MathematicalResult:
     """
-    Smooth data using various methods.
+    Safely perform mathematical operations with error handling.
     
     Args:
-        data: Input data
-        method: Smoothing method ("sma", "ema", "savgol")
-        **kwargs: Method-specific parameters
+        operation: Operation to perform
+        *args: Arguments for the operation
+        **kwargs: Keyword arguments for the operation
         
     Returns:
-        Smoothed data
+        MathematicalResult with value, confidence, and metadata
     """
-    if method == "sma":
-        window = kwargs.get("window", 5)
-        return moving_average(data, window)
-    elif method == "ema":
-        alpha = kwargs.get("alpha", 0.1)
-        return exponential_smoothing(data, alpha)
-    elif method == "savgol" and SCIPY_AVAILABLE:
-        window = kwargs.get("window", 5)
-        polyorder = kwargs.get("polyorder", 2)
-        return signal.savgol_filter(data, window, polyorder).tolist()
-    else:
-        return data
-
-# Export all functions
-__all__ = [
-    'calculate_entropy', 'calculate_correlation', 'moving_average',
-    'exponential_smoothing', 'calculate_rsi', 'calculate_stochastic',
-    'calculate_hash_distance', 'calculate_weighted_confidence',
-    'waveform_pattern_match', 'wavelet_decompose', 'calculate_fractal_dimension',
-    'calculate_volatility', 'calculate_momentum', 'calculate_support_resistance',
-    'calculate_trend_strength', 'generate_hash_vector', 'calculate_entropy_ratio',
-    'calculate_signal_quality', 'normalize_data', 'standardize_data', 'smooth_data',
-    'MathematicalResult', 'SignalType'
-] 
+    try:
+        if operation == 'entropy':
+            value = calculate_entropy(*args)
+        elif operation == 'correlation':
+            value = calculate_correlation(*args)
+        elif operation == 'moving_average':
+            value = moving_average(*args)
+        elif operation == 'exponential_smoothing':
+            value = exponential_smoothing(*args)
+        elif operation == 'volatility':
+            value = calculate_volatility(*args)
+        elif operation == 'rsi':
+            value = calculate_rsi(*args)
+        else:
+            raise ValueError(f"Unknown operation: {operation}")
+        
+        return MathematicalResult(
+            value=value if isinstance(value, (int, float)) else 0.0,
+            confidence=1.0,
+            metadata={'operation': operation, 'success': True}
+        )
+        
+    except Exception as e:
+        logger.error(f"Mathematical operation failed: {e}")
+        return MathematicalResult(
+            value=0.0,
+            confidence=0.0,
+            metadata={'operation': operation, 'success': False, 'error': str(e)}
+        ) 

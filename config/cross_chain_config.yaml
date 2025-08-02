@@ -1,0 +1,214 @@
+# 🔗 Cross-Chain Mode System Configuration
+# ======================================
+# Configuration file for the Cross-Chain Mode System
+# 
+# Features:
+# - Multi-strategy portfolio management
+# - Cross-chain synchronization settings
+# - USB memory management
+# - Shadow mode test suite configuration
+# - Performance tracking and analytics
+# - Safety and execution mode settings
+
+# 🔒 Safety Configuration
+safety:
+  execution_mode: "shadow"  # shadow, paper, micro, live
+  max_position_size: 0.1    # 10% of portfolio
+  max_daily_loss: 0.05      # 5% daily loss limit
+  stop_loss_threshold: 0.02 # 2% stop loss
+  emergency_stop_enabled: true
+  require_confirmation: true
+  max_trades_per_hour: 10
+  min_confidence_threshold: 0.7
+
+# 🔗 Cross-Chain Settings
+cross_chain:
+  max_chains: 3                    # Maximum number of active chains
+  chain_sync_interval: 0.1         # 100ms chain synchronization
+  memory_sync_interval: 1.0        # 1 second memory sync
+  usb_write_interval: 0.05         # 50ms USB write operations
+  performance_weighting_enabled: true
+  auto_chain_optimization: true
+  chain_health_monitoring: true
+
+# 💾 USB Memory Management
+usb_memory:
+  enabled: true
+  auto_backup: true
+  backup_interval: 300             # 5 minutes
+  max_queue_size: 1000
+  compression_enabled: true
+  encryption_enabled: false
+  priority_levels:
+    high: 3
+    medium: 2
+    low: 1
+
+# 🕵️ Shadow Mode Test Suite
+shadow_mode:
+  enabled: true
+  data_collection_interval: 1.0    # 1 second
+  max_test_data_size: 10000        # Maximum test data entries
+  performance_tracking: true
+  memory_usage_tracking: true
+  cross_chain_analysis: true
+  usb_data_storage: true
+
+# 📊 Performance Analytics
+performance:
+  real_time_tracking: true
+  metrics_update_interval: 1.0     # 1 second
+  historical_data_retention: 86400 # 24 hours
+  performance_alerts: true
+  auto_optimization: true
+  benchmark_comparison: true
+
+# 🔄 Strategy Synchronization
+strategy_sync:
+  enabled: true
+  sync_interval: 0.1               # 100ms
+  hash_based_sync: true
+  memory_sharing: true
+  performance_weighting: true
+  adaptive_sync: true
+
+# 🧠 Memory Management
+memory_management:
+  short_term_memory_size: 1000
+  mid_term_memory_size: 5000
+  long_term_memory_size: 10000
+  vault_memory_size: 5000
+  pattern_memory_size: 2000
+  memory_compression_ratio: 0.8
+  auto_cleanup: true
+  cleanup_interval: 3600           # 1 hour
+
+# 🌐 Multi-Computer Synchronization
+multi_computer:
+  enabled: false
+  sync_computers: []
+  sync_confirmation_threshold: 0.7
+  sync_interval: 5.0               # 5 seconds
+  data_validation: true
+  conflict_resolution: "majority"
+
+# 📡 Kraken API Integration
+kraken_integration:
+  enabled: true
+  websocket_enabled: true
+  rest_api_enabled: true
+  sync_interval: 0.05              # 50ms
+  market_delta_threshold: 0.001    # 0.1%
+  re_sync_cooldown: 1.0            # 1 second
+  max_sync_failures: 5
+
+# 🎯 Available Strategies
+available_strategies:
+  clock_mode_001:
+    name: "Clock Mode"
+    description: "Mechanical watchmaker timing"
+    type: "clock_mode"
+    enabled: true
+    default_weight: 0.3
+    usb_memory_slot: "slot_clock_mode_001"
+    
+  ferris_ride_001:
+    name: "Ferris Ride"
+    description: "Ferris Ride looping strategy"
+    type: "ferris_ride"
+    enabled: true
+    default_weight: 0.3
+    usb_memory_slot: "slot_ferris_ride_001"
+    
+  ghost_mode_001:
+    name: "Ghost Mode"
+    description: "Ghost mode trading"
+    type: "ghost_mode"
+    enabled: true
+    default_weight: 0.2
+    usb_memory_slot: "slot_ghost_mode_001"
+    
+  brain_mode_001:
+    name: "Brain Mode"
+    description: "Neural brain processing"
+    type: "brain_mode"
+    enabled: true
+    default_weight: 0.1
+    usb_memory_slot: "slot_brain_mode_001"
+    
+  unified_backtest_001:
+    name: "Unified Backtest"
+    description: "Unified backtesting system"
+    type: "unified_backtest"
+    enabled: true
+    default_weight: 0.1
+    usb_memory_slot: "slot_unified_backtest_001"
+
+# 🔗 Predefined Cross-Chains
+predefined_chains:
+  dual_clock_ferris:
+    name: "Clock + Ferris Dual Chain"
+    type: "dual"
+    strategies: ["clock_mode_001", "ferris_ride_001"]
+    weights: {"clock_mode_001": 0.6, "ferris_ride_001": 0.4}
+    enabled: false
+    
+  triple_chain_001:
+    name: "Triple Strategy Chain"
+    type: "triple"
+    strategies: ["clock_mode_001", "ferris_ride_001", "ghost_mode_001"]
+    weights: {"clock_mode_001": 0.4, "ferris_ride_001": 0.4, "ghost_mode_001": 0.2}
+    enabled: false
+    
+  quad_chain_001:
+    name: "Quad Strategy Chain"
+    type: "quad"
+    strategies: ["clock_mode_001", "ferris_ride_001", "ghost_mode_001", "brain_mode_001"]
+    weights: {"clock_mode_001": 0.3, "ferris_ride_001": 0.3, "ghost_mode_001": 0.2, "brain_mode_001": 0.2}
+    enabled: false
+
+# 📈 Performance Benchmarks
+performance_benchmarks:
+  target_win_rate: 0.65            # 65% target win rate
+  target_profit_factor: 1.5        # 1.5x profit factor
+  max_drawdown_threshold: 0.1      # 10% max drawdown
+  min_trade_count: 100             # Minimum trades for analysis
+  performance_evaluation_period: 86400  # 24 hours
+
+# 🔧 System Optimization
+system_optimization:
+  auto_optimization_enabled: true
+  optimization_interval: 3600      # 1 hour
+  performance_threshold: 0.6       # 60% performance threshold
+  chain_rebalancing: true
+  strategy_weight_adjustment: true
+  memory_optimization: true
+
+# 📊 Logging and Monitoring
+logging:
+  level: "INFO"
+  file_logging: true
+  console_logging: true
+  log_rotation: true
+  max_log_size: 10485760           # 10MB
+  log_retention_days: 7
+  
+monitoring:
+  real_time_monitoring: true
+  alert_thresholds:
+    memory_usage: 0.8              # 80% memory usage
+    sync_failures: 5               # 5 sync failures
+    performance_drop: 0.2          # 20% performance drop
+  auto_restart_on_failure: true
+  health_check_interval: 60        # 1 minute
+
+# 🎨 GUI Configuration
+gui:
+  theme: "dark"
+  window_size: "1600x1000"
+  auto_refresh: true
+  refresh_interval: 1.0            # 1 second
+  show_performance_charts: true
+  show_memory_usage: true
+  show_sync_status: true
+  show_usb_status: true 

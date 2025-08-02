@@ -1,242 +1,197 @@
-# 🔐 SCHWABOT SECURITY CONFIGURATION
-# ===================================
-# 
-# Security settings for the Schwabot trading system
-# This file should be kept secure and not committed to version control
-
-# Encryption Settings
-# -------------------
-encryption:
-  algorithm: "AES-256-CBC"
-  key_rotation_days: 90  # Rotate encryption keys every 90 days
-  key_file_path: "config/encryption.key"
-  salt: "schwabot_salt_2024"
-  iterations: 100000  # PBKDF2 iterations
-  
-  # Key rotation schedule
-  rotation:
-    enabled: true
-    auto_rotate: true
-    backup_old_keys: true
-    backup_retention_days: 30
-
-# API Key Management
-# ------------------
-api_keys:
-  encryption_enabled: true
-  storage_path: "config/keys/"
-  auto_encrypt: true
-  
-  # Exchange API keys (encrypted)
-  exchanges:
-    binance:
-      api_key: ""  # Will be encrypted
-      secret_key: ""  # Will be encrypted
-      passphrase: ""  # Will be encrypted (if needed)
-      enabled: false
-    
-    coinbase:
-      api_key: ""  # Will be encrypted
-      secret_key: ""  # Will be encrypted
-      passphrase: ""  # Will be encrypted
-      enabled: false
-    
-    kraken:
-      api_key: ""  # Will be encrypted
-      secret_key: ""  # Will be encrypted
-      enabled: false
-
-# Access Control
-# --------------
+_integration_metadata:
+  preserves_legacy_functionality: true
+  real_api_integration_version: '1.0'
+  update_timestamp: '2025-07-24T06:58:38.779810'
+  updated_by: legacy_backup_config_updater
 access_control:
-  # IP whitelist (empty = allow all)
+  authentication:
+    lockout_duration_minutes: 30
+    max_login_attempts: 5
+    password_min_length: 12
+    require_numbers: true
+    require_special_chars: true
+    require_uppercase: true
   ip_whitelist: []
-  
-  # API rate limiting
   rate_limiting:
-    enabled: true
-    requests_per_minute: 100
-    requests_per_hour: 1000
     burst_limit: 20
-  
-  # Session management
+    enabled: true
+    requests_per_hour: 1000
+    requests_per_minute: 100
   session:
-    timeout_minutes: 60
     max_sessions_per_user: 5
     require_2fa: false
-  
-  # Authentication
-  authentication:
-    password_min_length: 12
-    require_special_chars: true
-    require_numbers: true
-    require_uppercase: true
-    max_login_attempts: 5
-    lockout_duration_minutes: 30
-
-# Audit Logging
-# -------------
+    timeout_minutes: 60
+api_keys:
+  auto_encrypt: true
+  encryption_enabled: true
+  exchanges:
+    binance:
+      api_key: ''
+      enabled: false
+      passphrase: ''
+      secret_key: ''
+    coinbase:
+      api_key: ''
+      enabled: false
+      passphrase: ''
+      secret_key: ''
+    kraken:
+      api_key: ''
+      enabled: false
+      secret_key: ''
+  storage_path: config/keys/
 audit_logging:
-  enabled: true
-  log_file: "logs/security_audit.log"
-  max_file_size_mb: 100
   backup_count: 5
-  
-  # Events to log
+  enabled: true
   events:
-    - "login_attempt"
-    - "api_key_access"
-    - "configuration_change"
-    - "encryption_operation"
-    - "key_rotation"
-    - "security_alert"
-    - "system_error"
-  
-  # Log level
-  level: "INFO"
-  
-  # Retention
+  - login_attempt
+  - api_key_access
+  - configuration_change
+  - encryption_operation
+  - key_rotation
+  - security_alert
+  - system_error
+  level: INFO
+  log_file: logs/security_audit.log
+  max_file_size_mb: 100
   retention_days: 365
-
-# Security Monitoring
-# -------------------
-security_monitoring:
+backup:
+  backup_directory: backups/
+  backup_interval: 3600
+  backup_retention: 7
+  compression: true
+  enable_backup_compression: true
   enabled: true
-  
-  # Suspicious activity detection
-  suspicious_activity:
-    failed_login_threshold: 5
-    unusual_api_usage_threshold: 10
-    large_trade_threshold_usd: 10000
-    rapid_trade_threshold: 10  # trades per minute
-  
-  # Alerts
-  alerts:
-    failed_login_alert: true
-    unusual_activity_alert: true
-    large_trade_alert: true
-    system_error_alert: true
-    encryption_error_alert: true
-
-# SSL/TLS Configuration
-# ---------------------
-ssl:
-  enabled: true
-  certificate_file: "config/ssl/cert.pem"
-  private_key_file: "config/ssl/key.pem"
-  ca_certificate_file: "config/ssl/ca.pem"
-  
-  # Cipher suites (strong defaults)
-  cipher_suites:
-    - "ECDHE-RSA-AES256-GCM-SHA384"
-    - "ECDHE-RSA-AES128-GCM-SHA256"
-    - "ECDHE-RSA-AES256-SHA384"
-    - "ECDHE-RSA-AES128-SHA256"
-  
-  # Protocol versions
-  min_version: "TLSv1.2"
-  max_version: "TLSv1.3"
-
-# Data Protection
-# ---------------
-data_protection:
-  # Sensitive data fields to encrypt
-  sensitive_fields:
-    - "api_key"
-    - "secret_key"
-    - "password"
-    - "private_key"
-    - "passphrase"
-    - "token"
-    - "auth_token"
-  
-  # Data retention
-  retention:
-    logs_days: 90
-    backup_days: 30
-    temp_files_hours: 24
-  
-  # Data sanitization
-  sanitization:
-    remove_sensitive_from_logs: true
-    mask_api_keys_in_output: true
-    encrypt_config_files: true
-
-# Backup Security
-# ---------------
+  encryption: false
+  legacy_integration:
+    backup_version: '2.0'
+    enabled: true
+    enhance_with_real_api: true
+    integration_timestamp: '2025-07-24T06:58:38.779810'
+    preserve_original_functionality: true
+  max_backup_files: 10
+  monitoring:
+    alert_on_backup_failure: true
+    enabled: true
+    health_check_interval: 60
+    log_backup_operations: true
+  portfolio_sequencing:
+    analysis_interval: 300
+    data_types:
+    - market_data
+    - trading_decisions
+    - profit_metrics
+    - risk_assessment
+    enabled: true
+    layer_priority: 7
+    max_sequencing_data_points: 100
+  real_api_integration:
+    enabled: true
+    integrate_with_real_api_system: true
+    portfolio_sequencing_enabled: true
+    trading_strategy_integration: true
+    use_memory_choice_menu: true
+    use_real_api_pricing: true
 backup_security:
+  backup_key_rotation: true
   enabled: true
   encrypt_backups: true
-  backup_key_rotation: true
-  
-  # Backup locations
   locations:
-    - "backups/"
-    - "config/backups/"
-  
-  # Backup verification
+  - backups/
+  - config/backups/
   verification:
     checksum_verification: true
     integrity_check: true
-    restore_test: false  # Set to true to test restore periodically
-
-# Emergency Procedures
-# --------------------
+    restore_test: false
+compliance:
+  financial:
+    audit_trail: true
+    risk_management: true
+    trade_logging: true
+  gdpr:
+    data_minimization: true
+    data_portability: true
+    right_to_erasure: true
+  standards:
+    follow_nist: true
+    follow_owasp: true
+    regular_security_assessment: true
+data_protection:
+  retention:
+    backup_days: 30
+    logs_days: 90
+    temp_files_hours: 24
+  sanitization:
+    encrypt_config_files: true
+    mask_api_keys_in_output: true
+    remove_sensitive_from_logs: true
+  sensitive_fields:
+  - api_key
+  - secret_key
+  - password
+  - private_key
+  - passphrase
+  - token
+  - auth_token
+development:
+  code_security:
+    dependency_scanning: true
+    secret_scanning: true
+    static_analysis: true
+  debug_mode:
+    disable_in_production: true
+    limit_debug_output: true
+    mask_sensitive_data: true
+  testing:
+    clean_test_data: true
+    isolate_test_environment: true
+    use_test_credentials: true
 emergency:
-  # Emergency stop
   emergency_stop:
     enabled: true
     trigger_conditions:
-      - "multiple_failed_logins"
-      - "unusual_trading_activity"
-      - "system_compromise_detected"
-      - "manual_trigger"
-  
-  # Incident response
+    - multiple_failed_logins
+    - unusual_trading_activity
+    - system_compromise_detected
+    - manual_trigger
   incident_response:
     auto_lockdown: true
+    contact_security_team: false
     notify_admin: true
     preserve_evidence: true
-    contact_security_team: false  # Set to true if you have a security team
-
-# Compliance
-# ----------
-compliance:
-  # GDPR compliance
-  gdpr:
-    data_minimization: true
-    right_to_erasure: true
-    data_portability: true
-  
-  # Financial regulations
-  financial:
-    trade_logging: true
-    audit_trail: true
-    risk_management: true
-  
-  # Security standards
-  standards:
-    follow_owasp: true
-    follow_nist: true
-    regular_security_assessment: true
-
-# Development Security
-# --------------------
-development:
-  # Debug mode security
-  debug_mode:
-    disable_in_production: true
-    mask_sensitive_data: true
-    limit_debug_output: true
-  
-  # Code security
-  code_security:
-    static_analysis: true
-    dependency_scanning: true
-    secret_scanning: true
-  
-  # Testing security
-  testing:
-    use_test_credentials: true
-    isolate_test_environment: true
-    clean_test_data: true 
+encryption:
+  algorithm: AES-256-CBC
+  iterations: 100000
+  key_file_path: config/encryption.key
+  key_rotation_days: 90
+  rotation:
+    auto_rotate: true
+    backup_old_keys: true
+    backup_retention_days: 30
+    enabled: true
+  salt: schwabot_salt_2024
+security_monitoring:
+  alerts:
+    encryption_error_alert: true
+    failed_login_alert: true
+    large_trade_alert: true
+    system_error_alert: true
+    unusual_activity_alert: true
+  enabled: true
+  suspicious_activity:
+    failed_login_threshold: 5
+    large_trade_threshold_usd: 10000
+    rapid_trade_threshold: 10
+    unusual_api_usage_threshold: 10
+ssl:
+  ca_certificate_file: config/ssl/ca.pem
+  certificate_file: config/ssl/cert.pem
+  cipher_suites:
+  - ECDHE-RSA-AES256-GCM-SHA384
+  - ECDHE-RSA-AES128-GCM-SHA256
+  - ECDHE-RSA-AES256-SHA384
+  - ECDHE-RSA-AES128-SHA256
+  enabled: true
+  max_version: TLSv1.3
+  min_version: TLSv1.2
+  private_key_file: config/ssl/key.pem

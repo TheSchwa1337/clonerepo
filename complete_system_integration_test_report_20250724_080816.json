@@ -1,0 +1,93 @@
+{
+  "test_summary": {
+    "start_time": "2025-07-24T08:06:46.027326",
+    "end_time": "2025-07-24T08:08:16.314708",
+    "total_duration_seconds": 90.287382,
+    "total_tests": 12,
+    "passed_tests": 5,
+    "failed_tests": 4,
+    "success_rate_percent": 41.66666666666667
+  },
+  "component_tests": {
+    "real_api_system": {
+      "status": "FAILED",
+      "error": "Cannot get live price data for BTC/USDC: No live price data available for BTC/USDC - API connection required"
+    },
+    "mathematical_engine": {
+      "status": "SKIPPED",
+      "reason": "System not available: No module named 'backtesting.mathematical_integration'"
+    },
+    "clock_mode_system": {
+      "status": "PASSED",
+      "mechanism_count": 1,
+      "is_running": true,
+      "performance": {
+        "init_time_ms": 24.98006820678711,
+        "startup_time_ms": 31.85105323791504
+      }
+    },
+    "backtesting_system": {
+      "status": "PASSED",
+      "config": {
+        "mode": "live_api_backtest",
+        "symbols": [
+          "BTCUSDT"
+        ],
+        "initial_balance": 1000.0
+      },
+      "performance": {
+        "init_time_ms": 28.968334197998047,
+        "startup_time_ms": 0.0
+      }
+    },
+    "mode_integration_system": {
+      "status": "FAILED",
+      "error": "'ModeIntegrationSystem' object has no attribute '_apply_global_safety_overrides'"
+    },
+    "complete_system_launcher": {
+      "status": "FAILED",
+      "error": "'ModeIntegrationSystem' object has no attribute '_apply_global_safety_overrides'"
+    }
+  },
+  "integration_tests": {
+    "memory_mathematical_integration": {
+      "status": "SKIPPED",
+      "reason": "Systems not available: No module named 'backtesting.mathematical_integration'"
+    },
+    "api_backtesting_integration": {
+      "status": "PASSED",
+      "note": "Integration handled within backtesting system"
+    },
+    "clock_memory_integration": {
+      "status": "PASSED",
+      "note": "Integration handled within clock mode system"
+    }
+  },
+  "performance_metrics": {
+    "rapid_api_calls": {
+      "status": "FAILED",
+      "error": "Cannot get live price data for BTC/USDC: No live price data available for BTC/USDC - API connection required"
+    },
+    "memory_storage_stress": {
+      "status": "PASSED",
+      "total_entries": 10,
+      "total_time_ms": 731.3613891601562,
+      "avg_time_ms": 73.13613891601562
+    },
+    "mathematical_stress": {
+      "status": "SKIPPED",
+      "reason": "System not available: No module named 'backtesting.mathematical_integration'"
+    }
+  },
+  "errors": [
+    "real_api_system: Cannot get live price data for BTC/USDC: No live price data available for BTC/USDC - API connection required",
+    "mode_integration_system: 'ModeIntegrationSystem' object has no attribute '_apply_global_safety_overrides'",
+    "complete_system_launcher: 'ModeIntegrationSystem' object has no attribute '_apply_global_safety_overrides'",
+    "rapid_api_calls: Cannot get live price data for BTC/USDC: No live price data available for BTC/USDC - API connection required"
+  ],
+  "recommendations": [
+    "\u274c Poor! Major issues need to be addressed.",
+    "\ud83d\udd27 4 errors found - review error logs.",
+    "\ud83d\udce6 1 components skipped - ensure all dependencies are installed."
+  ]
+}

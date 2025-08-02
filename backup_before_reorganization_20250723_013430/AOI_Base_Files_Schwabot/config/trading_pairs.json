@@ -1,0 +1,34 @@
+{
+  "default_pairs": [
+    "BTC/USDC",
+    "USDC/BTC",
+    "ETH/USDC",
+    "USDC/ETH",
+    "XRP/USDC",
+    "USDC/XRP",
+    "SOL/USDC",
+    "USDC/SOL"
+  ],
+  "exchanges": {
+    "coinbase": [
+      "BTC-USDC",
+      "USDC-BTC",
+      "ETH-USDC",
+      "USDC-ETH",
+      "XRP-USDC",
+      "USDC-XRP",
+      "SOL-USDC",
+      "USDC-SOL"
+    ],
+    "binance": [
+      "BTCUSDC",
+      "USDCBTC",
+      "ETHUSDC",
+      "USDCETH",
+      "XRPUSDC",
+      "USDCXRP",
+      "SOLUSDC",
+      "USDCSOL"
+    ]
+  }
+}

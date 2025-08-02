@@ -15,6 +15,7 @@
   },
   "errors": [],
   "warnings": [
-    "Warning in gui.unified_schwabot_interface: name 'Dict' is not defined"
+    "Warning in core.tensor_weight_memory: unexpected indent (neural_processing_engine.py, line 509)",
+    "Warning in gui.unified_schwabot_interface: unexpected character after line continuation character (strategy_executor.py, line 530)"
   ]
 }

@@ -255,7 +255,7 @@ class RealTimeMarketDataPipeline:
             # Create market data packet
             market_packet = MarketDataPacket(
                 symbol=symbol,
-                price=processed_data.get("price", 50000.0),
+                price=processed_data.get(\g<0>.split(",")[0], self._get_real_price_data()),
                 volume_24h=processed_data.get("volume_24h", 1000000.0),
                 market_cap=processed_data.get("market_cap", 1000000000000.0),
                 price_change_24h=processed_data.get("price_change_24h", 0.0),
@@ -325,7 +325,7 @@ class RealTimeMarketDataPipeline:
         """Fetch simulated market data for testing."""
         try:
             # Generate realistic simulated data
-            base_price = 50000.0
+            base_price = self._get_real_price_data()  # REAL API DATA
             price_variation = np.random.normal(0, 0.02)  # 2% variation
             current_price = base_price * (1 + price_variation)
             
@@ -959,7 +959,7 @@ class RealTimeMarketDataPipeline:
         try:
             return MarketDataPacket(
                 symbol=symbol,
-                price=50000.0,
+                price = self._get_real_price_data(),
                 volume_24h=1000000.0,
                 market_cap=1000000000000.0,
                 price_change_24h=0.0,
@@ -985,7 +985,7 @@ class RealTimeMarketDataPipeline:
             logger.error(f"Error creating fallback packet: {e}")
             return MarketDataPacket(
                 symbol=symbol,
-                price=50000.0,
+                price = self._get_real_price_data(),
                 volume_24h=1000000.0,
                 market_cap=1000000000000.0,
                 price_change_24h=0.0,
@@ -1050,4 +1050,38 @@ def create_real_time_market_data_pipeline(config: Optional[Dict[str, Any]] = Non
 
 
 # Global instance for easy access
+
+    def _get_real_price_data(self) -> float:
+        """Get real price data from API - NO MORE STATIC 50000.0!"""
+        try:
+            # Try to get real price from API
+            if hasattr(self, 'api_client') and self.api_client:
+                try:
+                    ticker = self.api_client.fetch_ticker('BTC/USDC')
+                    if ticker and 'last' in ticker and ticker['last']:
+                        return float(ticker['last'])
+                except Exception as e:
+                    pass
+            
+            # Try to get from market data provider
+            if hasattr(self, 'market_data_provider') and self.market_data_provider:
+                try:
+                    price = self.market_data_provider.get_current_price('BTC/USDC')
+                    if price and price > 0:
+                        return price
+                except Exception as e:
+                    pass
+            
+            # Try to get from cache
+            if hasattr(self, 'market_data_cache') and 'BTC/USDC' in self.market_data_cache:
+                cached_price = self.market_data_cache['BTC/USDC'].get('price')
+                if cached_price and cached_price > 0:
+                    return cached_price
+            
+            # CRITICAL: No real data available - fail properly
+            raise ValueError("No live price data available - API connection required")
+            
+        except Exception as e:
+            raise ValueError(f"Cannot get live price data: {e}")
+
 real_time_market_data_pipeline = create_real_time_market_data_pipeline() 

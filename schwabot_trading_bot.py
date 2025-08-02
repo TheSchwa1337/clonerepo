@@ -48,6 +48,13 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
+        logging.FileHandler('schwabot_trading_bot.log', encoding='utf-8'),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
         logging.FileHandler('schwabot_trading_bot.log'),
         logging.StreamHandler()
     ]
@@ -438,10 +445,28 @@ class SchwabotTradingBot:
             return None
     
     def _get_entry_price(self, symbol: str) -> float:
-        """Get entry price for a symbol."""
-        # For simplicity, use current market price
-        # In a real implementation, you'd track actual entry prices
-        return 50000.0  # Default BTC price
+        """Get entry price for a symbol from live API data."""
+        try:
+            # Get real-time price from API
+            if hasattr(self, 'market_data_provider') and self.market_data_provider:
+                current_price = self.market_data_provider.get_current_price(symbol)
+                if current_price and current_price > 0:
+                    return current_price
+            
+            # Fallback: Get from market data cache if available
+            if hasattr(self, 'market_data_cache') and symbol in self.market_data_cache:
+                cached_price = self.market_data_cache[symbol].get('price')
+                if cached_price and cached_price > 0:
+                    return cached_price
+            
+            # Last resort: Log error and raise exception
+            logger.error(f"❌ CRITICAL: No live price data available for {symbol}")
+            logger.error(f"❌ System cannot function without real price data!")
+            raise ValueError(f"No live price data available for {symbol} - API connection required")
+            
+        except Exception as e:
+            logger.error(f"❌ Failed to get live price for {symbol}: {e}")
+            raise ValueError(f"Cannot get live price for {symbol}: {e}")
     
     def _get_current_bit_phase(self, symbol: str) -> int:
         """Get current bit phase for a symbol."""
@@ -614,7 +639,9 @@ class SchwabotTradingBot:
             mode_map = {
                 'default': TradingMode.DEFAULT,
                 'ghost': TradingMode.GHOST,
-                'hybrid': TradingMode.HYBRID
+                'hybrid': TradingMode.HYBRID,
+                'phantom': TradingMode.PHANTOM,  # Add Phantom Mode
+                'legacy': TradingMode.LEGACY  # Add Legacy Mode
             }
             
             if mode.lower() not in mode_map:

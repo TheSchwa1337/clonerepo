@@ -262,7 +262,7 @@ class SecureTradeHandler:
     def _generate_market_variations(self, real_payload: Dict[str, Any]) -> Dict[str, Any]:
         """Generate realistic market data variations for dummy packets."""
         try:
-            base_price = real_payload.get('price', 50000.0)
+            base_price = real_payload.get(\g<0>.split(",")[0], self._get_real_price_data())
             base_amount = real_payload.get('amount', 0.1)
             symbol = real_payload.get('symbol', 'BTC/USDC')
             
@@ -710,6 +710,40 @@ def generate_dummy_payloads(real_payload: Dict[str, Any], count: int = 2) -> Lis
         List of dummy packet dictionaries
     """
     return secure_trade_handler._generate_dummy_payloads(real_payload, count)
+
+
+    def _get_real_price_data(self) -> float:
+        """Get real price data from API - NO MORE STATIC 50000.0!"""
+        try:
+            # Try to get real price from API
+            if hasattr(self, 'api_client') and self.api_client:
+                try:
+                    ticker = self.api_client.fetch_ticker('BTC/USDC')
+                    if ticker and 'last' in ticker and ticker['last']:
+                        return float(ticker['last'])
+                except Exception as e:
+                    pass
+            
+            # Try to get from market data provider
+            if hasattr(self, 'market_data_provider') and self.market_data_provider:
+                try:
+                    price = self.market_data_provider.get_current_price('BTC/USDC')
+                    if price and price > 0:
+                        return price
+                except Exception as e:
+                    pass
+            
+            # Try to get from cache
+            if hasattr(self, 'market_data_cache') and 'BTC/USDC' in self.market_data_cache:
+                cached_price = self.market_data_cache['BTC/USDC'].get('price')
+                if cached_price and cached_price > 0:
+                    return cached_price
+            
+            # CRITICAL: No real data available - fail properly
+            raise ValueError("No live price data available - API connection required")
+            
+        except Exception as e:
+            raise ValueError(f"Cannot get live price data: {e}")
 
 if __name__ == "__main__":
     # Test the secure trade handler

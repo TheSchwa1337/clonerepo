@@ -1,0 +1,1701 @@
+{
+  "timestamp": "2025-07-24T02:40:08.104906",
+  "results": {
+    "critical_issues": [
+      {
+        "file": "AOI_Base_Files_Schwabot\\launch_unified_mathematical_trading_system.py",
+        "line": 232,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\main.py",
+        "line": 482,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\main.py",
+        "line": 482,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\main.py",
+        "line": 883,
+        "pattern": "50000\\.0.*#.*price",
+        "content": "'price': 50000.0,  # Mock price",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\cli\\automated_trading_pipeline_cli.py",
+        "line": 124,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\cli\\digest_time_mapper_cli.py",
+        "line": 140,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\config\\quantum_btc_config.yaml",
+        "line": 177,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "base_btc_price: 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\clean_trading_pipeline.py",
+        "line": 401,
+        "pattern": "50000\\.0.*#.*Default.*BTC.*price",
+        "content": "execution_price = 50000.0 * (1 + price_impact)  # Default BTC price",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\clean_trading_pipeline.py",
+        "line": 401,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "execution_price = 50000.0 * (1 + price_impact)  # Default BTC price",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\clean_trading_pipeline.py",
+        "line": 401,
+        "pattern": "50000\\.0.*#.*BTC",
+        "content": "execution_price = 50000.0 * (1 + price_impact)  # Default BTC price",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\clean_trading_pipeline.py",
+        "line": 401,
+        "pattern": "50000\\.0.*#.*price",
+        "content": "execution_price = 50000.0 * (1 + price_impact)  # Default BTC price",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\cli_live_entry.py",
+        "line": 630,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\complete_internalized_scalping_system.py",
+        "line": 218,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\complete_internalized_scalping_system.py",
+        "line": 225,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\enhanced_real_time_data_puller.py",
+        "line": 431,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price = 50000.0 + np.random.normal(0, 100)  # BTC price simulation",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\enhanced_real_time_data_puller.py",
+        "line": 444,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "bid_price = 50000.0 + np.random.normal(0, 50)",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\enhanced_real_time_data_puller.py",
+        "line": 458,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "trade_price = 50000.0 + np.random.normal(0, 200)",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\enhanced_real_time_data_puller.py",
+        "line": 431,
+        "pattern": "50000\\.0.*#.*BTC",
+        "content": "price = 50000.0 + np.random.normal(0, 100)  # BTC price simulation",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\enhanced_real_time_data_puller.py",
+        "line": 431,
+        "pattern": "50000\\.0.*#.*price",
+        "content": "price = 50000.0 + np.random.normal(0, 100)  # BTC price simulation",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\live_vector_simulator.py",
+        "line": 85,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "initial_price: float = 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\math_to_trade_signal_router.py",
+        "line": 908,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = 50000.0  # Replace with real BTC price",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\math_to_trade_signal_router.py",
+        "line": 908,
+        "pattern": "50000\\.0.*#.*BTC",
+        "content": "current_price = 50000.0  # Replace with real BTC price",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\math_to_trade_signal_router.py",
+        "line": 908,
+        "pattern": "50000\\.0.*#.*price",
+        "content": "current_price = 50000.0  # Replace with real BTC price",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\pure_profit_calculator.py",
+        "line": 780,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\pure_profit_calculator.py",
+        "line": 381,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "market_data.btc_price / 50000.0,  # Normalized price",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\pure_profit_calculator.py",
+        "line": 780,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\pure_profit_calculator.py",
+        "line": 381,
+        "pattern": "50000\\.0.*#.*price",
+        "content": "market_data.btc_price / 50000.0,  # Normalized price",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\real_time_execution_engine.py",
+        "line": 619,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "average_price = order.price * (1 + price_impact) if order.price else 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\real_time_execution_engine.py",
+        "line": 859,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price=50000.0,",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\real_time_market_data.py",
+        "line": 345,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0  # Base price for BTC",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\real_time_market_data.py",
+        "line": 345,
+        "pattern": "50000\\.0.*#.*BTC",
+        "content": "base_price = 50000.0  # Base price for BTC",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\real_time_market_data.py",
+        "line": 345,
+        "pattern": "50000\\.0.*#.*price",
+        "content": "base_price = 50000.0  # Base price for BTC",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\unified_trading_pipeline.py",
+        "line": 291,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = 50000.0 + (time.time() % 1000) * 0.1",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\strategy\\strategy_executor.py",
+        "line": 496,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price=market_data.get('price', 50000.0),",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\examples\\entropy_pipeline_integration.py",
+        "line": 64,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "self.btc_price = 50000.0  # Current BTC price",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\examples\\entropy_pipeline_integration.py",
+        "line": 64,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "self.btc_price = 50000.0  # Current BTC price",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\examples\\entropy_pipeline_integration.py",
+        "line": 64,
+        "pattern": "50000\\.0.*#.*BTC",
+        "content": "self.btc_price = 50000.0  # Current BTC price",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\examples\\entropy_pipeline_integration.py",
+        "line": 64,
+        "pattern": "50000\\.0.*#.*price",
+        "content": "self.btc_price = 50000.0  # Current BTC price",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\chrono_resonance_integrity_checker.py",
+        "line": 718,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price = 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\dashboard_backend.py",
+        "line": 34,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "self.current_price = 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\hash_trigger_system_summary.py",
+        "line": 111,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "def __init__(self, price=50000.0, volatility=0.25, momentum=0.03):",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\hash_trigger_system_summary.py",
+        "line": 184,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "def __init__(self, price=50000.0, volatility=0.25, momentum=0.03):",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\integrate_crlf_into_pipeline.py",
+        "line": 421,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price=50000.0,",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\integrate_zpe_zbe_into_pipeline.py",
+        "line": 454,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price=50000.0,",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\quantum_drift_shell_engine.py",
+        "line": 302,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price_factor = market_data.get(\"price\", 50000) / 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\run_trading_pipeline.py",
+        "line": 45,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "self.last_price = 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\schwabot_enhanced_launcher.py",
+        "line": 484,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = 50000.0  # This would come from real market data",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\schwabot_enhanced_launcher.py",
+        "line": 559,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = self.performance_metrics.get(\"current_price\", 50000.0)",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\schwabot_main_integrated.py",
+        "line": 256,
+        "pattern": "50000\\.0.*#.*price",
+        "content": "\"price\": 50000.0 + (current_time % 1000) * 0.1,  # Simulate price movement",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\start_enhanced_math_to_trade_system.py",
+        "line": 412,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = 50000.0 + (time.time() % 1000) * 0.1",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\system_comprehensive_validation.py",
+        "line": 114,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price_series = [50000.0, 50100.0, 49950.0, 50075.0, 50025.0]",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\system_comprehensive_validation.py",
+        "line": 224,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price_tensor = np.array([[50000.0, 50100.0], [49950.0, 50075.0]])",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\system_comprehensive_validation.py",
+        "line": 260,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\system_comprehensive_validation.py",
+        "line": 418,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\validate_enhanced_math_to_trade_system.py",
+        "line": 248,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "test_price = 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\validate_enhanced_math_to_trade_system.py",
+        "line": 319,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price=50000.0,",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\server\\tensor_websocket_server.py",
+        "line": 157,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "btc_price = data.get(\"btc_price\", 50000.0)",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\server\\tensor_websocket_server.py",
+        "line": 229,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "btc_price = 50000.0  # Placeholder",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\server\\tensor_websocket_server.py",
+        "line": 157,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_price = data.get(\"btc_price\", 50000.0)",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\server\\tensor_websocket_server.py",
+        "line": 229,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_price = 50000.0  # Placeholder",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\strategies\\phantom_band_navigator.py",
+        "line": 441,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\ui\\schwabot_dashboard.py",
+        "line": 391,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price = data.get('entry_price', 50000.0)",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\ui\\schwabot_dashboard.py",
+        "line": 392,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = data.get('current_price', 50000.0)",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\visualization\\tick_plotter.py",
+        "line": 379,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "def __init__(self, base_price: float = 50000.0, volatility: float = 0.02):",
+        "severity": "critical"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\visualization\\tick_plotter.py",
+        "line": 428,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "simulator = LiveDataSimulator(base_price=50000.0, volatility=0.02)",
+        "severity": "critical"
+      },
+      {
+        "file": "core\\advanced_security_gui.py",
+        "line": 238,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "self.price_var = tk.StringVar(value=\"50000.0\")",
+        "severity": "critical"
+      },
+      {
+        "file": "core\\btc_usdc_trading_integration.py",
+        "line": 208,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price = self.market_data_cache.get(\"price\", 50000.0)",
+        "severity": "critical"
+      },
+      {
+        "file": "core\\btc_usdc_trading_integration.py",
+        "line": 474,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = self.market_data_cache.get(\"price\", 50000.0)",
+        "severity": "critical"
+      },
+      {
+        "file": "core\\btc_usdc_trading_integration.py",
+        "line": 503,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "prices = self.market_data_cache.get(\"price_history\", [50000.0])",
+        "severity": "critical"
+      },
+      {
+        "file": "core\\integrated_advanced_trading_system.py",
+        "line": 256,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = 50000.0 + np.random.normal(0, 100)  # Simulate BTC price",
+        "severity": "critical"
+      },
+      {
+        "file": "core\\integrated_advanced_trading_system.py",
+        "line": 256,
+        "pattern": "50000\\.0.*#.*BTC",
+        "content": "current_price = 50000.0 + np.random.normal(0, 100)  # Simulate BTC price",
+        "severity": "critical"
+      },
+      {
+        "file": "core\\integrated_advanced_trading_system.py",
+        "line": 256,
+        "pattern": "50000\\.0.*#.*price",
+        "content": "current_price = 50000.0 + np.random.normal(0, 100)  # Simulate BTC price",
+        "severity": "critical"
+      },
+      {
+        "file": "core\\phantom_mode_engine.py",
+        "line": 508,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "core\\phantom_mode_integration.py",
+        "line": 523,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "core\\real_time_market_data_pipeline.py",
+        "line": 258,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price=processed_data.get(\"price\", 50000.0),",
+        "severity": "critical"
+      },
+      {
+        "file": "core\\real_time_market_data_pipeline.py",
+        "line": 328,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "critical"
+      },
+      {
+        "file": "core\\real_time_market_data_pipeline.py",
+        "line": 962,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price=50000.0,",
+        "severity": "critical"
+      },
+      {
+        "file": "core\\real_time_market_data_pipeline.py",
+        "line": 988,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price=50000.0,",
+        "severity": "critical"
+      },
+      {
+        "file": "core\\secure_trade_handler.py",
+        "line": 265,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = real_payload.get('price', 50000.0)",
+        "severity": "critical"
+      }
+    ],
+    "test_files": [
+      {
+        "file": "AOI_Base_Files_Schwabot\\test_dynamic_timing_system.py",
+        "line": 405,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\backtesting\\internal_backtester.py",
+        "line": 191,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "dummy_price = window_prices[-1] if window_prices else 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\backtesting\\mathematical_integration_simplified.py",
+        "line": 187,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = market_data.get('current_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\backtesting\\mathematical_integration_simplified.py",
+        "line": 188,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price = market_data.get('entry_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\backtesting\\mathematical_integration_simplified.py",
+        "line": 218,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = market_data.get('current_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\backtesting\\mathematical_integration_simplified.py",
+        "line": 219,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price = market_data.get('entry_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\backtesting\\mathematical_integration_simplified.py",
+        "line": 295,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = market_data.get('current_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\backtesting\\mathematical_integration_simplified.py",
+        "line": 306,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = market_data.get('current_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\backtesting\\mathematical_integration_simplified.py",
+        "line": 347,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = market_data.get('current_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\backtesting\\mathematical_integration_simplified.py",
+        "line": 366,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = market_data.get('current_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\backtesting\\mathematical_integration_simplified.py",
+        "line": 439,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = market_data.get('current_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\backtesting_integration.py",
+        "line": 277,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\registry_backtester.py",
+        "line": 129,
+        "pattern": "50000\\.0.*#.*Default.*BTC.*price",
+        "content": "initial_price=Decimal(\"50000.0\"),  # Default BTC price",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\registry_backtester.py",
+        "line": 129,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "initial_price=Decimal(\"50000.0\"),  # Default BTC price",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\registry_backtester.py",
+        "line": 280,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\registry_backtester.py",
+        "line": 129,
+        "pattern": "50000\\.0.*#.*BTC",
+        "content": "initial_price=Decimal(\"50000.0\"),  # Default BTC price",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\core\\registry_backtester.py",
+        "line": 129,
+        "pattern": "50000\\.0.*#.*price",
+        "content": "initial_price=Decimal(\"50000.0\"),  # Default BTC price",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\data\\mathematical_relay_navigation_demo_20250629_075627.json",
+        "line": 8,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "\"btc_price\": 50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\data\\mathematical_relay_navigation_demo_20250629_075627.json",
+        "line": 39,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "\"btc_price\": 50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\data\\mathematical_relay_navigation_demo_20250629_075627.json",
+        "line": 82,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "\"btc_price\": 50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\data\\mathematical_relay_navigation_demo_20250629_075719.json",
+        "line": 8,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "\"btc_price\": 50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\data\\mathematical_relay_navigation_demo_20250629_075719.json",
+        "line": 39,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "\"btc_price\": 50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\data\\mathematical_relay_navigation_demo_20250629_075719.json",
+        "line": 82,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "\"btc_price\": 50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\demo\\demo_logic_flow.py",
+        "line": 564,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price = 50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\demo\\demo_logic_flow.py",
+        "line": 594,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = 50000.0 + np.random.normal(0, 1000)  # Simulate price movement",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\demo\\demo_logic_flow.py",
+        "line": 594,
+        "pattern": "50000\\.0.*#.*price",
+        "content": "current_price = 50000.0 + np.random.normal(0, 1000)  # Simulate price movement",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\demo\\demo_trade_sequence.py",
+        "line": 142,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "self.current_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\demo\\demo_unified_logic_integration.py",
+        "line": 36,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\demo_clean_system.py",
+        "line": 119,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "btc_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\demo_clean_system.py",
+        "line": 119,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\demo_complete_integration.py",
+        "line": 62,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "self.base_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\demo_complete_integration.py",
+        "line": 528,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = max(20000.0, min(50000.0, base_price))",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\demo_complete_schwabot_integration.py",
+        "line": 116,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\demo_drift_shell_complete.py",
+        "line": 82,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "self.base_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\demo_integrated_trading_system.py",
+        "line": 826,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\demo_lantern_integration.py",
+        "line": 152,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\demo_mathematical_relay_sequencing.py",
+        "line": 310,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "\"btc_price\": 50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\ghost_strategy_integration_demo.py",
+        "line": 208,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\ghost_strategy_integration_demo.py",
+        "line": 250,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\simple_demo.py",
+        "line": 75,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\simple_demo.py",
+        "line": 75,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\scripts\\simple_strategy_demo.py",
+        "line": 390,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot\\settings\\demo_integration_system.py",
+        "line": 534,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "backtesting\\mathematical_integration.py",
+        "line": 309,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "self.btc_price = market_data.get('current_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "backtesting\\mathematical_integration.py",
+        "line": 362,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = market_data.get('current_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "backtesting\\mathematical_integration.py",
+        "line": 363,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price = market_data.get('entry_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "backtesting\\mathematical_integration.py",
+        "line": 309,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "self.btc_price = market_data.get('current_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "backtesting\\mathematical_integration_simplified.py",
+        "line": 187,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = market_data.get('current_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "backtesting\\mathematical_integration_simplified.py",
+        "line": 188,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price = market_data.get('entry_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "backtesting\\mathematical_integration_simplified.py",
+        "line": 218,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = market_data.get('current_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "backtesting\\mathematical_integration_simplified.py",
+        "line": 219,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price = market_data.get('entry_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "backtesting\\mathematical_integration_simplified.py",
+        "line": 307,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = market_data.get('current_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "backtesting\\mathematical_integration_simplified.py",
+        "line": 308,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price = market_data.get('entry_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\demos\\demo_enhanced_kaprekar_integration.py",
+        "line": 191,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\critical_test.py",
+        "line": 63,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\critical_test.py",
+        "line": 63,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\direct_enhanced_state_test.py",
+        "line": 77,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "test_prices = [45000.0, 50000.0, 55000.0]",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\direct_enhanced_state_test.py",
+        "line": 152,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_hash = manager.generate_btc_price_hash(50000.0, 1000.0, 32)",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\direct_enhanced_state_test.py",
+        "line": 334,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_hash = BTCPriceHash.from_price_data(50000.0, 1000.0, 32)",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\simple_enhanced_state_test.py",
+        "line": 143,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "test_prices = [45000.0, 50000.0, 55000.0]",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\simple_enhanced_state_test.py",
+        "line": 46,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_hash = manager.generate_btc_price_hash(50000.0, 1000.0, 32)",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\simple_mathematical_relay_test.py",
+        "line": 112,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\simple_mathematical_relay_test.py",
+        "line": 112,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\simple_math_test.py",
+        "line": 125,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\system_integration_test.py",
+        "line": 157,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "signal = TradingSignal(symbol=\"BTC/USD\", side=\"buy\", quantity=0.1, price=50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\system_integration_test.py",
+        "line": 157,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "signal = TradingSignal(symbol=\"BTC/USD\", side=\"buy\", quantity=0.1, price=50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_alif_dualistic_engine.py",
+        "line": 37,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "def create_market_data(price=50000.0, volume=1000000.0, rsi=45.0, volatility=0.3, momentum=0.2, include_ai_feedback=False, include_errors=False) -> Dict[str, Any]:",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_alif_dualistic_engine.py",
+        "line": 137,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "create_market_data(price=50000.0, rsi=30.0, volatility=0.8, momentum=0.1, include_ai_feedback=True),",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_alif_dualistic_engine.py",
+        "line": 141,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "create_market_data(price=50000.0, volume=2000000.0, rsi=70.0, volatility=0.6, include_ai_feedback=True),",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_alif_dualistic_engine.py",
+        "line": 145,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "create_market_data(price=50000.0, rsi=50.0, volatility=0.4, include_ai_feedback=True, include_errors=True),",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_alif_dualistic_engine.py",
+        "line": 183,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price=50000.0 + i * 100,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_alif_dualistic_engine.py",
+        "line": 249,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "(\"Bullish\", create_market_data(price=50000.0, rsi=30.0, momentum=0.5)),",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_alif_dualistic_engine.py",
+        "line": 250,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "(\"Bearish\", create_market_data(price=50000.0, rsi=70.0, momentum=-0.5)),",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_alif_dualistic_engine.py",
+        "line": 251,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "(\"Neutral\", create_market_data(price=50000.0, rsi=50.0, momentum=0.0)),",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_alif_dualistic_engine.py",
+        "line": 252,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "(\"High Volatility\", create_market_data(price=50000.0, volatility=0.8)),",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_alif_dualistic_engine.py",
+        "line": 253,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "(\"Low Volume\", create_market_data(price=50000.0, volume=500000.0)),",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_bro_logic_integration.py",
+        "line": 52,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "prices = [50000.0]",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_bro_logic_integration.py",
+        "line": 180,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_bro_logic_integration.py",
+        "line": 283,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "prices = [50000.0]",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_bro_logic_module.py",
+        "line": 87,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_bro_logic_module.py",
+        "line": 115,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "short_prices = [50000.0, 50100.0, 50200.0]  # Too short for MACD",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_bro_logic_module.py",
+        "line": 145,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "prices = [50000.0]",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_bro_logic_module.py",
+        "line": 167,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "constant_prices = [50000.0] * 20  # No price changes",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_bro_logic_module.py",
+        "line": 172,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "short_prices = [50000.0, 50100.0]",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_bro_logic_module.py",
+        "line": 201,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_bro_logic_module.py",
+        "line": 266,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "prices = [50000.0]",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_bro_logic_module.py",
+        "line": 573,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "prices = [50000.0]",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_bro_logic_module.py",
+        "line": 167,
+        "pattern": "50000\\.0.*#.*price",
+        "content": "constant_prices = [50000.0] * 20  # No price changes",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_btc_trading_system.py",
+        "line": 43,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_btc_trading_system.py",
+        "line": 60,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_btc_trading_system.py",
+        "line": 112,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_btc_trading_system.py",
+        "line": 214,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_btc_trading_system.py",
+        "line": 41,
+        "pattern": "50000\\.0.*#.*BTC",
+        "content": "seq=[50000.0, 50100.0],  # BTC price sequence",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_btc_trading_system.py",
+        "line": 41,
+        "pattern": "50000\\.0.*#.*price",
+        "content": "seq=[50000.0, 50100.0],  # BTC price sequence",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_btc_usdc_integration.py",
+        "line": 213,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "\"BTC\": {\"price\": 50000.0, \"volume\": 2000000, \"timestamp\": time.time()},",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_btc_usdc_integration.py",
+        "line": 246,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "\"BTC\": {\"price\": 50000.0, \"volume\": 2000000},",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_btc_usdc_integration.py",
+        "line": 279,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "\"BTC\": {\"price\": 50000.0, \"volume\": 2000000},",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_btc_usdc_simple.py",
+        "line": 152,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "\"BTC\": {\"price\": 50000.0, \"volume\": 2000000, \"timestamp\": time.time()},",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_btc_usdc_simple.py",
+        "line": 199,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "\"BTC\": {\"price\": 50000.0, \"volume\": 2000000},",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_btc_usdc_simple.py",
+        "line": 243,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "\"BTC\": {\"price\": 50000.0, \"volume\": 2000000},",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_comprehensive_integration.py",
+        "line": 124,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "test_prices = [50000.0 + i * 100 for i in range(50)]",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_comprehensive_integration.py",
+        "line": 401,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "{\"asset\": \"BTC/USDT\", \"price\": 50000.0, \"volume\": 1000.0},",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_crlf_pipeline_integration.py",
+        "line": 36,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_cupy_integration.py",
+        "line": 87,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_cupy_integration.py",
+        "line": 87,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_enhanced_mathematical_integration.py",
+        "line": 217,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "asset=\"BTC/USDT\", price=50000.0, volume=1000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_enhanced_mathematical_integration.py",
+        "line": 281,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "asset=\"BTC/USDT\", price=50000.0, volume=1000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_enhanced_mathematical_integration.py",
+        "line": 217,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "asset=\"BTC/USDT\", price=50000.0, volume=1000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_enhanced_mathematical_integration.py",
+        "line": 281,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "asset=\"BTC/USDT\", price=50000.0, volume=1000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_enhanced_state_system.py",
+        "line": 184,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "test_prices = [45000.0, 50000.0, 55000.0]",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_enhanced_state_system.py",
+        "line": 69,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_hash = manager.generate_btc_price_hash(50000.0, 1000.0, 32)",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_enhanced_unified_trading_pipeline.py",
+        "line": 97,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_enhanced_unified_trading_pipeline.py",
+        "line": 111,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_final_components.py",
+        "line": 88,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_final_components.py",
+        "line": 89,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_final_components.py",
+        "line": 121,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_final_components.py",
+        "line": 134,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_final_components.py",
+        "line": 194,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_glyph_strategy_system.py",
+        "line": 148,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "test_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_gpu_shader_integration_run.py",
+        "line": 209,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_integrated_schwabot_system.py",
+        "line": 65,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "test_prices = [45000.0, 50000.0, 55000.0, 60000.0, 65000.0]",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_integration_system.py",
+        "line": 250,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_mathematical_implementation.py",
+        "line": 107,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_mathematical_implementation.py",
+        "line": 325,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_mathematical_implementation.py",
+        "line": 420,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_mathematical_implementation.py",
+        "line": 431,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_mathematical_implementation.py",
+        "line": 107,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_mathematical_implementation.py",
+        "line": 420,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_mathematical_integration.py",
+        "line": 211,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_mathematical_integration.py",
+        "line": 484,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_mathematical_relay_sequencer.py",
+        "line": 83,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_mathematical_relay_sequencer.py",
+        "line": 122,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_mathematical_relay_sequencer.py",
+        "line": 83,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_mathematical_relay_sequencer.py",
+        "line": 122,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_mathematical_relay_system.py",
+        "line": 508,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "btc_price = 50000.0 + i * 100",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_mathematical_relay_system.py",
+        "line": 588,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "btc_price = 50000.0 + np.random.normal(0, 500)  # Random price movement",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_mathematical_relay_system.py",
+        "line": 508,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_price = 50000.0 + i * 100",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_mathematical_relay_system.py",
+        "line": 588,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_price = 50000.0 + np.random.normal(0, 500)  # Random price movement",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_mathematical_relay_system.py",
+        "line": 588,
+        "pattern": "50000\\.0.*#.*price",
+        "content": "btc_price = 50000.0 + np.random.normal(0, 500)  # Random price movement",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_mathematical_states.py",
+        "line": 132,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_math_integration.py",
+        "line": 49,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "base_price = 50000.0",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_precision_profit_integration.py",
+        "line": 40,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "def __init__(self, starting_price: float = 50000.0):",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_profit_scaling_integration.py",
+        "line": 250,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_profit_scaling_integration.py",
+        "line": 243,
+        "pattern": "50000\\.0.*#.*price",
+        "content": "test_data = np.array([50000.0, 2_000_000_000, 0.025])  # price, volume, volatility",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_recursive_lattice_integration.py",
+        "line": 197,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "btc_prices = [48000.0, 50000.0, 52000.0, 55000.0, 58000.0]",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_recursive_lattice_integration.py",
+        "line": 197,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "btc_prices = [48000.0, 50000.0, 52000.0, 55000.0, 58000.0]",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_risk_manager_enhanced.py",
+        "line": 116,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_schwabot_integration.py",
+        "line": 331,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "result = btc_pipeline.process_price_data(50000.0, time.time())",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_simple_2gram_system.py",
+        "line": 138,
+        "pattern": "BTC.*price.*50000\\.0",
+        "content": "\"BTC\": {\"price\": 50000.0, \"volume\": 1000000},",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_simple_mathematical_import.py",
+        "line": 140,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "current_price = market_data.get('current_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_simple_mathematical_import.py",
+        "line": 141,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price = market_data.get('entry_price', 50000.0)",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_stub_implementation.py",
+        "line": 89,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "entry_price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_stub_implementation.py",
+        "line": 122,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_stub_implementation.py",
+        "line": 198,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price=50000.0,",
+        "severity": "test_file"
+      },
+      {
+        "file": "tests\\integration\\test_zpe_zbe_pipeline_integration.py",
+        "line": 34,
+        "pattern": "price.*=.*50000\\.0",
+        "content": "price=50000.0,",
+        "severity": "test_file"
+      }
+    ],
+    "backup_files": [],
+    "documentation_files": [],
+    "summary": {
+      "total_files_checked": 10443,
+      "critical_issues_found": 79,
+      "test_files_with_static_data": 155,
+      "backup_files_with_static_data": 0
+    }
+  },
+  "recommendations": {
+    "critical_fixes": [
+      {
+        "file": "AOI_Base_Files_Schwabot/core/mode_integration_system.py",
+        "issue": "Uses 50000.0 as default BTC price in market_data validation",
+        "fix": "Replace with proper error handling that requires real API data",
+        "status": "FIXED"
+      },
+      {
+        "file": "backtesting/backtest_engine.py",
+        "issue": "Returns 50000.0 as default BTC price in _get_entry_price",
+        "fix": "Replace with API data fetching and proper error handling",
+        "status": "FIXED"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot/core/production_trading_pipeline.py",
+        "issue": "Returns 50000.0 as default BTC price in _get_entry_price",
+        "fix": "Replace with API data fetching and proper error handling",
+        "status": "FIXED"
+      },
+      {
+        "file": "AOI_Base_Files_Schwabot/core/unified_btc_trading_pipeline.py",
+        "issue": "Returns 50000.0 as default BTC price in _get_entry_price",
+        "fix": "Replace with API data fetching and proper error handling",
+        "status": "NEEDS_ATTENTION"
+      }
+    ],
+    "general_recommendations": [
+      "All price data should come from real API endpoints (Binance, Coinbase, etc.)",
+      "Implement proper error handling when API data is unavailable",
+      "Use market data providers with fallback mechanisms",
+      "Add validation to ensure price data is current and valid",
+      "Implement circuit breakers when price data is stale or invalid",
+      "Add logging to track when fallback data is used",
+      "Test all trading logic with real market data, not static examples"
+    ],
+    "api_integration_requirements": [
+      "Implement market data provider interface",
+      "Add support for multiple exchange APIs",
+      "Implement price data caching with TTL",
+      "Add rate limiting for API calls",
+      "Implement retry logic for failed API calls",
+      "Add price validation (reasonable ranges, not stale data)",
+      "Implement websocket connections for real-time data"
+    ]
+  }
+}

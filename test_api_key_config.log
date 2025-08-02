@@ -1,0 +1,172 @@
+2025-07-24 08:29:03,572 - api_key_configuration - INFO - ✅ USB storage detected: D:\
+2025-07-24 08:29:03,573 - api_key_configuration - INFO - 🔑 API Key Manager initialized
+2025-07-24 08:29:03,575 - __main__ - ERROR - Test failed: 'list' object has no attribute 'keys'
+2025-07-24 08:29:04,114 - real_api_pricing_memory_system - INFO - 🚀 Initializing Real API Pricing & Memory Storage System
+2025-07-24 08:29:04,123 - real_api_pricing_memory_system - ERROR - ❌ Error initializing system: 'str' object has no attribute 'value'
+2025-07-24 08:29:04,123 - __main__ - ERROR - Integration test failed: 'str' object has no attribute 'value'
+2025-07-24 08:29:39,276 - api_key_configuration - INFO - ✅ USB storage detected: D:\
+2025-07-24 08:29:39,280 - api_key_configuration - INFO - 🔑 API Key Manager initialized
+2025-07-24 08:29:39,834 - real_api_pricing_memory_system - INFO - 🚀 Initializing Real API Pricing & Memory Storage System
+2025-07-24 08:29:39,915 - schwabot_usb_memory - INFO - Found USB drive via WMI: F: (Size: 115.4GB)
+2025-07-24 08:29:39,917 - schwabot_usb_memory - INFO - Found USB drive via WMI: G: (Size: 28.9GB)
+2025-07-24 08:29:39,918 - schwabot_usb_memory - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 08:29:39,919 - schwabot_usb_memory - INFO - USB memory initialized: F:\SchwabotMemory
+2025-07-24 08:29:39,920 - schwabot_usb_memory - INFO - Memory sync thread started
+2025-07-24 08:29:39,921 - schwabot_usb_memory - INFO - Found USB drive via win32api: F:\
+2025-07-24 08:29:39,921 - schwabot_usb_memory - INFO - Found USB drive via win32api: G:\
+2025-07-24 08:29:39,921 - schwabot_usb_memory - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 08:29:40,128 - real_api_pricing_memory_system - INFO - ✅ USB memory initialized: F:\SchwabotMemory
+2025-07-24 08:29:40,129 - real_api_pricing_memory_system - INFO - ✅ Memory database initialized
+2025-07-24 08:29:40,131 - api_key_configuration - INFO - ✅ USB storage detected: D:\
+2025-07-24 08:29:40,131 - api_key_configuration - INFO - 🔑 API Key Manager initialized
+2025-07-24 08:29:40,133 - real_api_pricing_memory_system - INFO - ✅ Loaded binance keys from API key configuration
+2025-07-24 08:29:40,134 - real_api_pricing_memory_system - INFO - ✅ Loaded coinbase keys from API key configuration
+2025-07-24 08:29:40,135 - real_api_pricing_memory_system - INFO - ✅ Loaded kraken keys from API key configuration
+2025-07-24 08:29:40,135 - real_api_pricing_memory_system - INFO - ✅ Loaded 3 exchange configurations from API key system
+2025-07-24 08:29:40,138 - schwabot_usb_memory - INFO - Backed up: schwabot_monitoring.log
+2025-07-24 08:29:40,196 - schwabot_usb_memory - INFO - Backed up: schwabot_cli.log
+2025-07-24 08:29:41,632 - schwabot_usb_memory - INFO - Backed up: config directory
+2025-07-24 08:29:41,716 - schwabot_usb_memory - INFO - Memory backup completed: F:\SchwabotMemory\backups\backup_20250724_082939
+2025-07-24 08:29:41,873 - real_api_pricing_memory_system - INFO - ✅ BINANCE API client initialized
+2025-07-24 08:29:41,873 - real_api_pricing_memory_system - ERROR - ❌ Error initializing Coinbase client: module 'ccxt' has no attribute 'coinbasepro'
+2025-07-24 08:29:41,873 - real_api_pricing_memory_system - INFO - ✅ COINBASE API client initialized
+2025-07-24 08:29:41,884 - real_api_pricing_memory_system - INFO - ✅ KRAKEN API client initialized
+2025-07-24 08:29:41,886 - real_api_pricing_memory_system - INFO - ✅ Background threads started
+2025-07-24 08:29:41,887 - real_api_pricing_memory_system - INFO - ✅ Real API Pricing & Memory Storage System initialized
+2025-07-24 08:29:41,888 - api_key_configuration - INFO - ✅ USB storage detected: D:\
+2025-07-24 08:29:41,888 - api_key_configuration - INFO - 🔑 API Key Manager initialized
+2025-07-24 08:29:41,890 - real_api_pricing_memory_system - INFO - ✅ Loaded binance keys from API key configuration
+2025-07-24 08:29:41,896 - real_api_pricing_memory_system - INFO - ✅ Loaded coinbase keys from API key configuration
+2025-07-24 08:29:41,898 - real_api_pricing_memory_system - INFO - ✅ Loaded kraken keys from API key configuration
+2025-07-24 08:29:41,898 - real_api_pricing_memory_system - INFO - ✅ Loaded 3 exchange configurations from API key system
+2025-07-24 08:29:42,116 - real_api_pricing_memory_system - WARNING - ⚠️ Error getting price from binance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1753360181936&recvWindow=10000&signature=a93d2a82723ed859c4f70dce45426ca4b2d86edec81a46ed0e0e1e5274b6ec82 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2025-07-24 08:29:42,129 - real_api_pricing_memory_system - WARNING - ⚠️ Error getting price from binance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1753360181885&recvWindow=10000&signature=2abc9751fb4fb770e68954b6cccfeb6770c8d9f3e269be8012b69785d44d414b 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2025-07-24 08:29:44,294 - real_api_pricing_memory_system - INFO - 📊 Real API price for BTC/USDC: $118558.58 from kraken
+2025-07-24 08:38:54,289 - api_key_configuration - INFO - ✅ Alpha256 encryption system available
+2025-07-24 08:38:54,310 - AOI_Base_Files_Schwabot.main - ERROR - Failed to import hash_config_manager: cannot import name 'hash_config_manager' from 'core.hash_config_manager' (C:\Users\maxde\Downloads\clonerepo\core\hash_config_manager.py)
+2025-07-24 08:38:54,310 - AOI_Base_Files_Schwabot.main - WARNING - Enhanced GPU auto-detection system not available
+2025-07-24 08:38:55,417 - api_key_configuration - INFO - ✅ Alpha Encryption (Ω-B-Γ Logic) system available
+2025-07-24 08:38:55,434 - core.encryption_manager - INFO - Master key saved to config/encryption.key
+2025-07-24 08:38:55,434 - core.encryption_manager - ERROR - Error creating Fernet instance: 'EncryptionManager' object has no attribute 'backend'
+2025-07-24 08:38:55,435 - __main__ - ERROR - Test failed: 'EncryptionManager' object has no attribute 'backend'
+2025-07-24 08:38:55,541 - real_api_pricing_memory_system - INFO - 🚀 Initializing Real API Pricing & Memory Storage System
+2025-07-24 08:38:55,636 - schwabot_usb_memory - INFO - Found USB drive via WMI: F: (Size: 115.4GB)
+2025-07-24 08:38:55,637 - schwabot_usb_memory - INFO - Found USB drive via WMI: G: (Size: 28.9GB)
+2025-07-24 08:38:55,637 - schwabot_usb_memory - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 08:38:55,638 - schwabot_usb_memory - INFO - USB memory initialized: F:\SchwabotMemory
+2025-07-24 08:38:55,640 - schwabot_usb_memory - INFO - Memory sync thread started
+2025-07-24 08:38:55,641 - schwabot_usb_memory - INFO - Found USB drive via win32api: F:\
+2025-07-24 08:38:55,642 - schwabot_usb_memory - INFO - Found USB drive via win32api: G:\
+2025-07-24 08:38:55,643 - schwabot_usb_memory - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 08:38:55,834 - real_api_pricing_memory_system - INFO - ✅ USB memory initialized: F:\SchwabotMemory
+2025-07-24 08:38:55,837 - real_api_pricing_memory_system - INFO - ✅ Memory database initialized
+2025-07-24 08:38:55,843 - core.alpha256_encryption - INFO - Master key loaded successfully
+2025-07-24 08:38:55,844 - core.alpha256_encryption - INFO - Loaded 24 API keys
+2025-07-24 08:38:55,845 - core.alpha256_encryption - INFO - Alpha256 Encryption System initialized
+2025-07-24 08:38:55,861 - schwabot_usb_memory - INFO - Backed up: schwabot_monitoring.log
+2025-07-24 08:38:55,919 - schwabot_usb_memory - INFO - Backed up: schwabot_cli.log
+2025-07-24 08:38:55,931 - real_api_pricing_memory_system - INFO - ✅ Loaded binance keys from Alpha256 encryption system
+2025-07-24 08:38:55,955 - real_api_pricing_memory_system - INFO - ✅ Loaded coinbase keys from Alpha256 encryption system
+2025-07-24 08:38:55,980 - real_api_pricing_memory_system - INFO - ✅ Loaded kraken keys from Alpha256 encryption system
+2025-07-24 08:38:56,007 - real_api_pricing_memory_system - INFO - ✅ Loaded kucoin keys from Alpha256 encryption system
+2025-07-24 08:38:56,023 - real_api_pricing_memory_system - INFO - ✅ Loaded test_exchange_1 keys from Alpha256 encryption system
+2025-07-24 08:38:56,049 - real_api_pricing_memory_system - INFO - ✅ Loaded test_exchange_2 keys from Alpha256 encryption system
+2025-07-24 08:38:56,049 - real_api_pricing_memory_system - INFO - ✅ Successfully loaded 6 exchanges from Alpha256 encryption system
+2025-07-24 08:38:57,417 - schwabot_usb_memory - INFO - Backed up: config directory
+2025-07-24 08:38:57,470 - schwabot_usb_memory - INFO - Memory backup completed: F:\SchwabotMemory\backups\backup_20250724_083855
+2025-07-24 08:38:58,019 - real_api_pricing_memory_system - INFO - ✅ BINANCE API client initialized
+2025-07-24 08:38:58,020 - real_api_pricing_memory_system - ERROR - ❌ Error initializing Coinbase client: module 'ccxt' has no attribute 'coinbasepro'
+2025-07-24 08:38:58,020 - real_api_pricing_memory_system - INFO - ✅ COINBASE API client initialized
+2025-07-24 08:38:58,025 - real_api_pricing_memory_system - INFO - ✅ KRAKEN API client initialized
+2025-07-24 08:38:58,025 - real_api_pricing_memory_system - INFO - ✅ KUCOIN API client initialized
+2025-07-24 08:38:58,025 - real_api_pricing_memory_system - INFO - ✅ TEST_EXCHANGE_1 API client initialized
+2025-07-24 08:38:58,026 - real_api_pricing_memory_system - INFO - ✅ TEST_EXCHANGE_2 API client initialized
+2025-07-24 08:38:58,032 - real_api_pricing_memory_system - INFO - ✅ Background threads started
+2025-07-24 08:38:58,032 - real_api_pricing_memory_system - INFO - ✅ Real API Pricing & Memory Storage System initialized
+2025-07-24 08:38:58,040 - core.alpha256_encryption - INFO - Master key loaded successfully
+2025-07-24 08:38:58,062 - core.alpha256_encryption - INFO - Loaded 24 API keys
+2025-07-24 08:38:58,062 - core.alpha256_encryption - INFO - Alpha256 Encryption System initialized
+2025-07-24 08:38:58,066 - real_api_pricing_memory_system - INFO - ✅ Loaded binance keys from Alpha256 encryption system
+2025-07-24 08:38:58,083 - real_api_pricing_memory_system - INFO - ✅ Loaded coinbase keys from Alpha256 encryption system
+2025-07-24 08:38:58,102 - real_api_pricing_memory_system - INFO - ✅ Loaded kraken keys from Alpha256 encryption system
+2025-07-24 08:38:58,127 - real_api_pricing_memory_system - INFO - ✅ Loaded kucoin keys from Alpha256 encryption system
+2025-07-24 08:38:58,153 - real_api_pricing_memory_system - INFO - ✅ Loaded test_exchange_1 keys from Alpha256 encryption system
+2025-07-24 08:38:58,172 - real_api_pricing_memory_system - INFO - ✅ Loaded test_exchange_2 keys from Alpha256 encryption system
+2025-07-24 08:38:58,172 - real_api_pricing_memory_system - INFO - ✅ Successfully loaded 6 exchanges from Alpha256 encryption system
+2025-07-24 08:38:58,295 - real_api_pricing_memory_system - WARNING - ⚠️ Error getting price from binance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1753360738026&recvWindow=10000&signature=a570e4a2fdc1a9c5fa10155720c1d62a51eede19a3dcb12b1693d07d369ade09 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2025-07-24 08:38:58,296 - real_api_pricing_memory_system - WARNING - ⚠️ Error getting price from binance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1753360738174&recvWindow=10000&signature=866d73ccd3983c2c501c206a78d5e602c441d67b39d1d9d0ad986cd5e781e48d 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2025-07-24 08:39:00,535 - real_api_pricing_memory_system - INFO - 📊 Real API price for BTC/USDC: $118514.20 from kraken
+2025-07-24 08:39:00,565 - real_api_pricing_memory_system - ERROR - ❌ Error storing locally: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 21552 and this is thread id 21756.
+2025-07-24 08:39:00,597 - real_api_pricing_memory_system - INFO - 💾 Stored memory entry: 3e7d96df0ce29d63 (api_data)
+2025-07-24 08:39:00,663 - real_api_pricing_memory_system - WARNING - ⚠️ Error getting price from binance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1753360740629&recvWindow=10000&signature=53418b6acbca006d0fea0119295bc6342d99cea148a45106807e9fb7b6bac0e2 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2025-07-24 08:39:01,346 - real_api_pricing_memory_system - INFO - 📊 Real API price for BTC/USDC: $118514.20 from kraken
+2025-07-24 08:43:37,846 - api_key_configuration - INFO - ✅ Alpha256 encryption system available
+2025-07-24 08:43:37,880 - AOI_Base_Files_Schwabot.main - ERROR - Failed to import hash_config_manager: cannot import name 'hash_config_manager' from 'core.hash_config_manager' (C:\Users\maxde\Downloads\clonerepo\core\hash_config_manager.py)
+2025-07-24 08:43:37,881 - AOI_Base_Files_Schwabot.main - WARNING - Enhanced GPU auto-detection system not available
+2025-07-24 08:43:39,080 - api_key_configuration - INFO - ✅ Alpha Encryption (Ω-B-Γ Logic) system available
+2025-07-24 08:43:39,089 - core.encryption_manager - ERROR - Error creating Fernet instance: 'EncryptionManager' object has no attribute 'backend'
+2025-07-24 08:43:39,090 - __main__ - ERROR - Test failed: 'EncryptionManager' object has no attribute 'backend'
+2025-07-24 08:43:39,195 - real_api_pricing_memory_system - INFO - 🚀 Initializing Real API Pricing & Memory Storage System
+2025-07-24 08:43:39,522 - schwabot_usb_memory - INFO - Found USB drive via WMI: F: (Size: 115.4GB)
+2025-07-24 08:43:39,534 - schwabot_usb_memory - INFO - Found USB drive via WMI: G: (Size: 28.9GB)
+2025-07-24 08:43:39,534 - schwabot_usb_memory - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 08:43:39,535 - schwabot_usb_memory - INFO - USB memory initialized: F:\SchwabotMemory
+2025-07-24 08:43:39,539 - schwabot_usb_memory - INFO - Memory sync thread started
+2025-07-24 08:43:39,539 - schwabot_usb_memory - INFO - Found USB drive via win32api: F:\
+2025-07-24 08:43:39,539 - schwabot_usb_memory - INFO - Found USB drive via win32api: G:\
+2025-07-24 08:43:39,540 - schwabot_usb_memory - INFO - Found 2 USB drives: ['F:\\', 'G:\\']
+2025-07-24 08:43:39,756 - real_api_pricing_memory_system - INFO - ✅ USB memory initialized: F:\SchwabotMemory
+2025-07-24 08:43:39,760 - real_api_pricing_memory_system - INFO - ✅ Memory database initialized
+2025-07-24 08:43:39,772 - core.alpha256_encryption - INFO - Master key loaded successfully
+2025-07-24 08:43:39,773 - core.alpha256_encryption - INFO - Loaded 24 API keys
+2025-07-24 08:43:39,773 - core.alpha256_encryption - INFO - Alpha256 Encryption System initialized
+2025-07-24 08:43:39,784 - schwabot_usb_memory - INFO - Backed up: schwabot_monitoring.log
+2025-07-24 08:43:39,850 - schwabot_usb_memory - INFO - Backed up: schwabot_cli.log
+2025-07-24 08:43:39,888 - real_api_pricing_memory_system - INFO - ✅ Loaded binance keys from Alpha256 encryption system
+2025-07-24 08:43:39,914 - real_api_pricing_memory_system - INFO - ✅ Loaded coinbase keys from Alpha256 encryption system
+2025-07-24 08:43:39,935 - real_api_pricing_memory_system - INFO - ✅ Loaded kraken keys from Alpha256 encryption system
+2025-07-24 08:43:39,969 - real_api_pricing_memory_system - INFO - ✅ Loaded kucoin keys from Alpha256 encryption system
+2025-07-24 08:43:39,995 - real_api_pricing_memory_system - INFO - ✅ Loaded test_exchange_1 keys from Alpha256 encryption system
+2025-07-24 08:43:40,029 - real_api_pricing_memory_system - INFO - ✅ Loaded test_exchange_2 keys from Alpha256 encryption system
+2025-07-24 08:43:40,033 - real_api_pricing_memory_system - INFO - ✅ Successfully loaded 6 exchanges from Alpha256 encryption system
+2025-07-24 08:43:41,359 - schwabot_usb_memory - INFO - Backed up: config directory
+2025-07-24 08:43:41,411 - schwabot_usb_memory - INFO - Memory backup completed: F:\SchwabotMemory\backups\backup_20250724_084339
+2025-07-24 08:43:41,928 - real_api_pricing_memory_system - INFO - ✅ BINANCE API client initialized
+2025-07-24 08:43:41,929 - real_api_pricing_memory_system - ERROR - ❌ Error initializing Coinbase client: module 'ccxt' has no attribute 'coinbasepro'
+2025-07-24 08:43:41,929 - real_api_pricing_memory_system - INFO - ✅ COINBASE API client initialized
+2025-07-24 08:43:41,936 - real_api_pricing_memory_system - INFO - ✅ KRAKEN API client initialized
+2025-07-24 08:43:41,936 - real_api_pricing_memory_system - INFO - ✅ KUCOIN API client initialized
+2025-07-24 08:43:41,942 - real_api_pricing_memory_system - INFO - ✅ TEST_EXCHANGE_1 API client initialized
+2025-07-24 08:43:41,942 - real_api_pricing_memory_system - INFO - ✅ TEST_EXCHANGE_2 API client initialized
+2025-07-24 08:43:41,945 - real_api_pricing_memory_system - INFO - ✅ Background threads started
+2025-07-24 08:43:41,945 - real_api_pricing_memory_system - INFO - ✅ Real API Pricing & Memory Storage System initialized
+2025-07-24 08:43:42,118 - real_api_pricing_memory_system - WARNING - ⚠️ Error getting price from binance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1753361021943&recvWindow=10000&signature=e040ea6d125362d697471f86b20ee8620a29e1bef22ac2260c4bcb142fb0b03b 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2025-07-24 08:43:44,226 - real_api_pricing_memory_system - INFO - 📊 Real API price for BTC/USDC: $118471.52 from kraken
+2025-07-24 08:43:44,367 - core.alpha256_encryption - INFO - Master key loaded successfully
+2025-07-24 08:43:44,389 - core.alpha256_encryption - INFO - Loaded 24 API keys
+2025-07-24 08:43:44,389 - core.alpha256_encryption - INFO - Alpha256 Encryption System initialized
+2025-07-24 08:43:44,394 - real_api_pricing_memory_system - INFO - ✅ Loaded binance keys from Alpha256 encryption system
+2025-07-24 08:43:44,412 - real_api_pricing_memory_system - INFO - ✅ Loaded coinbase keys from Alpha256 encryption system
+2025-07-24 08:43:44,433 - real_api_pricing_memory_system - INFO - ✅ Loaded kraken keys from Alpha256 encryption system
+2025-07-24 08:43:44,450 - real_api_pricing_memory_system - INFO - ✅ Loaded kucoin keys from Alpha256 encryption system
+2025-07-24 08:43:44,466 - real_api_pricing_memory_system - INFO - ✅ Loaded test_exchange_1 keys from Alpha256 encryption system
+2025-07-24 08:43:44,488 - real_api_pricing_memory_system - INFO - ✅ Loaded test_exchange_2 keys from Alpha256 encryption system
+2025-07-24 08:43:44,489 - real_api_pricing_memory_system - INFO - ✅ Successfully loaded 6 exchanges from Alpha256 encryption system

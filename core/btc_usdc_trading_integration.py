@@ -205,7 +205,7 @@ class BTCUSDCTradingIntegration:
         """Analyze current market conditions."""
         try:
             # Extract market data
-            price = self.market_data_cache.get("price", 50000.0)
+            price = self.market_data_cache.get(\g<0>.split(",")[0], self._get_real_price_data())
             volume = self.market_data_cache.get("volume", 1000000.0)
             volatility = self.market_data_cache.get("volatility", 0.02)
             
@@ -243,7 +243,7 @@ class BTCUSDCTradingIntegration:
         except Exception as e:
             logger.error(f"Error analyzing market conditions: {e}")
             return {
-                "price": 50000.0,
+                "price": self._get_real_price_data(),
                 "volume": 1000000.0,
                 "volatility": 0.02,
                 "calculated_volatility": 0.02,
@@ -471,7 +471,7 @@ class BTCUSDCTradingIntegration:
             # For now, use a fixed value
             account_balance = 100000.0  # $100k
             max_position_value = account_balance * self.config.max_position_size_pct
-            current_price = self.market_data_cache.get("price", 50000.0)
+            current_price = self.market_data_cache.get(\g<0>.split(",")[0], self._get_real_price_data())
             
             return max_position_value / current_price
             
@@ -654,7 +654,7 @@ class BTCUSDCTradingIntegration:
             # This would typically fetch from exchange API
             # For now, use simulated data
             self.market_data_cache.update({
-                "price": 50000.0 + np.random.normal(0, 100),
+                "price": self._get_real_price_data() + np.random.normal(0, 100),
                 "volume": 1000000.0 + np.random.normal(0, 100000),
                 "volatility": 0.02 + np.random.normal(0, 0.01),
                 "timestamp": time.time()
@@ -734,4 +734,38 @@ def create_btc_usdc_integration(config: Dict[str, Any] = None) -> BTCUSDCTrading
 
 
 # Global instance for easy access
+
+    def _get_real_price_data(self) -> float:
+        """Get real price data from API - NO MORE STATIC 50000.0!"""
+        try:
+            # Try to get real price from API
+            if hasattr(self, 'api_client') and self.api_client:
+                try:
+                    ticker = self.api_client.fetch_ticker('BTC/USDC')
+                    if ticker and 'last' in ticker and ticker['last']:
+                        return float(ticker['last'])
+                except Exception as e:
+                    pass
+            
+            # Try to get from market data provider
+            if hasattr(self, 'market_data_provider') and self.market_data_provider:
+                try:
+                    price = self.market_data_provider.get_current_price('BTC/USDC')
+                    if price and price > 0:
+                        return price
+                except Exception as e:
+                    pass
+            
+            # Try to get from cache
+            if hasattr(self, 'market_data_cache') and 'BTC/USDC' in self.market_data_cache:
+                cached_price = self.market_data_cache['BTC/USDC'].get('price')
+                if cached_price and cached_price > 0:
+                    return cached_price
+            
+            # CRITICAL: No real data available - fail properly
+            raise ValueError("No live price data available - API connection required")
+            
+        except Exception as e:
+            raise ValueError(f"Cannot get live price data: {e}")
+
 btc_usdc_integration = create_btc_usdc_integration() 
